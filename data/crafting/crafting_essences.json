@@ -1,0 +1,799 @@
+{
+ "_source": "Craft of Exile beta data.json essences",
+ "_patch": "0.5.4.1.2",
+ "_accessed": "2026-07-05",
+ "essence_types": [
+  {
+   "id": "Lesser",
+   "label": 5298,
+   "corrupted": false
+  },
+  {
+   "id": "Normal",
+   "label": 5299,
+   "corrupted": false
+  },
+  {
+   "id": "Greater",
+   "label": 5300,
+   "corrupted": false
+  },
+  {
+   "id": "Perfect",
+   "label": 5301,
+   "corrupted": false
+  },
+  {
+   "id": "Corrupted",
+   "label": 5302,
+   "corrupted": false
+  },
+  {
+   "id": "Alloy",
+   "label": 5303,
+   "corrupted": false
+  }
+ ],
+ "essences": [
+  {
+   "coe_id": 0,
+   "item_id": 87,
+   "name": "Lesser Essence of the Body",
+   "type": 0,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 1,
+   "item_id": 88,
+   "name": "Lesser Essence of the Mind",
+   "type": 0,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 2,
+   "item_id": 89,
+   "name": "Lesser Essence of Enhancement",
+   "type": 0,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 3,
+   "item_id": 90,
+   "name": "Lesser Essence of Abrasion",
+   "type": 0,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 4,
+   "item_id": 91,
+   "name": "Lesser Essence of Flames",
+   "type": 0,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 5,
+   "item_id": 92,
+   "name": "Lesser Essence of Ice",
+   "type": 0,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 6,
+   "item_id": 93,
+   "name": "Lesser Essence of Electricity",
+   "type": 0,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 7,
+   "item_id": 94,
+   "name": "Lesser Essence of Ruin",
+   "type": 0,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 8,
+   "item_id": 95,
+   "name": "Lesser Essence of Battle",
+   "type": 0,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 9,
+   "item_id": 96,
+   "name": "Lesser Essence of Sorcery",
+   "type": 0,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 10,
+   "item_id": 97,
+   "name": "Lesser Essence of Haste",
+   "type": 0,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 11,
+   "item_id": 98,
+   "name": "Lesser Essence of the Infinite",
+   "type": 0,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 12,
+   "item_id": 99,
+   "name": "Essence of the Body",
+   "type": 1,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 13,
+   "item_id": 100,
+   "name": "Essence of the Mind",
+   "type": 1,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 14,
+   "item_id": 101,
+   "name": "Essence of Enhancement",
+   "type": 1,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 15,
+   "item_id": 102,
+   "name": "Essence of Abrasion",
+   "type": 1,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 16,
+   "item_id": 103,
+   "name": "Essence of Flames",
+   "type": 1,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 17,
+   "item_id": 104,
+   "name": "Essence of Ice",
+   "type": 1,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 18,
+   "item_id": 105,
+   "name": "Essence of Electricity",
+   "type": 1,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 19,
+   "item_id": 106,
+   "name": "Essence of Ruin",
+   "type": 1,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 20,
+   "item_id": 107,
+   "name": "Essence of Battle",
+   "type": 1,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 21,
+   "item_id": 108,
+   "name": "Essence of Sorcery",
+   "type": 1,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 22,
+   "item_id": 109,
+   "name": "Essence of Haste",
+   "type": 1,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 23,
+   "item_id": 110,
+   "name": "Essence of the Infinite",
+   "type": 1,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 24,
+   "item_id": 111,
+   "name": "Greater Essence of the Body",
+   "type": 2,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 25,
+   "item_id": 112,
+   "name": "Greater Essence of the Mind",
+   "type": 2,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 26,
+   "item_id": 113,
+   "name": "Greater Essence of Enhancement",
+   "type": 2,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 27,
+   "item_id": 114,
+   "name": "Greater Essence of Abrasion",
+   "type": 2,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 28,
+   "item_id": 115,
+   "name": "Greater Essence of Flames",
+   "type": 2,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 29,
+   "item_id": 116,
+   "name": "Greater Essence of Ice",
+   "type": 2,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 30,
+   "item_id": 117,
+   "name": "Greater Essence of Electricity",
+   "type": 2,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 31,
+   "item_id": 118,
+   "name": "Greater Essence of Ruin",
+   "type": 2,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 32,
+   "item_id": 119,
+   "name": "Greater Essence of Battle",
+   "type": 2,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 33,
+   "item_id": 120,
+   "name": "Greater Essence of Sorcery",
+   "type": 2,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 34,
+   "item_id": 121,
+   "name": "Greater Essence of Haste",
+   "type": 2,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 35,
+   "item_id": 122,
+   "name": "Greater Essence of the Infinite",
+   "type": 2,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 36,
+   "item_id": 123,
+   "name": "Perfect Essence of the Body",
+   "type": 3,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 37,
+   "item_id": 124,
+   "name": "Perfect Essence of the Mind",
+   "type": 3,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 38,
+   "item_id": 125,
+   "name": "Perfect Essence of Enhancement",
+   "type": 3,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 39,
+   "item_id": 126,
+   "name": "Perfect Essence of Abrasion",
+   "type": 3,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 40,
+   "item_id": 127,
+   "name": "Perfect Essence of Flames",
+   "type": 3,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 41,
+   "item_id": 128,
+   "name": "Perfect Essence of Ice",
+   "type": 3,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 42,
+   "item_id": 129,
+   "name": "Perfect Essence of Electricity",
+   "type": 3,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 43,
+   "item_id": 130,
+   "name": "Perfect Essence of Ruin",
+   "type": 3,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 44,
+   "item_id": 131,
+   "name": "Perfect Essence of Battle",
+   "type": 3,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 45,
+   "item_id": 132,
+   "name": "Perfect Essence of Sorcery",
+   "type": 3,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 46,
+   "item_id": 133,
+   "name": "Perfect Essence of Haste",
+   "type": 3,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 47,
+   "item_id": 134,
+   "name": "Perfect Essence of the Infinite",
+   "type": 3,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 48,
+   "item_id": 139,
+   "name": "Essence of Hysteria",
+   "type": 4,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 49,
+   "item_id": 140,
+   "name": "Essence of Delirium",
+   "type": 4,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 50,
+   "item_id": 141,
+   "name": "Essence of Horror",
+   "type": 4,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 51,
+   "item_id": 142,
+   "name": "Essence of Insanity",
+   "type": 4,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 52,
+   "item_id": 135,
+   "name": "Lesser Essence of Seeking",
+   "type": 0,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 53,
+   "item_id": 136,
+   "name": "Essence of Seeking",
+   "type": 1,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 54,
+   "item_id": 137,
+   "name": "Greater Essence of Seeking",
+   "type": 2,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 55,
+   "item_id": 138,
+   "name": "Perfect Essence of Seeking",
+   "type": 3,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 56,
+   "item_id": 143,
+   "name": "Essence of the Abyss",
+   "type": 4,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 57,
+   "item_id": 144,
+   "name": "Essence of the Breach",
+   "type": 4,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 58,
+   "item_id": 145,
+   "name": "Lesser Essence of Insulation",
+   "type": 0,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 59,
+   "item_id": 146,
+   "name": "Essence of Insulation",
+   "type": 1,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 60,
+   "item_id": 147,
+   "name": "Greater Essence of Insulation",
+   "type": 2,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 61,
+   "item_id": 148,
+   "name": "Perfect Essence of Insulation",
+   "type": 3,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 62,
+   "item_id": 149,
+   "name": "Lesser Essence of Thawing",
+   "type": 0,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 63,
+   "item_id": 150,
+   "name": "Essence of Thawing",
+   "type": 1,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 64,
+   "item_id": 151,
+   "name": "Greater Essence of Thawing",
+   "type": 2,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 65,
+   "item_id": 152,
+   "name": "Perfect Essence of Thawing",
+   "type": 3,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 66,
+   "item_id": 153,
+   "name": "Lesser Essence of Grounding",
+   "type": 0,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 67,
+   "item_id": 154,
+   "name": "Essence of Grounding",
+   "type": 1,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 68,
+   "item_id": 155,
+   "name": "Greater Essence of Grounding",
+   "type": 2,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 69,
+   "item_id": 156,
+   "name": "Perfect Essence of Grounding",
+   "type": 3,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 70,
+   "item_id": 157,
+   "name": "Lesser Essence of Alacrity",
+   "type": 0,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 71,
+   "item_id": 158,
+   "name": "Essence of Alacrity",
+   "type": 1,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 72,
+   "item_id": 159,
+   "name": "Greater Essence of Alacrity",
+   "type": 2,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 73,
+   "item_id": 160,
+   "name": "Perfect Essence of Alacrity",
+   "type": 3,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 74,
+   "item_id": 161,
+   "name": "Lesser Essence of Opulence",
+   "type": 0,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 75,
+   "item_id": 162,
+   "name": "Essence of Opulence",
+   "type": 1,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 76,
+   "item_id": 163,
+   "name": "Greater Essence of Opulence",
+   "type": 2,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 77,
+   "item_id": 164,
+   "name": "Perfect Essence of Opulence",
+   "type": 3,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 78,
+   "item_id": 165,
+   "name": "Lesser Essence of Command",
+   "type": 0,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 79,
+   "item_id": 166,
+   "name": "Essence of Command",
+   "type": 1,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 80,
+   "item_id": 167,
+   "name": "Greater Essence of Command",
+   "type": 2,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 81,
+   "item_id": 168,
+   "name": "Perfect Essence of Command",
+   "type": 3,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 82,
+   "item_id": 5049,
+   "name": "Runic Alloy",
+   "type": 5,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 83,
+   "item_id": 5050,
+   "name": "Adaptive Alloy",
+   "type": 5,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 84,
+   "item_id": 5051,
+   "name": "Protective Alloy",
+   "type": 5,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 85,
+   "item_id": 5052,
+   "name": "Expansive Alloy",
+   "type": 5,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 86,
+   "item_id": 5053,
+   "name": "Swift Alloy",
+   "type": 5,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 87,
+   "item_id": 5054,
+   "name": "Cyclonic Alloy",
+   "type": 5,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 88,
+   "item_id": 5055,
+   "name": "Prismatic Alloy",
+   "type": 5,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 89,
+   "item_id": 5056,
+   "name": "Mystic Alloy",
+   "type": 5,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 90,
+   "item_id": 5057,
+   "name": "Sovereign Alloy",
+   "type": 5,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 91,
+   "item_id": 5058,
+   "name": "Celestial Alloy",
+   "type": 5,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 92,
+   "item_id": 5059,
+   "name": "Transcendent Alloy",
+   "type": 5,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 93,
+   "item_id": 5060,
+   "name": "The Runebinder's Alloy",
+   "type": 5,
+   "level": null,
+   "restriction": null
+  },
+  {
+   "coe_id": 94,
+   "item_id": 5061,
+   "name": "The Runefather's Alloy",
+   "type": 5,
+   "level": null,
+   "restriction": null
+  }
+ ]
+}

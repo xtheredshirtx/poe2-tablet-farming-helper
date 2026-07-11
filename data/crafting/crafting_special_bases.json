@@ -1,0 +1,975 @@
+{
+ "_source": "Craft of Exile beta data.json items filtered by Phase 6 special-base keyword list",
+ "_patch": "0.5.4.1.2",
+ "_accessed": "2026-07-05",
+ "keywords": [
+  "Gloam",
+  "Tenebrous",
+  "Dusk",
+  "Penumbra",
+  "Distorted",
+  "Absent",
+  "Portent",
+  "Lament",
+  "Corona",
+  "Stalking",
+  "Grasping Mail",
+  "Breach Ring",
+  "Runic Ward",
+  "Altered Collarbone"
+ ],
+ "special_bases": [
+  {
+   "coe_id": 2637,
+   "key": "Metadata/Items/Rings/FourRingLake1",
+   "name": "Dusk Ring",
+   "class_id": 33,
+   "class": "Rings",
+   "category": "Jewellery",
+   "drop_level": 1,
+   "implicit_mod_ids": [
+    1600
+   ],
+   "implicits": [
+    "+# Prefix Modifier allowed (1); # Suffix Modifier allowed (-1)"
+   ],
+   "domain": "ITEM",
+   "requirements": null,
+   "properties": null,
+   "tags": [],
+   "sockets": 0,
+   "corrupted_only": false,
+   "unmodifiable": false,
+   "wiki": "Dusk Ring"
+  },
+  {
+   "coe_id": 2638,
+   "key": "Metadata/Items/Rings/FourRingLake2",
+   "name": "Gloam Ring",
+   "class_id": 33,
+   "class": "Rings",
+   "category": "Jewellery",
+   "drop_level": 1,
+   "implicit_mod_ids": [
+    1601
+   ],
+   "implicits": [
+    "# Prefix Modifier allowed (-1); +# Suffix Modifier allowed (1)"
+   ],
+   "domain": "ITEM",
+   "requirements": null,
+   "properties": null,
+   "tags": [],
+   "sockets": 0,
+   "corrupted_only": false,
+   "unmodifiable": false,
+   "wiki": "Gloam Ring"
+  },
+  {
+   "coe_id": 2639,
+   "key": "Metadata/Items/Rings/FourRingLake3",
+   "name": "Penumbra Ring",
+   "class_id": 33,
+   "class": "Rings",
+   "category": "Jewellery",
+   "drop_level": 1,
+   "implicit_mod_ids": [
+    1602
+   ],
+   "implicits": [
+    "+# Prefix Modifiers allowed (2); # Suffix Modifiers allowed (-2)"
+   ],
+   "domain": "ITEM",
+   "requirements": null,
+   "properties": null,
+   "tags": [],
+   "sockets": 0,
+   "corrupted_only": false,
+   "unmodifiable": false,
+   "wiki": "Penumbra Ring"
+  },
+  {
+   "coe_id": 2640,
+   "key": "Metadata/Items/Rings/FourRingLake4",
+   "name": "Tenebrous Ring",
+   "class_id": 33,
+   "class": "Rings",
+   "category": "Jewellery",
+   "drop_level": 1,
+   "implicit_mod_ids": [
+    1603
+   ],
+   "implicits": [
+    "# Prefix Modifiers allowed (-2); +# Suffix Modifiers allowed (2)"
+   ],
+   "domain": "ITEM",
+   "requirements": null,
+   "properties": null,
+   "tags": [],
+   "sockets": 0,
+   "corrupted_only": false,
+   "unmodifiable": false,
+   "wiki": "Tenebrous Ring"
+  },
+  {
+   "coe_id": 2669,
+   "key": "Metadata/Items/Rings/FourRingBreach",
+   "name": "Breach Ring",
+   "class_id": 33,
+   "class": "Rings",
+   "category": "Jewellery",
+   "drop_level": 40,
+   "implicit_mod_ids": [
+    1598
+   ],
+   "implicits": [
+    "+#% to Maximum [Quality] (20)"
+   ],
+   "domain": "ITEM",
+   "requirements": null,
+   "properties": null,
+   "tags": [],
+   "sockets": 0,
+   "corrupted_only": false,
+   "unmodifiable": false,
+   "wiki": "Breach Ring"
+  },
+  {
+   "coe_id": 2670,
+   "key": "Metadata/Items/Rings/FourRingBreach2",
+   "name": "Refined Breach Ring",
+   "class_id": 33,
+   "class": "Rings",
+   "category": "Jewellery",
+   "drop_level": 40,
+   "implicit_mod_ids": [
+    1599
+   ],
+   "implicits": [
+    "+#% to Maximum [Quality] (25)"
+   ],
+   "domain": "ITEM",
+   "requirements": null,
+   "properties": null,
+   "tags": [],
+   "sockets": 0,
+   "corrupted_only": false,
+   "unmodifiable": false,
+   "wiki": "Refined Breach Ring"
+  },
+  {
+   "coe_id": 2601,
+   "key": "Metadata/Items/Belts/FourBeltB1",
+   "name": "Stalking Belt",
+   "class_id": 35,
+   "class": "Belts",
+   "category": "Jewellery",
+   "drop_level": 50,
+   "implicit_mod_ids": [
+    1628,
+    1624
+   ],
+   "implicits": [
+    "Has # [Charm] Slot (1)",
+    "This item gains bonuses from Socketed Items as though it was Boots"
+   ],
+   "domain": "ITEM",
+   "requirements": null,
+   "properties": null,
+   "tags": [],
+   "sockets": 0,
+   "corrupted_only": false,
+   "unmodifiable": false,
+   "wiki": "Stalking Belt"
+  },
+  {
+   "coe_id": 3614,
+   "key": "Metadata/Items/Weapons/OneHandWeapons/OneHandSpears/FourSpear3Endgame",
+   "name": "Stalking Spear",
+   "class_id": 43,
+   "class": "Spears",
+   "category": "One-Handed Weapon",
+   "drop_level": 77,
+   "implicit_mod_ids": [
+    1701,
+    1702
+   ],
+   "implicits": [
+    "",
+    "#% chance to [Maim|Maim] on [HitDamage|Hit] (15-25)"
+   ],
+   "domain": "ITEM",
+   "requirements": {
+    "strength": 50,
+    "dexterity": 127
+   },
+   "properties": {
+    "physical_damage_min": 47,
+    "physical_damage_max": 79,
+    "critical_strike_chance": 500,
+    "attack_time": 645,
+    "range": 15
+   },
+   "tags": [],
+   "sockets": 1,
+   "corrupted_only": false,
+   "unmodifiable": false,
+   "wiki": "Stalking Spear"
+  },
+  {
+   "coe_id": 2379,
+   "key": "Metadata/Items/Armours/Helmets/FourHelmetStrIntUnique1",
+   "name": "Tenebrous Crown",
+   "class_id": 29,
+   "class": "Helmets (STR/INT)",
+   "category": "Helmet",
+   "drop_level": 65,
+   "implicit_mod_ids": [],
+   "implicits": [],
+   "domain": "ITEM",
+   "requirements": {
+    "strength": 59,
+    "intelligence": 59
+   },
+   "properties": {
+    "armour": 179,
+    "energyshield": 50
+   },
+   "tags": [
+    "Armour"
+   ],
+   "sockets": 1,
+   "corrupted_only": false,
+   "unmodifiable": false,
+   "wiki": "Tenebrous Crown"
+  },
+  {
+   "coe_id": 5356,
+   "key": "Metadata/Items/Armours/Helmets/FourHelmetStrIntVerisiumUnique1",
+   "name": "Runemastered Tenebrous Crown",
+   "class_id": 29,
+   "class": "Helmets (STR/INT)",
+   "category": "Helmet",
+   "drop_level": 65,
+   "implicit_mod_ids": [],
+   "implicits": [],
+   "domain": "ITEM",
+   "requirements": {
+    "strength": 59,
+    "intelligence": 59
+   },
+   "properties": {
+    "armour": 143,
+    "energyshield": 40,
+    "ward": 56
+   },
+   "tags": [
+    "Armour"
+   ],
+   "sockets": 1,
+   "corrupted_only": false,
+   "unmodifiable": false,
+   "wiki": "Runemastered Tenebrous Crown"
+  },
+  {
+   "coe_id": 2956,
+   "key": "Metadata/Items/Armours/Gloves/FourGlovesDex2Endgame",
+   "name": "Stalking Bracers",
+   "class_id": 17,
+   "class": "Gloves (DEX)",
+   "category": "Gloves",
+   "drop_level": 65,
+   "implicit_mod_ids": [],
+   "implicits": [],
+   "domain": "ITEM",
+   "requirements": {
+    "dexterity": 80
+   },
+   "properties": {
+    "evasion": 148
+   },
+   "tags": [
+    "Armour"
+   ],
+   "sockets": 1,
+   "corrupted_only": false,
+   "unmodifiable": false,
+   "wiki": "Stalking Bracers"
+  },
+  {
+   "coe_id": 3441,
+   "key": "Metadata/Items/Armours/Gloves/FourGlovesDex2EndgameVerisium",
+   "name": "Runeforged Stalking Bracers",
+   "class_id": 17,
+   "class": "Gloves (DEX)",
+   "category": "Gloves",
+   "drop_level": 65,
+   "implicit_mod_ids": [],
+   "implicits": [],
+   "domain": "ITEM",
+   "requirements": {
+    "dexterity": 80
+   },
+   "properties": {
+    "evasion": 139,
+    "ward": 28
+   },
+   "tags": [
+    "Armour"
+   ],
+   "sockets": 1,
+   "corrupted_only": false,
+   "unmodifiable": false,
+   "wiki": "Runeforged Stalking Bracers"
+  },
+  {
+   "coe_id": 2561,
+   "key": "Metadata/Items/Amulets/FourAmuletB1a",
+   "name": "Lament Amulet",
+   "class_id": 34,
+   "class": "Amulets",
+   "category": "Jewellery",
+   "drop_level": 42,
+   "implicit_mod_ids": [
+    1582
+   ],
+   "implicits": [
+    "# Prefix Modifier allowed (-1)"
+   ],
+   "domain": "ITEM",
+   "requirements": null,
+   "properties": null,
+   "tags": [],
+   "sockets": 0,
+   "corrupted_only": false,
+   "unmodifiable": false,
+   "wiki": "Lament Amulet"
+  },
+  {
+   "coe_id": 2562,
+   "key": "Metadata/Items/Amulets/FourAmuletB1b",
+   "name": "Portent Amulet",
+   "class_id": 34,
+   "class": "Amulets",
+   "category": "Jewellery",
+   "drop_level": 42,
+   "implicit_mod_ids": [
+    1583
+   ],
+   "implicits": [
+    "# Suffix Modifier allowed (-1)"
+   ],
+   "domain": "ITEM",
+   "requirements": null,
+   "properties": null,
+   "tags": [],
+   "sockets": 0,
+   "corrupted_only": false,
+   "unmodifiable": false,
+   "wiki": "Portent Amulet"
+  },
+  {
+   "coe_id": 2563,
+   "key": "Metadata/Items/Amulets/FourAmuletB1c",
+   "name": "Absent Amulet",
+   "class_id": 34,
+   "class": "Amulets",
+   "category": "Jewellery",
+   "drop_level": 50,
+   "implicit_mod_ids": [
+    1584
+   ],
+   "implicits": [
+    "# Prefix Modifier allowed (-1); # Suffix Modifier allowed (-1)"
+   ],
+   "domain": "ITEM",
+   "requirements": null,
+   "properties": null,
+   "tags": [],
+   "sockets": 0,
+   "corrupted_only": false,
+   "unmodifiable": false,
+   "wiki": "Absent Amulet"
+  },
+  {
+   "coe_id": 2564,
+   "key": "Metadata/Items/Amulets/FourAmuletB2",
+   "name": "Corona Amulet",
+   "class_id": 34,
+   "class": "Amulets",
+   "category": "Jewellery",
+   "drop_level": 40,
+   "implicit_mod_ids": [
+    1585
+   ],
+   "implicits": [
+    "This item gains bonuses from Socketed Items as though it was a Helmet"
+   ],
+   "domain": "ITEM",
+   "requirements": null,
+   "properties": null,
+   "tags": [],
+   "sockets": 0,
+   "corrupted_only": false,
+   "unmodifiable": false,
+   "wiki": "Corona Amulet"
+  },
+  {
+   "coe_id": 2641,
+   "key": "Metadata/Items/Amulets/FourAmuletLake1",
+   "name": "Dusk Amulet",
+   "class_id": 34,
+   "class": "Amulets",
+   "category": "Jewellery",
+   "drop_level": 1,
+   "implicit_mod_ids": [
+    1576
+   ],
+   "implicits": [
+    "+# Prefix Modifier allowed (1); # Suffix Modifier allowed (-1)"
+   ],
+   "domain": "ITEM",
+   "requirements": null,
+   "properties": null,
+   "tags": [],
+   "sockets": 0,
+   "corrupted_only": false,
+   "unmodifiable": false,
+   "wiki": "Dusk Amulet"
+  },
+  {
+   "coe_id": 2642,
+   "key": "Metadata/Items/Amulets/FourAmuletLake2",
+   "name": "Gloam Amulet",
+   "class_id": 34,
+   "class": "Amulets",
+   "category": "Jewellery",
+   "drop_level": 1,
+   "implicit_mod_ids": [
+    1577
+   ],
+   "implicits": [
+    "# Prefix Modifier allowed (-1); +# Suffix Modifier allowed (1)"
+   ],
+   "domain": "ITEM",
+   "requirements": null,
+   "properties": null,
+   "tags": [],
+   "sockets": 0,
+   "corrupted_only": false,
+   "unmodifiable": false,
+   "wiki": "Gloam Amulet"
+  },
+  {
+   "coe_id": 2643,
+   "key": "Metadata/Items/Amulets/FourAmuletLake3",
+   "name": "Penumbra Amulet",
+   "class_id": 34,
+   "class": "Amulets",
+   "category": "Jewellery",
+   "drop_level": 1,
+   "implicit_mod_ids": [
+    1578
+   ],
+   "implicits": [
+    "+# Prefix Modifiers allowed (2); # Suffix Modifiers allowed (-2)"
+   ],
+   "domain": "ITEM",
+   "requirements": null,
+   "properties": null,
+   "tags": [],
+   "sockets": 0,
+   "corrupted_only": false,
+   "unmodifiable": false,
+   "wiki": "Penumbra Amulet"
+  },
+  {
+   "coe_id": 2644,
+   "key": "Metadata/Items/Amulets/FourAmuletLake4",
+   "name": "Tenebrous Amulet",
+   "class_id": 34,
+   "class": "Amulets",
+   "category": "Jewellery",
+   "drop_level": 1,
+   "implicit_mod_ids": [
+    1579
+   ],
+   "implicits": [
+    "# Prefix Modifiers allowed (-2); +# Suffix Modifiers allowed (2)"
+   ],
+   "domain": "ITEM",
+   "requirements": null,
+   "properties": null,
+   "tags": [],
+   "sockets": 0,
+   "corrupted_only": false,
+   "unmodifiable": false,
+   "wiki": "Tenebrous Amulet"
+  },
+  {
+   "coe_id": 2646,
+   "key": "Metadata/Items/Amulets/FourAmuletDelirium2",
+   "name": "Distorted Amulet",
+   "class_id": 34,
+   "class": "Amulets",
+   "category": "Jewellery",
+   "drop_level": 1,
+   "implicit_mod_ids": [
+    1581
+   ],
+   "implicits": [
+    "# Suffix Modifier allowed (-1)"
+   ],
+   "domain": "ITEM",
+   "requirements": null,
+   "properties": null,
+   "tags": [],
+   "sockets": 0,
+   "corrupted_only": false,
+   "unmodifiable": false,
+   "wiki": "Distorted Amulet"
+  },
+  {
+   "coe_id": 2650,
+   "key": "Metadata/Items/Armours/BodyArmours/FourBodyStrDexInt3",
+   "name": "Grasping Mail",
+   "class_id": 105,
+   "class": "Grasping Mail",
+   "category": "Body Armour",
+   "drop_level": 65,
+   "implicit_mod_ids": [
+    15234,
+    15235
+   ],
+   "implicits": [
+    "Can roll Ring Modifiers",
+    "Catalysts can be applied to this item"
+   ],
+   "domain": "ITEM",
+   "requirements": {
+    "strength": 41,
+    "dexterity": 41,
+    "intelligence": 41
+   },
+   "properties": {
+    "armour": 182,
+    "evasion": 165,
+    "energyshield": 50,
+    "increasedmovementspeed": -400
+   },
+   "tags": [
+    "Armour"
+   ],
+   "sockets": 2,
+   "corrupted_only": false,
+   "unmodifiable": false,
+   "wiki": "Grasping Mail"
+  },
+  {
+   "coe_id": 2651,
+   "key": "Metadata/Items/Armours/BodyArmours/FourBodyStrDexInt3Verisium1",
+   "name": "Runeforged Grasping Mail",
+   "class_id": 105,
+   "class": "Grasping Mail",
+   "category": "Body Armour",
+   "drop_level": 65,
+   "implicit_mod_ids": [
+    15234,
+    15235
+   ],
+   "implicits": [
+    "Can roll Ring Modifiers",
+    "Catalysts can be applied to this item"
+   ],
+   "domain": "ITEM",
+   "requirements": {
+    "strength": 61,
+    "dexterity": 61
+   },
+   "properties": {
+    "armour": 232,
+    "evasion": 211,
+    "ward": 107,
+    "increasedmovementspeed": -400
+   },
+   "tags": [
+    "Armour"
+   ],
+   "sockets": 2,
+   "corrupted_only": false,
+   "unmodifiable": false,
+   "wiki": "Runeforged Grasping Mail"
+  },
+  {
+   "coe_id": 2652,
+   "key": "Metadata/Items/Armours/BodyArmours/FourBodyStrDexInt3Verisium2",
+   "name": "Runeforged Grasping Mail",
+   "class_id": 105,
+   "class": "Grasping Mail",
+   "category": "Body Armour",
+   "drop_level": 65,
+   "implicit_mod_ids": [
+    15234,
+    15235
+   ],
+   "implicits": [
+    "Can roll Ring Modifiers",
+    "Catalysts can be applied to this item"
+   ],
+   "domain": "ITEM",
+   "requirements": {
+    "dexterity": 61,
+    "intelligence": 61
+   },
+   "properties": {
+    "evasion": 211,
+    "energyshield": 64,
+    "ward": 107,
+    "increasedmovementspeed": -300
+   },
+   "tags": [
+    "Armour"
+   ],
+   "sockets": 2,
+   "corrupted_only": false,
+   "unmodifiable": false,
+   "wiki": "Runeforged Grasping Mail"
+  },
+  {
+   "coe_id": 2653,
+   "key": "Metadata/Items/Armours/BodyArmours/FourBodyStrDexInt3Verisium3",
+   "name": "Runeforged Grasping Mail",
+   "class_id": 105,
+   "class": "Grasping Mail",
+   "category": "Body Armour",
+   "drop_level": 65,
+   "implicit_mod_ids": [
+    15234,
+    15235
+   ],
+   "implicits": [
+    "Can roll Ring Modifiers",
+    "Catalysts can be applied to this item"
+   ],
+   "domain": "ITEM",
+   "requirements": {
+    "strength": 61,
+    "intelligence": 61
+   },
+   "properties": {
+    "armour": 232,
+    "energyshield": 64,
+    "ward": 107,
+    "increasedmovementspeed": -400
+   },
+   "tags": [
+    "Armour"
+   ],
+   "sockets": 2,
+   "corrupted_only": false,
+   "unmodifiable": false,
+   "wiki": "Runeforged Grasping Mail"
+  },
+  {
+   "coe_id": 2654,
+   "key": "Metadata/Items/Armours/BodyArmours/FourBodyStrDexInt3Verisium4",
+   "name": "Runeforged Grasping Mail",
+   "class_id": 105,
+   "class": "Grasping Mail",
+   "category": "Body Armour",
+   "drop_level": 65,
+   "implicit_mod_ids": [
+    15234,
+    15235
+   ],
+   "implicits": [
+    "Can roll Ring Modifiers",
+    "Catalysts can be applied to this item"
+   ],
+   "domain": "ITEM",
+   "requirements": {
+    "strength": 41,
+    "dexterity": 41,
+    "intelligence": 41
+   },
+   "properties": {
+    "armour": 136,
+    "evasion": 124,
+    "energyshield": 38,
+    "ward": 215,
+    "increasedmovementspeed": -400
+   },
+   "tags": [
+    "Armour"
+   ],
+   "sockets": 2,
+   "corrupted_only": false,
+   "unmodifiable": false,
+   "wiki": "Runeforged Grasping Mail"
+  },
+  {
+   "coe_id": 2655,
+   "key": "Metadata/Items/Armours/BodyArmours/FourBodyStrDexInt3Verisium5",
+   "name": "Runemastered Grasping Mail",
+   "class_id": 105,
+   "class": "Grasping Mail",
+   "category": "Body Armour",
+   "drop_level": 65,
+   "implicit_mod_ids": [
+    15234,
+    15235
+   ],
+   "implicits": [
+    "Can roll Ring Modifiers",
+    "Catalysts can be applied to this item"
+   ],
+   "domain": "ITEM",
+   "requirements": {
+    "strength": 112
+   },
+   "properties": {
+    "armour": 421,
+    "ward": 150,
+    "increasedmovementspeed": -400
+   },
+   "tags": [
+    "Armour"
+   ],
+   "sockets": 2,
+   "corrupted_only": false,
+   "unmodifiable": false,
+   "wiki": "Runemastered Grasping Mail"
+  },
+  {
+   "coe_id": 2656,
+   "key": "Metadata/Items/Armours/BodyArmours/FourBodyStrDexInt3Verisium6",
+   "name": "Runemastered Grasping Mail",
+   "class_id": 105,
+   "class": "Grasping Mail",
+   "category": "Body Armour",
+   "drop_level": 65,
+   "implicit_mod_ids": [
+    15234,
+    15235
+   ],
+   "implicits": [
+    "Can roll Ring Modifiers",
+    "Catalysts can be applied to this item"
+   ],
+   "domain": "ITEM",
+   "requirements": {
+    "dexterity": 112
+   },
+   "properties": {
+    "evasion": 384,
+    "ward": 150,
+    "increasedmovementspeed": -300
+   },
+   "tags": [
+    "Armour"
+   ],
+   "sockets": 2,
+   "corrupted_only": false,
+   "unmodifiable": false,
+   "wiki": "Runemastered Grasping Mail"
+  },
+  {
+   "coe_id": 2657,
+   "key": "Metadata/Items/Armours/BodyArmours/FourBodyStrDexInt3Verisium7",
+   "name": "Runemastered Grasping Mail",
+   "class_id": 105,
+   "class": "Grasping Mail",
+   "category": "Body Armour",
+   "drop_level": 65,
+   "implicit_mod_ids": [
+    15234,
+    15235
+   ],
+   "implicits": [
+    "Can roll Ring Modifiers",
+    "Catalysts can be applied to this item"
+   ],
+   "domain": "ITEM",
+   "requirements": {
+    "intelligence": 112
+   },
+   "properties": {
+    "energyshield": 117,
+    "ward": 150,
+    "increasedmovementspeed": -400
+   },
+   "tags": [
+    "Armour"
+   ],
+   "sockets": 2,
+   "corrupted_only": false,
+   "unmodifiable": false,
+   "wiki": "Runemastered Grasping Mail"
+  },
+  {
+   "coe_id": 2658,
+   "key": "Metadata/Items/Armours/BodyArmours/FourBodyStrDexInt3Verisium8",
+   "name": "Runemastered Grasping Mail",
+   "class_id": 105,
+   "class": "Grasping Mail",
+   "category": "Body Armour",
+   "drop_level": 65,
+   "implicit_mod_ids": [
+    15234,
+    15235
+   ],
+   "implicits": [
+    "Can roll Ring Modifiers",
+    "Catalysts can be applied to this item"
+   ],
+   "domain": "ITEM",
+   "requirements": {
+    "strength": 41,
+    "dexterity": 41,
+    "intelligence": 41
+   },
+   "properties": {
+    "armour": 136,
+    "evasion": 124,
+    "energyshield": 38,
+    "ward": 322,
+    "increasedmovementspeed": -400
+   },
+   "tags": [
+    "Armour"
+   ],
+   "sockets": 2,
+   "corrupted_only": false,
+   "unmodifiable": false,
+   "wiki": "Runemastered Grasping Mail"
+  },
+  {
+   "coe_id": 2659,
+   "key": "Metadata/Items/Armours/BodyArmours/FourBodyStrDexInt3Verisium9",
+   "name": "Runefather's Grasping Mail",
+   "class_id": 105,
+   "class": "Grasping Mail",
+   "category": "Body Armour",
+   "drop_level": 65,
+   "implicit_mod_ids": [
+    15234,
+    15235
+   ],
+   "implicits": [
+    "Can roll Ring Modifiers",
+    "Catalysts can be applied to this item"
+   ],
+   "domain": "ITEM",
+   "requirements": {
+    "strength": 57,
+    "dexterity": 57,
+    "intelligence": 57
+   },
+   "properties": {
+    "ward": 550
+   },
+   "tags": [
+    "Armour"
+   ],
+   "sockets": 2,
+   "corrupted_only": false,
+   "unmodifiable": false,
+   "wiki": "Runefather's Grasping Mail"
+  },
+  {
+   "coe_id": 4866,
+   "key": "Metadata/Items/Currency/AbyssalBenchTicketBreach",
+   "name": "Altered Collarbone",
+   "class_id": null,
+   "class": null,
+   "category": null,
+   "drop_level": 1,
+   "implicit_mod_ids": [],
+   "implicits": [],
+   "domain": "SKILLGEM",
+   "requirements": null,
+   "properties": null,
+   "tags": [],
+   "sockets": 0,
+   "corrupted_only": false,
+   "unmodifiable": false,
+   "wiki": "Altered Collarbone"
+  },
+  {
+   "coe_id": 4420,
+   "key": "Metadata/Items/Currency/OmenOnRegalPrefix",
+   "name": "Omen of Sinistral Coronation",
+   "class_id": null,
+   "class": null,
+   "category": null,
+   "drop_level": 1,
+   "implicit_mod_ids": [],
+   "implicits": [],
+   "domain": "SKILLGEM",
+   "requirements": null,
+   "properties": null,
+   "tags": [],
+   "sockets": 0,
+   "corrupted_only": false,
+   "unmodifiable": false,
+   "wiki": "Omen of Sinistral Coronation"
+  },
+  {
+   "coe_id": 4421,
+   "key": "Metadata/Items/Currency/OmenOnRegalSuffix",
+   "name": "Omen of Dextral Coronation",
+   "class_id": null,
+   "class": null,
+   "category": null,
+   "drop_level": 1,
+   "implicit_mod_ids": [],
+   "implicits": [],
+   "domain": "SKILLGEM",
+   "requirements": null,
+   "properties": null,
+   "tags": [],
+   "sockets": 0,
+   "corrupted_only": false,
+   "unmodifiable": false,
+   "wiki": "Omen of Dextral Coronation"
+  },
+  {
+   "coe_id": 4434,
+   "key": "Metadata/Items/Currency/OmenOnRegalAddExistingModType",
+   "name": "Omen of Homogenising Coronation",
+   "class_id": null,
+   "class": null,
+   "category": null,
+   "drop_level": 75,
+   "implicit_mod_ids": [],
+   "implicits": [],
+   "domain": "SKILLGEM",
+   "requirements": null,
+   "properties": null,
+   "tags": [],
+   "sockets": 0,
+   "corrupted_only": false,
+   "unmodifiable": false,
+   "wiki": "Omen of Homogenising Coronation"
+  },
+  {
+   "coe_id": 5196,
+   "key": "Metadata/Items/SoulCores/RuneOlrothsLegacyDuskVigil",
+   "name": "Legacy of Dusk Vigil",
+   "class_id": null,
+   "class": null,
+   "category": null,
+   "drop_level": 65,
+   "implicit_mod_ids": [],
+   "implicits": [],
+   "domain": "SKILLGEM",
+   "requirements": null,
+   "properties": null,
+   "tags": [],
+   "sockets": 0,
+   "corrupted_only": false,
+   "unmodifiable": false,
+   "wiki": "Legacy of Dusk Vigil"
+  }
+ ]
+}

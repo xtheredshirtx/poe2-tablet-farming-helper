@@ -1,0 +1,1691 @@
+{
+  "_source": "Generated from PoE2DB tier pages plus official trade2 stat metadata where exact public stat text exists.",
+  "_patch_basis": "0.5.4b Hotfix 3; official 0.5.0 Waystone mod removals still apply.",
+  "_accessed": "2026-07-05",
+  "_status": "verified_draft",
+  "_limitations": [
+    "PoE2DB exposes hidden reward lines such as more Waystones found in Area that are not exposed as official trade2 stat filters.",
+    "The optimizer is a rule-of-thumb planner, not a profit simulator; no live price/listing data is scraped.",
+    "Official trade stat IDs are included only for exact public stat-text matches. Missing IDs are left blank instead of guessed.",
+    "Build safety is personal: a modifier tagged avoid for conservative play may still be profitable for a build that counters it."
+  ],
+  "sources": [
+    {
+      "name": "PoE2DB Waystones low tier",
+      "url": "https://poe2db.tw/us/Waystones_low_tier"
+    },
+    {
+      "name": "PoE2DB Waystones mid tier",
+      "url": "https://poe2db.tw/us/Waystones_mid_tier"
+    },
+    {
+      "name": "PoE2DB Waystones top tier",
+      "url": "https://poe2db.tw/us/Waystones_top_tier"
+    },
+    {
+      "name": "Official trade2 stats metadata",
+      "url": "https://www.pathofexile.com/api/trade2/data/stats"
+    },
+    {
+      "name": "Official 0.5.0 Patch Notes",
+      "url": "https://www.pathofexile.com/forum/view-thread/3932540"
+    }
+  ],
+  "official_patch_guardrails": [
+    "0.5.0: Waystones will no longer have the of Nemeses modifier.",
+    "0.5.0: Waystones will no longer have the Extra Projectiles modifier, and existing Extra Projectiles Waystones are disabled."
+  ],
+  "goals": [
+    {
+      "id": "safe_sustain",
+      "name": "Safe Waystone Sustain",
+      "prefer_reward_tags": [
+        "waystone_sustain",
+        "pack_size",
+        "rare_monsters"
+      ],
+      "avoid_danger_tags": [
+        "max_resist_penalty",
+        "extra_projectiles",
+        "player_curse",
+        "recovery_penalty",
+        "cooldown_penalty",
+        "flask_pressure",
+        "ground_effect",
+        "monster_crit"
+      ],
+      "notes": "For routine mapping, prefer reward density on mods your build barely notices. Skip hard player-penalty rows unless you specifically built around them."
+    },
+    {
+      "id": "currency_density",
+      "name": "Currency / Density Push",
+      "prefer_reward_tags": [
+        "pack_size",
+        "item_rarity",
+        "rare_monsters",
+        "waystone_sustain"
+      ],
+      "avoid_danger_tags": [
+        "extra_projectiles",
+        "max_resist_penalty",
+        "recovery_penalty"
+      ],
+      "notes": "Aggressive currency farming can accept more monster danger, but still avoid disabled rows and build-bricking player penalties."
+    },
+    {
+      "id": "boss_logbook_support",
+      "name": "Boss / Logbook Support",
+      "prefer_reward_tags": [
+        "waystone_sustain",
+        "rare_monsters",
+        "item_rarity"
+      ],
+      "avoid_danger_tags": [
+        "monster_crit",
+        "extra_projectiles",
+        "max_resist_penalty",
+        "recovery_penalty",
+        "player_curse"
+      ],
+      "notes": "Pairs with Overseer of Pathways, Expedition of Knowledge, and high-density tablets; keep map deaths low so sustain math actually works."
+    }
+  ],
+  "base_mods": [
+    {
+      "name": "Destructive",
+      "family": "MapMonsterCriticalStrikesAndDamage",
+      "slot": "Prefix",
+      "status": "active",
+      "reward_tags": [
+        "pack_size",
+        "waystone_sustain"
+      ],
+      "danger_tags": [
+        "monster_crit"
+      ],
+      "trade_stats": [
+        {
+          "id": "explicit.stat_2753083623",
+          "matched_line": "Monsters have (200-240)% increased Critical Hit Chance"
+        },
+        {
+          "id": "explicit.stat_57326096",
+          "matched_line": "Monsters have +(21-25)% Critical Damage Bonus"
+        }
+      ],
+      "trade_stats_status": "partial",
+      "recommendation": "Good value candidate if the danger profile is comfortable.",
+      "tiers": [
+        {
+          "tier": "low",
+          "spawn": [
+            "map_key_low",
+            "default"
+          ],
+          "text": "Monsters have (80-120)% increased Critical Hit Chance | Monsters have +(11-15)% Critical Damage Bonus | 9% more Pack size | 15% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_low_tier"
+        },
+        {
+          "tier": "mid",
+          "spawn": [
+            "map_key_medium",
+            "default"
+          ],
+          "text": "Monsters have (140-180)% increased Critical Hit Chance | Monsters have +(16-20)% Critical Damage Bonus | 9% more Pack size | 15% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_mid_tier"
+        },
+        {
+          "tier": "top",
+          "spawn": [
+            "map_key_high",
+            "default"
+          ],
+          "text": "Monsters have (200-240)% increased Critical Hit Chance | Monsters have +(21-25)% Critical Damage Bonus | 9% more Pack size | 15% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_top_tier"
+        }
+      ]
+    },
+    {
+      "name": "Fleeting",
+      "family": "MapMonsterFast",
+      "slot": "Prefix",
+      "status": "active",
+      "reward_tags": [
+        "pack_size",
+        "waystone_sustain"
+      ],
+      "danger_tags": [
+        "monster_speed"
+      ],
+      "trade_stats": [
+        {
+          "id": "explicit.stat_3909654181",
+          "matched_line": "Monsters have (10-15)% increased Attack, Cast and Movement Speed"
+        }
+      ],
+      "trade_stats_status": "partial",
+      "recommendation": "Good value candidate if the danger profile is comfortable.",
+      "tiers": [
+        {
+          "tier": "top",
+          "spawn": [
+            "map_key_high",
+            "default"
+          ],
+          "text": "Monsters have (10-15)% increased Attack, Cast and Movement Speed | 9% more Pack size | 25% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_top_tier"
+        }
+      ]
+    },
+    {
+      "name": "Frostbitten",
+      "family": "MapMonsterColdDamage",
+      "slot": "Prefix",
+      "status": "active",
+      "reward_tags": [
+        "item_rarity",
+        "waystone_sustain"
+      ],
+      "danger_tags": [
+        "extra_cold_damage"
+      ],
+      "trade_stats": [
+        {
+          "id": "explicit.stat_211727",
+          "matched_line": "Monsters deal (15-19)% of Damage as Extra Cold"
+        }
+      ],
+      "trade_stats_status": "partial",
+      "recommendation": "Good value candidate if the danger profile is comfortable.",
+      "tiers": [
+        {
+          "tier": "low",
+          "spawn": [
+            "map_key_low",
+            "default"
+          ],
+          "text": "Monsters deal (5-9)% of Damage as Extra Cold | 14% more Rarity of Items found in this Area | 15% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_low_tier"
+        },
+        {
+          "tier": "mid",
+          "spawn": [
+            "map_key_medium",
+            "default"
+          ],
+          "text": "Monsters deal (10-14)% of Damage as Extra Cold | 14% more Rarity of Items found in this Area | 15% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_mid_tier"
+        },
+        {
+          "tier": "top",
+          "spawn": [
+            "map_key_high",
+            "default"
+          ],
+          "text": "Monsters deal (15-19)% of Damage as Extra Cold | 14% more Rarity of Items found in this Area | 15% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_top_tier"
+        }
+      ]
+    },
+    {
+      "name": "Impacting",
+      "family": "MapMonstersStunBuildup",
+      "slot": "Prefix",
+      "status": "active",
+      "reward_tags": [
+        "waystone_sustain"
+      ],
+      "danger_tags": [
+        "monster_pressure"
+      ],
+      "trade_stats": [
+        {
+          "id": "explicit.stat_115425161",
+          "matched_line": "Monsters have (90-100)% increased Stun Buildup"
+        }
+      ],
+      "trade_stats_status": "partial",
+      "recommendation": "Build-dependent; use only when the downside is acceptable.",
+      "tiers": [
+        {
+          "tier": "low",
+          "spawn": [
+            "map_key_low",
+            "default"
+          ],
+          "text": "Monsters have (50-60)% increased Stun Buildup | Monsters have 13% more Effectiveness | 15% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_low_tier"
+        },
+        {
+          "tier": "mid",
+          "spawn": [
+            "map_key_medium",
+            "default"
+          ],
+          "text": "Monsters have (70-80)% increased Stun Buildup | Monsters have 13% more Effectiveness | 15% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_mid_tier"
+        },
+        {
+          "tier": "top",
+          "spawn": [
+            "map_key_high",
+            "default"
+          ],
+          "text": "Monsters have (90-100)% increased Stun Buildup | Monsters have 13% more Effectiveness | 15% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_top_tier"
+        }
+      ]
+    },
+    {
+      "name": "Infernal",
+      "family": "MapMonsterFireDamage",
+      "slot": "Prefix",
+      "status": "active",
+      "reward_tags": [
+        "waystone_sustain"
+      ],
+      "danger_tags": [
+        "extra_fire_damage"
+      ],
+      "trade_stats": [
+        {
+          "id": "explicit.stat_92381065",
+          "matched_line": "Monsters deal (15-19)% of Damage as Extra Fire"
+        },
+        {
+          "id": "explicit.stat_2065500219",
+          "matched_line": "Monsters have 16% increased Effectiveness"
+        }
+      ],
+      "trade_stats_status": "partial",
+      "recommendation": "Build-dependent; use only when the downside is acceptable.",
+      "tiers": [
+        {
+          "tier": "low",
+          "spawn": [
+            "map_key_low",
+            "default"
+          ],
+          "text": "Monsters deal (5-9)% of Damage as Extra Fire | Monsters have 16% increased Effectiveness | 15% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_low_tier"
+        },
+        {
+          "tier": "mid",
+          "spawn": [
+            "map_key_medium",
+            "default"
+          ],
+          "text": "Monsters deal (10-14)% of Damage as Extra Fire | Monsters have 16% increased Effectiveness | 15% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_mid_tier"
+        },
+        {
+          "tier": "top",
+          "spawn": [
+            "map_key_high",
+            "default"
+          ],
+          "text": "Monsters deal (15-19)% of Damage as Extra Fire | Monsters have 16% increased Effectiveness | 15% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_top_tier"
+        }
+      ]
+    },
+    {
+      "name": "Painful",
+      "family": "MapMonsterDamage",
+      "slot": "Prefix",
+      "status": "active",
+      "reward_tags": [
+        "rare_monsters",
+        "waystone_sustain"
+      ],
+      "danger_tags": [
+        "monster_damage"
+      ],
+      "trade_stats": [
+        {
+          "id": "explicit.stat_1890519597",
+          "matched_line": "(15-19)% increased Monster Damage"
+        }
+      ],
+      "trade_stats_status": "partial",
+      "recommendation": "Good value candidate if the danger profile is comfortable.",
+      "tiers": [
+        {
+          "tier": "low",
+          "spawn": [
+            "map_key_low",
+            "default"
+          ],
+          "text": "(5-9)% increased Monster Damage | 25% more Magic and Rare Monsters | Rare Monsters have 25% more chance of Monster Modifiers | 20% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_low_tier"
+        },
+        {
+          "tier": "mid",
+          "spawn": [
+            "map_key_medium",
+            "default"
+          ],
+          "text": "(10-14)% increased Monster Damage | 25% more Magic and Rare Monsters | Rare Monsters have 25% more chance of Monster Modifiers | 20% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_mid_tier"
+        },
+        {
+          "tier": "top",
+          "spawn": [
+            "map_key_high",
+            "default"
+          ],
+          "text": "(15-19)% increased Monster Damage | 25% more Magic and Rare Monsters | Rare Monsters have 25% more chance of Monster Modifiers | 20% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_top_tier"
+        }
+      ]
+    },
+    {
+      "name": "Penetrating",
+      "family": "MapMonstersElementalPenetration",
+      "slot": "Prefix",
+      "status": "active",
+      "reward_tags": [
+        "item_rarity",
+        "waystone_sustain"
+      ],
+      "danger_tags": [
+        "elemental_penetration"
+      ],
+      "trade_stats": [
+        {
+          "id": "explicit.stat_1898978455",
+          "matched_line": "Monster Damage Penetrates (12-14)% Elemental Resistances"
+        }
+      ],
+      "trade_stats_status": "partial",
+      "recommendation": "Good value candidate if the danger profile is comfortable.",
+      "tiers": [
+        {
+          "tier": "low",
+          "spawn": [
+            "map_key_low",
+            "default"
+          ],
+          "text": "Monster Damage Penetrates (6-8)% Elemental Resistances | 16% more Rarity of Items found in this Area | 20% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_low_tier"
+        },
+        {
+          "tier": "mid",
+          "spawn": [
+            "map_key_medium",
+            "default"
+          ],
+          "text": "Monster Damage Penetrates (9-11)% Elemental Resistances | 16% more Rarity of Items found in this Area | 20% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_mid_tier"
+        },
+        {
+          "tier": "top",
+          "spawn": [
+            "map_key_high",
+            "default"
+          ],
+          "text": "Monster Damage Penetrates (12-14)% Elemental Resistances | 16% more Rarity of Items found in this Area | 20% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_top_tier"
+        }
+      ]
+    },
+    {
+      "name": "Precise",
+      "family": "MapMonstersAccuracy",
+      "slot": "Prefix",
+      "status": "active",
+      "reward_tags": [
+        "pack_size",
+        "waystone_sustain"
+      ],
+      "danger_tags": [
+        "monster_pressure"
+      ],
+      "trade_stats": [
+        {
+          "id": "explicit.stat_1588049749",
+          "matched_line": "Monsters have (30-40)% increased Accuracy Rating"
+        }
+      ],
+      "trade_stats_status": "partial",
+      "recommendation": "Good value candidate if the danger profile is comfortable.",
+      "tiers": [
+        {
+          "tier": "low",
+          "spawn": [
+            "map_key_low",
+            "default"
+          ],
+          "text": "Monsters have (10-20)% increased Accuracy Rating | 7% more Pack size | 10% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_low_tier"
+        },
+        {
+          "tier": "mid",
+          "spawn": [
+            "map_key_medium",
+            "default"
+          ],
+          "text": "Monsters have (20-30)% increased Accuracy Rating | 7% more Pack size | 10% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_mid_tier"
+        },
+        {
+          "tier": "top",
+          "spawn": [
+            "map_key_high",
+            "default"
+          ],
+          "text": "Monsters have (30-40)% increased Accuracy Rating | 7% more Pack size | 10% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_top_tier"
+        }
+      ]
+    },
+    {
+      "name": "Profane",
+      "family": "MapMonsterChaosDamage",
+      "slot": "Prefix",
+      "status": "active",
+      "reward_tags": [
+        "item_rarity",
+        "waystone_sustain"
+      ],
+      "danger_tags": [
+        "extra_chaos_damage"
+      ],
+      "trade_stats": [
+        {
+          "id": "explicit.stat_2200661314",
+          "matched_line": "Monsters deal (15-19)% of Damage as Extra Chaos"
+        }
+      ],
+      "trade_stats_status": "partial",
+      "recommendation": "Good value candidate if the danger profile is comfortable.",
+      "tiers": [
+        {
+          "tier": "low",
+          "spawn": [
+            "map_key_low",
+            "default"
+          ],
+          "text": "Monsters deal (5-9)% of Damage as Extra Chaos | 15% more Rarity of Items found in this Area | 15% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_low_tier"
+        },
+        {
+          "tier": "mid",
+          "spawn": [
+            "map_key_medium",
+            "default"
+          ],
+          "text": "Monsters deal (10-14)% of Damage as Extra Chaos | 15% more Rarity of Items found in this Area | 15% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_mid_tier"
+        },
+        {
+          "tier": "top",
+          "spawn": [
+            "map_key_high",
+            "default"
+          ],
+          "text": "Monsters deal (15-19)% of Damage as Extra Chaos | 15% more Rarity of Items found in this Area | 15% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_top_tier"
+        }
+      ]
+    },
+    {
+      "name": "Puncturing",
+      "family": "MapBleeding",
+      "slot": "Prefix",
+      "status": "active",
+      "reward_tags": [
+        "waystone_sustain"
+      ],
+      "danger_tags": [
+        "ailment_damage"
+      ],
+      "trade_stats": [
+        {
+          "id": "explicit.stat_2506820610",
+          "matched_line": "Monsters have (15-20)% chance to inflict Bleeding on Hit"
+        }
+      ],
+      "trade_stats_status": "partial",
+      "recommendation": "Build-dependent; use only when the downside is acceptable.",
+      "tiers": [
+        {
+          "tier": "low",
+          "spawn": [
+            "map_key_low",
+            "default"
+          ],
+          "text": "Monsters have (5-10)% chance to inflict Bleeding on Hit | Monsters have 13% more Effectiveness | 10% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_low_tier"
+        },
+        {
+          "tier": "mid",
+          "spawn": [
+            "map_key_medium",
+            "default"
+          ],
+          "text": "Monsters have (10-15)% chance to inflict Bleeding on Hit | Monsters have 13% more Effectiveness | 10% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_mid_tier"
+        },
+        {
+          "tier": "top",
+          "spawn": [
+            "map_key_high",
+            "default"
+          ],
+          "text": "Monsters have (15-20)% chance to inflict Bleeding on Hit | Monsters have 13% more Effectiveness | 10% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_top_tier"
+        }
+      ]
+    },
+    {
+      "name": "Shattering",
+      "family": "MapMonstersArmourBreak",
+      "slot": "Prefix",
+      "status": "active",
+      "reward_tags": [
+        "rare_monsters",
+        "waystone_sustain"
+      ],
+      "danger_tags": [
+        "monster_pressure"
+      ],
+      "trade_stats": [
+        {
+          "id": "explicit.stat_1879340377",
+          "matched_line": "Monsters Break Armour equal to (25-30)% of Physical Damage dealt"
+        }
+      ],
+      "trade_stats_status": "partial",
+      "recommendation": "Good value candidate if the danger profile is comfortable.",
+      "tiers": [
+        {
+          "tier": "low",
+          "spawn": [
+            "map_key_low",
+            "default"
+          ],
+          "text": "Monsters Break Armour equal to (15-20)% of Physical Damage dealt | 19% more Magic and Rare Monsters | Rare Monsters have 19% more chance of Monster Modifiers | 10% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_low_tier"
+        },
+        {
+          "tier": "mid",
+          "spawn": [
+            "map_key_medium",
+            "default"
+          ],
+          "text": "Monsters Break Armour equal to (20-25)% of Physical Damage dealt | 19% more Magic and Rare Monsters | Rare Monsters have 19% more chance of Monster Modifiers | 10% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_mid_tier"
+        },
+        {
+          "tier": "top",
+          "spawn": [
+            "map_key_high",
+            "default"
+          ],
+          "text": "Monsters Break Armour equal to (25-30)% of Physical Damage dealt | 19% more Magic and Rare Monsters | Rare Monsters have 19% more chance of Monster Modifiers | 10% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_top_tier"
+        }
+      ]
+    },
+    {
+      "name": "Thunderous",
+      "family": "MapMonsterLightningDamage",
+      "slot": "Prefix",
+      "status": "active",
+      "reward_tags": [
+        "pack_size",
+        "waystone_sustain"
+      ],
+      "danger_tags": [
+        "extra_lightning_damage"
+      ],
+      "trade_stats": [
+        {
+          "id": "explicit.stat_512071314",
+          "matched_line": "Monsters deal (15-19)% of Damage as Extra Lightning"
+        }
+      ],
+      "trade_stats_status": "partial",
+      "recommendation": "Good value candidate if the danger profile is comfortable.",
+      "tiers": [
+        {
+          "tier": "low",
+          "spawn": [
+            "map_key_low",
+            "default"
+          ],
+          "text": "Monsters deal (5-9)% of Damage as Extra Lightning | 8% more Pack size | 15% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_low_tier"
+        },
+        {
+          "tier": "mid",
+          "spawn": [
+            "map_key_medium",
+            "default"
+          ],
+          "text": "Monsters deal (10-14)% of Damage as Extra Lightning | 8% more Pack size | 15% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_mid_tier"
+        },
+        {
+          "tier": "top",
+          "spawn": [
+            "map_key_high",
+            "default"
+          ],
+          "text": "Monsters deal (15-19)% of Damage as Extra Lightning | 8% more Pack size | 15% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_top_tier"
+        }
+      ]
+    },
+    {
+      "name": "Tough",
+      "family": "MapMonsterLife",
+      "slot": "Prefix",
+      "status": "active",
+      "reward_tags": [
+        "rare_monsters",
+        "waystone_sustain"
+      ],
+      "danger_tags": [
+        "monster_tankiness"
+      ],
+      "trade_stats": [
+        {
+          "id": "explicit.stat_95249895",
+          "matched_line": "(20-25)% more Monster Life"
+        }
+      ],
+      "trade_stats_status": "partial",
+      "recommendation": "Good value candidate if the danger profile is comfortable.",
+      "tiers": [
+        {
+          "tier": "low",
+          "spawn": [
+            "map_key_low",
+            "default"
+          ],
+          "text": "(10-14)% more Monster Life | 23% more Magic and Rare Monsters | Rare Monsters have 23% more chance of Monster Modifiers | 15% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_low_tier"
+        },
+        {
+          "tier": "mid",
+          "spawn": [
+            "map_key_medium",
+            "default"
+          ],
+          "text": "(15-19)% more Monster Life | 23% more Magic and Rare Monsters | Rare Monsters have 23% more chance of Monster Modifiers | 15% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_mid_tier"
+        },
+        {
+          "tier": "top",
+          "spawn": [
+            "map_key_high",
+            "default"
+          ],
+          "text": "(20-25)% more Monster Life | 23% more Magic and Rare Monsters | Rare Monsters have 23% more chance of Monster Modifiers | 15% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_top_tier"
+        }
+      ]
+    },
+    {
+      "name": "Venomous",
+      "family": "MapPoisoning",
+      "slot": "Prefix",
+      "status": "active",
+      "reward_tags": [
+        "pack_size",
+        "waystone_sustain"
+      ],
+      "danger_tags": [
+        "ailment_damage"
+      ],
+      "trade_stats": [
+        {
+          "id": "explicit.stat_95221307",
+          "matched_line": "Monsters have (27-33)% chance to Poison on Hit"
+        }
+      ],
+      "trade_stats_status": "partial",
+      "recommendation": "Good value candidate if the danger profile is comfortable.",
+      "tiers": [
+        {
+          "tier": "low",
+          "spawn": [
+            "map_key_low",
+            "default"
+          ],
+          "text": "Monsters have (13-19)% chance to Poison on Hit | 7% more Pack size | 10% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_low_tier"
+        },
+        {
+          "tier": "mid",
+          "spawn": [
+            "map_key_medium",
+            "default"
+          ],
+          "text": "Monsters have (20-26)% chance to Poison on Hit | 7% more Pack size | 10% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_mid_tier"
+        },
+        {
+          "tier": "top",
+          "spawn": [
+            "map_key_high",
+            "default"
+          ],
+          "text": "Monsters have (27-33)% chance to Poison on Hit | 7% more Pack size | 10% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_top_tier"
+        }
+      ]
+    },
+    {
+      "name": "Flaming",
+      "family": "MapSpreadGroundEffect",
+      "slot": "Suffix",
+      "status": "active",
+      "reward_tags": [
+        "waystone_sustain"
+      ],
+      "danger_tags": [
+        "ground_effect"
+      ],
+      "trade_stats": [
+        {
+          "id": "explicit.stat_133340941",
+          "matched_line": "Area has patches of Ignited Ground"
+        }
+      ],
+      "trade_stats_status": "partial",
+      "recommendation": "Avoid unless the build specifically counters this danger.",
+      "tiers": [
+        {
+          "tier": "low",
+          "spawn": [
+            "map_key_low",
+            "default"
+          ],
+          "text": "Area has patches of Ignited Ground | Monsters have 15% more Effectiveness | 15% more Waystones found in Area | ground fire art variation [1033] | map ground effect patches per 100 tiles [4] | map ground effect radius [20]",
+          "source": "https://poe2db.tw/us/Waystones_low_tier"
+        },
+        {
+          "tier": "mid",
+          "spawn": [
+            "map_key_medium",
+            "default"
+          ],
+          "text": "Area has patches of Ignited Ground | Monsters have 15% more Effectiveness | 15% more Waystones found in Area | ground fire art variation [1033] | map ground effect patches per 100 tiles [5] | map ground effect radius [20]",
+          "source": "https://poe2db.tw/us/Waystones_mid_tier"
+        },
+        {
+          "tier": "top",
+          "spawn": [
+            "map_key_high",
+            "default"
+          ],
+          "text": "Area has patches of Ignited Ground | Monsters have 15% more Effectiveness | 15% more Waystones found in Area | ground fire art variation [1033] | map ground effect patches per 100 tiles [6] | map ground effect radius [20]",
+          "source": "https://poe2db.tw/us/Waystones_top_tier"
+        }
+      ]
+    },
+    {
+      "name": "of Buffering",
+      "family": "MapMonstersEnergyShield",
+      "slot": "Suffix",
+      "status": "active",
+      "reward_tags": [
+        "item_rarity",
+        "waystone_sustain"
+      ],
+      "danger_tags": [
+        "monster_tankiness"
+      ],
+      "trade_stats": [
+        {
+          "id": "explicit.stat_2887760183",
+          "matched_line": "Monsters gain (12-25)% of maximum Life as Extra maximum Energy Shield"
+        }
+      ],
+      "trade_stats_status": "partial",
+      "recommendation": "Good value candidate if the danger profile is comfortable.",
+      "tiers": [
+        {
+          "tier": "low",
+          "spawn": [
+            "default"
+          ],
+          "text": "Monsters gain (12-25)% of maximum Life as Extra maximum Energy Shield | 13% more Rarity of Items found in this Area | 15% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_low_tier"
+        }
+      ]
+    },
+    {
+      "name": "of Drought",
+      "family": "MapPlayersGainReducedFlaskCharges",
+      "slot": "Suffix",
+      "status": "active",
+      "reward_tags": [
+        "pack_size",
+        "waystone_sustain"
+      ],
+      "danger_tags": [
+        "flask_pressure"
+      ],
+      "trade_stats": [
+        {
+          "id": "explicit.stat_2549889921",
+          "matched_line": "Players gain (30-35)% reduced Flask Charges"
+        }
+      ],
+      "trade_stats_status": "partial",
+      "recommendation": "Avoid unless the build specifically counters this danger.",
+      "tiers": [
+        {
+          "tier": "low",
+          "spawn": [
+            "map_key_low",
+            "default"
+          ],
+          "text": "Players gain (20-24)% reduced Flask Charges | 7% more Pack size | 15% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_low_tier"
+        },
+        {
+          "tier": "mid",
+          "spawn": [
+            "map_key_medium",
+            "default"
+          ],
+          "text": "Players gain (25-29)% reduced Flask Charges | 7% more Pack size | 15% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_mid_tier"
+        },
+        {
+          "tier": "top",
+          "spawn": [
+            "map_key_high",
+            "default"
+          ],
+          "text": "Players gain (30-35)% reduced Flask Charges | 7% more Pack size | 15% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_top_tier"
+        }
+      ]
+    },
+    {
+      "name": "of Enduring",
+      "family": "MapMonstersArmoured",
+      "slot": "Suffix",
+      "status": "active",
+      "reward_tags": [
+        "rare_monsters",
+        "waystone_sustain"
+      ],
+      "danger_tags": [
+        "monster_tankiness"
+      ],
+      "trade_stats": [
+        {
+          "id": "explicit.stat_2539290279",
+          "matched_line": "Monsters are Armoured"
+        }
+      ],
+      "trade_stats_status": "partial",
+      "recommendation": "Good value candidate if the danger profile is comfortable.",
+      "tiers": [
+        {
+          "tier": "low",
+          "spawn": [
+            "default"
+          ],
+          "text": "Monsters are Armoured | 18% more Magic and Rare Monsters | Rare Monsters have 18% more chance of Monster Modifiers | 15% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_low_tier"
+        }
+      ]
+    },
+    {
+      "name": "of Enfeebling",
+      "family": "MapPlayerEnfeeblement",
+      "slot": "Suffix",
+      "status": "active",
+      "reward_tags": [
+        "waystone_sustain"
+      ],
+      "danger_tags": [
+        "player_curse"
+      ],
+      "trade_stats": [
+        {
+          "id": "explicit.stat_2029171424",
+          "matched_line": "Players are periodically Cursed with Enfeeble"
+        }
+      ],
+      "trade_stats_status": "partial",
+      "recommendation": "Avoid unless the build specifically counters this danger.",
+      "tiers": [
+        {
+          "tier": "low",
+          "spawn": [
+            "default"
+          ],
+          "text": "Players are periodically Cursed with Enfeeble | Monsters have 16% more Effectiveness | 20% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_low_tier"
+        }
+      ]
+    },
+    {
+      "name": "of Erosion",
+      "family": "MapPlayerElementalWeakness",
+      "slot": "Suffix",
+      "status": "active",
+      "reward_tags": [
+        "item_rarity",
+        "waystone_sustain"
+      ],
+      "danger_tags": [
+        "player_curse"
+      ],
+      "trade_stats": [
+        {
+          "id": "explicit.stat_554690751",
+          "matched_line": "Players are periodically Cursed with Elemental Weakness"
+        }
+      ],
+      "trade_stats_status": "partial",
+      "recommendation": "Avoid unless the build specifically counters this danger.",
+      "tiers": [
+        {
+          "tier": "low",
+          "spawn": [
+            "default"
+          ],
+          "text": "Players are periodically Cursed with Elemental Weakness | 13% more Rarity of Items found in this Area | 20% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_low_tier"
+        }
+      ]
+    },
+    {
+      "name": "of Evasion",
+      "family": "MapMonstersEvasive",
+      "slot": "Suffix",
+      "status": "active",
+      "reward_tags": [
+        "pack_size",
+        "waystone_sustain"
+      ],
+      "danger_tags": [
+        "monster_tankiness"
+      ],
+      "trade_stats": [
+        {
+          "id": "explicit.stat_2570249991",
+          "matched_line": "Monsters are Evasive"
+        }
+      ],
+      "trade_stats_status": "partial",
+      "recommendation": "Good value candidate if the danger profile is comfortable.",
+      "tiers": [
+        {
+          "tier": "low",
+          "spawn": [
+            "default"
+          ],
+          "text": "Monsters are Evasive | 6% more Pack size | 15% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_low_tier"
+        }
+      ]
+    },
+    {
+      "name": "of Exposure",
+      "family": "MapPlayerMaxResists",
+      "slot": "Suffix",
+      "status": "active",
+      "reward_tags": [
+        "pack_size",
+        "waystone_sustain"
+      ],
+      "danger_tags": [
+        "max_resist_penalty"
+      ],
+      "trade_stats": [
+        {
+          "id": "explicit.stat_3376488707",
+          "matched_line": "(-8--6)% maximum Player Resistances"
+        }
+      ],
+      "trade_stats_status": "partial",
+      "recommendation": "Avoid unless the build specifically counters this danger.",
+      "tiers": [
+        {
+          "tier": "low",
+          "spawn": [
+            "map_key_low",
+            "default"
+          ],
+          "text": "(-4--3)% maximum Player Resistances | 10% more Pack size | 25% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_low_tier"
+        },
+        {
+          "tier": "mid",
+          "spawn": [
+            "map_key_medium",
+            "default"
+          ],
+          "text": "(-6--4)% maximum Player Resistances | 10% more Pack size | 25% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_mid_tier"
+        },
+        {
+          "tier": "top",
+          "spawn": [
+            "map_key_high",
+            "default"
+          ],
+          "text": "(-8--6)% maximum Player Resistances | 10% more Pack size | 25% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_top_tier"
+        }
+      ]
+    },
+    {
+      "name": "of Fatigue",
+      "family": "MapPlayerCooldownRecovery",
+      "slot": "Suffix",
+      "status": "active",
+      "reward_tags": [
+        "item_rarity",
+        "waystone_sustain"
+      ],
+      "danger_tags": [
+        "cooldown_penalty"
+      ],
+      "trade_stats": [],
+      "trade_stats_status": "none_found",
+      "recommendation": "Avoid unless the build specifically counters this danger.",
+      "tiers": [
+        {
+          "tier": "low",
+          "spawn": [
+            "map_key_low",
+            "default"
+          ],
+          "text": "Players have (15-20)% less Cooldown Recovery Rate | 12% more Rarity of Items found in this Area | 15% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_low_tier"
+        },
+        {
+          "tier": "mid",
+          "spawn": [
+            "map_key_medium",
+            "default"
+          ],
+          "text": "Players have (20-25)% less Cooldown Recovery Rate | 12% more Rarity of Items found in this Area | 15% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_mid_tier"
+        },
+        {
+          "tier": "top",
+          "spawn": [
+            "map_key_high",
+            "default"
+          ],
+          "text": "Players have (25-30)% less Cooldown Recovery Rate | 12% more Rarity of Items found in this Area | 15% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_top_tier"
+        }
+      ]
+    },
+    {
+      "name": "of Giants",
+      "family": "MapMonsterAreaOfEffect",
+      "slot": "Suffix",
+      "status": "active",
+      "reward_tags": [
+        "waystone_sustain"
+      ],
+      "danger_tags": [
+        "monster_aoe"
+      ],
+      "trade_stats": [
+        {
+          "id": "explicit.stat_1708461270",
+          "matched_line": "Monsters have 50% increased Area of Effect"
+        }
+      ],
+      "trade_stats_status": "partial",
+      "recommendation": "Build-dependent; use only when the downside is acceptable.",
+      "tiers": [
+        {
+          "tier": "low",
+          "spawn": [
+            "default"
+          ],
+          "text": "Monsters have 50% increased Area of Effect | 20% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_low_tier"
+        }
+      ]
+    },
+    {
+      "name": "of Hexwarding",
+      "family": "MapMonstersCurseEffectOnSelfFinal",
+      "slot": "Suffix",
+      "status": "active",
+      "reward_tags": [
+        "item_rarity",
+        "waystone_sustain"
+      ],
+      "danger_tags": [
+        "monster_resists_or_curse_mitigation"
+      ],
+      "trade_stats": [
+        {
+          "id": "explicit.stat_3796523155",
+          "matched_line": "(40-50)% less effect of Curses on Monsters"
+        }
+      ],
+      "trade_stats_status": "partial",
+      "recommendation": "Good value candidate if the danger profile is comfortable.",
+      "tiers": [
+        {
+          "tier": "low",
+          "spawn": [
+            "map_key_low",
+            "default"
+          ],
+          "text": "(20-30)% less effect of Curses on Monsters | 10% more Rarity of Items found in this Area | 10% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_low_tier"
+        },
+        {
+          "tier": "mid",
+          "spawn": [
+            "map_key_medium",
+            "default"
+          ],
+          "text": "(30-40)% less effect of Curses on Monsters | 10% more Rarity of Items found in this Area | 10% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_mid_tier"
+        },
+        {
+          "tier": "top",
+          "spawn": [
+            "map_key_high",
+            "default"
+          ],
+          "text": "(40-50)% less effect of Curses on Monsters | 10% more Rarity of Items found in this Area | 10% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_top_tier"
+        }
+      ]
+    },
+    {
+      "name": "of Obstruction",
+      "family": "MapMonstersBaseSelfCriticalMultiplier",
+      "slot": "Suffix",
+      "status": "active",
+      "reward_tags": [
+        "rare_monsters",
+        "waystone_sustain"
+      ],
+      "danger_tags": [
+        "build_damage_mitigation"
+      ],
+      "trade_stats": [
+        {
+          "id": "explicit.stat_337935900",
+          "matched_line": "Monsters take (26-30)% reduced Extra Damage from Critical Hits"
+        }
+      ],
+      "trade_stats_status": "partial",
+      "recommendation": "Good value candidate if the danger profile is comfortable.",
+      "tiers": [
+        {
+          "tier": "low",
+          "spawn": [
+            "map_key_low",
+            "default"
+          ],
+          "text": "Monsters take (15-19)% reduced Extra Damage from Critical Hits | 18% more Magic and Rare Monsters | Rare Monsters have 18% more chance of Monster Modifiers | 10% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_low_tier"
+        },
+        {
+          "tier": "mid",
+          "spawn": [
+            "map_key_medium",
+            "default"
+          ],
+          "text": "Monsters take (20-25)% reduced Extra Damage from Critical Hits | 18% more Magic and Rare Monsters | Rare Monsters have 18% more chance of Monster Modifiers | 10% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_mid_tier"
+        },
+        {
+          "tier": "top",
+          "spawn": [
+            "map_key_high",
+            "default"
+          ],
+          "text": "Monsters take (26-30)% reduced Extra Damage from Critical Hits | 18% more Magic and Rare Monsters | Rare Monsters have 18% more chance of Monster Modifiers | 10% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_top_tier"
+        }
+      ]
+    },
+    {
+      "name": "of Overpowering",
+      "family": "MapMonstersAilmentChance",
+      "slot": "Suffix",
+      "status": "active",
+      "reward_tags": [
+        "item_rarity",
+        "waystone_sustain"
+      ],
+      "danger_tags": [
+        "monster_pressure"
+      ],
+      "trade_stats": [
+        {
+          "id": "explicit.stat_3877264671",
+          "matched_line": "Monster have (100-119)% increased Elemental Ailment Application"
+        }
+      ],
+      "trade_stats_status": "partial",
+      "recommendation": "Good value candidate if the danger profile is comfortable.",
+      "tiers": [
+        {
+          "tier": "low",
+          "spawn": [
+            "map_key_low",
+            "default"
+          ],
+          "text": "Monster have (60-79)% increased Elemental Ailment Application | 11% more Rarity of Items found in this Area | 15% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_low_tier"
+        },
+        {
+          "tier": "mid",
+          "spawn": [
+            "map_key_medium",
+            "default"
+          ],
+          "text": "Monster have (80-99)% increased Elemental Ailment Application | 11% more Rarity of Items found in this Area | 15% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_mid_tier"
+        },
+        {
+          "tier": "top",
+          "spawn": [
+            "map_key_high",
+            "default"
+          ],
+          "text": "Monster have (100-119)% increased Elemental Ailment Application | 11% more Rarity of Items found in this Area | 15% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_top_tier"
+        }
+      ]
+    },
+    {
+      "name": "of Slowing",
+      "family": "MapPlayerTemporalChains",
+      "slot": "Suffix",
+      "status": "active",
+      "reward_tags": [
+        "pack_size",
+        "waystone_sustain"
+      ],
+      "danger_tags": [
+        "player_curse"
+      ],
+      "trade_stats": [
+        {
+          "id": "explicit.stat_1629357380",
+          "matched_line": "Players are periodically Cursed with Temporal Chains"
+        }
+      ],
+      "trade_stats_status": "partial",
+      "recommendation": "Avoid unless the build specifically counters this danger.",
+      "tiers": [
+        {
+          "tier": "low",
+          "spawn": [
+            "default"
+          ],
+          "text": "Players are periodically Cursed with Temporal Chains | 8% more Pack size | 20% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_low_tier"
+        }
+      ]
+    },
+    {
+      "name": "of Smothering",
+      "family": "MapPlayerReducedRegen",
+      "slot": "Suffix",
+      "status": "active",
+      "reward_tags": [
+        "item_rarity",
+        "waystone_sustain"
+      ],
+      "danger_tags": [
+        "recovery_penalty"
+      ],
+      "trade_stats": [
+        {
+          "id": "explicit.stat_4181072906",
+          "matched_line": "Players have (36-40)% less Recovery Rate of Life and Energy Shield"
+        }
+      ],
+      "trade_stats_status": "partial",
+      "recommendation": "Avoid unless the build specifically counters this danger.",
+      "tiers": [
+        {
+          "tier": "low",
+          "spawn": [
+            "map_key_low",
+            "default"
+          ],
+          "text": "Players have (20-29)% less Recovery Rate of Life and Energy Shield | 15% more Rarity of Items found in this Area | 20% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_low_tier"
+        },
+        {
+          "tier": "mid",
+          "spawn": [
+            "map_key_medium",
+            "default"
+          ],
+          "text": "Players have (30-35)% less Recovery Rate of Life and Energy Shield | 15% more Rarity of Items found in this Area | 20% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_mid_tier"
+        },
+        {
+          "tier": "top",
+          "spawn": [
+            "map_key_high",
+            "default"
+          ],
+          "text": "Players have (36-40)% less Recovery Rate of Life and Energy Shield | 15% more Rarity of Items found in this Area | 20% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_top_tier"
+        }
+      ]
+    },
+    {
+      "name": "of the Prism",
+      "family": "MapMonstersAllResistances",
+      "slot": "Suffix",
+      "status": "active",
+      "reward_tags": [
+        "item_rarity",
+        "waystone_sustain"
+      ],
+      "danger_tags": [
+        "monster_resists_or_curse_mitigation"
+      ],
+      "trade_stats": [
+        {
+          "id": "explicit.stat_1054098949",
+          "matched_line": "+(30-34)% Monster Elemental Resistances"
+        }
+      ],
+      "trade_stats_status": "partial",
+      "recommendation": "Good value candidate if the danger profile is comfortable.",
+      "tiers": [
+        {
+          "tier": "low",
+          "spawn": [
+            "map_key_low",
+            "default"
+          ],
+          "text": "+(20-24)% Monster Elemental Resistances | 14% more Rarity of Items found in this Area | 10% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_low_tier"
+        },
+        {
+          "tier": "mid",
+          "spawn": [
+            "map_key_medium",
+            "default"
+          ],
+          "text": "+(25-29)% Monster Elemental Resistances | 14% more Rarity of Items found in this Area | 10% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_mid_tier"
+        },
+        {
+          "tier": "top",
+          "spawn": [
+            "map_key_high",
+            "default"
+          ],
+          "text": "+(30-34)% Monster Elemental Resistances | 14% more Rarity of Items found in this Area | 10% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_top_tier"
+        }
+      ]
+    },
+    {
+      "name": "of the Unwavering",
+      "family": "MapMonstersStunAndAilmentThreshold",
+      "slot": "Suffix",
+      "status": "active",
+      "reward_tags": [
+        "waystone_sustain"
+      ],
+      "danger_tags": [
+        "build_damage_mitigation"
+      ],
+      "trade_stats": [
+        {
+          "id": "explicit.stat_1994551050",
+          "matched_line": "Monsters have (70-79)% increased Ailment Threshold"
+        },
+        {
+          "id": "explicit.stat_4101943684",
+          "matched_line": "Monsters have (60-69)% increased Stun Threshold"
+        }
+      ],
+      "trade_stats_status": "partial",
+      "recommendation": "Build-dependent; use only when the downside is acceptable.",
+      "tiers": [
+        {
+          "tier": "low",
+          "spawn": [
+            "map_key_low",
+            "default"
+          ],
+          "text": "Monsters have (30-39)% increased Ailment Threshold | Monsters have (30-39)% increased Stun Threshold | Monsters have 13% more Effectiveness | 10% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_low_tier"
+        },
+        {
+          "tier": "mid",
+          "spawn": [
+            "map_key_medium",
+            "default"
+          ],
+          "text": "Monsters have (50-59)% increased Ailment Threshold | Monsters have (40-49)% increased Stun Threshold | Monsters have 13% more Effectiveness | 10% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_mid_tier"
+        },
+        {
+          "tier": "top",
+          "spawn": [
+            "map_key_high",
+            "default"
+          ],
+          "text": "Monsters have (70-79)% increased Ailment Threshold | Monsters have (60-69)% increased Stun Threshold | Monsters have 13% more Effectiveness | 10% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_top_tier"
+        }
+      ]
+    },
+    {
+      "name": "Shocking",
+      "family": "MapSpreadGroundEffect",
+      "slot": "Suffix",
+      "status": "active",
+      "reward_tags": [
+        "pack_size",
+        "waystone_sustain"
+      ],
+      "danger_tags": [
+        "ground_effect"
+      ],
+      "trade_stats": [
+        {
+          "id": "explicit.stat_3477720557",
+          "matched_line": "Area has patches of Shocked Ground"
+        }
+      ],
+      "trade_stats_status": "partial",
+      "recommendation": "Avoid unless the build specifically counters this danger.",
+      "tiers": [
+        {
+          "tier": "low",
+          "spawn": [
+            "map_key_low",
+            "default"
+          ],
+          "text": "Area has patches of Shocked Ground | 7% more Pack size | 15% more Waystones found in Area | ground lightning art variation [1011] | map ground effect patches per 100 tiles [5] | map ground effect radius [17]",
+          "source": "https://poe2db.tw/us/Waystones_low_tier"
+        },
+        {
+          "tier": "mid",
+          "spawn": [
+            "map_key_medium",
+            "default"
+          ],
+          "text": "Area has patches of Shocked Ground | 7% more Pack size | 15% more Waystones found in Area | ground lightning art variation [1011] | map ground effect patches per 100 tiles [6] | map ground effect radius [17]",
+          "source": "https://poe2db.tw/us/Waystones_mid_tier"
+        },
+        {
+          "tier": "top",
+          "spawn": [
+            "map_key_high",
+            "default"
+          ],
+          "text": "Area has patches of Shocked Ground | 7% more Pack size | 15% more Waystones found in Area | ground lightning art variation [1011] | map ground effect patches per 100 tiles [7] | map ground effect radius [17]",
+          "source": "https://poe2db.tw/us/Waystones_top_tier"
+        }
+      ]
+    },
+    {
+      "name": "Sleet",
+      "family": "MapSpreadGroundEffect",
+      "slot": "Suffix",
+      "status": "active",
+      "reward_tags": [
+        "item_rarity",
+        "waystone_sustain"
+      ],
+      "danger_tags": [
+        "ground_effect"
+      ],
+      "trade_stats": [
+        {
+          "id": "explicit.stat_349586058",
+          "matched_line": "Area has patches of Chilled Ground"
+        }
+      ],
+      "trade_stats_status": "partial",
+      "recommendation": "Avoid unless the build specifically counters this danger.",
+      "tiers": [
+        {
+          "tier": "low",
+          "spawn": [
+            "map_key_low",
+            "default"
+          ],
+          "text": "Area has patches of Chilled Ground | 12% more Rarity of Items found in this Area | 15% more Waystones found in Area | ground ice art variation [1014] | map ground effect patches per 100 tiles [3] | map ground effect radius [26]",
+          "source": "https://poe2db.tw/us/Waystones_low_tier"
+        },
+        {
+          "tier": "mid",
+          "spawn": [
+            "map_key_medium",
+            "default"
+          ],
+          "text": "Area has patches of Chilled Ground | 12% more Rarity of Items found in this Area | 15% more Waystones found in Area | ground ice art variation [1014] | map ground effect patches per 100 tiles [4] | map ground effect radius [26]",
+          "source": "https://poe2db.tw/us/Waystones_mid_tier"
+        },
+        {
+          "tier": "top",
+          "spawn": [
+            "map_key_high",
+            "default"
+          ],
+          "text": "Area has patches of Chilled Ground | 12% more Rarity of Items found in this Area | 15% more Waystones found in Area | ground ice art variation [1014] | map ground effect patches per 100 tiles [5] | map ground effect radius [26]",
+          "source": "https://poe2db.tw/us/Waystones_top_tier"
+        }
+      ]
+    },
+    {
+      "name": "Splitting",
+      "family": "MapMonsterMultipleProjectiles",
+      "slot": "Prefix",
+      "status": "disabled_by_official_patch",
+      "reward_tags": [
+        "pack_size",
+        "waystone_sustain"
+      ],
+      "danger_tags": [
+        "extra_projectiles"
+      ],
+      "trade_stats": [
+        {
+          "id": "explicit.stat_1309819744",
+          "matched_line": "Monsters fire 3 additional Projectiles"
+        }
+      ],
+      "trade_stats_status": "partial",
+      "recommendation": "Disabled by official patch notes; do not price or recommend.",
+      "tiers": [
+        {
+          "tier": "low",
+          "spawn": [
+            "low_tier_map",
+            "mid_tier_map",
+            "top_tier_map",
+            "map_key_highest",
+            "default"
+          ],
+          "text": "Monsters fire 2 additional Projectiles | 9% more Pack size | 25% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_low_tier"
+        },
+        {
+          "tier": "mid",
+          "spawn": [
+            "default"
+          ],
+          "text": "Monsters fire 2 additional Projectiles | 9% more Pack size | 25% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_mid_tier"
+        },
+        {
+          "tier": "top",
+          "spawn": [
+            "default"
+          ],
+          "text": "Monsters fire 3 additional Projectiles | 9% more Pack size | 25% more Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_top_tier"
+        }
+      ],
+      "disabled_reason": "Official 0.5.0 patch notes: Waystones will no longer have the Extra Projectiles modifier; existing Waystones with the modifier are disabled."
+    },
+    {
+      "name": "of Nemeses",
+      "family": "MapRareMonstersAdditionalModifier",
+      "slot": "Suffix",
+      "status": "disabled_by_official_patch",
+      "reward_tags": [
+        "rare_monsters",
+        "waystone_sustain"
+      ],
+      "danger_tags": [],
+      "trade_stats": [],
+      "trade_stats_status": "none_found",
+      "recommendation": "Disabled by official patch notes; do not price or recommend.",
+      "tiers": [
+        {
+          "tier": "low",
+          "spawn": [
+            "default"
+          ],
+          "text": "Rare Monsters have 1 additional Modifiers | 25% increased number of Rare Monsters | 10% increased Waystones found in Area",
+          "source": "https://poe2db.tw/us/Waystones_low_tier"
+        }
+      ],
+      "disabled_reason": "Official 0.5.0 patch notes: Waystones will no longer have the of Nemeses modifier."
+    }
+  ],
+  "excluded_rows": [
+    {
+      "tier": "low",
+      "name": "MapWildwoodWispEmpowered1",
+      "family": "MapWildwoodWispEmpowered",
+      "reason": "PoE2DB row has no visible modifier text."
+    },
+    {
+      "tier": "low",
+      "name": "MapSuffixesNullified1",
+      "family": "MapSuffixesNullified",
+      "reason": "PoE2DB row has no visible modifier text."
+    },
+    {
+      "tier": "low",
+      "name": "MapGainRarityOnKill1",
+      "family": "MapGainRarityOnKill",
+      "reason": "PoE2DB row has no visible modifier text."
+    }
+  ]
+}

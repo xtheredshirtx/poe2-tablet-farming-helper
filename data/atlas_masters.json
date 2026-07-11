@@ -1,0 +1,376 @@
+{
+  "_source": "POE2_054_Farming_Research_Phase2/ATLAS_MASTER_UNLOCKS_AND_CHOICES.md",
+  "_patch_basis": "0.5.4b Hotfix 3",
+  "_primary_source": "PoE2DB Masters of the Atlas page",
+  "system_rules": [
+    "Masters of the Atlas is an endgame Ascendancy-style system (PoE2DB).",
+    "Each Master has 12 nodes; 4 can be selected at a time.",
+    "Selections can be changed at any time.",
+    "All three Masters can be allocated, with a quick select button to change between each Master before running a map.",
+    "Unlock rows by performing missions for the Masters."
+  ],
+  "unlocks": [
+    {
+      "master": "Doryani's Science",
+      "requirement": "Clear a corruption nexus",
+      "detail": "PoE2DB: unlocked by clearing a corruption nexus; inherited guides mention Corrupted Nexus near start and Immured Fury after progression",
+      "confidence": "Medium/High",
+      "conflict": "Exact quest text and row timing need in-game capture."
+    },
+    {
+      "master": "Hilda's Hunting",
+      "requirement": "Visit Hilda's Campsite slightly south-west of Atlas start",
+      "detail": "PoE2DB: speak with Hilda and defeat all 4 Great Beasts",
+      "confidence": "Medium/High",
+      "conflict": "Exact beast/map names need verification."
+    },
+    {
+      "master": "Jado's Spycraft",
+      "requirement": "Complete Jado anomaly/deadly map questline",
+      "detail": "PoE2DB Jado quest page lists the required maps/steps: Jade Isles, Sealed Vault, Sacred Reservoir, and Derelict Mansion, with Speak to Jado steps between completions. PoE2DB Masters page summarizes the unlock as completing an anomaly map near the starting location and defeating 4 Deadly Map Bosses.",
+      "confidence": "High/Medium",
+      "evidence": "Phase 10: resolved C10 against PoE2DB Jados_Spycraft and Atlas_Masters pages."
+    }
+  ],
+  "nodes": [
+    {
+      "master": "Jado's Spycraft",
+      "tier": 1,
+      "name": "Trove Seekers",
+      "effect": "100% increased amount of Rare Chests; Strongboxes have 100% increased chance to be Unique",
+      "use": "Strongboxes/unique hunting",
+      "confidence": "database"
+    },
+    {
+      "master": "Jado's Spycraft",
+      "tier": 1,
+      "name": "In The Wrong Hands",
+      "effect": "Powerful Map Bosses drop an additional unique item",
+      "use": "Boss/unique farming",
+      "confidence": "database"
+    },
+    {
+      "master": "Jado's Spycraft",
+      "tier": 1,
+      "name": "Unexpected Missions",
+      "effect": "Corrupted Waystones open a random map area on Basic Maps and Maps with 1 additional random modifier",
+      "use": "Layout reroll/risk",
+      "confidence": "database"
+    },
+    {
+      "master": "Jado's Spycraft",
+      "tier": 2,
+      "name": "Unforeseen Threats",
+      "effect": "5% chance on completing Maps for a nearby Anomaly Map to be revealed",
+      "use": "Anomaly access",
+      "confidence": "database"
+    },
+    {
+      "master": "Jado's Spycraft",
+      "tier": 2,
+      "name": "Mysterious Gifts",
+      "effect": "Rare Strongbox Monsters 5% and Unique Monsters 1% chance to drop a Cryptic Key",
+      "use": "Key/strongbox farming",
+      "confidence": "database"
+    },
+    {
+      "master": "Jado's Spycraft",
+      "tier": 2,
+      "name": "Eastern Knowledge",
+      "effect": "Verisium Remnants have 10% chance to be rolled an additional time, keeping rarest outcome",
+      "use": "Expedition/Verisium",
+      "confidence": "database"
+    },
+    {
+      "master": "Jado's Spycraft",
+      "tier": 3,
+      "name": "Partial Translations",
+      "effect": "Randomly gain 0-40% increased effect of Explicit Modifiers on Tablets",
+      "use": "Tablet scaling",
+      "confidence": "database"
+    },
+    {
+      "master": "Jado's Spycraft",
+      "tier": 3,
+      "name": "Stolen Relics",
+      "effect": "Unique Strongboxes may be Legacy of the Order, dropping a Twilight Reliquary Key",
+      "use": "Strongbox/key farming",
+      "confidence": "database"
+    },
+    {
+      "master": "Jado's Spycraft",
+      "tier": 3,
+      "name": "Long Days",
+      "effect": "20% more chance of Random Extra Content",
+      "use": "General mapping",
+      "confidence": "database"
+    },
+    {
+      "master": "Jado's Spycraft",
+      "tier": 4,
+      "name": "Keen Appraisal",
+      "effect": "50% increased Exceptional Items found",
+      "use": "Exceptional items",
+      "confidence": "database"
+    },
+    {
+      "master": "Jado's Spycraft",
+      "tier": 4,
+      "name": "Untold Histories",
+      "effect": "35% increased chance to find Lineage Supports; Pinnacle Bosses have 50% increased chance to drop Lineage Supports; Pinnacle Bosses take 35% less Damage",
+      "use": "Lineage/pinnacle farming",
+      "confidence": "database"
+    },
+    {
+      "master": "Jado's Spycraft",
+      "tier": 4,
+      "name": "Ancient Activations",
+      "effect": "Powerful Map Bosses have 5% chance to add Ancient Modifiers to a nearby Map",
+      "use": "Ancient map chains",
+      "confidence": "database"
+    },
+    {
+      "master": "Doryani's Science",
+      "tier": 1,
+      "name": "Stitch the Flesh",
+      "effect": "Your Maps have an additional Revival, up to 6",
+      "use": "Safety/progression",
+      "confidence": "database"
+    },
+    {
+      "master": "Doryani's Science",
+      "tier": 1,
+      "name": "Refined Formula",
+      "effect": "150% increased Expedition Explosive Radius; 100% increased Explosive Placement Range; Expeditions have only 1 Explosive; Grand Expeditions have only 5 Explosives",
+      "use": "Expedition control",
+      "confidence": "official"
+    },
+    {
+      "master": "Doryani's Science",
+      "tier": 1,
+      "name": "Evolutionary Pressure",
+      "effect": "Rarity/effectiveness/rare-modifier chance scales per Explicit Modifier on the Map",
+      "use": "High-mod mapping",
+      "confidence": "database"
+    },
+    {
+      "master": "Doryani's Science",
+      "tier": 2,
+      "name": "Improved Calibration",
+      "effect": "Waystones have 25% more effect of Prefix or Suffix Modifiers when opening Maps",
+      "use": "Waystone scaling",
+      "confidence": "database"
+    },
+    {
+      "master": "Doryani's Science",
+      "tier": 2,
+      "name": "Disengaged Safeties",
+      "effect": "Map Areas are Irradiated",
+      "use": "Area level/general",
+      "confidence": "database"
+    },
+    {
+      "master": "Doryani's Science",
+      "tier": 2,
+      "name": "Careful Procurement",
+      "effect": "Magic Monster Packs have 35% chance to have an additional Modifier",
+      "use": "Magic monster scaling",
+      "confidence": "database"
+    },
+    {
+      "master": "Doryani's Science",
+      "tier": 3,
+      "name": "Volatile Connection",
+      "effect": "15% chance areas are Cleansed or Corrupted",
+      "use": "Corruption/cleansed mapping",
+      "confidence": "database"
+    },
+    {
+      "master": "Doryani's Science",
+      "tier": 3,
+      "name": "Mechanical Guardians",
+      "effect": "Non-Unique Strongboxes guarded by Constructs; Strongboxes have 2% increased item quantity per modifier",
+      "use": "Strongbox side farming",
+      "confidence": "database"
+    },
+    {
+      "master": "Doryani's Science",
+      "tier": 3,
+      "name": "Hidden Patterns",
+      "effect": "10% chance when completing a Map to make nearby Maps accessible",
+      "use": "Atlas traversal",
+      "confidence": "database"
+    },
+    {
+      "master": "Doryani's Science",
+      "tier": 4,
+      "name": "Dam the River",
+      "effect": "Azmeri Spirits only possess monsters after reaching maximum empowerment",
+      "use": "Spirit control",
+      "confidence": "database"
+    },
+    {
+      "master": "Doryani's Science",
+      "tier": 4,
+      "name": "Remnants of Greatness",
+      "effect": "Map Bosses 20% chance to guard a Precursor Terraformer to change nearby map biome",
+      "use": "Biome control",
+      "confidence": "database"
+    },
+    {
+      "master": "Doryani's Science",
+      "tier": 4,
+      "name": "Head of the Snake",
+      "effect": "Pinnacle Bosses 25% chance to drop additional Unique; Powerful Map Bosses 5% chance to reveal nearby Citadel; Pinnacle Bosses have a single Revive",
+      "use": "Pinnacle/boss farming",
+      "confidence": "database"
+    },
+    {
+      "master": "Hilda's Hunting",
+      "tier": 1,
+      "name": "Breeding Season",
+      "effect": "15% increased Rare Monsters; Rare Monsters have 25% increased chance of Monster Modifiers",
+      "use": "General loot/danger",
+      "confidence": "database"
+    },
+    {
+      "master": "Hilda's Hunting",
+      "tier": 1,
+      "name": "Mighty Prey",
+      "effect": "25% chance to upgrade Map Bosses to Powerful Map Bosses",
+      "use": "Boss/unique farming",
+      "confidence": "database"
+    },
+    {
+      "master": "Hilda's Hunting",
+      "tier": 1,
+      "name": "Scarred Lands",
+      "effect": "15% increased Runic Monster Markers; 20% increased Rare Expedition Monsters",
+      "use": "Expedition",
+      "confidence": "database"
+    },
+    {
+      "master": "Hilda's Hunting",
+      "tier": 2,
+      "name": "Dangerous Game",
+      "effect": "Rogue Exiles have 20% chance to flee to adjacent Map and upgrade equipment",
+      "use": "Rogue Exile chain",
+      "confidence": "database"
+    },
+    {
+      "master": "Hilda's Hunting",
+      "tier": 2,
+      "name": "Soul Eaters",
+      "effect": "Map Bosses gain effectiveness per 100 Power of monsters slain",
+      "use": "Boss risk/reward",
+      "confidence": "database"
+    },
+    {
+      "master": "Hilda's Hunting",
+      "tier": 2,
+      "name": "Will of the Draiocht",
+      "effect": "Azmeri Spirits cannot possess Rare Monsters",
+      "use": "Spirit control",
+      "confidence": "database"
+    },
+    {
+      "master": "Hilda's Hunting",
+      "tier": 3,
+      "name": "Call of the Spirits",
+      "effect": "Possessed Unique Monsters release Spirits on death",
+      "use": "Spirit/boss chains",
+      "confidence": "database"
+    },
+    {
+      "master": "Hilda's Hunting",
+      "tier": 3,
+      "name": "Ancient Inscriptions",
+      "effect": "8% increased effect of Explicit Modifiers on Tablets for each type of Tablet affecting Map area",
+      "use": "Tablet scaling",
+      "confidence": "database"
+    },
+    {
+      "master": "Hilda's Hunting",
+      "tier": 3,
+      "name": "Lethal Adaptation",
+      "effect": "40% increased Effectiveness of Unique Monsters with Modifiers",
+      "use": "Boss danger/reward",
+      "confidence": "database"
+    },
+    {
+      "master": "Hilda's Hunting",
+      "tier": 4,
+      "name": "Patient Battue",
+      "effect": "25% chance 1 Rare Monster is replaced by a random Map Boss; 5% chance 3 additional Rare Monsters are replaced by random Map Bosses",
+      "use": "Boss density",
+      "confidence": "database"
+    },
+    {
+      "master": "Hilda's Hunting",
+      "tier": 4,
+      "name": "Gutting and Skinning",
+      "effect": "Pinnacle Bosses may be scavenged for 5% chance at additional Unique; Unique monsters 1% chance to be scavenged for Unique",
+      "use": "Unique farming",
+      "confidence": "database",
+      "note": "0.5.4b bug fix relevant."
+    },
+    {
+      "master": "Hilda's Hunting",
+      "tier": 4,
+      "name": "Claimed Territories",
+      "effect": "Overlord's Influence and Overlord's Domain Atlas passives have 45% chance to add twice as much content",
+      "use": "Atlas content scaling",
+      "confidence": "database"
+    }
+  ],
+  "strategy_mapping": [
+    {
+      "strategy": "Expedition/logbooks",
+      "focus": "Doryani Refined Formula or Hilda Scarred Lands; Jado Eastern Knowledge for Verisium Remnants",
+      "why": "Controls explosives, adds Expedition density, improves Verisium outcome",
+      "confidence": "Medium/High"
+    },
+    {
+      "strategy": "Ritual",
+      "focus": "Doryani safety/Waystone scaling by default",
+      "why": "No direct Ritual Master node verified in Phase 2",
+      "confidence": "Medium/Low"
+    },
+    {
+      "strategy": "Breach",
+      "focus": "Jado general unique/extra content or Doryani high-mod scaling",
+      "why": "No direct Breach Master node verified in Phase 2",
+      "confidence": "Medium/Low"
+    },
+    {
+      "strategy": "Delirium",
+      "focus": "Doryani safety/Waystone scaling",
+      "why": "No direct Delirium Master node verified in Phase 2",
+      "confidence": "Medium/Low"
+    },
+    {
+      "strategy": "Abyss",
+      "focus": "Doryani/Hilda depending on boss/general plan",
+      "why": "0.5.4 fixed Atlas passives applying in Abyssal Depths",
+      "confidence": "Medium"
+    },
+    {
+      "strategy": "Boss/Overseer",
+      "focus": "Hilda Mighty Prey/Patient Battue/Gutting and Skinning; Jado In The Wrong Hands; Doryani Head of the Snake",
+      "why": "Direct boss/unique reward nodes",
+      "confidence": "Medium/High"
+    },
+    {
+      "strategy": "Tablet scaling",
+      "focus": "Jado Partial Translations or Hilda Ancient Inscriptions; Doryani map/Waystone scaling",
+      "why": "Explicit tablet-effect scaling",
+      "confidence": "Medium/High"
+    },
+    {
+      "strategy": "Waystone sustain",
+      "focus": "Doryani Stitch the Flesh/Improved Calibration; Overseer tablet of Pathways",
+      "why": "Safety and Waystone effect scaling",
+      "confidence": "Medium"
+    }
+  ]
+}

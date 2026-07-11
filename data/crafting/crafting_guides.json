@@ -1,0 +1,211 @@
+{
+ "_note": "Sourced guides only - never invent guide steps. All guides below are summarized from the GhazzyTV crafting guide video the owner provided (transcript supplied 2026-07-05). Community content, not official.",
+ "video": {
+  "title": "PoE2 Crafting Guide - from basics to profit crafting",
+  "url": "https://www.youtube.com/watch?v=HfFkmE_t4SA",
+  "embed_url": "https://www.youtube.com/embed/HfFkmE_t4SA",
+  "credit": "GhazzyTV",
+  "date_added": "2026-07-05",
+  "source_type": "creator video guide",
+  "confidence": "community"
+ },
+ "guides": [
+  {
+   "title": "Item anatomy: item level, bases, and mod weights",
+   "goal": "Understand what can roll on an item before spending currency",
+   "steps": [
+    "Hover an item and hold ALT to see its ITEM LEVEL (not the required level - item level dictates which modifier tiers can roll).",
+    "Check the base type: evasion bases roll evasion mods, energy shield bases roll ES mods, armour bases roll armour mods; hybrid bases can roll both plus hybrid versions. Suffixes are mostly the same across bases.",
+    "Use the Craft view / Modifier Explorer (or craftofexile.com) with your item level set: any modifier whose required ilvl is higher than your item CANNOT roll (e.g. ilvl 76 sceptre cannot roll +4 minion skills; 78+ can; T1 spirit needs 82).",
+    "Weights are your odds: a 1000-weight mana roll is far more likely than a 50-weight T1 spirit roll. High-value mods are usually low weight."
+   ],
+   "source": "https://www.youtube.com/watch?v=HfFkmE_t4SA",
+   "credit": "GhazzyTV",
+   "confidence": "community"
+  },
+  {
+   "title": "Greater / Perfect currency: minimum modifier level",
+   "goal": "Use upgraded orbs to block low tiers",
+   "steps": [
+    "Greater orbs (Transmutation/Augmentation/Exalted...) add 'minimum modifier level 44': tiers requiring ilvl 43 or lower can no longer roll, so hits skew to higher tiers.",
+    "Perfect orbs raise that to minimum modifier level 70 - but they also block any mod whose top tiers sit below ilvl 70 (e.g. flat life on some bases can stop rolling entirely).",
+    "Weights still apply within the remaining pool - a Greater Augmentation on a ring is still most likely to hit mana, just at a better tier."
+   ],
+   "source": "https://www.youtube.com/watch?v=HfFkmE_t4SA",
+   "credit": "GhazzyTV",
+   "confidence": "community"
+  },
+  {
+   "title": "Budget ring craft: guarantee life with an Essence",
+   "goal": "Cheap early-endgame rare with guaranteed life",
+   "steps": [
+    "Start from a magic ring with one useful suffix (e.g. a resistance) and an open prefix.",
+    "Orb of Augmentation to fill the prefix (or Greater if you can afford it).",
+    "Use an Essence of the Body: on ring/amulet/boots/gloves it makes the item RARE and guarantees 70-84 life. (An essence cannot be used if the item already has a mod of that type.)",
+    "Essences of this tier are very cheap (a few exalted) - great value per guaranteed mod.",
+    "Fill the remaining open affixes with Exalted Orb slams (attributes/resists are suffixes, so once suffixes fill, the next exalt is guaranteed to add a prefix).",
+    "Price check the result before using it - decent resist/attribute rings sell."
+   ],
+   "source": "https://www.youtube.com/watch?v=HfFkmE_t4SA",
+   "credit": "GhazzyTV",
+   "confidence": "community"
+  },
+  {
+   "title": "Boots rule: movement speed or don't bother",
+   "goal": "Avoid wasting currency on dead boots",
+   "steps": [
+    "Movement speed is the single most important boots modifier.",
+    "If boots already have a crafted mod and no movement speed, an exalt slam is a pure gamble to hit it; a Chaos Orb removes a random mod and adds a random one - also a gamble.",
+    "GhazzyTV's advice: don't craft on boots without movement speed already on them."
+   ],
+   "source": "https://www.youtube.com/watch?v=HfFkmE_t4SA",
+   "credit": "GhazzyTV",
+   "confidence": "community"
+  },
+  {
+   "title": "Minion sceptre craft (+4 minion skills base)",
+   "goal": "High-value minion weapon without praying for the 100-weight roll",
+   "steps": [
+    "BUY a magic base that already has '+4 to Level of all Minion Skills' (weight ~100, ilvl 78+ required) instead of trying to hit it yourself.",
+    "Use a Perfect Orb of Augmentation for the second magic prefix (highest tiers only).",
+    "Use a Greater Essence of Command to go rare with guaranteed 'Allies in your Presence deal 75-89% increased Damage'.",
+    "Desecrate with a Preserved Jawbone + Omen of Dextral Necromancy so the desecrated mod is guaranteed a SUFFIX (with an open slot it adds without removing).",
+    "Use an Omen of Greater Exaltation + one Greater Exalted Orb: adds TWO modifiers at once (often cheaper than two separate greater exalts).",
+    "Reveal the desecrated mod at the Well of Souls and pick crit damage / attack speed / cast speed depending on the buyer's build.",
+    "Price check against listed +4 sceptres before selling."
+   ],
+   "source": "https://www.youtube.com/watch?v=HfFkmE_t4SA",
+   "credit": "GhazzyTV",
+   "confidence": "community"
+  },
+  {
+   "title": "Perfect Essences, Distilled Emotions, and Alloys",
+   "goal": "Targeted mod replacement on rares",
+   "steps": [
+    "Perfect Essences act like a Chaos Orb with a guaranteed outcome: REMOVE a random mod, then ADD the guaranteed essence mod. If the guaranteed mod is a prefix and all prefixes are full, it must remove a prefix - use that to protect suffixes.",
+    "Distilled Emotions (since 0.5) work like perfect essences for JEWELS (e.g. Diluted Liquid Iron on a sapphire jewel: remove one random mod, guarantee %ES). A cheap jewel can jump in value massively with the right third mod.",
+    "Alloys work the same way on rares with base-specific guaranteed mods (Runic Alloy: runic ward mods by slot; Mystic Alloy: AoE on helmet/gloves, spirit on boots)."
+   ],
+   "source": "https://www.youtube.com/watch?v=HfFkmE_t4SA",
+   "credit": "GhazzyTV",
+   "confidence": "community"
+  },
+  {
+   "title": "Advanced: fracture + omen metacrafting (the minion belt)",
+   "goal": "Lock the key mod, then re-roll everything else safely",
+   "steps": [
+    "A Fracturing Orb locks one random modifier forever on a rare with 4+ mods - a fractured mod survives Chaos and Annulment orbs.",
+    "Trick: fracture BEFORE revealing a desecrated mod - unrevealed desecrated mods cannot be fractured, so the fracture odds improve (1 in 3 instead of 1 in 4 in the video's example).",
+    "With the key mod fractured (e.g. +2 minion skills), you can Annul freely: failures only remove unlocked mods.",
+    "Use Omen of Dextral/Sinistral Necromancy to force desecration onto the affix side you want; Altered Collarbones give access to Otherworldly (breach-exclusive) desecrated mods like Minion Strikes Melee Splash.",
+    "Omen of Light + Annulment removes a desecrated mod specifically (expensive); Omen of Whittling makes a Chaos Orb remove the LOWEST-level modifier; combine with Sinistral/Dextral Erasure to restrict it to one affix side.",
+    "This tier of crafting is EXPENSIVE (collarbones ~98ex, whittling ~188ex in the video's market) - know your exit price first."
+   ],
+   "source": "https://www.youtube.com/watch?v=HfFkmE_t4SA",
+   "credit": "GhazzyTV",
+   "confidence": "community"
+  },
+  {
+   "title": "Endgame gambles: corruption and sanctification",
+   "goal": "Final irreversible steps",
+   "steps": [
+    "Vaal Orb corruption (and double corruption) can add crazy mods (e.g. +level of all minion skills) or brick the item.",
+    "Omen of Sanctification + Divine Orb 'sanctifies': every mod value is multiplied by 78%-122% at random and the item becomes PERMANENTLY unmodifiable - this is how +4 sceptres become +5. Always the LAST step.",
+    "Anticore locks let you preview the next currency outcome before committing (~110 divines per try - mirror-tier crafting only)."
+   ],
+   "source": "https://www.youtube.com/watch?v=HfFkmE_t4SA",
+   "credit": "GhazzyTV",
+   "confidence": "community"
+  },
+  {
+   "title": "Profit crafting 101 (economy, not recipes)",
+   "goal": "Find your own profitable crafts",
+   "steps": [
+    "No one can tell you WHAT to craft - a published profit craft stops being profitable (economy 101).",
+    "Use poe.ninja > Builds > current league: see the most-played classes, ctrl-click several top players, and look for the RARE items they share in common (e.g. hybrid evasion/ES boots with deflection + resists; movement speed optional for some builds).",
+    "Buy a base that already has the hardest mod (e.g. +4 minion sceptre for ~12-14 div) - the base is your static cost.",
+    "Add the cheap guaranteed steps first (essence ~1ex), then targeted desecration with omens, then exalt/greater-exalt fills.",
+    "Price check honestly against listed items before and after - the video's own example roughly broke even, which is normal while learning.",
+    "The real payoff of learning to craft: recognizing valuable dropped bases (e.g. double-socket +4 sceptre) on the ground."
+   ],
+   "source": "https://www.youtube.com/watch?v=HfFkmE_t4SA",
+   "credit": "GhazzyTV",
+   "confidence": "community"
+  },
+  {
+   "id": "craft_kolrs_hunt_marksman_projectile_gloves",
+   "title": "Kolr's Hunt / Marksman Projectile Gloves",
+   "source_type": "owner_transcript_plus_db_crosscheck",
+   "confidence": "medium_high_sequence_medium_exact_final_mods",
+   "difficulty": "advanced",
+   "risk": "very_high",
+   "best_for": [
+    "projectile attack builds",
+    "Marksman/Huntress-style builds",
+    "Twister-like projectile builds if scaling projectile skills"
+   ],
+   "base_requirements": [
+    "Gloves",
+    "Non-corrupted",
+    "Item level 82+ target from transcript",
+    "Open augment socket or Kolr's Hunt already socketed"
+   ],
+   "required_materials": [
+    "Kolr's Hunt",
+    "Chaos Orb",
+    "Orb of Annulment",
+    "Omen of Sinistral Annulment",
+    "Omen of Sinistral Erasure optional/risky",
+    "Omen of Dextral Necromancy",
+    "Omen of Abyssal Echoes",
+    "Omen of Light",
+    "Fracturing Orb",
+    "Greater/Perfect Exalted Orbs",
+    "Essence/Perfect Essence depending on target"
+   ],
+   "target_mods": [
+    "+Level of all Projectile Skills",
+    "Surpassing chance to fire an additional Projectile",
+    "Projectile Damage",
+    "Added Physical Damage",
+    "Added Lightning/Cold Damage",
+    "Critical Damage Bonus",
+    "Evasion/Energy Shield or life/resists"
+   ],
+   "steps": [
+    "Buy/prepare non-corrupted ilvl 82+ gloves.",
+    "Socket Kolr's Hunt to enable Marksman modifier pool.",
+    "Make rare and reduce junk mods; transcript moved toward a one-mod state before chaos spam.",
+    "Chaos spam/fish until the key Marksman projectile mod appears.",
+    "Add prefixes; prioritize projectile damage, added physical, added lightning/cold.",
+    "If a bad prefix appears, prefer Omen of Sinistral Annulment + Orb of Annulment for clean prefix-only removal; prefix-only Chaos is not clean deletion.",
+    "Keep good damage rolls; consider Fracturing Orb only once the item has enough value.",
+    "Use Omen of Dextral Necromancy to make next Desecration add only suffixes.",
+    "Use Omen of Abyssal Echoes to reroll revealed Desecrated options once while fishing for additional projectile chance.",
+    "Use Omen of Light + Orb of Annulment to remove bad Desecrated mods and repeat if budget allows.",
+    "Finish prefixes with Greater/Perfect Exalted slams; stop once the item is strong enough."
+   ],
+   "stop_conditions": [
+    "Key projectile mod hit + acceptable suffixes",
+    "Additional projectile chance hit even if tier is not perfect",
+    "Fractured useful mod and final prefixes acceptable",
+    "Budget/currency pain point reached"
+   ],
+   "mistakes_to_warn": [
+    "Prefix-only Chaos does not equal clean prefix deletion.",
+    "Transcript prices are stale and should not be hard-coded.",
+    "Exact final mod text needs screenshot/trade verification.",
+    "Do not treat as guaranteed recipe."
+   ],
+   "source_refs": [
+    "owner_transcript:Pasted text(2).txt",
+    "https://poe2db.tw/us/Kolrs_Hunt",
+    "https://www.poe2wiki.net/wiki/Omen",
+    "https://www.craftofexile.com/?game=poe2"
+   ],
+   "goal": "Craft Kolr's Hunt / Marksman Projectile Gloves",
+   "credit": "Owner-provided transcript (pack 2026-07-11)",
+   "source": "owner_transcript:Pasted text(2).txt"
+  }
+ ]
+}

@@ -1,0 +1,88 @@
+{
+  "_source": "Built from strategies.json / tablets.json community ratings (Phase 9, 2026-07-05)",
+  "_rule": "Tablets cannot have more than 4 modifiers, so every preset selects at most 4 and the trade builder blocks searches with more than 4 selected modifiers.",
+  "_rating_type": "opinion",
+  "presets": [
+    {
+      "id": "best_currency",
+      "name": "Best currency chances (max 4)",
+      "tablet_type": "Any",
+      "mods": ["Breeding", "Brimming", "of Undertaking", "of the Cartographer"],
+      "match_mode": "count",
+      "count_min": 2,
+      "description": "The four community SS/S-rated general-currency modifiers: Pack Size, more Rare Monsters, an extra random map modifier, and Waystone quantity. Matches tablets with at least 2 of the 4 (raise COUNT min for stricter results)."
+    },
+    {
+      "id": "waystone_sustain",
+      "name": "Waystone sustain",
+      "tablet_type": "Any",
+      "mods": ["of the Cartographer", "Breeding", "Brimming"],
+      "match_mode": "count",
+      "count_min": 1,
+      "description": "Waystone quantity first, density second. Combine with Overseer 'of Pathways' (boss preset) for boss-based sustain."
+    },
+    {
+      "id": "mf_rarity",
+      "name": "Magic find / rarity",
+      "tablet_type": "Any",
+      "mods": ["Collector's", "Abounding", "Breeding", "Brimming"],
+      "match_mode": "count",
+      "count_min": 2,
+      "description": "Item rarity, monster rarity, and density for MF-focused builds."
+    },
+    {
+      "id": "ritual_omens",
+      "name": "Ritual omen farming",
+      "tablet_type": "Ritual Tablet",
+      "mods": ["Ritual Omen chance", "Reroll additional time", "Breeding", "Brimming"],
+      "match_mode": "count",
+      "count_min": 2,
+      "description": "Omen chance and extra rerolls are the two SS Ritual suffixes; density fills the rest."
+    },
+    {
+      "id": "breach_density",
+      "name": "Breach density",
+      "tablet_type": "Breach Tablet",
+      "mods": ["of the Horde", "of the Invasion", "Breeding", "Brimming"],
+      "match_mode": "count",
+      "count_min": 2,
+      "description": "Breach pack size, extra rare on stabilise, and general density."
+    },
+    {
+      "id": "deli_splinters",
+      "name": "Delirium simulacrum splinters",
+      "tablet_type": "Delirium Tablet",
+      "mods": ["of the Simulacrum", "of Persecution", "Breeding", "Brimming"],
+      "match_mode": "count",
+      "count_min": 2,
+      "description": "Splinter stack size plus Delirium and general density."
+    },
+    {
+      "id": "abyss_volume",
+      "name": "Abyss volume",
+      "tablet_type": "Abyss Tablet",
+      "mods": ["of Schisms", "of Hollows", "of Champions", "Breeding"],
+      "match_mode": "count",
+      "count_min": 2,
+      "description": "More Abysses (chance and guaranteed) plus extra rares per Abyss."
+    },
+    {
+      "id": "boss_loot",
+      "name": "Boss loot (Overseer)",
+      "tablet_type": "Overseer Tablet",
+      "mods": ["of Treasure", "of Hoards", "of Pathways", "Breeding"],
+      "match_mode": "count",
+      "count_min": 2,
+      "description": "Boss rarity/quantity and Waystone drops - the three S-rated Overseer suffixes."
+    },
+    {
+      "id": "temple_experimental",
+      "name": "Temple / Vaal Beacons (experimental)",
+      "tablet_type": "Temple Tablet",
+      "mods": ["Vaal Beacon pack size", "Vaal Beacon extra pack", "Vaal Beacon additional monsters", "Vaal Beacon extra crystal"],
+      "match_mode": "count",
+      "count_min": 1,
+      "description": "Temple farming value is still experimental - rolls verified against PoE2DB in Phase 5, but strategy value is unproven."
+    }
+  ]
+}

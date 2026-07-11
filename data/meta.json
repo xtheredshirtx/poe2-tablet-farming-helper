@@ -1,0 +1,104 @@
+{
+  "app_name": "PoE2 Tablet Farming Helper",
+  "app_version": "0.9.1-phase13b-gear-builder",
+  "data_generated": "2026-07-05",
+  "patch": {
+    "version": "0.5.4b Hotfix 3",
+    "posted": "2026-07-03",
+    "verified": "2026-07-05",
+    "official_url": "https://www.pathofexile.com/forum/view-thread/3980829",
+    "patch_forum_url": "https://www.pathofexile.com/forum/view-forum/2212",
+    "note": "Recheck the official patch forum before relying on recommendations. Data older than the current patch may be stale."
+  },
+  "leagues": [
+    "Runes of Aldur",
+    "HC Runes of Aldur",
+    "Standard",
+    "Hardcore"
+  ],
+  "trade": {
+    "item_category": "map.tablet",
+    "search_endpoint_template": "https://www.pathofexile.com/api/trade2/search/poe2/{league}",
+    "result_url_template": "https://www.pathofexile.com/trade2/search/poe2/{league}/{id}",
+    "trade_site_url": "https://www.pathofexile.com/trade2",
+    "status_options": [
+      "online",
+      "onlineleague",
+      "available",
+      "securable",
+      "any"
+    ],
+    "rarity_options": [
+      "normal",
+      "magic",
+      "rare",
+      "unique",
+      "uniquefoil",
+      "nonunique"
+    ],
+    "tos_note": "Official API details may change without notice. This app performs at most one user-triggered search POST and opens the official site. No scraping, no polling, no background searches.",
+    "deep_link_note": "?q= deep links remain UNVERIFIED as of 2026-07-05. The in-app browser reached the official trade2 route but hit the sign-in gate before query rendering, so the app should keep the user-triggered POST path.",
+    "last_validation": {
+      "date": "2026-07-05",
+      "league": "Runes of Aldur",
+      "test": "LEGACY ONLY - Expedition Tablet payload with explicit.stat_1083387327 minimum 15",
+      "endpoint_status": 200,
+      "complexity": 9,
+      "result_count": 0,
+      "listing_fetch_performed": false,
+      "note": "Official trade2 search POST accepted the stat-filtered payload. Result IDs were not fetched."
+    },
+    "status_options_labeled": [
+      {
+        "id": "securable",
+        "text": "Instant Buyout"
+      },
+      {
+        "id": "available",
+        "text": "Instant Buyout and In Person"
+      },
+      {
+        "id": "onlineleague",
+        "text": "In Person (Online in League)"
+      },
+      {
+        "id": "online",
+        "text": "In Person (Online)"
+      },
+      {
+        "id": "any",
+        "text": "Any"
+      }
+    ],
+    "status_labels_source": "Official trade2 filters metadata, verified 2026-07-05",
+    "default_status": "securable",
+    "live_url_template": "https://www.pathofexile.com/trade2/search/poe2/{league}/{id}/live",
+    "live_note": "Live search runs on the OFFICIAL trade site in your browser. The app only opens the URL; it never polls or watches results itself."
+  },
+  "confidence_labels": {
+    "official": "Verified from GGG patch notes or official trade2 metadata.",
+    "database": "Verified from PoE2DB or poe2wiki, but not official patch text.",
+    "community": "Community spreadsheet or guide data.",
+    "opinion": "Community/editorial farming value. Not official.",
+    "conflict": "Sources disagree or wording/value signs do not match.",
+    "unknown": "UNKNOWN - NEEDS VERIFICATION. Must not be treated as a real value."
+  },
+  "known_gameplay_rules": [
+    {
+      "id": "no_current_expedition_tablets",
+      "status": "authoritative_owner_rule",
+      "date": "2026-07-05",
+      "rule": "Expedition Tablets do not exist in the current game.",
+      "app_behavior": "Hide Expedition Tablet from active tablet/trade workflows; keep old Expedition tablet rows only as legacy/source-history data.",
+      "data_import_rule": "If imported data lists Expedition Tablet, mark it legacy/current_game_available=false and do not re-enable it without explicit owner reversal."
+    },
+    {
+      "id": "expedition_juice_means_other_tablets",
+      "status": "authoritative_owner_interpretation",
+      "date": "2026-07-05",
+      "rule": "If current Expedition notes say to juice Expedition, interpret that as other current tablets, map/waystone modifiers, Atlas Master choices, whispers, and remnant order around Expedition content, not Expedition Tablets.",
+      "app_behavior": "Show this in Expedition Whispers and keep Expedition Tablet trade filters hidden/legacy.",
+      "data_import_rule": "If imported strategy text says Expedition Tablet or old Expedition-specific tablet suffixes, mark those setup rows legacy and add a current-game note pointing to other-tablet/shared juice instead."
+    }
+  ]
+}

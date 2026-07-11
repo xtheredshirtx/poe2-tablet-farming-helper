@@ -1,0 +1,1203 @@
+{
+  "_source": "POE2_054_Farming_Research_Phase2/TABLET_MODIFIER_DATABASE_DRAFT.md",
+  "_patch_basis": "0.5.4b Hotfix 3",
+  "_accessed": "2026-07-05",
+  "_rating_disclaimer": "All SS/S/A/B/C/Avoid ratings are community/editorial opinion, not official.",
+  "bases": [
+    {
+      "name": "Expedition Tablet",
+      "function": "Adds a Kalguuran Expedition to a Map",
+      "uses": 10,
+      "trade_type": "Expedition Tablet",
+      "confidence": "owner_authoritative",
+      "sources": [
+        "Owner in-game report 2026-07-05",
+        "legacy trade2/PoE2DB kept as history"
+      ],
+      "removed_from_game": true,
+      "note": "Current gameplay rule: no Expedition Tablets. Old Expedition tablet data remains legacy only; Expedition Whispers is the current gameplay knowledge tab.",
+      "current_game_available": false,
+      "removal_note": "OWNER RULE 2026-07-05: Expedition Tablets do not exist in the current game. If trade metadata, PoE2DB, old research, or imported packs list Expedition Tablet, treat those rows as legacy/stale/trade-leftover data and keep Expedition out of current tablet workflows."
+    },
+    {
+      "name": "Ritual Tablet",
+      "function": "Adds Ritual Altars to a Map",
+      "uses": 10,
+      "trade_type": "Ritual Tablet",
+      "confidence": "database",
+      "sources": [
+        "PoE2DB",
+        "trade2 items"
+      ]
+    },
+    {
+      "name": "Breach Tablet",
+      "function": "Adds Breaches to a Map",
+      "uses": 10,
+      "trade_type": "Breach Tablet",
+      "confidence": "database",
+      "sources": [
+        "PoE2DB",
+        "trade2 items"
+      ]
+    },
+    {
+      "name": "Delirium Tablet",
+      "function": "Adds Mirrors of Delirium to a Map",
+      "uses": 10,
+      "trade_type": "Delirium Tablet",
+      "confidence": "database",
+      "sources": [
+        "PoE2DB",
+        "trade2 items"
+      ]
+    },
+    {
+      "name": "Abyss Tablet",
+      "function": "Adds Abysses to a Map",
+      "uses": 10,
+      "trade_type": "Abyss Tablet",
+      "confidence": "database",
+      "sources": [
+        "PoE2DB",
+        "trade2 items"
+      ]
+    },
+    {
+      "name": "Overseer Tablet",
+      "function": "Adds bosses to a Map",
+      "uses": 10,
+      "trade_type": "Overseer Tablet",
+      "confidence": "database",
+      "sources": [
+        "PoE2DB",
+        "trade2 items"
+      ]
+    },
+    {
+      "name": "Irradiated Tablet",
+      "function": "Irradiates a Map area, increasing area level by 1",
+      "uses": 10,
+      "trade_type": "Irradiated Tablet",
+      "confidence": "database",
+      "sources": [
+        "PoE2DB",
+        "trade2 items"
+      ]
+    },
+    {
+      "name": "Temple Tablet",
+      "function": "Adds Vaal Beacons to a Map",
+      "uses": 10,
+      "trade_type": "Temple Tablet",
+      "confidence": "database",
+      "sources": [
+        "PoE2DB",
+        "trade2 items"
+      ],
+      "note": "Suffix roll ranges incomplete; treat Temple data as experimental."
+    }
+  ],
+  "system_rules": [
+    "Tablets are used in a personal Map Device to add modifiers to Maps; tablet bases have 10 uses (PoE2DB).",
+    "Precursor Towers reveal a large area and grant a Tablet after completion (PoE2DB).",
+    "Trade category filter for all tablets is map.tablet (official trade2 metadata).",
+    "CONFLICT: the inherited 'Magic only' rarity rule is incomplete — PoE2DB lists unique tablets, Ancient Infuser corrupts/modifies tablets, and passives can upgrade tablets to Rare / add max modifiers.",
+    "Modifier weights are UNKNOWN - NEEDS VERIFICATION (PoE2DB says weight info cannot be obtained from game files)."
+  ],
+  "shared_prefixes": [
+    {
+      "name": "Breeding",
+      "text": "#% increased Pack Size in Map",
+      "roll": "5-7",
+      "stat_id": "explicit.stat_2017682521",
+      "stat_status": "confirmed",
+      "rating": "SS",
+      "best_for": "Almost all strategies",
+      "confidence": "database",
+      "trade_ready": true
+    },
+    {
+      "name": "Brimming",
+      "text": "Map has #% increased number of Rare Monsters",
+      "roll": "25-35",
+      "stat_id": "explicit.stat_3793155082",
+      "stat_status": "confirmed",
+      "rating": "S",
+      "best_for": "Currency, rare drops, density",
+      "confidence": "database",
+      "trade_ready": true
+    },
+    {
+      "name": "Abounding",
+      "text": "Map has #% increased Monster Rarity",
+      "roll": "15-20",
+      "stat_id": "explicit.stat_4142653832",
+      "stat_status": "confirmed",
+      "rating": "S",
+      "best_for": "Rare-monster strategies",
+      "confidence": "database",
+      "trade_ready": true
+    },
+    {
+      "name": "Collector's",
+      "text": "#% increased Rarity of Items found in Map",
+      "roll": "8-12",
+      "stat_id": "explicit.stat_2306002879",
+      "stat_status": "confirmed",
+      "rating": "A",
+      "best_for": "Rarity/MF builds",
+      "confidence": "database",
+      "trade_ready": true
+    },
+    {
+      "name": "Teeming",
+      "text": "Map has #% increased Magic Monsters",
+      "roll": "30-40",
+      "stat_id": "explicit.stat_3873704640",
+      "stat_status": "confirmed",
+      "rating": "A/S with Doryani",
+      "best_for": "Doryani magic-monster setups",
+      "confidence": "database",
+      "trade_ready": true
+    },
+    {
+      "name": "Treasurer's",
+      "text": "Map contains an additional Rare Chest",
+      "roll": "2-3 (inherited)",
+      "stat_id": "explicit.stat_231864447",
+      "stat_status": "confirmed",
+      "rating": "B",
+      "best_for": "Chest/Jado setups",
+      "confidence": "official",
+      "trade_ready": true,
+      "note": "RESOLVED 2026-07-05: official trade text is singular 'an additional Rare Chest'; inherited 2-3 roll kept as historical note only. Official trade2 stats metadata re-verified 2026-07-05; official trade text is authoritative for trade search."
+    },
+    {
+      "name": "Crystallised",
+      "text": "Map contains an additional Essence",
+      "roll": "+1",
+      "stat_id": "explicit.stat_395808938",
+      "stat_status": "confirmed",
+      "rating": "B",
+      "best_for": "Essence side farming",
+      "confidence": "database",
+      "trade_ready": true
+    },
+    {
+      "name": "Summoner's",
+      "text": "Map contains an additional Summoning Circle",
+      "roll": "+1",
+      "stat_id": "explicit.stat_2839545956",
+      "stat_status": "confirmed",
+      "rating": "B/C",
+      "best_for": "Summoning circle content",
+      "confidence": "database",
+      "trade_ready": true
+    },
+    {
+      "name": "Azmeri's",
+      "text": "Map contains # additional Azmeri Spirit",
+      "roll": "1",
+      "stat_id": "explicit.stat_358129101",
+      "stat_status": "confirmed",
+      "rating": "B/A with Hilda",
+      "best_for": "Spirit/Hilda strategies",
+      "confidence": "database",
+      "trade_ready": true
+    },
+    {
+      "name": "Exiled",
+      "text": "Map is inhabited by # additional Rogue Exile",
+      "roll": "1",
+      "stat_id": "explicit.stat_3550168289",
+      "stat_status": "confirmed",
+      "rating": "B/C",
+      "best_for": "Rogue exile/tablet drops",
+      "confidence": "database",
+      "trade_ready": true
+    },
+    {
+      "name": "Bountiful",
+      "text": "#% increased Gold found in Map",
+      "roll": "25-35",
+      "stat_id": "explicit.stat_1276056105",
+      "stat_status": "confirmed",
+      "rating": "C",
+      "best_for": "Gold-specific farming",
+      "confidence": "database",
+      "trade_ready": true,
+      "note": "Official trade text says Gold Piles."
+    },
+    {
+      "name": "Elevated",
+      "text": "#% increased Experience gain in Map",
+      "roll": "12-18",
+      "stat_id": "explicit.stat_57434274",
+      "stat_status": "confirmed",
+      "rating": "C",
+      "best_for": "Leveling",
+      "confidence": "database",
+      "trade_ready": true
+    },
+    {
+      "name": "Challenger's",
+      "text": "Monsters have #% increased Effectiveness",
+      "roll": "10-15",
+      "stat_id": "explicit.stat_2065500219",
+      "stat_status": "confirmed",
+      "rating": "Avoid",
+      "best_for": "Only if rewards justify danger elsewhere",
+      "confidence": "database",
+      "trade_ready": true,
+      "warning": "Pure danger modifier."
+    }
+  ],
+  "shared_suffixes": [
+    {
+      "name": "of the Cartographer",
+      "text": "#% increased Quantity of Waystones found in Map",
+      "roll": "30-40",
+      "stat_id": "explicit.stat_2777224821",
+      "stat_status": "confirmed",
+      "rating": "S",
+      "best_for": "Waystone sustain",
+      "confidence": "database",
+      "trade_ready": true
+    },
+    {
+      "name": "of Undertaking",
+      "text": "Map has # additional random Modifier",
+      "roll": "1-2",
+      "stat_id": "explicit.stat_588512487",
+      "stat_status": "confirmed",
+      "rating": "S for strong builds",
+      "best_for": "General scaling",
+      "confidence": "database",
+      "trade_ready": true
+    },
+    {
+      "name": "of Contest",
+      "text": "Unique Monsters have # additional Rare Modifier",
+      "roll": "+1",
+      "stat_id": "explicit.stat_3371085671",
+      "stat_status": "confirmed",
+      "rating": "A",
+      "best_for": "Boss/unique monsters",
+      "confidence": "database",
+      "trade_ready": true
+    },
+    {
+      "name": "of the Antiquarian",
+      "text": "Map contains an additional Strongbox",
+      "roll": "+1",
+      "stat_id": "explicit.stat_3240183538",
+      "stat_status": "confirmed",
+      "rating": "A",
+      "best_for": "Strongbox/Jado",
+      "confidence": "database",
+      "trade_ready": true
+    },
+    {
+      "name": "of Strongboxes",
+      "text": "Map has #% increased chance to contain Strongboxes",
+      "roll": "70-100",
+      "stat_id": "explicit.stat_4279535856",
+      "stat_status": "confirmed",
+      "rating": "B",
+      "best_for": "Strongbox chance",
+      "confidence": "database",
+      "trade_ready": true
+    },
+    {
+      "name": "of the Devoted",
+      "text": "Map contains an additional Shrine",
+      "roll": "+1",
+      "stat_id": "explicit.stat_1468737867",
+      "stat_status": "confirmed",
+      "rating": "B",
+      "best_for": "Shrine setups",
+      "confidence": "database",
+      "trade_ready": true
+    },
+    {
+      "name": "of Shrines",
+      "text": "Map has #% increased chance to contain Shrines",
+      "roll": "70-100",
+      "stat_id": "explicit.stat_689816330",
+      "stat_status": "confirmed",
+      "rating": "C",
+      "best_for": "Shrine chance",
+      "confidence": "database",
+      "trade_ready": true
+    },
+    {
+      "name": "of the Essence",
+      "text": "Map has #% increased chance to contain Essences",
+      "roll": "70-100",
+      "stat_id": "explicit.stat_1825943485",
+      "stat_status": "confirmed",
+      "rating": "B",
+      "best_for": "Essence chance",
+      "confidence": "database",
+      "trade_ready": true
+    },
+    {
+      "name": "of Spirits",
+      "text": "Map has #% increased chance to contain Azmeri Spirits",
+      "roll": "70-100",
+      "stat_id": "explicit.stat_3815617979",
+      "stat_status": "confirmed",
+      "rating": "B",
+      "best_for": "Spirit/Hilda",
+      "confidence": "database",
+      "trade_ready": true
+    },
+    {
+      "name": "of the Summoning",
+      "text": "Map has #% increased chance to contain a Summoning Circle",
+      "roll": "70-100",
+      "stat_id": "explicit.stat_267210597",
+      "stat_status": "confirmed",
+      "rating": "C",
+      "best_for": "Summoning chance",
+      "confidence": "database",
+      "trade_ready": true
+    },
+    {
+      "name": "of the Exile",
+      "text": "Map has #% increased chance to contain Rogue Exiles",
+      "roll": "70-100",
+      "stat_id": "explicit.stat_1352729973",
+      "stat_status": "confirmed",
+      "rating": "C",
+      "best_for": "Rogue exile chance",
+      "confidence": "database",
+      "trade_ready": true
+    }
+  ],
+  "type_suffixes": {
+    "Expedition Tablet": [
+      {
+        "name": "of Knowledge",
+        "text": "#% increased Quantity of Expedition Logbooks dropped by Runic Monsters in Map",
+        "roll": "15-30",
+        "stat_id": "explicit.stat_1083387327",
+        "stat_status": "legacy_verified_stat_currently_removed",
+        "rating": "SS",
+        "best_for": "Logbook sustain/farming",
+        "confidence": "legacy",
+        "trade_ready": false,
+        "note": "Top Expedition suffix by community consensus.",
+        "current_game_available": false,
+        "legacy_removed_from_current_game": true,
+        "conflict": "OWNER RULE 2026-07-05: Expedition Tablets do not exist in the current game. If trade metadata, PoE2DB, old research, or imported packs list Expedition Tablet, treat those rows as legacy/stale/trade-leftover data and keep Expedition out of current tablet workflows.",
+        "evidence": "Stat ID may be known from legacy metadata, but current game has no Expedition Tablet to search for."
+      },
+      {
+        "name": "of Runes",
+        "text": "Map contains #% increased number of Runic Monster Markers",
+        "roll": "15-30",
+        "stat_id": "explicit.stat_1640965354",
+        "stat_status": "legacy_verified_stat_currently_removed",
+        "rating": "S",
+        "best_for": "Runic monster density",
+        "confidence": "legacy",
+        "trade_ready": false,
+        "note": "0.5.4 added this Grand Expedition modifier family.",
+        "current_game_available": false,
+        "legacy_removed_from_current_game": true,
+        "conflict": "OWNER RULE 2026-07-05: Expedition Tablets do not exist in the current game. If trade metadata, PoE2DB, old research, or imported packs list Expedition Tablet, treat those rows as legacy/stale/trade-leftover data and keep Expedition out of current tablet workflows.",
+        "evidence": "Stat ID may be known from legacy metadata, but current game has no Expedition Tablet to search for."
+      },
+      {
+        "name": "of Ancient Fiends",
+        "text": "#% increased number of Rare Expedition Monsters in Map",
+        "roll": "25-40",
+        "stat_id": "explicit.stat_2694800111",
+        "stat_status": "legacy_verified_stat_currently_removed",
+        "rating": "S",
+        "best_for": "Rare/runic rewards",
+        "confidence": "legacy",
+        "trade_ready": false,
+        "note": "Trade endpoint also has Area wording.",
+        "current_game_available": false,
+        "legacy_removed_from_current_game": true,
+        "conflict": "OWNER RULE 2026-07-05: Expedition Tablets do not exist in the current game. If trade metadata, PoE2DB, old research, or imported packs list Expedition Tablet, treat those rows as legacy/stale/trade-leftover data and keep Expedition out of current tablet workflows.",
+        "evidence": "Stat ID may be known from legacy metadata, but current game has no Expedition Tablet to search for."
+      },
+      {
+        "name": "of the Writings",
+        "text": "Expeditions in Map have # Remnant",
+        "roll": "+1 to +2",
+        "stat_id": "explicit.stat_3753446846",
+        "stat_status": "legacy_verified_stat_currently_removed",
+        "rating": "S",
+        "best_for": "Remnant/rune recipes",
+        "confidence": "legacy",
+        "trade_ready": false,
+        "note": "Trade text singular; source says Remnants.",
+        "current_game_available": false,
+        "legacy_removed_from_current_game": true,
+        "conflict": "OWNER RULE 2026-07-05: Expedition Tablets do not exist in the current game. If trade metadata, PoE2DB, old research, or imported packs list Expedition Tablet, treat those rows as legacy/stale/trade-leftover data and keep Expedition out of current tablet workflows.",
+        "evidence": "Stat ID may be known from legacy metadata, but current game has no Expedition Tablet to search for."
+      },
+      {
+        "name": "of Verisium",
+        "text": "#% increased quantity of Expedition Artifacts dropped by Monsters in Map",
+        "roll": "15-30",
+        "stat_id": "explicit.stat_4219583418",
+        "stat_status": "legacy_verified_stat_currently_removed",
+        "rating": "A",
+        "best_for": "Artifact/vendor farming",
+        "confidence": "legacy",
+        "trade_ready": false,
+        "current_game_available": false,
+        "legacy_removed_from_current_game": true,
+        "conflict": "OWNER RULE 2026-07-05: Expedition Tablets do not exist in the current game. If trade metadata, PoE2DB, old research, or imported packs list Expedition Tablet, treat those rows as legacy/stale/trade-leftover data and keep Expedition out of current tablet workflows.",
+        "evidence": "Stat ID may be known from legacy metadata, but current game has no Expedition Tablet to search for."
+      },
+      {
+        "name": "of Relics",
+        "text": "#% increased Effect of Expedition Remnants in Map",
+        "roll": "12-18",
+        "stat_id": "explicit.stat_3078574625",
+        "stat_status": "legacy_verified_stat_currently_removed",
+        "rating": "A",
+        "best_for": "Remnant scaling",
+        "confidence": "legacy",
+        "trade_ready": false,
+        "warning": "Scales danger as well as reward.",
+        "current_game_available": false,
+        "legacy_removed_from_current_game": true,
+        "conflict": "OWNER RULE 2026-07-05: Expedition Tablets do not exist in the current game. If trade metadata, PoE2DB, old research, or imported packs list Expedition Tablet, treat those rows as legacy/stale/trade-leftover data and keep Expedition out of current tablet workflows.",
+        "evidence": "Stat ID may be known from legacy metadata, but current game has no Expedition Tablet to search for."
+      },
+      {
+        "name": "of the Demolition",
+        "text": "#% increased Expedition Explosive Radius in Map",
+        "roll": "15-30",
+        "stat_id": "explicit.stat_3289828378",
+        "stat_status": "legacy_verified_stat_currently_removed",
+        "rating": "B",
+        "best_for": "QoL/pathing",
+        "confidence": "legacy",
+        "trade_ready": false,
+        "current_game_available": false,
+        "legacy_removed_from_current_game": true,
+        "conflict": "OWNER RULE 2026-07-05: Expedition Tablets do not exist in the current game. If trade metadata, PoE2DB, old research, or imported packs list Expedition Tablet, treat those rows as legacy/stale/trade-leftover data and keep Expedition out of current tablet workflows.",
+        "evidence": "Stat ID may be known from legacy metadata, but current game has no Expedition Tablet to search for."
+      },
+      {
+        "name": "of the Detonator",
+        "text": "#% increased Expedition Explosive Placement Range in Map",
+        "roll": "15-30",
+        "stat_id": "explicit.stat_1539368271",
+        "stat_status": "legacy_verified_stat_currently_removed",
+        "rating": "B",
+        "best_for": "QoL/pathing",
+        "confidence": "legacy",
+        "trade_ready": false,
+        "current_game_available": false,
+        "legacy_removed_from_current_game": true,
+        "conflict": "OWNER RULE 2026-07-05: Expedition Tablets do not exist in the current game. If trade metadata, PoE2DB, old research, or imported packs list Expedition Tablet, treat those rows as legacy/stale/trade-leftover data and keep Expedition out of current tablet workflows.",
+        "evidence": "Stat ID may be known from legacy metadata, but current game has no Expedition Tablet to search for."
+      }
+    ],
+    "Ritual Tablet": [
+      {
+        "name": "Ritual Omen chance",
+        "text": "Ritual Favours in Map have #% increased chance to be Omens",
+        "roll": "35-70",
+        "stat_id": "explicit.stat_4219853180",
+        "stat_status": "confirmed",
+        "rating": "SS",
+        "best_for": "Omen farming",
+        "confidence": "official",
+        "trade_ready": true
+      },
+      {
+        "name": "Reroll additional time",
+        "text": "Ritual Altars in Map allow rerolling Favours an additional time",
+        "roll": "+1",
+        "stat_id": "explicit.stat_120737942",
+        "stat_status": "confirmed",
+        "rating": "SS",
+        "best_for": "Reroll strategies",
+        "confidence": "official",
+        "trade_ready": true
+      },
+      {
+        "name": "Reroll cost",
+        "text": "Rerolling Favours at Ritual Altars in Map costs #% increased Tribute",
+        "roll": "per official trade text (increased)",
+        "stat_id": "explicit.stat_2282052746",
+        "stat_status": "confirmed",
+        "rating": "B",
+        "best_for": "Reroll-cost tuning",
+        "confidence": "official",
+        "trade_ready": true,
+        "note": "RESOLVED 2026-07-05: official trade text says INCREASED Tribute; inherited reduced-cost note was wrong for trade purposes. Official trade2 stats metadata re-verified 2026-07-05; official trade text is authoritative for trade search."
+      },
+      {
+        "name": "Defer cost",
+        "text": "Deferring Favours at Ritual Altars in Map costs #% increased Tribute",
+        "roll": "per official trade text (increased)",
+        "stat_id": "explicit.stat_1345835998",
+        "stat_status": "confirmed",
+        "rating": "B",
+        "best_for": "Defer-heavy setups",
+        "confidence": "official",
+        "trade_ready": true,
+        "note": "RESOLVED 2026-07-05: official trade text says INCREASED Tribute. Official trade2 stats metadata re-verified 2026-07-05; official trade text is authoritative for trade search."
+      },
+      {
+        "name": "Tribute increase",
+        "text": "Monsters Sacrificed at Ritual Altars in Map grant #% increased Tribute",
+        "roll": "18-30",
+        "stat_id": "explicit.stat_159726667",
+        "stat_status": "confirmed",
+        "rating": "A",
+        "best_for": "Raw tribute",
+        "confidence": "database",
+        "trade_ready": true
+      },
+      {
+        "name": "Defer speed",
+        "text": "Favours Deferred at Ritual Altars in Map reappear #% sooner",
+        "roll": "25-40",
+        "stat_id": "explicit.stat_28208665",
+        "stat_status": "confirmed",
+        "rating": "B",
+        "best_for": "Defer cycling",
+        "confidence": "official",
+        "trade_ready": true
+      },
+      {
+        "name": "No-cost reroll chance",
+        "text": "Favours Rerolled at Ritual Altars in Map have #% chance to cost no Tribute",
+        "roll": "3-6",
+        "stat_id": "explicit.stat_937291386",
+        "stat_status": "confirmed",
+        "rating": "B",
+        "best_for": "Marginal reroll value",
+        "confidence": "official",
+        "trade_ready": true
+      }
+    ],
+    "Breach Tablet": [
+      {
+        "name": "of the Horde",
+        "text": "Breaches in Map have #% increased Pack Size",
+        "roll": "5-15",
+        "stat_id": "explicit.stat_1210760818",
+        "stat_status": "confirmed",
+        "rating": "S",
+        "best_for": "Density",
+        "confidence": "database",
+        "trade_ready": true
+      },
+      {
+        "name": "of the Invasion",
+        "text": "Unstable Breaches in Map spawn an additional Rare Monster when Stabilised",
+        "roll": "1-3 inherited; trade text singular",
+        "stat_id": "explicit.stat_3762913035",
+        "stat_status": "confirmed",
+        "rating": "S",
+        "best_for": "Rare-monster loot",
+        "confidence": "official",
+        "trade_ready": true,
+        "note": "RESOLVED 2026-07-05: official trade text is singular 'an additional Rare Monster'. Official trade2 stats metadata re-verified 2026-07-05; official trade text is authoritative for trade search."
+      },
+      {
+        "name": "of the Flow",
+        "text": "#% increased Quantity of Hiveblood found in Map",
+        "roll": "30-60",
+        "stat_id": "explicit.stat_2778285247",
+        "stat_status": "confirmed",
+        "rating": "A",
+        "best_for": "Hiveblood",
+        "confidence": "database",
+        "trade_ready": true
+      },
+      {
+        "name": "of the Form",
+        "text": "#% increased Quantity of Wombgifts found in Map",
+        "roll": "30-60",
+        "stat_id": "explicit.stat_472809816",
+        "stat_status": "confirmed",
+        "rating": "A",
+        "best_for": "Wombgifts",
+        "confidence": "database",
+        "trade_ready": true
+      },
+      {
+        "name": "of the Flesh",
+        "text": "Wombgifts have #% chance to drop one Level higher in Map",
+        "roll": "10-30",
+        "stat_id": "explicit.stat_2889272422",
+        "stat_status": "confirmed",
+        "rating": "A",
+        "best_for": "Wombgift level",
+        "confidence": "database",
+        "trade_ready": true
+      },
+      {
+        "name": "of the Commander",
+        "text": "Unstable Breaches in Map have #% increased chance to contain Vruun, Marshal of Xesht",
+        "roll": "20-50",
+        "stat_id": "explicit.stat_2433436306",
+        "stat_status": "confirmed",
+        "rating": "A/B",
+        "best_for": "Boss/splinter farming",
+        "confidence": "database",
+        "trade_ready": true
+      },
+      {
+        "name": "of the Hand",
+        "text": "#% increased Effectiveness of Rare Breach Monsters in Map",
+        "roll": "5-20",
+        "stat_id": "explicit.stat_2895378479",
+        "stat_status": "confirmed",
+        "rating": "Avoid",
+        "best_for": "Pure danger unless reward tested",
+        "confidence": "database",
+        "trade_ready": true,
+        "warning": "Pure danger badge unless reward testing is added."
+      },
+      {
+        "name": "Additional Breach chance",
+        "text": "Map has #% chance to contain three additional Breaches",
+        "roll": "UNKNOWN - NEEDS VERIFICATION",
+        "stat_id": "explicit.stat_2440265466",
+        "stat_status": "unknown",
+        "rating": "A/S if real on tablets",
+        "best_for": "Breach volume",
+        "confidence": "unknown",
+        "trade_ready": false,
+        "conflict": "Needs item-base validation: unconfirmed that this rolls on tablets."
+      }
+    ],
+    "Delirium Tablet": [
+      {
+        "name": "of the Simulacrum",
+        "text": "#% increased Stack size of Simulacrum Splinters found in Map",
+        "roll": "15-30",
+        "stat_id": "explicit.stat_3836551197",
+        "stat_status": "confirmed",
+        "rating": "S",
+        "best_for": "Simulacrum splinters",
+        "confidence": "official",
+        "trade_ready": true
+      },
+      {
+        "name": "of Persecution",
+        "text": "Delirium Monsters in Map have #% increased Pack Size",
+        "roll": "15-30",
+        "stat_id": "explicit.stat_3465791711",
+        "stat_status": "confirmed",
+        "rating": "S",
+        "best_for": "Density",
+        "confidence": "official",
+        "trade_ready": true
+      },
+      {
+        "name": "of Eternity",
+        "text": "Delirium Fog in Map lasts # additional seconds before dissipating",
+        "roll": "6-12",
+        "stat_id": "explicit.stat_3226351972",
+        "stat_status": "confirmed",
+        "rating": "A",
+        "best_for": "Fog uptime",
+        "confidence": "official",
+        "trade_ready": true,
+        "note": "STILL OPEN (C5): two official stat IDs share this exact text; item validation needed to know which one rolls on tablets. Trade search stays disabled.",
+        "evidence": "Phase 10: official trade2 stats has duplicate text, but POST test for Delirium Tablet returned matches for explicit.stat_3226351972 and zero matches for explicit.stat_1174954559; no listing fetch performed."
+      },
+      {
+        "name": "of the Unending",
+        "text": "Delirium Fog in Map dissipates #% faster",
+        "roll": "20-30 (PoE2DB says slower; official trade text says faster)",
+        "stat_id": "explicit.stat_3350944114",
+        "stat_status": "confirmed",
+        "rating": "B",
+        "best_for": "Fog uptime",
+        "confidence": "official",
+        "trade_ready": true,
+        "note": "RESOLVED for trade 2026-07-05: official text is 'dissipates # faster'; negative/low values may encode slower - check listed values when buying. Official trade2 stats metadata re-verified 2026-07-05; official trade text is authoritative for trade search.",
+        "evidence": "Phase 10: official trade2 stats text is Delirium Fog in Map dissipates #% faster; app uses official text for search."
+      },
+      {
+        "name": "of Freeze Time",
+        "text": "Slaying Rare Monsters in Map pauses the Delirium Mirror Timer for 1 second",
+        "roll": "1 second (official trade text)",
+        "stat_id": "explicit.stat_2323782229",
+        "stat_status": "confirmed",
+        "rating": "B",
+        "best_for": "Slower builds",
+        "confidence": "official",
+        "trade_ready": true,
+        "note": "RESOLVED 2026-07-05: official trade text is fixed 'for 1 second'; inherited 3-5s note superseded. Official trade2 stats metadata re-verified 2026-07-05; official trade text is authoritative for trade search."
+      },
+      {
+        "name": "of Shattering",
+        "text": "Delirium Fog in Map spawns #% increased MirrorShards",
+        "roll": "12-26",
+        "stat_id": "explicit.stat_900933517",
+        "stat_status": "confirmed",
+        "rating": "B",
+        "best_for": "Shard farming",
+        "confidence": "official",
+        "trade_ready": true
+      },
+      {
+        "name": "of Mirrors",
+        "text": "Delirium Fog in Map spawns #% increased Fracturing Mirrors",
+        "roll": "15-30",
+        "stat_id": "explicit.stat_551040294",
+        "stat_status": "confirmed",
+        "rating": "B",
+        "best_for": "Mirror spawns",
+        "confidence": "official",
+        "trade_ready": true
+      },
+      {
+        "name": "of Phobia",
+        "text": "Delirium Encounters in Map are #% more likely to spawn Unique Bosses",
+        "roll": "15-30",
+        "stat_id": "explicit.stat_3962960008",
+        "stat_status": "confirmed",
+        "rating": "B",
+        "best_for": "Delirium bosses",
+        "confidence": "official",
+        "trade_ready": true
+      },
+      {
+        "name": "of Madness",
+        "text": "Delirium Fog in Map applies #% increased Deliriousness to Players",
+        "roll": "15-30 (inherited concept differs)",
+        "stat_id": "explicit.stat_1769611692",
+        "stat_status": "confirmed",
+        "rating": "Avoid / A for strong builds",
+        "best_for": "Risk/reward ramp",
+        "confidence": "official",
+        "trade_ready": true,
+        "note": "RESOLVED for trade 2026-07-05: official text confirmed 'increased Deliriousness to Players'. Avoid rating (community) unchanged. Official trade2 stats metadata re-verified 2026-07-05; official trade text is authoritative for trade search.",
+        "evidence": "Phase 10: official trade2 stats text confirmed."
+      }
+    ],
+    "Abyss Tablet": [
+      {
+        "name": "of Schisms",
+        "text": "Map has #% chance to contain four additional Abysses",
+        "roll": "20-40",
+        "stat_id": "explicit.stat_2890355696",
+        "stat_status": "confirmed",
+        "rating": "S",
+        "best_for": "Abyss volume",
+        "confidence": "database",
+        "trade_ready": true
+      },
+      {
+        "name": "of Hollows",
+        "text": "Map contains an additional Abyss",
+        "roll": "+1",
+        "stat_id": "explicit.stat_1070816711",
+        "stat_status": "confirmed",
+        "rating": "S",
+        "best_for": "Guaranteed volume",
+        "confidence": "database",
+        "trade_ready": true
+      },
+      {
+        "name": "of Champions",
+        "text": "# additional Rare Monsters are spawned from Abysses in Map",
+        "roll": "1-2",
+        "stat_id": "explicit.stat_243380454",
+        "stat_status": "confirmed",
+        "rating": "A",
+        "best_for": "Loot per abyss",
+        "confidence": "database",
+        "trade_ready": true
+      },
+      {
+        "name": "of Treasures",
+        "text": "Abyss Pits in Map are twice as likely to have Rewards",
+        "roll": "2x",
+        "stat_id": "explicit.stat_4256531808",
+        "stat_status": "confirmed",
+        "rating": "A",
+        "best_for": "Pit rewards",
+        "confidence": "database",
+        "trade_ready": true
+      },
+      {
+        "name": "of Ossification",
+        "text": "#% increased chance for Desecrated Currency from Abysses in Map",
+        "roll": "20-30",
+        "stat_id": "explicit.stat_1710200734",
+        "stat_status": "confirmed",
+        "rating": "B",
+        "best_for": "Desecrated currency",
+        "confidence": "official",
+        "trade_ready": true,
+        "warning": "Community report says possible bug for omen drops.",
+        "evidence": "Phase 10: official trade2 stats and PoE2DB both expose this modifier; old community bug report kept as gameplay watch item, not an active source conflict."
+      },
+      {
+        "name": "of Dark Power",
+        "text": "#% increased chance for Abyssal monsters in Map to have Abyssal Modifiers",
+        "roll": "20-30",
+        "stat_id": "explicit.stat_2789248444",
+        "stat_status": "confirmed",
+        "rating": "B",
+        "best_for": "Risk/reward",
+        "confidence": "official",
+        "trade_ready": true
+      },
+      {
+        "name": "of the Depths",
+        "text": "Abysses in Map have #% increased chance to lead to an Abyssal Depths",
+        "roll": "10-20",
+        "stat_id": "explicit.stat_2722831300",
+        "stat_status": "confirmed",
+        "rating": "B/C",
+        "best_for": "Depths/Kulemak route",
+        "confidence": "official",
+        "trade_ready": true
+      },
+      {
+        "name": "of Escalation",
+        "text": "Abyssal Monsters have #% increased Effectiveness for each closed Pit, up to 100%",
+        "roll": "8-12",
+        "stat_id": "explicit.stat_664606484",
+        "stat_status": "confirmed",
+        "rating": "Avoid",
+        "best_for": "Pure danger",
+        "confidence": "official",
+        "trade_ready": true,
+        "warning": "Pure danger modifier."
+      }
+    ],
+    "Overseer Tablet": [
+      {
+        "name": "of Treasure",
+        "text": "#% increased Rarity of Items dropped by Map Bosses",
+        "roll": "35-60",
+        "stat_id": "explicit.stat_4255069232",
+        "stat_status": "confirmed",
+        "rating": "S",
+        "best_for": "Boss loot",
+        "confidence": "database",
+        "trade_ready": true
+      },
+      {
+        "name": "of Hoards",
+        "text": "#% increased Quantity of Items dropped by Map Bosses",
+        "roll": "13-20",
+        "stat_id": "explicit.stat_3119172063",
+        "stat_status": "confirmed",
+        "rating": "S",
+        "best_for": "Boss loot",
+        "confidence": "database",
+        "trade_ready": true
+      },
+      {
+        "name": "of Pathways",
+        "text": "#% increased Quantity of Waystones dropped by Map Bosses",
+        "roll": "18-30",
+        "stat_id": "explicit.stat_1457896329",
+        "stat_status": "confirmed",
+        "rating": "S",
+        "best_for": "Boss sustain",
+        "confidence": "database",
+        "trade_ready": true
+      },
+      {
+        "name": "of Conquering",
+        "text": "Map Bosses grant #% increased Experience",
+        "roll": "40-80",
+        "stat_id": "explicit.stat_3860150265",
+        "stat_status": "confirmed",
+        "rating": "B",
+        "best_for": "XP pushing",
+        "confidence": "database",
+        "trade_ready": true
+      },
+      {
+        "name": "of Wisps",
+        "text": "Map contains # additional Azmeri Spirit",
+        "roll": "1-2",
+        "stat_id": "explicit.stat_358129101",
+        "stat_status": "confirmed",
+        "rating": "A with Hilda",
+        "best_for": "Spirit/boss chains",
+        "confidence": "database",
+        "trade_ready": true
+      },
+      {
+        "name": "of Compartments",
+        "text": "Map contains # additional Strongbox(es)",
+        "roll": "1-2",
+        "stat_id": "explicit.stat_3240183538",
+        "stat_status": "confirmed",
+        "rating": "B",
+        "best_for": "Strongboxes",
+        "confidence": "database",
+        "trade_ready": true
+      },
+      {
+        "name": "of Worship",
+        "text": "Map contains an additional Shrine",
+        "roll": "1-2 inherited",
+        "stat_id": "explicit.stat_1468737867",
+        "stat_status": "confirmed",
+        "rating": "B",
+        "best_for": "Shrines",
+        "confidence": "database",
+        "trade_ready": true,
+        "note": "Inherited roll 1-2 vs shared +1; minor discrepancy."
+      },
+      {
+        "name": "of Crystals",
+        "text": "Map contains an additional Essence",
+        "roll": "1-2 inherited",
+        "stat_id": "explicit.stat_395808938",
+        "stat_status": "confirmed",
+        "rating": "B",
+        "best_for": "Essences",
+        "confidence": "database",
+        "trade_ready": true,
+        "note": "Inherited roll 1-2 vs shared +1; minor discrepancy."
+      }
+    ],
+    "Irradiated Tablet": [],
+    "Temple Tablet": [
+      {
+        "name": "Vaal Beacon pack size",
+        "text": "#% increased Pack Size for Monsters around Vaal Beacons in Map",
+        "roll": "10-30",
+        "stat_id": "explicit.stat_890040946",
+        "stat_status": "confirmed",
+        "rating": "Experimental",
+        "best_for": "Temple density candidate",
+        "confidence": "database",
+        "trade_ready": true,
+        "note": "Roll range from PoE2DB Temple Tablet page; strategy value still untested."
+      },
+      {
+        "name": "Vaal Beacon extra pack",
+        "text": "# extra pack of Monsters around Vaal Beacons in Map",
+        "roll": "+1",
+        "stat_id": "explicit.stat_3294218801",
+        "stat_status": "confirmed",
+        "rating": "Experimental",
+        "best_for": "Temple/Vaal Beacon density",
+        "confidence": "database",
+        "trade_ready": true,
+        "note": "PoE2DB and official trade metadata agree on the extra-pack stat."
+      },
+      {
+        "name": "Vaal Beacon extra pack chance",
+        "text": "#% chance for an extra packs of Monsters around Vaal Beacons in Map",
+        "roll": "30-60",
+        "stat_id": "explicit.stat_1359775981",
+        "stat_status": "confirmed",
+        "rating": "Experimental",
+        "best_for": "Temple/Vaal Beacon density",
+        "confidence": "database",
+        "trade_ready": true,
+        "note": "Official trade text keeps the grammar oddity: 'an extra packs'."
+      },
+      {
+        "name": "Vaal Beacon additional monsters",
+        "text": "#% increased chance Vaal Beacons summon additional Monsters in Map",
+        "roll": "25-50",
+        "stat_id": "explicit.stat_632698321",
+        "stat_status": "confirmed",
+        "rating": "Experimental",
+        "best_for": "Temple/Vaal Beacon monster count",
+        "confidence": "database",
+        "trade_ready": true
+      },
+      {
+        "name": "Vaal Beacon extra crystal",
+        "text": "#% chance to gain an additional Crystal from Vaal Beacons in Map",
+        "roll": "5-10",
+        "stat_id": "explicit.stat_1940774881",
+        "stat_status": "confirmed",
+        "rating": "Experimental",
+        "best_for": "Temple/Vaal Beacon reward candidate",
+        "confidence": "database",
+        "trade_ready": true
+      },
+      {
+        "name": "Vaal Beacon unique monster",
+        "text": "#% chance to add a Vaal Beacon Unique Monster to the Map",
+        "roll": "10-25",
+        "stat_id": "explicit.stat_3591307827",
+        "stat_status": "confirmed",
+        "rating": "Experimental",
+        "best_for": "Temple unique-monster candidate",
+        "confidence": "database",
+        "trade_ready": true
+      },
+      {
+        "name": "Vaal Beacon rare chests",
+        "text": "#% increased chance Vaal Beacon Chests are Rare in Map",
+        "roll": "30-60",
+        "stat_id": "explicit.stat_2514439422",
+        "stat_status": "confirmed",
+        "rating": "Experimental",
+        "best_for": "Temple chest reward candidate",
+        "confidence": "database",
+        "trade_ready": true
+      }
+    ]
+  },
+  "irradiated_note": "Irradiated Tablet's primary value is its base function (irradiate + area level +1). Inherited research says it uses the shared prefix/suffix pool rather than a type-specific pool. Confirm in-game/trade filters each patch.",
+  "uniques": [
+    {
+      "name": "Forgotten By Time",
+      "base": "Expedition Tablet",
+      "text": "Expedition Monsters in your Maps spawn with half of their Life missing; Runic Monsters in your Maps are Duplicated",
+      "stat_ids": [
+        "explicit.stat_144770454",
+        "explicit.stat_2816104578"
+      ],
+      "stat_status": "confirmed",
+      "rating": "SS",
+      "rating_type": "opinion",
+      "best_for": "Expedition/logbooks",
+      "confidence": "database",
+      "trade_ready": true
+    },
+    {
+      "name": "Freedom of Faith",
+      "base": "Ritual Tablet",
+      "text": "Favours at Ritual Altars cost increased Tribute; can reroll Favours twice as many times",
+      "stat_ids": [
+        "explicit.stat_1228222525",
+        "explicit.stat_2500154144"
+      ],
+      "stat_status": "confirmed",
+      "rating": "S/SS",
+      "rating_type": "opinion",
+      "best_for": "Ritual reroll setups",
+      "confidence": "conflict",
+      "trade_ready": true,
+      "conflict": "Downside requires tribute-cost compensation; wording conflicts with some inherited rows."
+    },
+    {
+      "name": "Clear Skies",
+      "base": "Delirium Tablet",
+      "text": "Delirium Fog in your Maps never dissipates",
+      "stat_ids": [
+        "explicit.stat_1084853859"
+      ],
+      "stat_status": "confirmed",
+      "rating": "S",
+      "rating_type": "opinion",
+      "best_for": "Delirium full clear",
+      "confidence": "official",
+      "trade_ready": true,
+      "evidence": "Phase 10: official trade2 stats exposes the never-dissipates stat; no secondary trade stat conflict remains in source data."
+    },
+    {
+      "name": "Unforeseen Consequences",
+      "base": "Abyss Tablet",
+      "text": "Map contains # additional Abysses; Map is overrun by the Abyssal",
+      "stat_ids": [
+        "explicit.stat_3490187949",
+        "explicit.stat_2741291867"
+      ],
+      "stat_status": "confirmed",
+      "rating": "SS",
+      "rating_type": "opinion",
+      "best_for": "Abyss density",
+      "confidence": "official",
+      "trade_ready": true,
+      "evidence": "Phase 10: official trade2 stats exposes both the additional-Abysses and overrun lines."
+    },
+    {
+      "name": "Season of the Hunt",
+      "base": "Overseer Tablet",
+      "text": "Map Bosses are Hunted by Azmeri Spirits",
+      "stat_ids": [
+        "explicit.stat_2588474575"
+      ],
+      "stat_status": "confirmed",
+      "rating": "S",
+      "rating_type": "opinion",
+      "best_for": "Boss/Overseer",
+      "confidence": "official",
+      "trade_ready": true
+    },
+    {
+      "name": "Cruel Hegemony",
+      "base": "Overseer Tablet",
+      "text": "Map Bosses have # additional Modifier",
+      "stat_ids": [
+        "explicit.stat_1458461453"
+      ],
+      "stat_status": "confirmed",
+      "rating": "A/S",
+      "rating_type": "opinion",
+      "best_for": "Boss difficulty/reward",
+      "confidence": "official",
+      "trade_ready": true,
+      "warning": "Reward delta untested; dangerous for weak builds."
+    },
+    {
+      "name": "The Grand Project",
+      "base": "Irradiated Tablet",
+      "text": "UNKNOWN - NEEDS VERIFICATION (inherited effect overlaps Vaal Beacon content)",
+      "stat_ids": [],
+      "stat_status": "unknown",
+      "rating": "B/A",
+      "rating_type": "opinion",
+      "best_for": "Vaal/Temple",
+      "confidence": "unknown",
+      "trade_ready": false
+    },
+    {
+      "name": "Visions of Paradise",
+      "base": "Irradiated Tablet",
+      "text": "UNKNOWN - NEEDS VERIFICATION (inherited effect overlaps Vaal Beacon content)",
+      "stat_ids": [],
+      "stat_status": "unknown",
+      "rating": "B/A",
+      "rating_type": "opinion",
+      "best_for": "Vaal/Temple",
+      "confidence": "unknown",
+      "trade_ready": false
+    },
+    {
+      "name": "Mastered Domain",
+      "base": "Irradiated Tablet",
+      "text": "UNKNOWN - NEEDS VERIFICATION (inherited effect overlaps Vaal Beacon content)",
+      "stat_ids": [],
+      "stat_status": "unknown",
+      "rating": "B/A",
+      "rating_type": "opinion",
+      "best_for": "Vaal/Temple",
+      "confidence": "unknown",
+      "trade_ready": false
+    },
+    {
+      "name": "Wraeclast Besieged",
+      "base": "Breach Tablet",
+      "text": "Inherited: additional Breaches and improved Breach monsters (exact text unverified)",
+      "stat_ids": [
+        "explicit.stat_2440265466"
+      ],
+      "stat_status": "partial",
+      "rating": "S",
+      "rating_type": "opinion",
+      "best_for": "Breach density",
+      "confidence": "conflict",
+      "trade_ready": false,
+      "conflict": "Need exact unique text and full stat mapping."
+    }
+  ]
+}

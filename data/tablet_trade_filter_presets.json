@@ -1,0 +1,370 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-07-05",
+  "presets": [
+    {
+      "id": "preset_all_safe_currency",
+      "name": "Any Tablet - Safe Currency Juice",
+      "tablet_type": "All tablets",
+      "description": "Start with the safest universal currency filters. Good for users who want valuable tablets without extreme danger.",
+      "mode": "COUNT",
+      "count_min": 1,
+      "filters": [
+        {
+          "modifier_id": "shared_prefix_pack_size",
+          "min": 6
+        },
+        {
+          "modifier_id": "shared_prefix_rare_monsters",
+          "min": 30
+        },
+        {
+          "modifier_id": "shared_prefix_monster_rarity",
+          "min": 18
+        },
+        {
+          "modifier_id": "shared_prefix_item_rarity",
+          "min": 10
+        },
+        {
+          "modifier_id": "shared_suffix_waystone_quantity",
+          "min": 35
+        }
+      ],
+      "trade_ready": true,
+      "verification_note": "Phase 10: all referenced filter stat IDs verified against official trade2 metadata; preset still represents community/editorial ranking.",
+      "current_game_available": true
+    },
+    {
+      "id": "preset_all_high_investment",
+      "name": "Any Tablet - High-Investment Juice",
+      "tablet_type": "All tablets",
+      "description": "For strong builds only. Prioritizes high reward/difficulty multipliers.",
+      "mode": "COUNT",
+      "count_min": 1,
+      "filters": [
+        {
+          "modifier_id": "shared_prefix_monster_effectiveness",
+          "min": 13
+        },
+        {
+          "modifier_id": "shared_suffix_random_modifiers",
+          "min": 2
+        },
+        {
+          "modifier_id": "shared_prefix_rare_monsters",
+          "min": 30
+        },
+        {
+          "modifier_id": "shared_prefix_pack_size",
+          "min": 6
+        }
+      ],
+      "trade_ready": true,
+      "verification_note": "Phase 10: all referenced filter stat IDs verified against official trade2 metadata; preset still represents community/editorial ranking.",
+      "current_game_available": true
+    },
+    {
+      "id": "preset_expedition_logbook",
+      "name": "Expedition - Logbook/Currency Juice",
+      "tablet_type": "Expedition Tablet",
+      "description": "Best filters for Expedition logbook and runic-monster currency farming.",
+      "mode": "COUNT",
+      "count_min": 1,
+      "filters": [
+        {
+          "modifier_id": "exp_suffix_logbooks",
+          "min": 25
+        },
+        {
+          "modifier_id": "exp_suffix_runic_markers",
+          "min": 25
+        },
+        {
+          "modifier_id": "exp_suffix_rare_expedition",
+          "min": 35
+        },
+        {
+          "modifier_id": "exp_suffix_remnants",
+          "min": 2
+        }
+      ],
+      "recommended_prefixes": [
+        "shared_prefix_pack_size",
+        "shared_prefix_rare_monsters",
+        "shared_prefix_monster_effectiveness"
+      ],
+      "trade_ready": false,
+      "verification_note": "Legacy preset retained for source history only; do not show or search in current workflows.",
+      "current_game_available": false,
+      "legacy_removed_from_current_game": true,
+      "reason_disabled": "Owner rule 2026-07-05: Expedition Tablets do not exist in the current game."
+    },
+    {
+      "id": "preset_ritual_omens",
+      "name": "Ritual - Omens/Rerolls Juice",
+      "tablet_type": "Ritual Tablet",
+      "description": "Best filters for Omen hunting and maximizing ritual reward screens.",
+      "mode": "COUNT",
+      "count_min": 1,
+      "filters": [
+        {
+          "modifier_id": "rit_suffix_omen_chance",
+          "min": 60
+        },
+        {
+          "modifier_id": "rit_suffix_additional_rerolls",
+          "min": 2
+        },
+        {
+          "modifier_id": "rit_suffix_reroll_cost",
+          "min": 25
+        },
+        {
+          "modifier_id": "rit_suffix_tribute_gain",
+          "min": 25
+        }
+      ],
+      "recommended_prefixes": [
+        "shared_prefix_pack_size",
+        "shared_prefix_rare_monsters"
+      ],
+      "recommended_uniques": [
+        "unique_ritual_freedom_of_faith"
+      ],
+      "trade_ready": true,
+      "verification_note": "Phase 10: all referenced filter stat IDs verified against official trade2 metadata; preset still represents community/editorial ranking.",
+      "current_game_available": true
+    },
+    {
+      "id": "preset_breach_currency",
+      "name": "Breach - Density/Currency Juice",
+      "tablet_type": "Breach Tablet",
+      "description": "Best filters for Breach density and targeted Hiveblood/Wombgift currency.",
+      "mode": "COUNT",
+      "count_min": 1,
+      "filters": [
+        {
+          "modifier_id": "breach_suffix_pack_size",
+          "min": 12
+        },
+        {
+          "modifier_id": "breach_suffix_stabilized_rares",
+          "min": 2
+        },
+        {
+          "modifier_id": "breach_suffix_hiveblood_quantity",
+          "min": 50
+        },
+        {
+          "modifier_id": "breach_suffix_wombgifts_quantity",
+          "min": 50
+        },
+        {
+          "modifier_id": "breach_suffix_wombgifts_level",
+          "min": 25
+        }
+      ],
+      "recommended_prefixes": [
+        "shared_prefix_pack_size",
+        "shared_prefix_rare_monsters"
+      ],
+      "recommended_uniques": [
+        "unique_breach_wraeclast_besieged"
+      ],
+      "trade_ready": true,
+      "verification_note": "Phase 10: all referenced filter stat IDs verified against official trade2 metadata; preset still represents community/editorial ranking.",
+      "current_game_available": true
+    },
+    {
+      "id": "preset_delirium_currency",
+      "name": "Delirium - Density/Splinter Juice",
+      "tablet_type": "Delirium Tablet",
+      "description": "Best filters for Delirium density, Simulacrum splinters, and fog uptime.",
+      "mode": "COUNT",
+      "count_min": 1,
+      "filters": [
+        {
+          "modifier_id": "deli_suffix_pack_size",
+          "min": 25
+        },
+        {
+          "modifier_id": "deli_suffix_simulacrum_stack",
+          "min": 25
+        },
+        {
+          "modifier_id": "deli_suffix_increased_deliriousness",
+          "min": 25
+        },
+        {
+          "modifier_id": "deli_suffix_fog_slower",
+          "min": 25
+        },
+        {
+          "modifier_id": "deli_suffix_fog_duration",
+          "min": 10
+        }
+      ],
+      "recommended_prefixes": [
+        "shared_prefix_pack_size",
+        "shared_prefix_rare_monsters",
+        "shared_prefix_monster_effectiveness"
+      ],
+      "recommended_uniques": [
+        "unique_delirium_clear_skies"
+      ],
+      "trade_ready": true,
+      "verification_note": "Phase 10: all referenced filter stat IDs verified against official trade2 metadata; preset still represents community/editorial ranking.",
+      "current_game_available": true
+    },
+    {
+      "id": "preset_abyss_currency",
+      "name": "Abyss - Abyss Count/Omens Juice",
+      "tablet_type": "Abyss Tablet",
+      "description": "Best filters for Abyss volume, pit rewards, rare spawns, and targeted currency.",
+      "mode": "COUNT",
+      "count_min": 1,
+      "filters": [
+        {
+          "modifier_id": "abyss_suffix_four_extra",
+          "min": 35
+        },
+        {
+          "modifier_id": "abyss_suffix_one_extra"
+        },
+        {
+          "modifier_id": "abyss_suffix_spawn_monsters",
+          "min": 25
+        },
+        {
+          "modifier_id": "abyss_suffix_rare_spawn",
+          "min": 2
+        },
+        {
+          "modifier_id": "abyss_suffix_pit_rewards"
+        }
+      ],
+      "recommended_prefixes": [
+        "shared_prefix_pack_size",
+        "shared_prefix_rare_monsters",
+        "shared_prefix_monster_effectiveness"
+      ],
+      "recommended_uniques": [
+        "unique_abyss_unforeseen_consequences"
+      ],
+      "trade_ready": true,
+      "verification_note": "Phase 10: all referenced filter stat IDs verified against official trade2 metadata; preset still represents community/editorial ranking.",
+      "current_game_available": true
+    },
+    {
+      "id": "preset_overseer_boss_currency",
+      "name": "Overseer - Boss Loot Juice",
+      "tablet_type": "Overseer Tablet",
+      "description": "Best filters for boss quantity/rarity and boss waystone sustain.",
+      "mode": "COUNT",
+      "count_min": 1,
+      "filters": [
+        {
+          "modifier_id": "overseer_suffix_boss_quantity",
+          "min": 18
+        },
+        {
+          "modifier_id": "overseer_suffix_boss_rarity",
+          "min": 50
+        },
+        {
+          "modifier_id": "overseer_suffix_boss_waystones",
+          "min": 25
+        },
+        {
+          "modifier_id": "overseer_suffix_add_spirits",
+          "min": 2
+        }
+      ],
+      "recommended_prefixes": [
+        "shared_prefix_item_rarity",
+        "shared_prefix_monster_effectiveness"
+      ],
+      "recommended_uniques": [
+        "unique_overseer_cruel_hegemony",
+        "unique_overseer_season_of_the_hunt"
+      ],
+      "trade_ready": true,
+      "verification_note": "Phase 10: all referenced filter stat IDs verified against official trade2 metadata; preset still represents community/editorial ranking.",
+      "current_game_available": true
+    },
+    {
+      "id": "preset_irradiated_currency",
+      "name": "Irradiated - Area Level/Tablet Farm Juice",
+      "tablet_type": "Irradiated Tablet",
+      "description": "Irradiated tablets use shared modifiers; this preset targets the community “Irradiated stacking” style for area level/tablet/currency farming.",
+      "mode": "COUNT",
+      "count_min": 1,
+      "filters": [
+        {
+          "modifier_id": "shared_prefix_monster_effectiveness",
+          "min": 13
+        },
+        {
+          "modifier_id": "shared_prefix_item_rarity",
+          "min": 10
+        },
+        {
+          "modifier_id": "shared_prefix_pack_size",
+          "min": 6
+        },
+        {
+          "modifier_id": "shared_suffix_random_modifiers",
+          "min": 2
+        },
+        {
+          "modifier_id": "shared_suffix_waystone_quantity",
+          "min": 35
+        }
+      ],
+      "recommended_uniques": [
+        "unique_irradiated_visions_of_paradise",
+        "unique_irradiated_mastered_domain"
+      ],
+      "trade_ready": true,
+      "verification_note": "Phase 10: all referenced filter stat IDs verified against official trade2 metadata; preset still represents community/editorial ranking.",
+      "current_game_available": true
+    },
+    {
+      "id": "preset_temple_vaal_beacon",
+      "name": "Temple - Vaal Beacon Juice",
+      "tablet_type": "Temple Tablet",
+      "description": "Best filters for Vaal Beacon chest quality and pack density.",
+      "mode": "COUNT",
+      "count_min": 1,
+      "filters": [
+        {
+          "modifier_id": "temple_suffix_rare_chests",
+          "min": 50
+        },
+        {
+          "modifier_id": "temple_suffix_extra_monster_packs_chance",
+          "min": 50
+        },
+        {
+          "modifier_id": "temple_suffix_guaranteed_extra_pack"
+        },
+        {
+          "modifier_id": "temple_suffix_pack_size_beacons",
+          "min": 25
+        },
+        {
+          "modifier_id": "temple_suffix_summon_monsters",
+          "min": 40
+        }
+      ],
+      "recommended_prefixes": [
+        "shared_prefix_pack_size",
+        "shared_prefix_rare_monsters"
+      ],
+      "trade_ready": true,
+      "verification_note": "Phase 10: all referenced filter stat IDs verified against official trade2 metadata; preset still represents community/editorial ranking.",
+      "current_game_available": true
+    }
+  ]
+}

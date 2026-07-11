@@ -1,0 +1,173 @@
+{
+  "metadata": {
+    "created": "2026-07-11",
+    "target_patch": "0.5.4b",
+    "purpose": "Human and app guidance for best modifiers by item slot."
+  },
+  "slots": [
+    {
+      "slot": "Weapon - Physical Attack",
+      "ss": [
+        "% increased Physical Damage",
+        "Adds Physical Damage",
+        "Attack Speed"
+      ],
+      "s": [
+        "Critical Hit Chance",
+        "Critical Damage Bonus",
+        "Weapon-specific projectile/skill modifier"
+      ],
+      "budget": "Sort by physical DPS and attack speed.",
+      "warning": "Local damage matters more than unrelated global stats."
+    },
+    {
+      "slot": "Weapon - Elemental Attack",
+      "ss": [
+        "Multiple flat elemental damage rolls",
+        "Attack Speed"
+      ],
+      "s": [
+        "Critical Hit Chance",
+        "Critical Damage Bonus",
+        "Projectile/skill-specific mods"
+      ],
+      "budget": "Search eDPS + attack speed.",
+      "warning": "Match element to build."
+    },
+    {
+      "slot": "Wand/Staff/Focus - Spell",
+      "ss": [
+        "+Skill levels",
+        "Spell/elemental/chaos damage",
+        "Cast Speed"
+      ],
+      "s": [
+        "Spell critical chance",
+        "Critical Damage Bonus",
+        "Mana",
+        "Energy Shield on focus"
+      ],
+      "budget": "+Skill levels alone first.",
+      "warning": "Avoid attack-only stats."
+    },
+    {
+      "slot": "Sceptre - Minion",
+      "ss": [
+        "+Minion skill levels",
+        "Minion damage"
+      ],
+      "s": [
+        "Minion attack/cast speed",
+        "Spirit",
+        "Minion life"
+      ],
+      "budget": "+Minion levels only.",
+      "warning": "Exact base/implicit is build-specific."
+    },
+    {
+      "slot": "Gloves - Projectile/Marksman",
+      "ss": [
+        "+Projectile skill levels",
+        "Surpassing additional projectile chance"
+      ],
+      "s": [
+        "Projectile damage",
+        "Added phys/lightning/cold",
+        "Crit",
+        "Attack speed"
+      ],
+      "budget": "One key projectile mod + life/resists.",
+      "warning": "Kolr's Hunt required for the special Marksman craft."
+    },
+    {
+      "slot": "Boots",
+      "ss": [
+        "Movement Speed"
+      ],
+      "s": [
+        "Life/ES",
+        "Elemental resistances",
+        "Chaos resistance",
+        "Item rarity"
+      ],
+      "budget": "Movement speed + two resists.",
+      "warning": "Movement speed is usually the first filter."
+    },
+    {
+      "slot": "Rings",
+      "ss": [
+        "Item rarity for farming",
+        "Resistances for fixing gear"
+      ],
+      "s": [
+        "Chaos resistance",
+        "Life/ES/mana",
+        "Attributes",
+        "Build damage"
+      ],
+      "budget": "Rarity + one resist or two resists + life.",
+      "warning": "Do not sacrifice survivability for rarity."
+    },
+    {
+      "slot": "Amulet",
+      "ss": [
+        "+Skill levels",
+        "Spirit where applicable"
+      ],
+      "s": [
+        "Attributes",
+        "Life/ES",
+        "Resists",
+        "Damage",
+        "Rarity"
+      ],
+      "budget": "+Skill level alone.",
+      "warning": "Skill tag must match build."
+    },
+    {
+      "slot": "Body Armour",
+      "ss": [
+        "High defense",
+        "Life/ES",
+        "Spirit where applicable"
+      ],
+      "s": [
+        "Resists",
+        "Chaos res",
+        "Sockets/augment value"
+      ],
+      "budget": "High defense + life/ES.",
+      "warning": "Choose defense type based on build."
+    },
+    {
+      "slot": "Helmet",
+      "ss": [
+        "Life/ES",
+        "Resists",
+        "Build-specific skill/minion/spirit mods"
+      ],
+      "s": [
+        "Attributes",
+        "Rarity",
+        "defenses"
+      ],
+      "budget": "Life/ES + two resists.",
+      "warning": "Build-specific mods need verification."
+    },
+    {
+      "slot": "Belt",
+      "ss": [
+        "Good base implicit/charm slots",
+        "Life/ES",
+        "Resists"
+      ],
+      "s": [
+        "Chaos res",
+        "flask/charm mods",
+        "rarity base for farming"
+      ],
+      "budget": "Life + resists.",
+      "warning": "Belt base matters."
+    }
+  ]
+}

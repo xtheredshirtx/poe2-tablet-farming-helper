@@ -1,0 +1,260 @@
+{
+ "_source": "POE2_054_Farming_Research_Phase2/FARMING_STRATEGY_MATRIX.md",
+ "_patch_basis": "0.5.4b Hotfix 3",
+ "_disclaimer": "All ratings are draft community/editorial recommendations, not final market truth. Recheck official patch notes before trusting any recommendation.",
+ "strategies": [
+  {
+   "id": "expedition",
+   "name": "Expedition / Whispers (Logbooks)",
+   "tablet_type": "Expedition Logbook",
+   "budget_rating": "S",
+   "high_investment_rating": "SS",
+   "rating_type": "opinion",
+   "confidence": "Medium/High for mechanics; Medium for profit",
+   "best_mods": [
+    "Pack Size (Breeding)",
+    "of Knowledge",
+    "of Runes",
+    "of Ancient Fiends",
+    "of the Writings",
+    "Forgotten By Time (if build can handle it)"
+   ],
+   "atlas_choices": "Expedition Atlas Tree; Doryani Refined Formula for controlled explosives; Hilda Scarred Lands for density; Jado Eastern Knowledge for Verisium Remnants",
+   "budget_setup": "Expedition tablets with of Knowledge / of Runes; safe rare Waystones",
+   "high_investment_setup": "Forgotten By Time plus high-mod Waystones, 8+ good Remnants, Liquid Verisium rerolling",
+   "avoid": [
+    "Damage-type immunity matching your build",
+    "Guaranteed crits",
+    "Excessive monster effectiveness",
+    "F-rank rumours (untargetable enemies)"
+   ],
+   "rewards": "Logbooks, artifacts, rune recipes, Liquid Verisium value, Grand Expedition rewards",
+   "main_danger": "Remnants/build bricking, Runic monsters",
+   "trade_ready": false,
+   "warnings": [
+    "Owner update 2026-07-05: Expeditions are no longer tablets. Use the Expedition Whispers tab; old tablet modifiers are legacy."
+   ]
+  },
+  {
+   "id": "ritual",
+   "name": "Ritual",
+   "tablet_type": "Ritual Tablet",
+   "budget_rating": "A/S",
+   "high_investment_rating": "SS",
+   "rating_type": "opinion",
+   "confidence": "Medium",
+   "best_mods": [
+    "Pack Size (Breeding)",
+    "Ritual Omen chance",
+    "Reroll additional time",
+    "Tribute increase",
+    "Freedom of Faith"
+   ],
+   "atlas_choices": "Ritual Atlas tree; Doryani safety if no better Master (no direct Ritual Master node verified in Phase 2)",
+   "budget_setup": "Ritual tablets with Omen chance or tribute gain",
+   "high_investment_setup": "Freedom of Faith with reroll mods and strong tribute generation",
+   "avoid": [
+    "Freedom of Faith without tribute support",
+    "Dangerous altar packs",
+    "Unverified cost-sign rows (reroll/defer cost)"
+   ],
+   "rewards": "Omens, unique rewards, high-value Ritual favours",
+   "main_danger": "Tribute economy, dangerous altar packs",
+   "trade_ready": true,
+   "warnings": [
+    "Reroll/Defer cost modifier wording is CONFLICTED (increased vs reduced Tribute) — excluded from trade search until verified."
+   ]
+  },
+  {
+   "id": "breach",
+   "name": "Breach",
+   "tablet_type": "Breach Tablet",
+   "budget_rating": "A",
+   "high_investment_rating": "S",
+   "rating_type": "opinion",
+   "confidence": "Medium",
+   "best_mods": [
+    "Pack Size (Breeding)",
+    "of the Horde",
+    "of the Invasion",
+    "Hiveblood/Wombgift quantity",
+    "Wraeclast Besieged (unverified)"
+   ],
+   "atlas_choices": "Breach Atlas nodes; Jado for strongbox/unique route; Doryani magic-monster setups may help density",
+   "budget_setup": "Breach tablets with density suffixes",
+   "high_investment_setup": "Stack Breach tablets with quantity/density and strong clear speed",
+   "avoid": [
+    "of the Hand if rewards do not justify danger",
+    "Slow builds in compressed density"
+   ],
+   "rewards": "Splinters, breach currency/items, dense loot",
+   "main_danger": "Clear speed and monster density",
+   "trade_ready": true
+  },
+  {
+   "id": "delirium",
+   "name": "Delirium",
+   "tablet_type": "Delirium Tablet",
+   "budget_rating": "A",
+   "high_investment_rating": "S",
+   "rating_type": "opinion",
+   "confidence": "Medium/Low due to text conflicts",
+   "best_mods": [
+    "of the Simulacrum",
+    "of Persecution",
+    "Fog uptime mods (CONFLICTED)",
+    "Clear Skies (unverified downside)"
+   ],
+   "atlas_choices": "Delirium Atlas nodes; Delirium + Ritual overlap is promising but needs current testing",
+   "budget_setup": "Fog-duration/density suffixes",
+   "high_investment_setup": "Simulacrum suffix stack plus Ritual overlap",
+   "avoid": [
+    "Conflicted fog signs",
+    "Too much Deliriousness",
+    "Bad layouts"
+   ],
+   "rewards": "Simulacrum splinters, Delirium rewards, dense loot",
+   "main_danger": "Fog/deliriousness scaling",
+   "trade_ready": true,
+   "warnings": [
+    "Several fog modifiers have wording/sign CONFLICTS — excluded from trade search until verified."
+   ]
+  },
+  {
+   "id": "abyss",
+   "name": "Abyss",
+   "tablet_type": "Abyss Tablet",
+   "budget_rating": "A",
+   "high_investment_rating": "S/SS",
+   "rating_type": "opinion",
+   "confidence": "Medium/Low",
+   "best_mods": [
+    "of Schisms",
+    "of Hollows",
+    "of Champions",
+    "of Treasures",
+    "Unforeseen Consequences (exact text unverified)"
+   ],
+   "atlas_choices": "Abyss Atlas nodes; 0.5.4 fixed Atlas passives applying in Abyssal Depths",
+   "budget_setup": "Guaranteed/additional Abyss suffixes",
+   "high_investment_setup": "Unforeseen Consequences plus high-density tablets if performance/build allows",
+   "avoid": [
+    "of Escalation",
+    "of Ossification (possible bug)",
+    "Poor chase layouts"
+   ],
+   "rewards": "Desecrated currency, jewels, Abyssal Depths, Kulemak-related drops",
+   "main_danger": "Performance and Abyssal modifiers",
+   "trade_ready": true
+  },
+  {
+   "id": "boss",
+   "name": "Boss / Overseer",
+   "tablet_type": "Overseer Tablet",
+   "budget_rating": "A",
+   "high_investment_rating": "S",
+   "rating_type": "opinion",
+   "confidence": "Medium/High for node text; Medium for profit",
+   "best_mods": [
+    "of Treasure",
+    "of Hoards",
+    "of Pathways",
+    "Season of the Hunt",
+    "Cruel Hegemony"
+   ],
+   "atlas_choices": "Hilda Mighty Prey / Patient Battue / Gutting and Skinning; Jado In The Wrong Hands; Doryani Head of the Snake",
+   "budget_setup": "Overseer tablets with of Pathways or safe reward mods",
+   "high_investment_setup": "Hilda/Jado/Doryani boss setups with unique/boss reward scaling",
+   "avoid": [
+    "Weak single-target builds",
+    "Cruel Hegemony over-tuning"
+   ],
+   "rewards": "Boss uniques, waystones, lineage/exceptional item paths",
+   "main_danger": "Boss difficulty",
+   "trade_ready": true
+  },
+  {
+   "id": "currency",
+   "name": "General Currency Mapping",
+   "tablet_type": "Irradiated Tablet",
+   "budget_rating": "A",
+   "high_investment_rating": "S",
+   "rating_type": "opinion",
+   "confidence": "Medium",
+   "best_mods": [
+    "Pack Size (Breeding)",
+    "Rare Monsters (Brimming)",
+    "of Undertaking",
+    "of the Cartographer"
+   ],
+   "atlas_choices": "Doryani Improved Calibration / Stitch the Flesh; tablet-effect passives",
+   "budget_setup": "Alch-and-go with decent tablets and safe Waystone",
+   "high_investment_setup": "Multi-tablet stacking with rare/explicit-effect scaling",
+   "avoid": [
+    "Challenger's",
+    "Random bricking mods",
+    "Over-investing low-tier maps"
+   ],
+   "rewards": "Raw currency, bases, waystones, side content",
+   "main_danger": "Area level/difficulty",
+   "trade_ready": true
+  },
+  {
+   "id": "waystone_sustain",
+   "name": "Waystone Sustain",
+   "tablet_type": "Any + sustain suffixes",
+   "budget_rating": "A",
+   "high_investment_rating": "S",
+   "rating_type": "opinion",
+   "confidence": "Medium/High",
+   "best_mods": [
+    "of the Cartographer",
+    "of Pathways (Overseer)",
+    "Pack Size",
+    "Quantity"
+   ],
+   "atlas_choices": "Main Atlas sustain passives; Doryani safety/calibration",
+   "budget_setup": "Cartographer suffix on cheap tablets",
+   "high_investment_setup": "Combine Cartographer x3 with Overseer of Pathways and boss density",
+   "avoid": [
+    "Death-heavy maps",
+    "Skipping bosses",
+    "Bad clear efficiency"
+   ],
+   "rewards": "Stable T15/T16 pool",
+   "main_danger": "Deaths interrupting sustain",
+   "trade_ready": true,
+   "warnings": [
+    "Waystone modifier pool is now a verified draft from PoE2DB + trade metadata; use the optimizer as a rule-of-thumb planner, not a profit simulator."
+   ]
+  },
+  {
+   "id": "temple",
+   "name": "Temple / Vaal Beacon (Experimental)",
+   "tablet_type": "Temple Tablet",
+   "budget_rating": "Unknown",
+   "high_investment_rating": "Unknown",
+   "rating_type": "unknown",
+   "confidence": "Low",
+   "best_mods": [
+    "Vaal Beacon pack size",
+    "Vaal Beacon extra pack",
+    "Vaal Beacon additional monsters",
+    "Vaal Beacon extra crystal",
+    "Vaal Beacon rare chests"
+   ],
+   "atlas_choices": "Doryani/Vaal/Temple route needs research",
+   "budget_setup": "Do not overpay; experimental only",
+   "high_investment_setup": "Not recommended until Temple data complete",
+   "avoid": [
+    "Treating this as a proven strategy"
+   ],
+   "rewards": "Orbs of Sacrifice, Vaal/Temple rewards",
+   "main_danger": "Under-researched content",
+   "trade_ready": false,
+   "warnings": [
+    "Temple suffix roll ranges are now sourced from PoE2DB/trade metadata, but the farming strategy remains experimental and needs economy testing."
+   ]
+  }
+ ]
+}

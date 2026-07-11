@@ -1,0 +1,1283 @@
+{
+ "_source": "Craft of Exile beta data.json methods.crafting",
+ "_patch": "0.5.4.1.2",
+ "_accessed": "2026-07-05",
+ "methods": [
+  {
+   "coe_id": 3,
+   "name": "Orb of Transmutation",
+   "group": "Currencies",
+   "currency_item": "Orb of Transmutation",
+   "handler": null,
+   "constraints": [
+    "rarity_normal"
+   ],
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 4,
+   "name": "Orb of Transmutation",
+   "group": "Currencies",
+   "currency_item": "Orb of Transmutation",
+   "handler": "poe2_transmutation",
+   "constraints": null,
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 5,
+   "name": "Greater Orb of Transmutation",
+   "group": "Currencies",
+   "currency_item": "Greater Orb of Transmutation",
+   "handler": "poe2_transmutation_greater",
+   "constraints": null,
+   "omens": null,
+   "properties": [
+    {
+     "key": "min_mod_level",
+     "value": 44
+    }
+   ],
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 6,
+   "name": "Perfect Orb of Transmutation",
+   "group": "Currencies",
+   "currency_item": "Perfect Orb of Transmutation",
+   "handler": "poe2_transmutation_perfect",
+   "constraints": null,
+   "omens": null,
+   "properties": [
+    {
+     "key": "min_mod_level",
+     "value": 70
+    }
+   ],
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 7,
+   "name": "Orb of Augmentation",
+   "group": "Currencies",
+   "currency_item": "Orb of Augmentation",
+   "handler": null,
+   "constraints": [
+    "rarity_magic",
+    "open_affix"
+   ],
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 8,
+   "name": "Orb of Augmentation",
+   "group": "Currencies",
+   "currency_item": "Orb of Augmentation",
+   "handler": "poe2_augmentation",
+   "constraints": null,
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 9,
+   "name": "Greater Orb of Augmentation",
+   "group": "Currencies",
+   "currency_item": "Greater Orb of Augmentation",
+   "handler": "poe2_augmentation_greater",
+   "constraints": null,
+   "omens": null,
+   "properties": [
+    {
+     "key": "min_mod_level",
+     "value": 44
+    }
+   ],
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 10,
+   "name": "Perfect Orb of Augmentation",
+   "group": "Currencies",
+   "currency_item": "Perfect Orb of Augmentation",
+   "handler": "poe2_augmentation_perfect",
+   "constraints": null,
+   "omens": null,
+   "properties": [
+    {
+     "key": "min_mod_level",
+     "value": 70
+    }
+   ],
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 11,
+   "name": "Regal Orb",
+   "group": "Currencies",
+   "currency_item": "Regal Orb",
+   "handler": null,
+   "constraints": [
+    "rarity_magic",
+    "can_be_rare"
+   ],
+   "omens": [
+    "OmenOnRegalPrefix",
+    "OmenOnRegalSuffix",
+    "OmenOnRegalAddExistingModType"
+   ],
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 12,
+   "name": "Regal Orb",
+   "group": "Currencies",
+   "currency_item": "Regal Orb",
+   "handler": "poe2_regal",
+   "constraints": null,
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": [
+    1,
+    2
+   ]
+  },
+  {
+   "coe_id": 13,
+   "name": "Greater Regal Orb",
+   "group": "Currencies",
+   "currency_item": "Greater Regal Orb",
+   "handler": "poe2_regal_greater",
+   "constraints": null,
+   "omens": null,
+   "properties": [
+    {
+     "key": "min_mod_level",
+     "value": 35
+    }
+   ],
+   "reroll_affix_types": [
+    1,
+    2
+   ]
+  },
+  {
+   "coe_id": 14,
+   "name": "Perfect Regal Orb",
+   "group": "Currencies",
+   "currency_item": "Perfect Regal Orb",
+   "handler": "poe2_regal_perfect",
+   "constraints": null,
+   "omens": null,
+   "properties": [
+    {
+     "key": "min_mod_level",
+     "value": 50
+    }
+   ],
+   "reroll_affix_types": [
+    1,
+    2
+   ]
+  },
+  {
+   "coe_id": 15,
+   "name": "Orb of Alchemy",
+   "group": "Currencies",
+   "currency_item": "Orb of Alchemy",
+   "handler": "poe2_alchemy",
+   "constraints": [
+    "rarity_normal",
+    "can_be_rare"
+   ],
+   "omens": [
+    "OmenOnAlchemyMaximumPrefixes",
+    "OmenOnAlchemyMaximumSuffixes"
+   ],
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 16,
+   "name": "Chaos Orb",
+   "group": "Currencies",
+   "currency_item": "Chaos Orb",
+   "handler": null,
+   "constraints": [
+    "rarity_rare",
+    "can_be_rare"
+   ],
+   "omens": [
+    "OmenOnChaosLowestLevelMod",
+    "OmenOnChaosPrefix",
+    "OmenOnChaosSuffix",
+    "OmenOnChaosMapItemRarity",
+    "OmenOnChaosMapPackSize",
+    "OmenOnChaosMapMonsterRarity"
+   ],
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 17,
+   "name": "Chaos Orb",
+   "group": "Currencies",
+   "currency_item": "Chaos Orb",
+   "handler": "poe2_chaos",
+   "constraints": null,
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 18,
+   "name": "Greater Chaos Orb",
+   "group": "Currencies",
+   "currency_item": "Greater Chaos Orb",
+   "handler": "poe2_chaos_greater",
+   "constraints": null,
+   "omens": null,
+   "properties": [
+    {
+     "key": "min_mod_level",
+     "value": 35
+    }
+   ],
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 19,
+   "name": "Perfect Chaos Orb",
+   "group": "Currencies",
+   "currency_item": "Perfect Chaos Orb",
+   "handler": "poe2_chaos_perfect",
+   "constraints": null,
+   "omens": null,
+   "properties": [
+    {
+     "key": "min_mod_level",
+     "value": 50
+    }
+   ],
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 20,
+   "name": "Exalted Orb",
+   "group": "Currencies",
+   "currency_item": "Exalted Orb",
+   "handler": null,
+   "constraints": [
+    "rarity_rare",
+    "can_be_rare",
+    "open_affix"
+   ],
+   "omens": [
+    "OmenOnExaltAddTwoMods",
+    "OmenOnExaltAddPrefixes",
+    "OmenOnExaltAddSuffixes",
+    "OmenOnExaltAddExistingModType",
+    "OmenOnExaltConsumeQuality"
+   ],
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 21,
+   "name": "Exalted Orb",
+   "group": "Currencies",
+   "currency_item": "Exalted Orb",
+   "handler": "poe2_exalted",
+   "constraints": null,
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 22,
+   "name": "Greater Exalted Orb",
+   "group": "Currencies",
+   "currency_item": "Greater Exalted Orb",
+   "handler": "poe2_exalted_greater",
+   "constraints": null,
+   "omens": null,
+   "properties": [
+    {
+     "key": "min_mod_level",
+     "value": 35
+    }
+   ],
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 23,
+   "name": "Perfect Exalted Orb",
+   "group": "Currencies",
+   "currency_item": "Perfect Exalted Orb",
+   "handler": "poe2_exalted_perfect",
+   "constraints": null,
+   "omens": null,
+   "properties": [
+    {
+     "key": "min_mod_level",
+     "value": 50
+    }
+   ],
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 24,
+   "name": "Orb of Annulment",
+   "group": "Currencies",
+   "currency_item": "Orb of Annulment",
+   "handler": "poe2_annulment",
+   "constraints": [
+    "rarity_not_normal",
+    "minimum_1_mod"
+   ],
+   "omens": [
+    "OmenOnAnnulRemoveTwoMods",
+    "OmenOnAnnulRemovePrefixes",
+    "OmenOnAnnulRemoveSuffixes",
+    "OmenOnAnnulRemoveAbyssMod"
+   ],
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 25,
+   "name": "Divine Orb",
+   "group": "Currencies",
+   "currency_item": "Divine Orb",
+   "handler": "poe2_divine",
+   "constraints": [
+    "rarity_not_normal"
+   ],
+   "omens": [
+    "OmenOnDivineRerollImplicits",
+    "OmenOnDivineSanctify"
+   ],
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 26,
+   "name": "Fracturing Orb",
+   "group": "Currencies",
+   "currency_item": "Fracturing Orb",
+   "handler": "poe2_fracture",
+   "constraints": [
+    "rarity_rare",
+    "minimum_4_mods",
+    "can_be_rare",
+    "not_strongbox"
+   ],
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 27,
+   "name": "Vaal Orb",
+   "group": "Currencies",
+   "currency_item": "Vaal Orb",
+   "handler": "poe2_vaal",
+   "constraints": [
+    "can_corrupt",
+    "corruptable_base"
+   ],
+   "omens": [
+    "OmenOnVaalRemoveDoNothingOutcome"
+   ],
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 28,
+   "name": "Ancient Infuser",
+   "group": "Currencies",
+   "currency_item": "Ancient Infuser",
+   "handler": "poe2_vaal",
+   "constraints": [
+    "tablet_base"
+   ],
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 29,
+   "name": "Artificer's Orb",
+   "group": "Currencies",
+   "currency_item": "Artificer's Orb",
+   "handler": "artificer",
+   "constraints": [
+    "socketable_base",
+    "not_maximum_sockets"
+   ],
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 30,
+   "name": "Blacksmith's Whetstone",
+   "group": "Currencies",
+   "currency_item": "Blacksmith's Whetstone",
+   "handler": "blacksmith_whetstone",
+   "constraints": [
+    "weapon_quality_base",
+    "not_maximum_quality"
+   ],
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 31,
+   "name": "Arcanist's Etcher",
+   "group": "Currencies",
+   "currency_item": "Arcanist's Etcher",
+   "handler": "arcanist_etcher",
+   "constraints": [
+    "caster_quality_base",
+    "not_maximum_quality"
+   ],
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 32,
+   "name": "Armourer's Scrap",
+   "group": "Currencies",
+   "currency_item": "Armourer's Scrap",
+   "handler": "armourer_scrap",
+   "constraints": [
+    "armour_quality_base",
+    "not_maximum_quality"
+   ],
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 33,
+   "name": "Glassblower's Bauble",
+   "group": "Currencies",
+   "currency_item": "Glassblower's Bauble",
+   "handler": "glassblower_bauble",
+   "constraints": [
+    "flask_base",
+    "not_maximum_quality"
+   ],
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 99,
+   "name": "Vaal Armourer's Infuser",
+   "group": "Currencies",
+   "currency_item": "Vaal Armourer's Infuser",
+   "handler": "poe2_vaal_infuser",
+   "constraints": [
+    "armour_quality_base"
+   ],
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 100,
+   "name": "Vaal Blacksmith's Infuser",
+   "group": "Currencies",
+   "currency_item": "Vaal Blacksmith's Infuser",
+   "handler": "poe2_vaal_infuser",
+   "constraints": [
+    "weapon_quality_base"
+   ],
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 101,
+   "name": "Vaal Arcanist's Infuser",
+   "group": "Currencies",
+   "currency_item": "Vaal Arcanist's Infuser",
+   "handler": "poe2_vaal_infuser",
+   "constraints": [
+    "caster_quality_base"
+   ],
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 102,
+   "name": "Vaal Catalysing Infuser",
+   "group": "Currencies",
+   "currency_item": "Vaal Catalysing Infuser",
+   "handler": "poe2_vaal_infuser",
+   "constraints": [
+    "ring_or_amulet_base"
+   ],
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 92,
+   "name": "Distilled Emotions",
+   "group": null,
+   "currency_item": null,
+   "handler": "poe2_distilled_emotions",
+   "constraints": [
+    "distilled_emotions_base",
+    "rarity_rare",
+    "is_modifiable"
+   ],
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 35,
+   "name": "Lesser",
+   "group": "Essences",
+   "currency_item": null,
+   "handler": "poe2_essence",
+   "constraints": [
+    "rarity_magic"
+   ],
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 36,
+   "name": "Normal",
+   "group": "Essences",
+   "currency_item": null,
+   "handler": "poe2_essence",
+   "constraints": [
+    "rarity_magic"
+   ],
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 37,
+   "name": "Greater",
+   "group": "Essences",
+   "currency_item": null,
+   "handler": "poe2_essence",
+   "constraints": [
+    "rarity_magic"
+   ],
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 38,
+   "name": "Perfect",
+   "group": "Essences",
+   "currency_item": null,
+   "handler": "poe2_essence",
+   "constraints": [
+    "rarity_rare"
+   ],
+   "omens": [
+    "OmenOnPerfectEssenceSuffix",
+    "OmenOnPerfectEssencePrefix"
+   ],
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 39,
+   "name": "Corrupted",
+   "group": "Essences",
+   "currency_item": null,
+   "handler": "poe2_essence",
+   "constraints": [
+    "rarity_rare"
+   ],
+   "omens": [
+    "OmenOnPerfectEssenceSuffix",
+    "OmenOnPerfectEssencePrefix"
+   ],
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 91,
+   "name": "Alloy",
+   "group": "Essences",
+   "currency_item": null,
+   "handler": "poe2_essence",
+   "constraints": [
+    "rarity_rare"
+   ],
+   "omens": [
+    "OmenOnPerfectEssenceSuffix",
+    "OmenOnPerfectEssencePrefix"
+   ],
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 98,
+   "name": "Altered Collarbone",
+   "group": "Desecrate",
+   "currency_item": "Altered Collarbone",
+   "handler": "poe2_desecrate_breach",
+   "constraints": [
+    "desecration_collarbone_base"
+   ],
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 41,
+   "name": "Ancient Collarbone",
+   "group": "Desecrate",
+   "currency_item": "Ancient Collarbone",
+   "handler": "poe2_desecrate_high",
+   "constraints": [
+    "desecration_collarbone_base"
+   ],
+   "omens": null,
+   "properties": [
+    {
+     "key": "min_mod_level",
+     "value": 40
+    }
+   ],
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 42,
+   "name": "Ancient Jawbone",
+   "group": "Desecrate",
+   "currency_item": "Ancient Jawbone",
+   "handler": "poe2_desecrate_high",
+   "constraints": [
+    "desecration_jawbone_base"
+   ],
+   "omens": null,
+   "properties": [
+    {
+     "key": "min_mod_level",
+     "value": 40
+    }
+   ],
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 43,
+   "name": "Ancient Rib",
+   "group": "Desecrate",
+   "currency_item": "Ancient Rib",
+   "handler": "poe2_desecrate_high",
+   "constraints": [
+    "desecration_rib_base"
+   ],
+   "omens": null,
+   "properties": [
+    {
+     "key": "min_mod_level",
+     "value": 40
+    }
+   ],
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 44,
+   "name": "Gnawed Collarbone",
+   "group": "Desecrate",
+   "currency_item": "Gnawed Collarbone",
+   "handler": "poe2_desecrate_low",
+   "constraints": [
+    "desecration_collarbone_base",
+    "max_item_level_64"
+   ],
+   "omens": null,
+   "properties": [
+    {
+     "key": "max_item_level",
+     "value": 64
+    }
+   ],
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 45,
+   "name": "Gnawed Jawbone",
+   "group": "Desecrate",
+   "currency_item": "Gnawed Jawbone",
+   "handler": "poe2_desecrate_low",
+   "constraints": [
+    "desecration_jawbone_base",
+    "max_item_level_64"
+   ],
+   "omens": null,
+   "properties": [
+    {
+     "key": "max_item_level",
+     "value": 64
+    }
+   ],
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 46,
+   "name": "Gnawed Rib",
+   "group": "Desecrate",
+   "currency_item": "Gnawed Rib",
+   "handler": "poe2_desecrate_low",
+   "constraints": [
+    "desecration_rib_base",
+    "max_item_level_64"
+   ],
+   "omens": null,
+   "properties": [
+    {
+     "key": "max_item_level",
+     "value": 64
+    }
+   ],
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 47,
+   "name": "Preserved Collarbone",
+   "group": "Desecrate",
+   "currency_item": "Preserved Collarbone",
+   "handler": "poe2_desecrate_mid",
+   "constraints": [
+    "desecration_collarbone_base"
+   ],
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 48,
+   "name": "Preserved Cranium",
+   "group": "Desecrate",
+   "currency_item": "Preserved Cranium",
+   "handler": "poe2_desecrate_mid",
+   "constraints": [
+    "desecration_cranium_base"
+   ],
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 49,
+   "name": "Preserved Jawbone",
+   "group": "Desecrate",
+   "currency_item": "Preserved Jawbone",
+   "handler": "poe2_desecrate_mid",
+   "constraints": [
+    "desecration_jawbone_base"
+   ],
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 50,
+   "name": "Preserved Rib",
+   "group": "Desecrate",
+   "currency_item": "Preserved Rib",
+   "handler": "poe2_desecrate_mid",
+   "constraints": [
+    "desecration_rib_base"
+   ],
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 51,
+   "name": "Preserved Vertebrae",
+   "group": "Desecrate",
+   "currency_item": "Preserved Vertebrae",
+   "handler": "poe2_desecrate_mid",
+   "constraints": [
+    "desecration_vertebrae_base"
+   ],
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 52,
+   "name": "Socketables",
+   "group": null,
+   "currency_item": null,
+   "handler": "poe2_socketable",
+   "constraints": [
+    "socketable_base",
+    "has_empty_socket"
+   ],
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 79,
+   "name": "Refined Adaptive Catalyst",
+   "group": "Refined Catalysts",
+   "currency_item": "Refined Adaptive Catalyst",
+   "handler": "poe2_refined_catalyst_adaptive",
+   "constraints": null,
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 80,
+   "name": "Refined Carapace Catalyst",
+   "group": "Refined Catalysts",
+   "currency_item": "Refined Carapace Catalyst",
+   "handler": "poe2_refined_catalyst_carapace",
+   "constraints": null,
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 81,
+   "name": "Refined Chayula's Catalyst",
+   "group": "Refined Catalysts",
+   "currency_item": "Refined Chayula's Catalyst",
+   "handler": "poe2_refined_catalyst_chayula",
+   "constraints": null,
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 82,
+   "name": "Refined Esh's Catalyst",
+   "group": "Refined Catalysts",
+   "currency_item": "Refined Esh's Catalyst",
+   "handler": "poe2_refined_catalyst_esh",
+   "constraints": null,
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 83,
+   "name": "Refined Flesh Catalyst",
+   "group": "Refined Catalysts",
+   "currency_item": "Refined Flesh Catalyst",
+   "handler": "poe2_refined_catalyst_flesh",
+   "constraints": null,
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 84,
+   "name": "Refined Neural Catalyst",
+   "group": "Refined Catalysts",
+   "currency_item": "Refined Neural Catalyst",
+   "handler": "poe2_refined_catalyst_neural",
+   "constraints": null,
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 103,
+   "name": "Refined Necrotic Catalyst",
+   "group": "Refined Catalysts",
+   "currency_item": "Refined Necrotic Catalyst",
+   "handler": "poe2_refined_catalyst_necrotic",
+   "constraints": null,
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 85,
+   "name": "Refined Reaver Catalyst",
+   "group": "Refined Catalysts",
+   "currency_item": "Refined Reaver Catalyst",
+   "handler": "poe2_refined_catalyst_reaver",
+   "constraints": null,
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 86,
+   "name": "Refined Sibilant Catalyst",
+   "group": "Refined Catalysts",
+   "currency_item": "Refined Sibilant Catalyst",
+   "handler": "poe2_refined_catalyst_sibilant",
+   "constraints": null,
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 87,
+   "name": "Refined Skittering Catalyst",
+   "group": "Refined Catalysts",
+   "currency_item": "Refined Skittering Catalyst",
+   "handler": "poe2_refined_catalyst_skittering",
+   "constraints": null,
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 88,
+   "name": "Refined Tul's Catalyst",
+   "group": "Refined Catalysts",
+   "currency_item": "Refined Tul's Catalyst",
+   "handler": "poe2_refined_catalyst_tul",
+   "constraints": null,
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 89,
+   "name": "Refined Uul-Netol's Catalyst",
+   "group": "Refined Catalysts",
+   "currency_item": "Refined Uul-Netol's Catalyst",
+   "handler": "poe2_refined_catalyst_uulnetol",
+   "constraints": null,
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 90,
+   "name": "Refined Xoph's Catalyst",
+   "group": "Refined Catalysts",
+   "currency_item": "Refined Xoph's Catalyst",
+   "handler": "poe2_refined_catalyst_xoph",
+   "constraints": null,
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 54,
+   "name": "Adaptive Catalyst",
+   "group": "Catalysts",
+   "currency_item": "Adaptive Catalyst",
+   "handler": "poe2_catalyst_adaptive",
+   "constraints": null,
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 55,
+   "name": "Carapace Catalyst",
+   "group": "Catalysts",
+   "currency_item": "Carapace Catalyst",
+   "handler": "poe2_catalyst_carapace",
+   "constraints": null,
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 56,
+   "name": "Chayula's Catalyst",
+   "group": "Catalysts",
+   "currency_item": "Chayula's Catalyst",
+   "handler": "poe2_catalyst_chayula",
+   "constraints": null,
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 57,
+   "name": "Esh's Catalyst",
+   "group": "Catalysts",
+   "currency_item": "Esh's Catalyst",
+   "handler": "poe2_catalyst_esh",
+   "constraints": null,
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 58,
+   "name": "Flesh Catalyst",
+   "group": "Catalysts",
+   "currency_item": "Flesh Catalyst",
+   "handler": "poe2_catalyst_flesh",
+   "constraints": null,
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 59,
+   "name": "Neural Catalyst",
+   "group": "Catalysts",
+   "currency_item": "Neural Catalyst",
+   "handler": "poe2_catalyst_neural",
+   "constraints": null,
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 104,
+   "name": "Necrotic Catalyst",
+   "group": "Catalysts",
+   "currency_item": "Necrotic Catalyst",
+   "handler": "poe2_catalyst_necrotic",
+   "constraints": null,
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 60,
+   "name": "Reaver Catalyst",
+   "group": "Catalysts",
+   "currency_item": "Reaver Catalyst",
+   "handler": "poe2_catalyst_reaver",
+   "constraints": null,
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 61,
+   "name": "Sibilant Catalyst",
+   "group": "Catalysts",
+   "currency_item": "Sibilant Catalyst",
+   "handler": "poe2_catalyst_sibilant",
+   "constraints": null,
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 62,
+   "name": "Skittering Catalyst",
+   "group": "Catalysts",
+   "currency_item": "Skittering Catalyst",
+   "handler": "poe2_catalyst_skittering",
+   "constraints": null,
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 63,
+   "name": "Tul's Catalyst",
+   "group": "Catalysts",
+   "currency_item": "Tul's Catalyst",
+   "handler": "poe2_catalyst_tul",
+   "constraints": null,
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 64,
+   "name": "Uul-Netol's Catalyst",
+   "group": "Catalysts",
+   "currency_item": "Uul-Netol's Catalyst",
+   "handler": "poe2_catalyst_uulnetol",
+   "constraints": null,
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 65,
+   "name": "Xoph's Catalyst",
+   "group": "Catalysts",
+   "currency_item": "Xoph's Catalyst",
+   "handler": "poe2_catalyst_xoph",
+   "constraints": null,
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 67,
+   "name": "Architect's Orb",
+   "group": "Temple",
+   "currency_item": "Architect's Orb",
+   "handler": "poe2_architect",
+   "constraints": [
+    "is_equipment_or_jewel"
+   ],
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 94,
+   "name": "Blazing Flux",
+   "group": "Fluxes",
+   "currency_item": "Blazing Flux",
+   "handler": "poe2_fire_flux",
+   "constraints": null,
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 95,
+   "name": "Chilling Flux",
+   "group": "Fluxes",
+   "currency_item": "Chilling Flux",
+   "handler": "poe2_ice_flux",
+   "constraints": null,
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 96,
+   "name": "Crackling Flux",
+   "group": "Fluxes",
+   "currency_item": "Crackling Flux",
+   "handler": "poe2_lightning_flux",
+   "constraints": null,
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 97,
+   "name": "Void Flux",
+   "group": "Fluxes",
+   "currency_item": "Void Flux",
+   "handler": "poe2_chaos_flux",
+   "constraints": null,
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 69,
+   "name": "Armour Recombinator",
+   "group": "Recombinate",
+   "currency_item": null,
+   "handler": "poe2_recombinate",
+   "constraints": [
+    "armour_recombinate_base"
+   ],
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 70,
+   "name": "Jewellery Recombinator",
+   "group": "Recombinate",
+   "currency_item": null,
+   "handler": "poe2_recombinate",
+   "constraints": [
+    "jewellery_recombinate_base"
+   ],
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 71,
+   "name": "Weapon Recombinator",
+   "group": "Recombinate",
+   "currency_item": null,
+   "handler": "poe2_recombinate",
+   "constraints": [
+    "weapon_recombinate_base"
+   ],
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  },
+  {
+   "coe_id": 73,
+   "name": "Normal item",
+   "group": "Generate",
+   "currency_item": null,
+   "handler": "spawn_normal_item",
+   "constraints": null,
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": [
+    1,
+    2
+   ]
+  },
+  {
+   "coe_id": 74,
+   "name": "Magic item",
+   "group": "Generate",
+   "currency_item": null,
+   "handler": "spawn_magic_item",
+   "constraints": null,
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": [
+    1,
+    2
+   ]
+  },
+  {
+   "coe_id": 75,
+   "name": "Rare item",
+   "group": "Generate",
+   "currency_item": null,
+   "handler": "spawn_rare_item",
+   "constraints": [
+    "can_be_rare"
+   ],
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": [
+    1,
+    2
+   ]
+  },
+  {
+   "coe_id": 77,
+   "name": "Reveal",
+   "group": "Misc",
+   "currency_item": null,
+   "handler": "reveal",
+   "constraints": [
+    "desecration_base",
+    "has_unrevealed",
+    "is_modifiable"
+   ],
+   "omens": null,
+   "properties": null,
+   "reroll_affix_types": null
+  }
+ ]
+}

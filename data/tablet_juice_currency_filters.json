@@ -1,0 +1,3282 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-07-05",
+  "patch_basis": "0.5.4b Hotfix 3 visible latest official forum listing as of 2026-07-05; PoE2DB tablet page checked for modifier text/ranges.",
+  "purpose": "App-ready tablet modifier and preset data for adding Best Currency Juice filter options to the Trade Search Builder.",
+  "guardrails": [
+    "Do not invent trade stat IDs.",
+    "Ratings are community/editorial opinion; display opinion/confidence badges.",
+    "Official one-click trade search must remain disabled for a modifier until trade_stat_id is verified against /api/trade2/data/stats or trade UI payload.",
+    "Do not scrape listings or poll trade. Generate official trade URLs/searches only through user action.",
+    "Recheck official patch forum before treating this as current."
+  ],
+  "sources": [
+    {
+      "id": "official_patch_forum",
+      "name": "Official Path of Exile Early Access Patch Notes Forum",
+      "url": "https://www.pathofexile.com/forum/view-forum/2212",
+      "type": "official",
+      "reliability": "High",
+      "used_for": "Current visible patch/hotfix state; official patch sequence; confirms latest visible 0.5.4b Hotfix 3 listing.",
+      "accessed": "2026-07-05"
+    },
+    {
+      "id": "official_054b_patch",
+      "name": "0.5.4b Patch Notes",
+      "url": "https://www.pathofexile.com/forum/view-thread/3980516",
+      "type": "official",
+      "reliability": "High",
+      "used_for": "Expedition, Endgame, Abyss, Atlas Master bugfix context; confirms 0.5.4b changes relevant to farming data.",
+      "accessed": "2026-07-05"
+    },
+    {
+      "id": "poe2db_tablet",
+      "name": "PoE2DB Tablet page",
+      "url": "https://poe2db.tw/Tablet",
+      "type": "database",
+      "reliability": "High for text/ranges, unofficial mirror",
+      "used_for": "Tablet bases, unique tablets, shared prefix/suffix pool, type-specific suffixes and roll ranges.",
+      "accessed": "2026-07-05"
+    },
+    {
+      "id": "poe2_regex_tablet",
+      "name": "PoE2 Regex Tablet helper",
+      "url": "https://poe2.re/tablet",
+      "type": "community tool",
+      "reliability": "Medium",
+      "used_for": "Cross-check visible tablet modifier wording for regex/filter text; not used as primary source.",
+      "accessed": "2026-07-05"
+    },
+    {
+      "id": "mobalytics_05_patch_hub",
+      "name": "Mobalytics PoE 2 0.5 Patch Notes Hub",
+      "url": "https://mobalytics.gg/poe-2/guides/0-5-patch-notes",
+      "type": "guide/patch aggregation",
+      "reliability": "Medium",
+      "used_for": "Cross-check of official patch note wording around disabled tablet modifiers and Monster Effectiveness reward scaling.",
+      "accessed": "2026-07-05"
+    },
+    {
+      "id": "reddit_grand_expedition_tips",
+      "name": "Reddit Grand Expedition tips post",
+      "url": "https://www.reddit.com/r/PathOfExile2/comments/1ud069j/some_grand_expedition_tips_that_have_been/",
+      "type": "Reddit/community",
+      "reliability": "Low/Medium",
+      "used_for": "Community claim that 3x Irradiated tablets with Increased Effectiveness + Item Rarity is profitable for Grand Expedition style farming; marked opinion.",
+      "accessed": "2026-07-05"
+    },
+    {
+      "id": "reddit_irradiated_stacking",
+      "name": "Reddit Irradiated Tablet Stacking post",
+      "url": "https://www.reddit.com/r/pathofexile2builds/comments/1u75ffy/irradiated_tablet_stacking_not_an_abyss_farming/",
+      "type": "Reddit/community",
+      "reliability": "Low/Medium",
+      "used_for": "Community claim that Irradiated tablet stacking still allows mechanics and drops tablets/omens; marked opinion and needs dated market testing.",
+      "accessed": "2026-07-05"
+    },
+    {
+      "id": "mobalytics_expedition_054",
+      "name": "Mobalytics / Mattjestic 0.5.4 Expedition guide",
+      "url": "https://mobalytics.gg/poe-2/profile/mattjestic-multigaming/guides/poe-2-0-5-expedition-endgame-farming-guide-500-divine-daily-income",
+      "type": "creator guide",
+      "reliability": "Medium/Low for profit claims",
+      "used_for": "Community claim that tablets and map mods improve rarity/loot/logbooks/Saga/currency in 0.5.4 Expedition; profit claims treated perishable.",
+      "accessed": "2026-07-05"
+    },
+    {
+      "id": "aoeah_054_expedition",
+      "name": "AOEAH 0.5.4 Expedition Farm Guide",
+      "url": "https://www.aoeah.com/news/4619--poe-2-054-expedition-farm-guide-logbooks-tablets-atlas--farm-strats",
+      "type": "guide",
+      "reliability": "Low/Medium",
+      "used_for": "Community opinions on 0.5.4 Expedition/Grand Expedition choices; used only for strategy notes, not database text.",
+      "accessed": "2026-07-05"
+    },
+    {
+      "id": "aoeah_05_abyss",
+      "name": "AOEAH 0.5 Abyss Farming Guide",
+      "url": "https://www.aoeah.com/news/4616--poe-2-05-abyss-farming-guide-best-faction-tablets--atlas-tree",
+      "type": "guide",
+      "reliability": "Low/Medium",
+      "used_for": "Community opinions that Abyss/Irradiated/high-effectiveness tablet setups are profitable; marked opinion.",
+      "accessed": "2026-07-05"
+    },
+    {
+      "id": "reddit_ritual_setup",
+      "name": "Reddit Ritual tablet setup discussion",
+      "url": "https://www.reddit.com/r/PathOfExile2/comments/1rkb9il/never_farmed_ritual_before_whats_considered_the/",
+      "type": "Reddit/community",
+      "reliability": "Low/Medium",
+      "used_for": "Community Ritual setup questions/claims; only used to support that reroll/omen/tribute mods are common trade targets.",
+      "accessed": "2026-07-05"
+    },
+    {
+      "id": "youtube_tablet_roll_guide",
+      "name": "How to Roll Waystones and Tablets - PoE2 0.5",
+      "url": "https://www.youtube.com/watch?v=Rowlyx5glV8",
+      "type": "YouTube/community",
+      "reliability": "Medium/Low",
+      "used_for": "Current 0.5 community prioritization of rolling tablets/waystones; no database text copied.",
+      "accessed": "2026-07-05"
+    },
+    {
+      "id": "official_trade2_stats_phase10",
+      "name": "Official trade2 stats metadata (Phase 10 refresh)",
+      "url": "https://www.pathofexile.com/api/trade2/data/stats",
+      "type": "official metadata",
+      "reliability": "High",
+      "used_for": "Verified trade_stat_id values for tablet juice filters, including Delirium duplicate ID resolution.",
+      "accessed": "2026-07-05"
+    }
+  ],
+  "modifiers": [
+    {
+      "id": "shared_prefix_pack_size",
+      "tablet_type": "All tablets",
+      "scope": "shared_prefix",
+      "affix_slot": "prefix",
+      "modifier_text": "(5-7)% increased Pack Size in Map",
+      "roll_range": "5-7%",
+      "trade_stat_id": "explicit.stat_2017682521",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 6,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "SS",
+      "priority": 100,
+      "best_for": [
+        "general currency",
+        "Ritual tribute",
+        "Delirium density",
+        "Breach density",
+        "Abyss density"
+      ],
+      "tags": [
+        "pack_size",
+        "density",
+        "safe_default",
+        "currency"
+      ],
+      "risk_level": "low",
+      "reason_for_trade_filter": "Best universal currency prefix because it increases total monsters/content interaction and scales most mechanics.",
+      "source_ids": [
+        "poe2db_tablet",
+        "youtube_tablet_roll_guide",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "shared_prefix_rare_monsters",
+      "tablet_type": "All tablets",
+      "scope": "shared_prefix",
+      "affix_slot": "prefix",
+      "modifier_text": "Map has (25-35)% increased number of Rare Monsters",
+      "roll_range": "25-35%",
+      "trade_stat_id": "explicit.stat_3793155082",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 30,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "S",
+      "priority": 95,
+      "best_for": [
+        "general currency",
+        "rare monster loot",
+        "Abyss",
+        "Breach"
+      ],
+      "tags": [
+        "rare_monsters",
+        "currency",
+        "density"
+      ],
+      "risk_level": "medium",
+      "reason_for_trade_filter": "Rare monsters are high-value loot carriers and synergize with rare-modifier/rarity Atlas Master setups.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "shared_prefix_monster_rarity",
+      "tablet_type": "All tablets",
+      "scope": "shared_prefix",
+      "affix_slot": "prefix",
+      "modifier_text": "Map has (15-20)% increased Monster Rarity",
+      "roll_range": "15-20%",
+      "trade_stat_id": "explicit.stat_4142653832",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 18,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "S",
+      "priority": 90,
+      "best_for": [
+        "general currency",
+        "rare/magic scaling"
+      ],
+      "tags": [
+        "monster_rarity",
+        "currency"
+      ],
+      "risk_level": "low",
+      "reason_for_trade_filter": "More magic/rare monsters supports currency and item drops; pair with pack size or rare-monster chance.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "shared_prefix_monster_effectiveness",
+      "tablet_type": "All tablets",
+      "scope": "shared_prefix",
+      "affix_slot": "prefix",
+      "modifier_text": "Monsters have (10-15)% increased Effectiveness",
+      "roll_range": "10-15%",
+      "trade_stat_id": "explicit.stat_2065500219",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 13,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "S_HIGH_RISK",
+      "priority": 88,
+      "best_for": [
+        "high-investment currency juice",
+        "Grand Expedition style mapping",
+        "Irradiated stacking"
+      ],
+      "tags": [
+        "monster_effectiveness",
+        "high_risk",
+        "currency",
+        "difficulty"
+      ],
+      "risk_level": "high",
+      "reason_for_trade_filter": "Older notes incorrectly treated this as no reward. Current 0.5 context indicates Monster Effectiveness affects reward scaling, but it is dangerous and should be shown as high-investment only.",
+      "source_ids": [
+        "poe2db_tablet",
+        "mobalytics_05_patch_hub",
+        "reddit_grand_expedition_tips",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_rating_has_conflict_official_trade_stat_verified",
+      "notes": "Conflict correction: do not label as no-reward. Show warning that reward scaling was reduced/changed in 0.5 and survival matters.",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "shared_prefix_magic_monsters",
+      "tablet_type": "All tablets",
+      "scope": "shared_prefix",
+      "affix_slot": "prefix",
+      "modifier_text": "Map has (30-40)% increased Magic Monsters",
+      "roll_range": "30-40%",
+      "trade_stat_id": "explicit.stat_3873704640",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 35,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "A",
+      "priority": 80,
+      "best_for": [
+        "general density",
+        "Doryani/magic monster setups"
+      ],
+      "tags": [
+        "magic_monsters",
+        "density"
+      ],
+      "risk_level": "low",
+      "reason_for_trade_filter": "Good density prefix; becomes stronger if a player is using Atlas/Master choices that specifically reward magic monsters.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "shared_prefix_item_rarity",
+      "tablet_type": "All tablets",
+      "scope": "shared_prefix",
+      "affix_slot": "prefix",
+      "modifier_text": "(8-12)% increased Rarity of Items found in Map",
+      "roll_range": "8-12%",
+      "trade_stat_id": "explicit.stat_2306002879",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 10,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "A",
+      "priority": 78,
+      "best_for": [
+        "magic find",
+        "boss/rare loot",
+        "Grand Expedition style mapping"
+      ],
+      "tags": [
+        "item_rarity",
+        "magic_find"
+      ],
+      "risk_level": "low",
+      "reason_for_trade_filter": "Useful as a visible generic trade filter when player wants raw rarity stacking; community often pairs rarity with Irradiated/Effectiveness for map juice.",
+      "source_ids": [
+        "poe2db_tablet",
+        "reddit_grand_expedition_tips",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "shared_prefix_rare_chests",
+      "tablet_type": "All tablets",
+      "scope": "shared_prefix",
+      "affix_slot": "prefix",
+      "modifier_text": "Map contains an additional Rare Chest",
+      "roll_range": "2-3",
+      "trade_stat_id": "explicit.stat_231864447",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 3,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "B",
+      "priority": 60,
+      "best_for": [
+        "chest strategies",
+        "general extra rewards"
+      ],
+      "tags": [
+        "chests",
+        "budget"
+      ],
+      "risk_level": "low",
+      "reason_for_trade_filter": "Budget extra reward target; not a top universal currency prefix compared with pack size/rare monsters.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (manual official trade2 match).",
+      "current_game_available": true
+    },
+    {
+      "id": "shared_prefix_azmeri_spirit",
+      "tablet_type": "All tablets",
+      "scope": "shared_prefix",
+      "affix_slot": "prefix",
+      "modifier_text": "Map contains 1 additional Azmeri Spirit",
+      "roll_range": "1",
+      "trade_stat_id": "explicit.stat_358129101",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": null,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "B",
+      "priority": 58,
+      "best_for": [
+        "Azmeri spirit strategies",
+        "Hilda setups"
+      ],
+      "tags": [
+        "azmeri_spirit",
+        "mechanic"
+      ],
+      "risk_level": "low",
+      "reason_for_trade_filter": "Only high priority when the player is specifically stacking spirits or Hilda/Master bonuses.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "shared_prefix_essence",
+      "tablet_type": "All tablets",
+      "scope": "shared_prefix",
+      "affix_slot": "prefix",
+      "modifier_text": "Map contains 1 additional Essence",
+      "roll_range": "1",
+      "trade_stat_id": "explicit.stat_395808938",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": null,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "B",
+      "priority": 55,
+      "best_for": [
+        "Essence side content"
+      ],
+      "tags": [
+        "essence",
+        "mechanic"
+      ],
+      "risk_level": "low",
+      "reason_for_trade_filter": "Good side-content filter, not primary currency juice unless player farms Essence.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "shared_prefix_summoning_circle",
+      "tablet_type": "All tablets",
+      "scope": "shared_prefix",
+      "affix_slot": "prefix",
+      "modifier_text": "Map contains 1 additional Summoning Circle",
+      "roll_range": "1",
+      "trade_stat_id": "explicit.stat_2839545956",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": null,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "B",
+      "priority": 52,
+      "best_for": [
+        "Summoning circle side content"
+      ],
+      "tags": [
+        "summoning_circle",
+        "mechanic"
+      ],
+      "risk_level": "medium",
+      "reason_for_trade_filter": "Side-content filter for players who want circles; not default currency juice.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "shared_suffix_waystone_quantity",
+      "tablet_type": "All tablets",
+      "scope": "shared_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "(30-40)% increased Quantity of Waystones found in Map",
+      "roll_range": "30-40%",
+      "trade_stat_id": "explicit.stat_2777224821",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 35,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "S",
+      "priority": 92,
+      "best_for": [
+        "waystone sustain",
+        "currency sustain"
+      ],
+      "tags": [
+        "waystone_sustain",
+        "currency"
+      ],
+      "risk_level": "low",
+      "reason_for_trade_filter": "Best generic sustain suffix and should be a trade filter preset for players trying to maintain map tiers.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "shared_suffix_random_modifiers",
+      "tablet_type": "All tablets",
+      "scope": "shared_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "Map has # additional random Modifier",
+      "roll_range": "1-2",
+      "trade_stat_id": "explicit.stat_588512487",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 2,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "S_HIGH_RISK",
+      "priority": 90,
+      "best_for": [
+        "high-investment juice",
+        "Irradiated stacking",
+        "general currency"
+      ],
+      "tags": [
+        "random_modifiers",
+        "high_risk",
+        "currency"
+      ],
+      "risk_level": "high",
+      "reason_for_trade_filter": "Strong because extra map mods multiply reward/difficulty; should be a high-investment filter, not a safe default.",
+      "source_ids": [
+        "poe2db_tablet",
+        "reddit_irradiated_stacking",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (manual official trade2 match).",
+      "current_game_available": true
+    },
+    {
+      "id": "shared_suffix_unique_monster_rare_mod",
+      "tablet_type": "All tablets",
+      "scope": "shared_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "Unique Monsters have 1 additional Rare Modifier",
+      "roll_range": "1",
+      "trade_stat_id": "explicit.stat_3371085671",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": null,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "A",
+      "priority": 75,
+      "best_for": [
+        "boss/unique monster loot",
+        "Overseer"
+      ],
+      "tags": [
+        "boss",
+        "rare_modifiers"
+      ],
+      "risk_level": "high",
+      "reason_for_trade_filter": "Good for boss/unique monster focused maps; raises danger.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "shared_suffix_strongbox_guaranteed",
+      "tablet_type": "All tablets",
+      "scope": "shared_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "Map contains 1 additional Strongbox",
+      "roll_range": "1",
+      "trade_stat_id": "explicit.stat_3240183538",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": null,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "A",
+      "priority": 72,
+      "best_for": [
+        "strongbox side farm",
+        "budget juice"
+      ],
+      "tags": [
+        "strongbox",
+        "budget"
+      ],
+      "risk_level": "low",
+      "reason_for_trade_filter": "Guaranteed extra box is preferable to chance-to-contain if player wants side-content.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "shared_suffix_strongbox_chance",
+      "tablet_type": "All tablets",
+      "scope": "shared_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "Map has (70-100)% increased chance to contain Strongboxes",
+      "roll_range": "70-100%",
+      "trade_stat_id": "explicit.stat_4279535856",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 90,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "B",
+      "priority": 55,
+      "best_for": [
+        "strongbox side farm"
+      ],
+      "tags": [
+        "strongbox"
+      ],
+      "risk_level": "low",
+      "reason_for_trade_filter": "Chance-based side-content suffix; lower priority than guaranteed strongbox.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "shared_suffix_essence_chance",
+      "tablet_type": "All tablets",
+      "scope": "shared_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "Map has (70-100)% increased chance to contain Essences",
+      "roll_range": "70-100%",
+      "trade_stat_id": "explicit.stat_1825943485",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 90,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "B",
+      "priority": 55,
+      "best_for": [
+        "Essence side farm"
+      ],
+      "tags": [
+        "essence"
+      ],
+      "risk_level": "medium",
+      "reason_for_trade_filter": "Chance-based side-content suffix.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "shared_suffix_spirits_chance",
+      "tablet_type": "All tablets",
+      "scope": "shared_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "Map has (70-100)% increased chance to contain Azmeri Spirits",
+      "roll_range": "70-100%",
+      "trade_stat_id": "explicit.stat_3815617979",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 90,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "B",
+      "priority": 55,
+      "best_for": [
+        "Azmeri/Hilda setup"
+      ],
+      "tags": [
+        "azmeri_spirit"
+      ],
+      "risk_level": "low",
+      "reason_for_trade_filter": "Use for spirit-specific strategies only.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "exp_suffix_logbooks",
+      "tablet_type": "Expedition Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "(15-30)% increased Quantity of Expedition Logbooks dropped by Runic Monsters in Map",
+      "roll_range": "15-30%",
+      "trade_stat_id": "explicit.stat_1083387327",
+      "trade_ready": false,
+      "recommended_min_roll_for_filter": 25,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "SS",
+      "priority": 100,
+      "best_for": [
+        "Expedition logbook farming",
+        "currency"
+      ],
+      "tags": [
+        "expedition",
+        "logbooks",
+        "currency"
+      ],
+      "risk_level": "low",
+      "reason_for_trade_filter": "Top Expedition trade filter because logbooks are the direct target and only Runic monsters roll this reward.",
+      "source_ids": [
+        "poe2db_tablet",
+        "mobalytics_expedition_054",
+        "aoeah_054_expedition",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Keep as legacy reference only. Do not show in current tablet/trade workflows unless owner reverses the rule.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data). Phase 11: stat ID remains preserved for history, but current-game search is disabled by owner rule.",
+      "current_game_available": false,
+      "legacy_removed_from_current_game": true,
+      "reason_disabled": "Owner rule 2026-07-05: Expedition Tablets do not exist in the current game."
+    },
+    {
+      "id": "exp_suffix_runic_markers",
+      "tablet_type": "Expedition Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "Map contains (15-30)% increased number of Runic Monster Markers",
+      "roll_range": "15-30%",
+      "trade_stat_id": "explicit.stat_1640965354",
+      "trade_ready": false,
+      "recommended_min_roll_for_filter": 25,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "SS",
+      "priority": 98,
+      "best_for": [
+        "Expedition currency",
+        "logbook odds",
+        "runic loot"
+      ],
+      "tags": [
+        "expedition",
+        "runic_markers",
+        "density"
+      ],
+      "risk_level": "medium",
+      "reason_for_trade_filter": "More Runic monsters means more Expedition loot and more chances at logbooks/reward-bearing monsters.",
+      "source_ids": [
+        "poe2db_tablet",
+        "mobalytics_expedition_054",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Keep as legacy reference only. Do not show in current tablet/trade workflows unless owner reverses the rule.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data). Phase 11: stat ID remains preserved for history, but current-game search is disabled by owner rule.",
+      "current_game_available": false,
+      "legacy_removed_from_current_game": true,
+      "reason_disabled": "Owner rule 2026-07-05: Expedition Tablets do not exist in the current game."
+    },
+    {
+      "id": "exp_suffix_rare_expedition",
+      "tablet_type": "Expedition Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "(25-40)% increased number of Rare Expedition Monsters in Map",
+      "roll_range": "25-40%",
+      "trade_stat_id": "explicit.stat_2694800111",
+      "trade_ready": false,
+      "recommended_min_roll_for_filter": 35,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "S",
+      "priority": 94,
+      "best_for": [
+        "Expedition currency",
+        "rare loot"
+      ],
+      "tags": [
+        "expedition",
+        "rare_monsters"
+      ],
+      "risk_level": "medium",
+      "reason_for_trade_filter": "Strong rare-monster loot scaling for Expedition maps.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Keep as legacy reference only. Do not show in current tablet/trade workflows unless owner reverses the rule.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data). Phase 11: stat ID remains preserved for history, but current-game search is disabled by owner rule.",
+      "current_game_available": false,
+      "legacy_removed_from_current_game": true,
+      "reason_disabled": "Owner rule 2026-07-05: Expedition Tablets do not exist in the current game."
+    },
+    {
+      "id": "exp_suffix_remnants",
+      "tablet_type": "Expedition Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "Expeditions in Map have +(1-2) Remnants",
+      "roll_range": "1-2",
+      "trade_stat_id": "explicit.stat_3753446846",
+      "trade_ready": false,
+      "recommended_min_roll_for_filter": 2,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "S",
+      "priority": 92,
+      "best_for": [
+        "Grand Expedition/runic remnant value",
+        "currency"
+      ],
+      "tags": [
+        "expedition",
+        "remnants"
+      ],
+      "risk_level": "medium",
+      "reason_for_trade_filter": "More remnants create more reward choices and more 0.5 Expedition/rune mechanic value; high priority especially in Grand Expedition strategies.",
+      "source_ids": [
+        "poe2db_tablet",
+        "aoeah_054_expedition",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Keep as legacy reference only. Do not show in current tablet/trade workflows unless owner reverses the rule.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (official trade2 stats exact text). Phase 11: stat ID remains preserved for history, but current-game search is disabled by owner rule.",
+      "current_game_available": false,
+      "legacy_removed_from_current_game": true,
+      "reason_disabled": "Owner rule 2026-07-05: Expedition Tablets do not exist in the current game."
+    },
+    {
+      "id": "exp_suffix_remnant_effect",
+      "tablet_type": "Expedition Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "(12-18)% increased Effect of Expedition Remnants in Map",
+      "roll_range": "12-18%",
+      "trade_stat_id": "explicit.stat_3078574625",
+      "trade_ready": false,
+      "recommended_min_roll_for_filter": 15,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "A_HIGH_RISK",
+      "priority": 82,
+      "best_for": [
+        "high-investment Expedition",
+        "remnant scaling"
+      ],
+      "tags": [
+        "expedition",
+        "remnant_effect",
+        "high_risk"
+      ],
+      "risk_level": "high",
+      "reason_for_trade_filter": "Scales remnant rewards and danger. Use when build can handle bad remnant modifiers.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Keep as legacy reference only. Do not show in current tablet/trade workflows unless owner reverses the rule.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data). Phase 11: stat ID remains preserved for history, but current-game search is disabled by owner rule.",
+      "current_game_available": false,
+      "legacy_removed_from_current_game": true,
+      "reason_disabled": "Owner rule 2026-07-05: Expedition Tablets do not exist in the current game."
+    },
+    {
+      "id": "exp_suffix_artifacts",
+      "tablet_type": "Expedition Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "(15-30)% increased quantity of Expedition Artifacts dropped by Monsters in Map",
+      "roll_range": "15-30%",
+      "trade_stat_id": "explicit.stat_4219583418",
+      "trade_ready": false,
+      "recommended_min_roll_for_filter": 25,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "A",
+      "priority": 78,
+      "best_for": [
+        "vendor/artifact farming"
+      ],
+      "tags": [
+        "expedition",
+        "artifacts"
+      ],
+      "risk_level": "low",
+      "reason_for_trade_filter": "Good if the player specifically wants Expedition artifacts/vendor currency.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Keep as legacy reference only. Do not show in current tablet/trade workflows unless owner reverses the rule.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data). Phase 11: stat ID remains preserved for history, but current-game search is disabled by owner rule.",
+      "current_game_available": false,
+      "legacy_removed_from_current_game": true,
+      "reason_disabled": "Owner rule 2026-07-05: Expedition Tablets do not exist in the current game."
+    },
+    {
+      "id": "exp_suffix_explosive_radius",
+      "tablet_type": "Expedition Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "(15-30)% increased Expedition Explosive Radius in Map",
+      "roll_range": "15-30%",
+      "trade_stat_id": "explicit.stat_3289828378",
+      "trade_ready": false,
+      "recommended_min_roll_for_filter": 25,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "B",
+      "priority": 50,
+      "best_for": [
+        "quality of life",
+        "speed"
+      ],
+      "tags": [
+        "expedition",
+        "qol"
+      ],
+      "risk_level": "low",
+      "reason_for_trade_filter": "QoL/speed, not direct currency; useful but do not include in default currency filter.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Keep as legacy reference only. Do not show in current tablet/trade workflows unless owner reverses the rule.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data). Phase 11: stat ID remains preserved for history, but current-game search is disabled by owner rule.",
+      "current_game_available": false,
+      "legacy_removed_from_current_game": true,
+      "reason_disabled": "Owner rule 2026-07-05: Expedition Tablets do not exist in the current game."
+    },
+    {
+      "id": "exp_suffix_explosive_range",
+      "tablet_type": "Expedition Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "(15-30)% increased Expedition Explosive Placement Range in Map",
+      "roll_range": "15-30%",
+      "trade_stat_id": "explicit.stat_1539368271",
+      "trade_ready": false,
+      "recommended_min_roll_for_filter": 25,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "B",
+      "priority": 48,
+      "best_for": [
+        "quality of life",
+        "speed"
+      ],
+      "tags": [
+        "expedition",
+        "qol"
+      ],
+      "risk_level": "low",
+      "reason_for_trade_filter": "QoL/speed, not direct currency; lower priority than loot suffixes.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Keep as legacy reference only. Do not show in current tablet/trade workflows unless owner reverses the rule.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data). Phase 11: stat ID remains preserved for history, but current-game search is disabled by owner rule.",
+      "current_game_available": false,
+      "legacy_removed_from_current_game": true,
+      "reason_disabled": "Owner rule 2026-07-05: Expedition Tablets do not exist in the current game."
+    },
+    {
+      "id": "rit_suffix_omen_chance",
+      "tablet_type": "Ritual Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "Ritual Favours in Map have (35-70)% increased chance to be Omens",
+      "roll_range": "35-70%",
+      "trade_stat_id": "explicit.stat_4219853180",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 60,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "SS",
+      "priority": 100,
+      "best_for": [
+        "Ritual omen farming",
+        "currency"
+      ],
+      "tags": [
+        "ritual",
+        "omens",
+        "currency"
+      ],
+      "risk_level": "low",
+      "reason_for_trade_filter": "Best direct Ritual currency filter because expensive Omens are the target reward.",
+      "source_ids": [
+        "poe2db_tablet",
+        "reddit_ritual_setup",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "rit_suffix_additional_rerolls",
+      "tablet_type": "Ritual Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "Ritual Altars in Map allow rerolling Favours an additional time",
+      "roll_range": "1-3",
+      "trade_stat_id": "explicit.stat_120737942",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 2,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "SS",
+      "priority": 98,
+      "best_for": [
+        "Ritual omen hunt",
+        "favor rerolling"
+      ],
+      "tags": [
+        "ritual",
+        "rerolls",
+        "currency"
+      ],
+      "risk_level": "low",
+      "reason_for_trade_filter": "More rerolls means more reward screens and more Omen/jackpot chances.",
+      "source_ids": [
+        "poe2db_tablet",
+        "reddit_ritual_setup",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (manual official trade2 match).",
+      "current_game_available": true
+    },
+    {
+      "id": "rit_suffix_reroll_cost",
+      "tablet_type": "Ritual Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "Rerolling Favours at Ritual Altars in Map costs #% increased Tribute",
+      "roll_range": "20-30%",
+      "trade_stat_id": "explicit.stat_2282052746",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 25,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "S",
+      "priority": 94,
+      "best_for": [
+        "Ritual reroll economy",
+        "free/cheap rerolls"
+      ],
+      "tags": [
+        "ritual",
+        "reduced_cost",
+        "currency"
+      ],
+      "risk_level": "low",
+      "reason_for_trade_filter": "Lets the player push toward low-cost reroll setups; very strong with Atlas and reroll-count stacking.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "Phase 10 correction: ZIP said reduced Tribute; official trade2 stats say increased Tribute.",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (manual official trade2 match).",
+      "current_game_available": true
+    },
+    {
+      "id": "rit_suffix_tribute_gain",
+      "tablet_type": "Ritual Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "Monsters Sacrificed at Ritual Altars in Map grant (18-30)% increased Tribute",
+      "roll_range": "18-30%",
+      "trade_stat_id": "explicit.stat_159726667",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 25,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "S",
+      "priority": 90,
+      "best_for": [
+        "Ritual tribute",
+        "reward purchasing"
+      ],
+      "tags": [
+        "ritual",
+        "tribute"
+      ],
+      "risk_level": "low",
+      "reason_for_trade_filter": "Directly improves buying power from the mechanic; pairs well with pack size prefix.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "rit_suffix_defer_cost",
+      "tablet_type": "Ritual Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "Deferring Favours at Ritual Altars in Map costs #% increased Tribute",
+      "roll_range": "20-30%",
+      "trade_stat_id": "explicit.stat_1345835998",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 25,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "A",
+      "priority": 78,
+      "best_for": [
+        "defer strategy",
+        "jackpot protection"
+      ],
+      "tags": [
+        "ritual",
+        "defer"
+      ],
+      "risk_level": "low",
+      "reason_for_trade_filter": "Useful when chasing expensive Omens/invitations that need defer cycles.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "Phase 10 correction: ZIP said reduced Tribute; official trade2 stats say increased Tribute.",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (manual official trade2 match).",
+      "current_game_available": true
+    },
+    {
+      "id": "rit_suffix_rare_revived",
+      "tablet_type": "Ritual Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "Revived Monsters from Ritual Altars in Map have (25-40)% increased chance to be Rare",
+      "roll_range": "25-40%",
+      "trade_stat_id": "explicit.stat_3979184174",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 35,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "A",
+      "priority": 76,
+      "best_for": [
+        "Ritual density/loot",
+        "tribute scaling"
+      ],
+      "tags": [
+        "ritual",
+        "rare_monsters"
+      ],
+      "risk_level": "medium",
+      "reason_for_trade_filter": "Can improve monster value and tribute, but less direct than Omen/reroll/tribute mods.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (manual official trade2 match).",
+      "current_game_available": true
+    },
+    {
+      "id": "rit_suffix_magic_revived",
+      "tablet_type": "Ritual Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "Revived Monsters from Ritual Altars in Map have (35-70)% increased chance to be Magic",
+      "roll_range": "35-70%",
+      "trade_stat_id": "explicit.stat_1031644647",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 60,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "B",
+      "priority": 62,
+      "best_for": [
+        "Ritual density/loot"
+      ],
+      "tags": [
+        "ritual",
+        "magic_monsters"
+      ],
+      "risk_level": "low",
+      "reason_for_trade_filter": "Secondary density/value suffix; lower priority than rare revived.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (manual official trade2 match).",
+      "current_game_available": true
+    },
+    {
+      "id": "rit_suffix_no_cost_reroll",
+      "tablet_type": "Ritual Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "Favours Rerolled at Ritual Altars in Map have (3-6)% chance to cost no Tribute",
+      "roll_range": "3-6%",
+      "trade_stat_id": "explicit.stat_937291386",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 5,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "B",
+      "priority": 56,
+      "best_for": [
+        "Ritual budget rerolling"
+      ],
+      "tags": [
+        "ritual",
+        "rerolls"
+      ],
+      "risk_level": "low",
+      "reason_for_trade_filter": "Too inconsistent to be a top filter but useful as a budget target.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "rit_suffix_defer_soon",
+      "tablet_type": "Ritual Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "Favours Deferred at Ritual Altars in Map reappear (25-40)% sooner",
+      "roll_range": "25-40%",
+      "trade_stat_id": "explicit.stat_28208665",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 35,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "B",
+      "priority": 52,
+      "best_for": [
+        "defer cycling"
+      ],
+      "tags": [
+        "ritual",
+        "defer"
+      ],
+      "risk_level": "low",
+      "reason_for_trade_filter": "Quality-of-life defer cycling; not a top currency mod.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "breach_suffix_pack_size",
+      "tablet_type": "Breach Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "Breaches in Map have (5-15)% increased Pack Size",
+      "roll_range": "5-15%",
+      "trade_stat_id": "explicit.stat_1210760818",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 12,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "SS",
+      "priority": 100,
+      "best_for": [
+        "Breach currency",
+        "splinters",
+        "Catalyst/Hiveblood/Wombgift farming"
+      ],
+      "tags": [
+        "breach",
+        "pack_size",
+        "density",
+        "currency"
+      ],
+      "risk_level": "medium",
+      "reason_for_trade_filter": "Best Breach trade filter because density drives breach loot and stabilisation value.",
+      "source_ids": [
+        "poe2db_tablet",
+        "youtube_tablet_roll_guide",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "breach_suffix_stabilized_rares",
+      "tablet_type": "Breach Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "Unstable Breaches in Map spawn (1-3) additional Rare Monsters when Stabilised",
+      "roll_range": "1-3",
+      "trade_stat_id": "explicit.stat_3762913035",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 2,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "S",
+      "priority": 94,
+      "best_for": [
+        "Breach rare loot",
+        "high investment breach"
+      ],
+      "tags": [
+        "breach",
+        "rare_monsters",
+        "currency"
+      ],
+      "risk_level": "high",
+      "reason_for_trade_filter": "Adds rare monsters at the high-value point of Unstable Breaches.",
+      "source_ids": [
+        "poe2db_tablet",
+        "reddit_grand_expedition_tips",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (manual official trade2 match).",
+      "current_game_available": true
+    },
+    {
+      "id": "breach_suffix_hiveblood_quantity",
+      "tablet_type": "Breach Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "(30-60)% increased Quantity of Hiveblood found in Map",
+      "roll_range": "30-60%",
+      "trade_stat_id": "explicit.stat_2778285247",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 50,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "A",
+      "priority": 84,
+      "best_for": [
+        "Hiveblood farming"
+      ],
+      "tags": [
+        "breach",
+        "hiveblood",
+        "currency"
+      ],
+      "risk_level": "low",
+      "reason_for_trade_filter": "Targeted currency suffix for Hiveblood farming.",
+      "source_ids": [
+        "poe2db_tablet",
+        "aoeah_054_expedition",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "breach_suffix_wombgifts_quantity",
+      "tablet_type": "Breach Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "(30-60)% increased Quantity of Wombgifts found in Map",
+      "roll_range": "30-60%",
+      "trade_stat_id": "explicit.stat_472809816",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 50,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "A",
+      "priority": 82,
+      "best_for": [
+        "Wombgift farming"
+      ],
+      "tags": [
+        "breach",
+        "wombgifts",
+        "currency"
+      ],
+      "risk_level": "low",
+      "reason_for_trade_filter": "Targeted currency suffix for Wombgift farming.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "breach_suffix_wombgifts_level",
+      "tablet_type": "Breach Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "Wombgifts have (10-30)% chance to drop one Level higher in Map",
+      "roll_range": "10-30%",
+      "trade_stat_id": "explicit.stat_2889272422",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 25,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "A",
+      "priority": 80,
+      "best_for": [
+        "Wombgift value scaling"
+      ],
+      "tags": [
+        "breach",
+        "wombgifts"
+      ],
+      "risk_level": "low",
+      "reason_for_trade_filter": "Raises Wombgift value; best when Wombgifts are the explicit goal.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "breach_suffix_vruun_chance",
+      "tablet_type": "Breach Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "Unstable Breaches in Map have (20-50)% increased chance to contain Vruun, Marshal of Xesht",
+      "roll_range": "20-50%",
+      "trade_stat_id": "explicit.stat_2433436306",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 40,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "B",
+      "priority": 62,
+      "best_for": [
+        "Breach boss target farming"
+      ],
+      "tags": [
+        "breach",
+        "boss"
+      ],
+      "risk_level": "high",
+      "reason_for_trade_filter": "Boss-target suffix; not default currency unless market values boss drops.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "breach_suffix_rare_effectiveness",
+      "tablet_type": "Breach Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "(5-20)% increased Effectiveness of Rare Breach Monsters in Map",
+      "roll_range": "5-20%",
+      "trade_stat_id": "explicit.stat_2895378479",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 15,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "B_HIGH_RISK",
+      "priority": 60,
+      "best_for": [
+        "high-risk breach rare loot"
+      ],
+      "tags": [
+        "breach",
+        "monster_effectiveness",
+        "high_risk"
+      ],
+      "risk_level": "high",
+      "reason_for_trade_filter": "Dangerous scaling. Use only for builds that can handle rare Breach monsters.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "deli_suffix_pack_size",
+      "tablet_type": "Delirium Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "Delirium Monsters in Map have (15-30)% increased Pack Size",
+      "roll_range": "15-30%",
+      "trade_stat_id": "explicit.stat_3465791711",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 25,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "SS",
+      "priority": 100,
+      "best_for": [
+        "Delirium currency",
+        "density",
+        "Ritual synergy"
+      ],
+      "tags": [
+        "delirium",
+        "pack_size",
+        "density",
+        "currency"
+      ],
+      "risk_level": "medium",
+      "reason_for_trade_filter": "Best generic Delirium currency suffix because monster density drives rewards and map loot.",
+      "source_ids": [
+        "poe2db_tablet",
+        "youtube_tablet_roll_guide",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "deli_suffix_simulacrum_stack",
+      "tablet_type": "Delirium Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "(15-30)% increased Stack size of Simulacrum Splinters found in Map",
+      "roll_range": "15-30%",
+      "trade_stat_id": "explicit.stat_3836551197",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 25,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "S",
+      "priority": 94,
+      "best_for": [
+        "Simulacrum splinter farming"
+      ],
+      "tags": [
+        "delirium",
+        "simulacrum",
+        "currency"
+      ],
+      "risk_level": "low",
+      "reason_for_trade_filter": "Direct currency filter for splinter farming.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "deli_suffix_increased_deliriousness",
+      "tablet_type": "Delirium Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "Delirium Fog in Map applies (15-30)% increased Deliriousness to Players",
+      "roll_range": "15-30%",
+      "trade_stat_id": "explicit.stat_1769611692",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 25,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "S_HIGH_RISK",
+      "priority": 88,
+      "best_for": [
+        "high-investment delirium rewards"
+      ],
+      "tags": [
+        "delirium",
+        "deliriousness",
+        "high_risk"
+      ],
+      "risk_level": "high",
+      "reason_for_trade_filter": "Potential high ceiling but much more dangerous; not for weak builds.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "deli_suffix_fog_slower",
+      "tablet_type": "Delirium Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "Delirium Fog in Map dissipates #% faster",
+      "roll_range": "20-30%",
+      "trade_stat_id": "explicit.stat_3350944114",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 25,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "A",
+      "priority": 82,
+      "best_for": [
+        "Delirium uptime",
+        "slower builds"
+      ],
+      "tags": [
+        "delirium",
+        "fog_uptime"
+      ],
+      "risk_level": "medium",
+      "reason_for_trade_filter": "Better fog uptime means more time in reward state.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "Phase 10 correction: official trade2 stats use faster wording; PoE2DB/community wording may encode slower via value sign.",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (manual official trade2 match).",
+      "current_game_available": true
+    },
+    {
+      "id": "deli_suffix_fog_duration",
+      "tablet_type": "Delirium Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "Delirium Fog in Map lasts # additional seconds before dissipating",
+      "roll_range": "6-12",
+      "trade_stat_id": "explicit.stat_3226351972",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 10,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "A",
+      "priority": 80,
+      "best_for": [
+        "Delirium uptime"
+      ],
+      "tags": [
+        "delirium",
+        "fog_uptime"
+      ],
+      "risk_level": "medium",
+      "reason_for_trade_filter": "Good uptime suffix, especially for less mobile builds.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "Phase 10 verification: official duplicate explicit.stat_1174954559 returned 0 Delirium Tablet matches; explicit.stat_3226351972 returned matches.",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (manual official trade2 match).",
+      "current_game_available": true
+    },
+    {
+      "id": "deli_suffix_freeze_timer",
+      "tablet_type": "Delirium Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "Slaying Rare Monsters in Map pauses the Delirium Mirror Timer for 1 second",
+      "roll_range": "3-5",
+      "trade_stat_id": "explicit.stat_2323782229",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 4,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "A",
+      "priority": 78,
+      "best_for": [
+        "Delirium uptime",
+        "rare monster builds"
+      ],
+      "tags": [
+        "delirium",
+        "timer",
+        "rare_monsters"
+      ],
+      "risk_level": "medium",
+      "reason_for_trade_filter": "Useful when maps contain many rare monsters and the player needs uptime.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "Phase 10 correction: official trade2 stats use fixed 1 second text.",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (manual official trade2 match).",
+      "current_game_available": true
+    },
+    {
+      "id": "deli_suffix_fracturing_mirrors",
+      "tablet_type": "Delirium Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "Delirium Fog in Map spawns (15-30)% increased Fracturing Mirrors",
+      "roll_range": "15-30%",
+      "trade_stat_id": "explicit.stat_551040294",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 25,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "B",
+      "priority": 64,
+      "best_for": [
+        "Fracturing Mirror target farming"
+      ],
+      "tags": [
+        "delirium",
+        "fracturing_mirrors"
+      ],
+      "risk_level": "medium",
+      "reason_for_trade_filter": "Targeted reward suffix; not universal.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "deli_suffix_mirror_shards",
+      "tablet_type": "Delirium Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "Delirium Fog in Map spawns #% increased MirrorShards",
+      "roll_range": "12-26%",
+      "trade_stat_id": "explicit.stat_900933517",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 22,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "B",
+      "priority": 60,
+      "best_for": [
+        "Mirror shard target farming"
+      ],
+      "tags": [
+        "delirium",
+        "mirror_shards"
+      ],
+      "risk_level": "medium",
+      "reason_for_trade_filter": "Targeted reward suffix; lower general priority.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (manual official trade2 match).",
+      "current_game_available": true
+    },
+    {
+      "id": "deli_suffix_unique_boss",
+      "tablet_type": "Delirium Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "Delirium Encounters in Map are (15-30)% more likely to spawn Unique Bosses",
+      "roll_range": "15-30%",
+      "trade_stat_id": "explicit.stat_3962960008",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 25,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "B",
+      "priority": 56,
+      "best_for": [
+        "Delirium boss target farming"
+      ],
+      "tags": [
+        "delirium",
+        "boss"
+      ],
+      "risk_level": "high",
+      "reason_for_trade_filter": "Use for boss/drop target, not default currency.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "abyss_suffix_four_extra",
+      "tablet_type": "Abyss Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "Map has (20-40)% chance to contain four additional Abysses",
+      "roll_range": "20-40%",
+      "trade_stat_id": "explicit.stat_2890355696",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 35,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "SS",
+      "priority": 100,
+      "best_for": [
+        "Abyss currency",
+        "Abyssal Echoes/Omens",
+        "density"
+      ],
+      "tags": [
+        "abyss",
+        "additional_abysses",
+        "currency"
+      ],
+      "risk_level": "medium",
+      "reason_for_trade_filter": "Top expected-value Abyss filter because four extra Abysses is massive volume when it hits.",
+      "source_ids": [
+        "poe2db_tablet",
+        "aoeah_05_abyss",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (manual official trade2 match).",
+      "current_game_available": true
+    },
+    {
+      "id": "abyss_suffix_one_extra",
+      "tablet_type": "Abyss Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "Map contains 1 additional Abyss",
+      "roll_range": "1",
+      "trade_stat_id": "explicit.stat_1070816711",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": null,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "SS",
+      "priority": 96,
+      "best_for": [
+        "Abyss currency",
+        "consistent volume"
+      ],
+      "tags": [
+        "abyss",
+        "additional_abysses",
+        "currency"
+      ],
+      "risk_level": "medium",
+      "reason_for_trade_filter": "Guaranteed extra Abyss is more consistent than chance-based high-rolls.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "abyss_suffix_spawn_monsters",
+      "tablet_type": "Abyss Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "Abysses in Map spawn (20-30)% increased Monsters",
+      "roll_range": "20-30%",
+      "trade_stat_id": "explicit.stat_944630113",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 25,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "S",
+      "priority": 92,
+      "best_for": [
+        "Abyss density",
+        "currency"
+      ],
+      "tags": [
+        "abyss",
+        "density",
+        "currency"
+      ],
+      "risk_level": "medium",
+      "reason_for_trade_filter": "Direct density increase inside the mechanic.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (official trade2 stats exact text).",
+      "current_game_available": true
+    },
+    {
+      "id": "abyss_suffix_rare_spawn",
+      "tablet_type": "Abyss Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "(1-2) additional Rare Monsters are spawned from Abysses in Map",
+      "roll_range": "1-2",
+      "trade_stat_id": "explicit.stat_243380454",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 2,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "S",
+      "priority": 90,
+      "best_for": [
+        "Abyss rare loot",
+        "currency"
+      ],
+      "tags": [
+        "abyss",
+        "rare_monsters",
+        "currency"
+      ],
+      "risk_level": "high",
+      "reason_for_trade_filter": "Strong rare-monster value per Abyss.",
+      "source_ids": [
+        "poe2db_tablet",
+        "aoeah_05_abyss",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "abyss_suffix_pit_rewards",
+      "tablet_type": "Abyss Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "Abyss Pits in Map are twice as likely to have Rewards",
+      "roll_range": "2x",
+      "trade_stat_id": "explicit.stat_4256531808",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": null,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "S",
+      "priority": 88,
+      "best_for": [
+        "Abyss pit rewards"
+      ],
+      "tags": [
+        "abyss",
+        "pit_rewards",
+        "currency"
+      ],
+      "risk_level": "medium",
+      "reason_for_trade_filter": "Strong reward targeting when Abysses close pits reliably.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "abyss_suffix_desecrated_currency",
+      "tablet_type": "Abyss Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "(20-30)% increased chance for Desecrated Currency from Abysses in Map",
+      "roll_range": "20-30%",
+      "trade_stat_id": "explicit.stat_1710200734",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 25,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "A",
+      "priority": 76,
+      "best_for": [
+        "Desecrated currency"
+      ],
+      "tags": [
+        "abyss",
+        "desecrated_currency"
+      ],
+      "risk_level": "medium",
+      "reason_for_trade_filter": "Good targeted currency mod, but needs live/in-game verification for exact interaction with guaranteed omen drops.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_interaction_uncertain_official_trade_stat_verified",
+      "notes": "Interaction with some Abyss reward sources remains uncertain; keep a warning badge.",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "abyss_suffix_abyssal_mods",
+      "tablet_type": "Abyss Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "(20-30)% increased chance for Abyssal monsters in Map to have Abyssal Modifiers",
+      "roll_range": "20-30%",
+      "trade_stat_id": "explicit.stat_2789248444",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 25,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "A_HIGH_RISK",
+      "priority": 72,
+      "best_for": [
+        "Abyss risk/reward"
+      ],
+      "tags": [
+        "abyss",
+        "monster_modifiers",
+        "high_risk"
+      ],
+      "risk_level": "high",
+      "reason_for_trade_filter": "Adds danger and reward potential through monster modifiers; high-investment only.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "abyss_suffix_depths",
+      "tablet_type": "Abyss Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "Abysses in Map have (10-20)% increased chance to lead to an Abyssal Depths",
+      "roll_range": "10-20%",
+      "trade_stat_id": "explicit.stat_2722831300",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 18,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "B",
+      "priority": 58,
+      "best_for": [
+        "Abyssal Depths target farming"
+      ],
+      "tags": [
+        "abyss",
+        "depths"
+      ],
+      "risk_level": "medium",
+      "reason_for_trade_filter": "Target-farm suffix; not top raw currency per map unless Depths drops are desired.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "abyss_suffix_effectiveness_per_pit",
+      "tablet_type": "Abyss Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "Abyssal Monsters have (8-12)% increased Effectiveness for each closed Pit, up to 100%",
+      "roll_range": "8-12%",
+      "trade_stat_id": "explicit.stat_664606484",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 10,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "B_HIGH_RISK",
+      "priority": 54,
+      "best_for": [
+        "extreme Abyss juice"
+      ],
+      "tags": [
+        "abyss",
+        "monster_effectiveness",
+        "high_risk"
+      ],
+      "risk_level": "very_high",
+      "reason_for_trade_filter": "Potential reward scaling but very dangerous; never default for casual players.",
+      "source_ids": [
+        "poe2db_tablet",
+        "mobalytics_05_patch_hub",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (manual official trade2 match).",
+      "current_game_available": true
+    },
+    {
+      "id": "overseer_suffix_boss_quantity",
+      "tablet_type": "Overseer Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "(13-20)% increased Quantity of Items dropped by Map Bosses",
+      "roll_range": "13-20%",
+      "trade_stat_id": "explicit.stat_3119172063",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 18,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "SS",
+      "priority": 98,
+      "best_for": [
+        "boss currency",
+        "Overseer farming"
+      ],
+      "tags": [
+        "overseer",
+        "boss",
+        "quantity",
+        "currency"
+      ],
+      "risk_level": "medium",
+      "reason_for_trade_filter": "Best direct boss loot suffix for Overseer tablet filters.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "overseer_suffix_boss_rarity",
+      "tablet_type": "Overseer Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "(35-60)% increased Rarity of Items dropped by Map Bosses",
+      "roll_range": "35-60%",
+      "trade_stat_id": "explicit.stat_4255069232",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 50,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "S",
+      "priority": 92,
+      "best_for": [
+        "boss unique/rare hunting"
+      ],
+      "tags": [
+        "overseer",
+        "boss",
+        "rarity"
+      ],
+      "risk_level": "medium",
+      "reason_for_trade_filter": "Strong boss magic-find suffix.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "overseer_suffix_boss_waystones",
+      "tablet_type": "Overseer Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "(18-30)% increased Quantity of Waystones dropped by Map Bosses",
+      "roll_range": "18-30%",
+      "trade_stat_id": "explicit.stat_1457896329",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 25,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "S",
+      "priority": 88,
+      "best_for": [
+        "boss waystone sustain"
+      ],
+      "tags": [
+        "overseer",
+        "waystone_sustain"
+      ],
+      "risk_level": "low",
+      "reason_for_trade_filter": "Boss-focused waystone sustain filter.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "overseer_suffix_boss_experience",
+      "tablet_type": "Overseer Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "Map Bosses grant (40-80)% increased Experience",
+      "roll_range": "40-80%",
+      "trade_stat_id": "explicit.stat_3860150265",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 70,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "B",
+      "priority": 48,
+      "best_for": [
+        "boss XP"
+      ],
+      "tags": [
+        "overseer",
+        "experience"
+      ],
+      "risk_level": "medium",
+      "reason_for_trade_filter": "XP only, not a currency filter.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "overseer_suffix_add_spirits",
+      "tablet_type": "Overseer Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "Map contains # additional Azmeri Spirit",
+      "roll_range": "1-2",
+      "trade_stat_id": "explicit.stat_358129101",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 2,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "A",
+      "priority": 76,
+      "best_for": [
+        "spirit-possessed boss setup"
+      ],
+      "tags": [
+        "overseer",
+        "azmeri_spirit"
+      ],
+      "risk_level": "medium",
+      "reason_for_trade_filter": "Good when paired with Atlas/Master choices that reward spirits/bosses.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (manual official trade2 match).",
+      "current_game_available": true
+    },
+    {
+      "id": "overseer_suffix_add_strongboxes",
+      "tablet_type": "Overseer Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "Map contains (1-2) additional Strongboxes",
+      "roll_range": "1-2",
+      "trade_stat_id": "explicit.stat_3240183538",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 2,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "B",
+      "priority": 60,
+      "best_for": [
+        "side content"
+      ],
+      "tags": [
+        "overseer",
+        "strongbox"
+      ],
+      "risk_level": "low",
+      "reason_for_trade_filter": "Side content; not pure boss filter.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (official trade2 stats exact text).",
+      "current_game_available": true
+    },
+    {
+      "id": "temple_suffix_rare_chests",
+      "tablet_type": "Temple Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "(30-60)% increased chance Vaal Beacon Chests are Rare in Map",
+      "roll_range": "30-60%",
+      "trade_stat_id": "explicit.stat_2514439422",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 50,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "S",
+      "priority": 86,
+      "best_for": [
+        "Temple/Vaal Beacon rewards"
+      ],
+      "tags": [
+        "temple",
+        "vaal_beacon",
+        "chests",
+        "currency"
+      ],
+      "risk_level": "medium",
+      "reason_for_trade_filter": "Strong direct reward quality suffix for Temple tablet filters.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "temple_suffix_extra_monster_packs_chance",
+      "tablet_type": "Temple Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "#% chance for an extra packs of Monsters around Vaal Beacons in Map",
+      "roll_range": "30-60%",
+      "trade_stat_id": "explicit.stat_1359775981",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 50,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "S",
+      "priority": 84,
+      "best_for": [
+        "Temple density",
+        "currency"
+      ],
+      "tags": [
+        "temple",
+        "density"
+      ],
+      "risk_level": "medium",
+      "reason_for_trade_filter": "Adds density around Vaal Beacons; good for currency/loot.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (manual official trade2 match).",
+      "current_game_available": true
+    },
+    {
+      "id": "temple_suffix_guaranteed_extra_pack",
+      "tablet_type": "Temple Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "1 extra pack of Monsters around Vaal Beacons in Map",
+      "roll_range": "1",
+      "trade_stat_id": "explicit.stat_3294218801",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": null,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "S",
+      "priority": 82,
+      "best_for": [
+        "Temple density",
+        "currency"
+      ],
+      "tags": [
+        "temple",
+        "density"
+      ],
+      "risk_level": "medium",
+      "reason_for_trade_filter": "Guaranteed extra packs are reliable density.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "temple_suffix_pack_size_beacons",
+      "tablet_type": "Temple Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "(10-30)% increased Pack Size for Monsters around Vaal Beacons in Map",
+      "roll_range": "10-30%",
+      "trade_stat_id": "explicit.stat_890040946",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 25,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "A",
+      "priority": 78,
+      "best_for": [
+        "Temple density",
+        "currency"
+      ],
+      "tags": [
+        "temple",
+        "pack_size"
+      ],
+      "risk_level": "medium",
+      "reason_for_trade_filter": "Density multiplier for Vaal Beacon packs.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "temple_suffix_summon_monsters",
+      "tablet_type": "Temple Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "(25-50)% increased chance Vaal Beacons summon additional Monsters in Map",
+      "roll_range": "25-50%",
+      "trade_stat_id": "explicit.stat_632698321",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 40,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "A",
+      "priority": 76,
+      "best_for": [
+        "Temple density"
+      ],
+      "tags": [
+        "temple",
+        "density"
+      ],
+      "risk_level": "medium",
+      "reason_for_trade_filter": "More monsters, more loot/danger.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "temple_suffix_unique_monster",
+      "tablet_type": "Temple Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "(10-25)% chance to add a Vaal Beacon Unique Monster to the Map",
+      "roll_range": "10-25%",
+      "trade_stat_id": "explicit.stat_3591307827",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 20,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "B",
+      "priority": 62,
+      "best_for": [
+        "Temple boss/unique target"
+      ],
+      "tags": [
+        "temple",
+        "unique_monster"
+      ],
+      "risk_level": "high",
+      "reason_for_trade_filter": "Targeted unique monster suffix; market dependent.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "temple_suffix_crystal",
+      "tablet_type": "Temple Tablet",
+      "scope": "type_suffix",
+      "affix_slot": "suffix",
+      "modifier_text": "(5-10)% chance to gain an additional Crystal from Vaal Beacons in Map",
+      "roll_range": "5-10%",
+      "trade_stat_id": "explicit.stat_1940774881",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": 8,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "B",
+      "priority": 58,
+      "best_for": [
+        "Temple crystals"
+      ],
+      "tags": [
+        "temple",
+        "crystal"
+      ],
+      "risk_level": "medium",
+      "reason_for_trade_filter": "Targeted crystal reward; rating should be economy-tested before final scoring.",
+      "source_ids": [
+        "poe2db_tablet",
+        "official_trade2_stats_phase10"
+      ],
+      "confidence": "confirmed_text_opinion_rating_official_trade_stat_verified",
+      "notes": "",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "explicit_stat",
+      "verification_note": "Verified 2026-07-05 against official trade2 stats metadata (existing app verified data).",
+      "current_game_available": true
+    },
+    {
+      "id": "irradiated_base_strategy",
+      "tablet_type": "Irradiated Tablet",
+      "scope": "base_strategy",
+      "affix_slot": "implicit",
+      "modifier_text": "Adds Irradiated to a Map",
+      "roll_range": "10 uses",
+      "trade_stat_id": "TYPE_FILTER_ONLY",
+      "trade_ready": true,
+      "recommended_min_roll_for_filter": null,
+      "recommended_max_roll_for_filter": null,
+      "currency_juice_rating": "S_UTILITY",
+      "priority": 88,
+      "best_for": [
+        "area level breakpoints",
+        "tablet farming",
+        "Grand Expedition map prep"
+      ],
+      "tags": [
+        "irradiated",
+        "area_level",
+        "utility"
+      ],
+      "risk_level": "medium",
+      "reason_for_trade_filter": "Irradiated itself is the value. Use shared prefixes/suffixes for trade filters: Pack Size, Monster Effectiveness, Item Rarity, Rare Monsters, Waystone Quantity, Additional Random Modifiers.",
+      "source_ids": [
+        "poe2db_tablet",
+        "reddit_irradiated_stacking",
+        "reddit_grand_expedition_tips"
+      ],
+      "confidence": "confirmed_text_opinion_rating",
+      "notes": "Has no unique type-specific suffix pool in this pack; filter it with shared prefix/suffix presets.",
+      "deprecated_or_disabled": false,
+      "app_behavior": "Show in Tablet Juice filter. If trade_ready is false, allow UI selection but keep official one-click search disabled until stat id is verified.",
+      "trade_filter_kind": "type_only",
+      "verification_note": "Phase 10: no stat filter required; the selected item type Irradiated Tablet is the filter.",
+      "current_game_available": true
+    }
+  ],
+  "unique_tablets": [
+    {
+      "id": "unique_breach_wraeclast_besieged",
+      "name": "Wraeclast Besieged",
+      "base": "Breach Tablet",
+      "rating": "S_HIGH_RISK",
+      "trade_filter_tags": [
+        "breach",
+        "unique_tablet",
+        "high_investment"
+      ],
+      "mods": [
+        "Breach Hives in Map have (2-5) additional waves of Hiveborn Monsters",
+        "Breaches in Map have (-10-20)% reduced Pack Size",
+        "Unstable Breaches in Map take 120 additional seconds to collapse after timer is filled",
+        "Unstable Breaches in Map spawn (2-5) additional Rare Monsters when Stabilised"
+      ],
+      "notes": "Potentially strong for unstable Breach farming; pack-size roll can be negative/positive. Treat as advanced filter with roll thresholds.",
+      "source_ids": [
+        "poe2db_tablet"
+      ]
+    },
+    {
+      "id": "unique_delirium_clear_skies",
+      "name": "Clear Skies",
+      "base": "Delirium Tablet",
+      "rating": "S",
+      "trade_filter_tags": [
+        "delirium",
+        "unique_tablet",
+        "fog_uptime"
+      ],
+      "mods": [
+        "Delirium Fog in your Maps never dissipates",
+        "Delirium Fog in Map applies (-10-10)% reduced Deliriousness to Players"
+      ],
+      "notes": "High utility for Delirium uptime; value depends on price and build speed.",
+      "source_ids": [
+        "poe2db_tablet"
+      ]
+    },
+    {
+      "id": "unique_ritual_freedom_of_faith",
+      "name": "Freedom of Faith",
+      "base": "Ritual Tablet",
+      "rating": "SS",
+      "trade_filter_tags": [
+        "ritual",
+        "unique_tablet",
+        "rerolls",
+        "omens"
+      ],
+      "mods": [
+        "Favours at Ritual Altars in Area costs (10-15)% increased Tribute",
+        "Can Reroll Favours at Ritual Altars in your Maps twice as many times"
+      ],
+      "notes": "Top unique for Ritual reroll strategies; downside should be shown.",
+      "source_ids": [
+        "poe2db_tablet"
+      ]
+    },
+    {
+      "id": "unique_abyss_unforeseen_consequences",
+      "name": "Unforeseen Consequences",
+      "base": "Abyss Tablet",
+      "rating": "SS_HIGH_RISK",
+      "trade_filter_tags": [
+        "abyss",
+        "unique_tablet",
+        "additional_abysses",
+        "high_investment"
+      ],
+      "mods": [
+        "Map contains (14-18) additional Abysses",
+        "Map is overrun by the Abyssal",
+        "% more Waystones found in Area",
+        "additional Rare Monsters are spawned from Abysses in Map",
+        "map abyss tower augment quantity +% final from overrun unique tablet [-75]"
+      ],
+      "notes": "Huge Abyss volume but with severe/corrupted-looking downside text from PoE2DB; exact display text and trade filter behavior need final UI verification.",
+      "source_ids": [
+        "poe2db_tablet"
+      ]
+    },
+    {
+      "id": "unique_overseer_cruel_hegemony",
+      "name": "Cruel Hegemony",
+      "base": "Overseer Tablet",
+      "rating": "S_HIGH_RISK",
+      "trade_filter_tags": [
+        "overseer",
+        "unique_tablet",
+        "boss_modifiers"
+      ],
+      "mods": [
+        "Map Bosses have 1 additional Modifier"
+      ],
+      "notes": "Good boss/rare modifier scaling but raises danger; pair with boss quantity/rarity strategy.",
+      "source_ids": [
+        "poe2db_tablet"
+      ]
+    },
+    {
+      "id": "unique_overseer_season_of_the_hunt",
+      "name": "Season of the Hunt",
+      "base": "Overseer Tablet",
+      "rating": "A",
+      "trade_filter_tags": [
+        "overseer",
+        "unique_tablet",
+        "azmeri_spirit"
+      ],
+      "mods": [
+        "Map Bosses are Hunted by Azmeri Spirits"
+      ],
+      "notes": "Spirit/boss synergy; exact value depends on Master/Atlas setup.",
+      "source_ids": [
+        "poe2db_tablet"
+      ]
+    },
+    {
+      "id": "unique_irradiated_grand_project",
+      "name": "The Grand Project",
+      "base": "Irradiated Tablet",
+      "rating": "A_UTILITY",
+      "trade_filter_tags": [
+        "irradiated",
+        "unique_tablet",
+        "tower"
+      ],
+      "mods": [
+        "Can only be applied to Precursor Tower Maps",
+        "Completing the Tower makes all nearby Maps accessible"
+      ],
+      "notes": "Atlas access/utility, not direct currency roll.",
+      "source_ids": [
+        "poe2db_tablet"
+      ]
+    },
+    {
+      "id": "unique_irradiated_visions_of_paradise",
+      "name": "Visions of Paradise",
+      "base": "Irradiated Tablet",
+      "rating": "A_UTILITY",
+      "trade_filter_tags": [
+        "irradiated",
+        "unique_tablet",
+        "irradiation"
+      ],
+      "mods": [
+        "If Map was not previously Irradiated, completing Map adds Irradiation instead"
+      ],
+      "notes": "Irradiation utility; add as optional trade filter.",
+      "source_ids": [
+        "poe2db_tablet"
+      ]
+    },
+    {
+      "id": "unique_irradiated_mastered_domain",
+      "name": "Mastered Domain",
+      "base": "Irradiated Tablet",
+      "rating": "B_UTILITY",
+      "trade_filter_tags": [
+        "irradiated",
+        "unique_tablet",
+        "biome_water"
+      ],
+      "mods": [
+        "Map also counts as a Water Map"
+      ],
+      "notes": "Biome targeting utility.",
+      "source_ids": [
+        "poe2db_tablet"
+      ]
+    }
+  ],
+  "filter_presets": [
+    {
+      "id": "preset_all_safe_currency",
+      "name": "Any Tablet - Safe Currency Juice",
+      "tablet_type": "All tablets",
+      "description": "Start with the safest universal currency filters. Good for users who want valuable tablets without extreme danger.",
+      "mode": "COUNT",
+      "count_min": 1,
+      "filters": [
+        {
+          "modifier_id": "shared_prefix_pack_size",
+          "min": 6
+        },
+        {
+          "modifier_id": "shared_prefix_rare_monsters",
+          "min": 30
+        },
+        {
+          "modifier_id": "shared_prefix_monster_rarity",
+          "min": 18
+        },
+        {
+          "modifier_id": "shared_prefix_item_rarity",
+          "min": 10
+        },
+        {
+          "modifier_id": "shared_suffix_waystone_quantity",
+          "min": 35
+        }
+      ],
+      "trade_ready": false,
+      "reason_disabled": "Trade stat IDs still need official trade2 metadata verification."
+    },
+    {
+      "id": "preset_all_high_investment",
+      "name": "Any Tablet - High-Investment Juice",
+      "tablet_type": "All tablets",
+      "description": "For strong builds only. Prioritizes high reward/difficulty multipliers.",
+      "mode": "COUNT",
+      "count_min": 1,
+      "filters": [
+        {
+          "modifier_id": "shared_prefix_monster_effectiveness",
+          "min": 13
+        },
+        {
+          "modifier_id": "shared_suffix_random_modifiers",
+          "min": 2
+        },
+        {
+          "modifier_id": "shared_prefix_rare_monsters",
+          "min": 30
+        },
+        {
+          "modifier_id": "shared_prefix_pack_size",
+          "min": 6
+        }
+      ],
+      "trade_ready": false,
+      "reason_disabled": "Trade stat IDs still need official trade2 metadata verification."
+    },
+    {
+      "id": "preset_expedition_logbook",
+      "name": "Expedition - Logbook/Currency Juice",
+      "tablet_type": "Expedition Tablet",
+      "description": "Best filters for Expedition logbook and runic-monster currency farming.",
+      "mode": "COUNT",
+      "count_min": 1,
+      "filters": [
+        {
+          "modifier_id": "exp_suffix_logbooks",
+          "min": 25
+        },
+        {
+          "modifier_id": "exp_suffix_runic_markers",
+          "min": 25
+        },
+        {
+          "modifier_id": "exp_suffix_rare_expedition",
+          "min": 35
+        },
+        {
+          "modifier_id": "exp_suffix_remnants",
+          "min": 2
+        }
+      ],
+      "recommended_prefixes": [
+        "shared_prefix_pack_size",
+        "shared_prefix_rare_monsters",
+        "shared_prefix_monster_effectiveness"
+      ],
+      "trade_ready": false
+    },
+    {
+      "id": "preset_ritual_omens",
+      "name": "Ritual - Omens/Rerolls Juice",
+      "tablet_type": "Ritual Tablet",
+      "description": "Best filters for Omen hunting and maximizing ritual reward screens.",
+      "mode": "COUNT",
+      "count_min": 1,
+      "filters": [
+        {
+          "modifier_id": "rit_suffix_omen_chance",
+          "min": 60
+        },
+        {
+          "modifier_id": "rit_suffix_additional_rerolls",
+          "min": 2
+        },
+        {
+          "modifier_id": "rit_suffix_reroll_cost",
+          "min": 25
+        },
+        {
+          "modifier_id": "rit_suffix_tribute_gain",
+          "min": 25
+        }
+      ],
+      "recommended_prefixes": [
+        "shared_prefix_pack_size",
+        "shared_prefix_rare_monsters"
+      ],
+      "recommended_uniques": [
+        "unique_ritual_freedom_of_faith"
+      ],
+      "trade_ready": false
+    },
+    {
+      "id": "preset_breach_currency",
+      "name": "Breach - Density/Currency Juice",
+      "tablet_type": "Breach Tablet",
+      "description": "Best filters for Breach density and targeted Hiveblood/Wombgift currency.",
+      "mode": "COUNT",
+      "count_min": 1,
+      "filters": [
+        {
+          "modifier_id": "breach_suffix_pack_size",
+          "min": 12
+        },
+        {
+          "modifier_id": "breach_suffix_stabilized_rares",
+          "min": 2
+        },
+        {
+          "modifier_id": "breach_suffix_hiveblood_quantity",
+          "min": 50
+        },
+        {
+          "modifier_id": "breach_suffix_wombgifts_quantity",
+          "min": 50
+        },
+        {
+          "modifier_id": "breach_suffix_wombgifts_level",
+          "min": 25
+        }
+      ],
+      "recommended_prefixes": [
+        "shared_prefix_pack_size",
+        "shared_prefix_rare_monsters"
+      ],
+      "recommended_uniques": [
+        "unique_breach_wraeclast_besieged"
+      ],
+      "trade_ready": false
+    },
+    {
+      "id": "preset_delirium_currency",
+      "name": "Delirium - Density/Splinter Juice",
+      "tablet_type": "Delirium Tablet",
+      "description": "Best filters for Delirium density, Simulacrum splinters, and fog uptime.",
+      "mode": "COUNT",
+      "count_min": 1,
+      "filters": [
+        {
+          "modifier_id": "deli_suffix_pack_size",
+          "min": 25
+        },
+        {
+          "modifier_id": "deli_suffix_simulacrum_stack",
+          "min": 25
+        },
+        {
+          "modifier_id": "deli_suffix_increased_deliriousness",
+          "min": 25
+        },
+        {
+          "modifier_id": "deli_suffix_fog_slower",
+          "min": 25
+        },
+        {
+          "modifier_id": "deli_suffix_fog_duration",
+          "min": 10
+        }
+      ],
+      "recommended_prefixes": [
+        "shared_prefix_pack_size",
+        "shared_prefix_rare_monsters",
+        "shared_prefix_monster_effectiveness"
+      ],
+      "recommended_uniques": [
+        "unique_delirium_clear_skies"
+      ],
+      "trade_ready": false
+    },
+    {
+      "id": "preset_abyss_currency",
+      "name": "Abyss - Abyss Count/Omens Juice",
+      "tablet_type": "Abyss Tablet",
+      "description": "Best filters for Abyss volume, pit rewards, rare spawns, and targeted currency.",
+      "mode": "COUNT",
+      "count_min": 1,
+      "filters": [
+        {
+          "modifier_id": "abyss_suffix_four_extra",
+          "min": 35
+        },
+        {
+          "modifier_id": "abyss_suffix_one_extra"
+        },
+        {
+          "modifier_id": "abyss_suffix_spawn_monsters",
+          "min": 25
+        },
+        {
+          "modifier_id": "abyss_suffix_rare_spawn",
+          "min": 2
+        },
+        {
+          "modifier_id": "abyss_suffix_pit_rewards"
+        }
+      ],
+      "recommended_prefixes": [
+        "shared_prefix_pack_size",
+        "shared_prefix_rare_monsters",
+        "shared_prefix_monster_effectiveness"
+      ],
+      "recommended_uniques": [
+        "unique_abyss_unforeseen_consequences"
+      ],
+      "trade_ready": false
+    },
+    {
+      "id": "preset_overseer_boss_currency",
+      "name": "Overseer - Boss Loot Juice",
+      "tablet_type": "Overseer Tablet",
+      "description": "Best filters for boss quantity/rarity and boss waystone sustain.",
+      "mode": "COUNT",
+      "count_min": 1,
+      "filters": [
+        {
+          "modifier_id": "overseer_suffix_boss_quantity",
+          "min": 18
+        },
+        {
+          "modifier_id": "overseer_suffix_boss_rarity",
+          "min": 50
+        },
+        {
+          "modifier_id": "overseer_suffix_boss_waystones",
+          "min": 25
+        },
+        {
+          "modifier_id": "overseer_suffix_add_spirits",
+          "min": 2
+        }
+      ],
+      "recommended_prefixes": [
+        "shared_prefix_item_rarity",
+        "shared_prefix_monster_effectiveness"
+      ],
+      "recommended_uniques": [
+        "unique_overseer_cruel_hegemony",
+        "unique_overseer_season_of_the_hunt"
+      ],
+      "trade_ready": false
+    },
+    {
+      "id": "preset_irradiated_currency",
+      "name": "Irradiated - Area Level/Tablet Farm Juice",
+      "tablet_type": "Irradiated Tablet",
+      "description": "Irradiated tablets use shared modifiers; this preset targets the community “Irradiated stacking” style for area level/tablet/currency farming.",
+      "mode": "COUNT",
+      "count_min": 1,
+      "filters": [
+        {
+          "modifier_id": "shared_prefix_monster_effectiveness",
+          "min": 13
+        },
+        {
+          "modifier_id": "shared_prefix_item_rarity",
+          "min": 10
+        },
+        {
+          "modifier_id": "shared_prefix_pack_size",
+          "min": 6
+        },
+        {
+          "modifier_id": "shared_suffix_random_modifiers",
+          "min": 2
+        },
+        {
+          "modifier_id": "shared_suffix_waystone_quantity",
+          "min": 35
+        }
+      ],
+      "recommended_uniques": [
+        "unique_irradiated_visions_of_paradise",
+        "unique_irradiated_mastered_domain"
+      ],
+      "trade_ready": false
+    },
+    {
+      "id": "preset_temple_vaal_beacon",
+      "name": "Temple - Vaal Beacon Juice",
+      "tablet_type": "Temple Tablet",
+      "description": "Best filters for Vaal Beacon chest quality and pack density.",
+      "mode": "COUNT",
+      "count_min": 1,
+      "filters": [
+        {
+          "modifier_id": "temple_suffix_rare_chests",
+          "min": 50
+        },
+        {
+          "modifier_id": "temple_suffix_extra_monster_packs_chance",
+          "min": 50
+        },
+        {
+          "modifier_id": "temple_suffix_guaranteed_extra_pack"
+        },
+        {
+          "modifier_id": "temple_suffix_pack_size_beacons",
+          "min": 25
+        },
+        {
+          "modifier_id": "temple_suffix_summon_monsters",
+          "min": 40
+        }
+      ],
+      "recommended_prefixes": [
+        "shared_prefix_pack_size",
+        "shared_prefix_rare_monsters"
+      ],
+      "trade_ready": false
+    }
+  ],
+  "phase10_verification": {
+    "verified_at": "2026-07-05",
+    "official_stats_source": "https://www.pathofexile.com/api/trade2/data/stats",
+    "verified_modifier_count": 73,
+    "method": "Matched ZIP modifier text against fresh official trade2 stats metadata and existing app rows whose stat IDs were already official-trade verified. No listing fetches or polling were performed.",
+    "stat_id_verified_count": 73,
+    "current_trade_ready_count_after_phase11_owner_rule": 65
+  },
+  "known_gameplay_rules": [
+    {
+      "id": "no_current_expedition_tablets",
+      "status": "authoritative_owner_rule",
+      "date": "2026-07-05",
+      "rule": "Expedition Tablets do not exist in the current game.",
+      "app_behavior": "Hide Expedition Tablet from active tablet/trade workflows; keep old Expedition tablet rows only as legacy/source-history data.",
+      "data_import_rule": "If imported data lists Expedition Tablet, mark it legacy/current_game_available=false and do not re-enable it without explicit owner reversal."
+    }
+  ],
+  "phase11_owner_rule": {
+    "date": "2026-07-05",
+    "rule": "OWNER RULE 2026-07-05: Expedition Tablets do not exist in the current game. If trade metadata, PoE2DB, old research, or imported packs list Expedition Tablet, treat those rows as legacy/stale/trade-leftover data and keep Expedition out of current tablet workflows.",
+    "legacy_expedition_modifier_count": 8,
+    "current_behavior": "Expedition Tablet juice rows are disabled/legacy and hidden by the app because Expedition Tablet is removed from current gameplay."
+  }
+}

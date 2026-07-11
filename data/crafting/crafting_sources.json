@@ -1,0 +1,40 @@
+{
+ "_note": "Craft of Exile is third-party and not affiliated with GGG. Weights/odds are estimates. Simulation is out of scope.",
+ "coe_patch": "4.5.4.1.2",
+ "coe_patch_label": "0.5.4.1.2",
+ "coe_league_label": "Return of the Ancients",
+ "league_label_conflict": "Craft of Exile labels the league 'Return of the Ancients' but the official trade2 API lists 'Runes of Aldur' as the current league (verified 2026-07-05). Treat labels separately.",
+ "accessed": "2026-07-05",
+ "sources": [
+  {
+   "name": "Craft of Exile Beta POE2 app shell",
+   "url": "https://beta.craftofexile.com/?game=poe2",
+   "type": "Third-party crafting/data app",
+   "reliability": "Medium/High utility, not official"
+  },
+  {
+   "name": "Craft of Exile Beta POE2 data.json",
+   "url": "https://beta.craftofexile.com/json/poe2/4.5.4.1.2/data.json",
+   "type": "Static data file referenced by the app shell",
+   "reliability": "Medium/High utility, not official"
+  },
+  {
+   "name": "Craft of Exile Beta POE2 english.json",
+   "url": "https://beta.craftofexile.com/json/poe2/4.5.4.1.2/localization/english.json",
+   "type": "Localization file",
+   "reliability": "Medium/High"
+  },
+  {
+   "name": "Craft of Exile Beta POE2 prices.json",
+   "url": "https://beta.craftofexile.com/json/poe2/4.5.4.1.2/prices.json",
+   "type": "Third-party price snapshot",
+   "reliability": "Medium; perishable"
+  },
+  {
+   "name": "Official trade2 leagues metadata",
+   "url": "https://www.pathofexile.com/api/trade2/data/leagues",
+   "type": "Official metadata",
+   "reliability": "High"
+  }
+ ]
+}

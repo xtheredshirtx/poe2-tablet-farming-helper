@@ -1,0 +1,200 @@
+{
+ "metadata": {
+  "created": "2026-07-11",
+  "target_patch": "0.5.4b",
+  "purpose": "Item-name trade shortcuts for crafting guides.",
+  "verification": "14/14 material names matched exactly in official trade2 items metadata on 2026-07-11."
+ },
+ "materials": [
+  {
+   "id": "kolrs_hunt",
+   "display_name": "Kolr's Hunt",
+   "exact_name": "Kolr's Hunt",
+   "item_type": "rune",
+   "used_for": [
+    "craft_kolrs_hunt_marksman_projectile_gloves"
+   ],
+   "trade_ready": true,
+   "notes": "Item-name search shortcut; no stat ID required after exact item name/category is verified.",
+   "official_item_group": "currency",
+   "verified_by": "official trade2 items metadata exact-name match",
+   "verified_date": "2026-07-11"
+  },
+  {
+   "id": "omen_of_sinistral_annulment",
+   "display_name": "Omen of Sinistral Annulment",
+   "exact_name": "Omen of Sinistral Annulment",
+   "item_type": "omen",
+   "used_for": [
+    "craft_kolrs_hunt_marksman_projectile_gloves"
+   ],
+   "trade_ready": true,
+   "notes": "Item-name search shortcut; no stat ID required after exact item name/category is verified.",
+   "official_item_group": "currency",
+   "verified_by": "official trade2 items metadata exact-name match",
+   "verified_date": "2026-07-11"
+  },
+  {
+   "id": "omen_of_sinistral_erasure",
+   "display_name": "Omen of Sinistral Erasure",
+   "exact_name": "Omen of Sinistral Erasure",
+   "item_type": "omen",
+   "used_for": [
+    "craft_kolrs_hunt_marksman_projectile_gloves"
+   ],
+   "trade_ready": true,
+   "notes": "Item-name search shortcut; no stat ID required after exact item name/category is verified.",
+   "official_item_group": "currency",
+   "verified_by": "official trade2 items metadata exact-name match",
+   "verified_date": "2026-07-11"
+  },
+  {
+   "id": "omen_of_dextral_necromancy",
+   "display_name": "Omen of Dextral Necromancy",
+   "exact_name": "Omen of Dextral Necromancy",
+   "item_type": "omen",
+   "used_for": [
+    "craft_kolrs_hunt_marksman_projectile_gloves"
+   ],
+   "trade_ready": true,
+   "notes": "Item-name search shortcut; no stat ID required after exact item name/category is verified.",
+   "official_item_group": "currency",
+   "verified_by": "official trade2 items metadata exact-name match",
+   "verified_date": "2026-07-11"
+  },
+  {
+   "id": "omen_of_abyssal_echoes",
+   "display_name": "Omen of Abyssal Echoes",
+   "exact_name": "Omen of Abyssal Echoes",
+   "item_type": "omen",
+   "used_for": [
+    "craft_kolrs_hunt_marksman_projectile_gloves"
+   ],
+   "trade_ready": true,
+   "notes": "Item-name search shortcut; no stat ID required after exact item name/category is verified.",
+   "official_item_group": "currency",
+   "verified_by": "official trade2 items metadata exact-name match",
+   "verified_date": "2026-07-11"
+  },
+  {
+   "id": "omen_of_light",
+   "display_name": "Omen of Light",
+   "exact_name": "Omen of Light",
+   "item_type": "omen",
+   "used_for": [
+    "craft_kolrs_hunt_marksman_projectile_gloves"
+   ],
+   "trade_ready": true,
+   "notes": "Item-name search shortcut; no stat ID required after exact item name/category is verified.",
+   "official_item_group": "currency",
+   "verified_by": "official trade2 items metadata exact-name match",
+   "verified_date": "2026-07-11"
+  },
+  {
+   "id": "omen_of_whittling",
+   "display_name": "Omen of Whittling",
+   "exact_name": "Omen of Whittling",
+   "item_type": "omen",
+   "used_for": [],
+   "trade_ready": true,
+   "notes": "Item-name search shortcut; no stat ID required after exact item name/category is verified.",
+   "official_item_group": "currency",
+   "verified_by": "official trade2 items metadata exact-name match",
+   "verified_date": "2026-07-11"
+  },
+  {
+   "id": "omen_of_greater_exaltation",
+   "display_name": "Omen of Greater Exaltation",
+   "exact_name": "Omen of Greater Exaltation",
+   "item_type": "omen",
+   "used_for": [],
+   "trade_ready": true,
+   "notes": "Item-name search shortcut; no stat ID required after exact item name/category is verified.",
+   "official_item_group": "currency",
+   "verified_by": "official trade2 items metadata exact-name match",
+   "verified_date": "2026-07-11"
+  },
+  {
+   "id": "omen_of_catalysing_exaltation",
+   "display_name": "Omen of Catalysing Exaltation",
+   "exact_name": "Omen of Catalysing Exaltation",
+   "item_type": "omen",
+   "used_for": [],
+   "trade_ready": true,
+   "notes": "Item-name search shortcut; no stat ID required after exact item name/category is verified.",
+   "official_item_group": "currency",
+   "verified_by": "official trade2 items metadata exact-name match",
+   "verified_date": "2026-07-11"
+  },
+  {
+   "id": "chaos_orb",
+   "display_name": "Chaos Orb",
+   "exact_name": "Chaos Orb",
+   "item_type": "currency",
+   "used_for": [
+    "craft_kolrs_hunt_marksman_projectile_gloves"
+   ],
+   "trade_ready": true,
+   "notes": "Item-name search shortcut; no stat ID required after exact item name/category is verified.",
+   "official_item_group": "currency",
+   "verified_by": "official trade2 items metadata exact-name match",
+   "verified_date": "2026-07-11"
+  },
+  {
+   "id": "orb_of_annulment",
+   "display_name": "Orb of Annulment",
+   "exact_name": "Orb of Annulment",
+   "item_type": "currency",
+   "used_for": [
+    "craft_kolrs_hunt_marksman_projectile_gloves"
+   ],
+   "trade_ready": true,
+   "notes": "Item-name search shortcut; no stat ID required after exact item name/category is verified.",
+   "official_item_group": "currency",
+   "verified_by": "official trade2 items metadata exact-name match",
+   "verified_date": "2026-07-11"
+  },
+  {
+   "id": "fracturing_orb",
+   "display_name": "Fracturing Orb",
+   "exact_name": "Fracturing Orb",
+   "item_type": "currency",
+   "used_for": [
+    "craft_kolrs_hunt_marksman_projectile_gloves"
+   ],
+   "trade_ready": true,
+   "notes": "Item-name search shortcut; no stat ID required after exact item name/category is verified.",
+   "official_item_group": "currency",
+   "verified_by": "official trade2 items metadata exact-name match",
+   "verified_date": "2026-07-11"
+  },
+  {
+   "id": "greater_exalted_orb",
+   "display_name": "Greater Exalted Orb",
+   "exact_name": "Greater Exalted Orb",
+   "item_type": "currency",
+   "used_for": [
+    "craft_kolrs_hunt_marksman_projectile_gloves"
+   ],
+   "trade_ready": true,
+   "notes": "Item-name search shortcut; no stat ID required after exact item name/category is verified.",
+   "official_item_group": "currency",
+   "verified_by": "official trade2 items metadata exact-name match",
+   "verified_date": "2026-07-11"
+  },
+  {
+   "id": "perfect_exalted_orb",
+   "display_name": "Perfect Exalted Orb",
+   "exact_name": "Perfect Exalted Orb",
+   "item_type": "currency",
+   "used_for": [
+    "craft_kolrs_hunt_marksman_projectile_gloves"
+   ],
+   "trade_ready": true,
+   "notes": "Item-name search shortcut; no stat ID required after exact item name/category is verified.",
+   "official_item_group": "currency",
+   "verified_by": "official trade2 items metadata exact-name match",
+   "verified_date": "2026-07-11"
+  }
+ ]
+}

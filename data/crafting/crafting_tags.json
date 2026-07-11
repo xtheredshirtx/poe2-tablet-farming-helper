@@ -1,0 +1,1092 @@
+{
+ "_source": "Craft of Exile beta data.json tags",
+ "_patch": "0.5.4.1.2",
+ "_accessed": "2026-07-05",
+ "tags": [
+  {
+   "coe_id": 0,
+   "name": null,
+   "key": "default"
+  },
+  {
+   "coe_id": 1,
+   "name": null,
+   "key": "shield"
+  },
+  {
+   "coe_id": 2,
+   "name": null,
+   "key": "ring"
+  },
+  {
+   "coe_id": 3,
+   "name": null,
+   "key": "amulet"
+  },
+  {
+   "coe_id": 4,
+   "name": null,
+   "key": "boots"
+  },
+  {
+   "coe_id": 5,
+   "name": null,
+   "key": "bow"
+  },
+  {
+   "coe_id": 7,
+   "name": "Armour",
+   "key": "armour"
+  },
+  {
+   "coe_id": 8,
+   "name": null,
+   "key": "weapon"
+  },
+  {
+   "coe_id": 9,
+   "name": null,
+   "key": "wand"
+  },
+  {
+   "coe_id": 10,
+   "name": null,
+   "key": "staff"
+  },
+  {
+   "coe_id": 11,
+   "name": null,
+   "key": "mace"
+  },
+  {
+   "coe_id": 12,
+   "name": null,
+   "key": "sword"
+  },
+  {
+   "coe_id": 13,
+   "name": null,
+   "key": "dagger"
+  },
+  {
+   "coe_id": 14,
+   "name": null,
+   "key": "claw"
+  },
+  {
+   "coe_id": 15,
+   "name": null,
+   "key": "axe"
+  },
+  {
+   "coe_id": 16,
+   "name": null,
+   "key": "body_armour"
+  },
+  {
+   "coe_id": 17,
+   "name": null,
+   "key": "life_flask"
+  },
+  {
+   "coe_id": 18,
+   "name": null,
+   "key": "mana_flask"
+  },
+  {
+   "coe_id": 20,
+   "name": null,
+   "key": "flask"
+  },
+  {
+   "coe_id": 21,
+   "name": null,
+   "key": "quiver"
+  },
+  {
+   "coe_id": 22,
+   "name": null,
+   "key": "gloves"
+  },
+  {
+   "coe_id": 23,
+   "name": null,
+   "key": "onehand"
+  },
+  {
+   "coe_id": 24,
+   "name": null,
+   "key": "twohand"
+  },
+  {
+   "coe_id": 25,
+   "name": null,
+   "key": "helmet"
+  },
+  {
+   "coe_id": 26,
+   "name": null,
+   "key": "belt"
+  },
+  {
+   "coe_id": 27,
+   "name": "Gem",
+   "key": "gem"
+  },
+  {
+   "coe_id": 32,
+   "name": null,
+   "key": "ranged"
+  },
+  {
+   "coe_id": 33,
+   "name": null,
+   "key": "not_for_sale"
+  },
+  {
+   "coe_id": 34,
+   "name": "Caster",
+   "key": "caster"
+  },
+  {
+   "coe_id": 37,
+   "name": null,
+   "key": "sceptre"
+  },
+  {
+   "coe_id": 38,
+   "name": null,
+   "key": "str_armour"
+  },
+  {
+   "coe_id": 39,
+   "name": null,
+   "key": "dex_armour"
+  },
+  {
+   "coe_id": 40,
+   "name": null,
+   "key": "int_armour"
+  },
+  {
+   "coe_id": 41,
+   "name": null,
+   "key": "str_dex_armour"
+  },
+  {
+   "coe_id": 42,
+   "name": null,
+   "key": "str_int_armour"
+  },
+  {
+   "coe_id": 43,
+   "name": null,
+   "key": "dex_int_armour"
+  },
+  {
+   "coe_id": 44,
+   "name": null,
+   "key": "str_dex_int_armour"
+  },
+  {
+   "coe_id": 45,
+   "name": null,
+   "key": "focus"
+  },
+  {
+   "coe_id": 46,
+   "name": null,
+   "key": "utility_flask"
+  },
+  {
+   "coe_id": 57,
+   "name": null,
+   "key": "map"
+  },
+  {
+   "coe_id": 70,
+   "name": null,
+   "key": "high_level_map"
+  },
+  {
+   "coe_id": 81,
+   "name": null,
+   "key": "one_hand_weapon"
+  },
+  {
+   "coe_id": 82,
+   "name": null,
+   "key": "two_hand_weapon"
+  },
+  {
+   "coe_id": 134,
+   "name": null,
+   "key": "jewel"
+  },
+  {
+   "coe_id": 135,
+   "name": null,
+   "key": "strjewel"
+  },
+  {
+   "coe_id": 136,
+   "name": null,
+   "key": "dexjewel"
+  },
+  {
+   "coe_id": 137,
+   "name": null,
+   "key": "intjewel"
+  },
+  {
+   "coe_id": 151,
+   "name": null,
+   "key": "currency"
+  },
+  {
+   "coe_id": 154,
+   "name": null,
+   "key": "low_tier_map"
+  },
+  {
+   "coe_id": 155,
+   "name": null,
+   "key": "mid_tier_map"
+  },
+  {
+   "coe_id": 156,
+   "name": null,
+   "key": "top_tier_map"
+  },
+  {
+   "coe_id": 157,
+   "name": null,
+   "key": "map_key_highest"
+  },
+  {
+   "coe_id": 173,
+   "name": null,
+   "key": "has_attack_mod"
+  },
+  {
+   "coe_id": 223,
+   "name": null,
+   "key": "chaos_warband"
+  },
+  {
+   "coe_id": 227,
+   "name": null,
+   "key": "str_shield"
+  },
+  {
+   "coe_id": 228,
+   "name": null,
+   "key": "dex_shield"
+  },
+  {
+   "coe_id": 229,
+   "name": null,
+   "key": "str_dex_shield"
+  },
+  {
+   "coe_id": 230,
+   "name": null,
+   "key": "str_int_shield"
+  },
+  {
+   "coe_id": 231,
+   "name": null,
+   "key": "dex_int_shield"
+  },
+  {
+   "coe_id": 249,
+   "name": null,
+   "key": "gloves_shaper"
+  },
+  {
+   "coe_id": 250,
+   "name": null,
+   "key": "gloves_elder"
+  },
+  {
+   "coe_id": 255,
+   "name": null,
+   "key": "amulet_shaper"
+  },
+  {
+   "coe_id": 256,
+   "name": null,
+   "key": "amulet_elder"
+  },
+  {
+   "coe_id": 303,
+   "name": null,
+   "key": "essence"
+  },
+  {
+   "coe_id": 304,
+   "name": null,
+   "key": "talisman"
+  },
+  {
+   "coe_id": 305,
+   "name": null,
+   "key": "idol"
+  },
+  {
+   "coe_id": 311,
+   "name": "Fire",
+   "key": "fire"
+  },
+  {
+   "coe_id": 312,
+   "name": "Cold",
+   "key": "cold"
+  },
+  {
+   "coe_id": 313,
+   "name": "Lightning",
+   "key": "lightning"
+  },
+  {
+   "coe_id": 314,
+   "name": "Chaos",
+   "key": "chaos"
+  },
+  {
+   "coe_id": 315,
+   "name": "Physical",
+   "key": "physical"
+  },
+  {
+   "coe_id": 316,
+   "name": null,
+   "key": "poison"
+  },
+  {
+   "coe_id": 317,
+   "name": null,
+   "key": "bleed"
+  },
+  {
+   "coe_id": 318,
+   "name": "Life",
+   "key": "life"
+  },
+  {
+   "coe_id": 319,
+   "name": null,
+   "key": "defences"
+  },
+  {
+   "coe_id": 320,
+   "name": "Elemental",
+   "key": "elemental"
+  },
+  {
+   "coe_id": 321,
+   "name": "Attack",
+   "key": "attack"
+  },
+  {
+   "coe_id": 322,
+   "name": "Minion",
+   "key": "minion"
+  },
+  {
+   "coe_id": 323,
+   "name": "Aura",
+   "key": "aura"
+  },
+  {
+   "coe_id": 325,
+   "name": "Mana",
+   "key": "mana"
+  },
+  {
+   "coe_id": 326,
+   "name": "Speed",
+   "key": "speed"
+  },
+  {
+   "coe_id": 327,
+   "name": null,
+   "key": "flat_life_regen"
+  },
+  {
+   "coe_id": 350,
+   "name": null,
+   "key": "quality_currency"
+  },
+  {
+   "coe_id": 463,
+   "name": null,
+   "key": "mushrune"
+  },
+  {
+   "coe_id": 569,
+   "name": null,
+   "key": "warstaff"
+  },
+  {
+   "coe_id": 575,
+   "name": "Critical",
+   "key": "critical"
+  },
+  {
+   "coe_id": 577,
+   "name": "Evasion",
+   "key": "evasion"
+  },
+  {
+   "coe_id": 578,
+   "name": "Energy Shield",
+   "key": "energy_shield"
+  },
+  {
+   "coe_id": 579,
+   "name": null,
+   "key": "power_charge"
+  },
+  {
+   "coe_id": 580,
+   "name": null,
+   "key": "frenzy_charge"
+  },
+  {
+   "coe_id": 581,
+   "name": null,
+   "key": "endurance_charge"
+  },
+  {
+   "coe_id": 582,
+   "name": "Damage",
+   "key": "damage"
+  },
+  {
+   "coe_id": 583,
+   "name": "Resistance",
+   "key": "resistance"
+  },
+  {
+   "coe_id": 584,
+   "name": "Attribute",
+   "key": "attribute"
+  },
+  {
+   "coe_id": 588,
+   "name": null,
+   "key": "block"
+  },
+  {
+   "coe_id": 589,
+   "name": "Ailment",
+   "key": "ailment"
+  },
+  {
+   "coe_id": 590,
+   "name": null,
+   "key": "blue_herring"
+  },
+  {
+   "coe_id": 591,
+   "name": null,
+   "key": "skill"
+  },
+  {
+   "coe_id": 593,
+   "name": "Curse",
+   "key": "curse"
+  },
+  {
+   "coe_id": 611,
+   "name": null,
+   "key": "elemental_damage"
+  },
+  {
+   "coe_id": 612,
+   "name": null,
+   "key": "physical_damage"
+  },
+  {
+   "coe_id": 613,
+   "name": null,
+   "key": "resource"
+  },
+  {
+   "coe_id": 614,
+   "name": null,
+   "key": "caster_damage"
+  },
+  {
+   "coe_id": 621,
+   "name": null,
+   "key": "catalyst"
+  },
+  {
+   "coe_id": 659,
+   "name": null,
+   "key": "chaos_damage"
+  },
+  {
+   "coe_id": 662,
+   "name": null,
+   "key": "demigods"
+  },
+  {
+   "coe_id": 663,
+   "name": null,
+   "key": "dot_multi"
+  },
+  {
+   "coe_id": 665,
+   "name": null,
+   "key": "unveiled_mod"
+  },
+  {
+   "coe_id": 987,
+   "name": null,
+   "key": "small_sanctum_relic"
+  },
+  {
+   "coe_id": 988,
+   "name": null,
+   "key": "medium_sanctum_relic"
+  },
+  {
+   "coe_id": 989,
+   "name": null,
+   "key": "large_sanctum_relic"
+  },
+  {
+   "coe_id": 1015,
+   "name": null,
+   "key": "spear"
+  },
+  {
+   "coe_id": 1017,
+   "name": null,
+   "key": "crossbow"
+  },
+  {
+   "coe_id": 1019,
+   "name": null,
+   "key": "flail"
+  },
+  {
+   "coe_id": 1023,
+   "name": null,
+   "key": "buckler"
+  },
+  {
+   "coe_id": 1024,
+   "name": null,
+   "key": "trap"
+  },
+  {
+   "coe_id": 1053,
+   "name": null,
+   "key": "no_fire_spell_mods"
+  },
+  {
+   "coe_id": 1054,
+   "name": null,
+   "key": "no_cold_spell_mods"
+  },
+  {
+   "coe_id": 1055,
+   "name": null,
+   "key": "no_lightning_spell_mods"
+  },
+  {
+   "coe_id": 1056,
+   "name": null,
+   "key": "no_chaos_spell_mods"
+  },
+  {
+   "coe_id": 1057,
+   "name": null,
+   "key": "no_physical_spell_mods"
+  },
+  {
+   "coe_id": 1082,
+   "name": null,
+   "key": "ezomyte_basetype"
+  },
+  {
+   "coe_id": 1083,
+   "name": null,
+   "key": "maraketh_basetype"
+  },
+  {
+   "coe_id": 1084,
+   "name": null,
+   "key": "vaal_basetype"
+  },
+  {
+   "coe_id": 1085,
+   "name": null,
+   "key": "tower_augment_breach"
+  },
+  {
+   "coe_id": 1086,
+   "name": null,
+   "key": "tower_augment_generic"
+  },
+  {
+   "coe_id": 1087,
+   "name": null,
+   "key": "tower_augment_expedition"
+  },
+  {
+   "coe_id": 1088,
+   "name": null,
+   "key": "tower_augment_delirium"
+  },
+  {
+   "coe_id": 1089,
+   "name": null,
+   "key": "tower_augment_ritual"
+  },
+  {
+   "coe_id": 1090,
+   "name": null,
+   "key": "tower_augment_map_boss"
+  },
+  {
+   "coe_id": 1091,
+   "name": null,
+   "key": "tower_augment_abyss"
+  },
+  {
+   "coe_id": 1092,
+   "name": null,
+   "key": "tower_augment_incursion"
+  },
+  {
+   "coe_id": 1094,
+   "name": null,
+   "key": "map_key_low"
+  },
+  {
+   "coe_id": 1095,
+   "name": null,
+   "key": "map_key_medium"
+  },
+  {
+   "coe_id": 1096,
+   "name": null,
+   "key": "map_key_high"
+  },
+  {
+   "coe_id": 1104,
+   "name": null,
+   "key": "soul_core"
+  },
+  {
+   "coe_id": 1105,
+   "name": null,
+   "key": "soul_core_tier1"
+  },
+  {
+   "coe_id": 1106,
+   "name": null,
+   "key": "soul_core_tier2"
+  },
+  {
+   "coe_id": 1107,
+   "name": null,
+   "key": "soul_core_tier3"
+  },
+  {
+   "coe_id": 1108,
+   "name": null,
+   "key": "soul_core_vaal"
+  },
+  {
+   "coe_id": 1109,
+   "name": null,
+   "key": "str_radius_jewel"
+  },
+  {
+   "coe_id": 1110,
+   "name": null,
+   "key": "dex_radius_jewel"
+  },
+  {
+   "coe_id": 1111,
+   "name": null,
+   "key": "int_radius_jewel"
+  },
+  {
+   "coe_id": 1112,
+   "name": null,
+   "key": "radius_jewel"
+  },
+  {
+   "coe_id": 1114,
+   "name": null,
+   "key": "currency_strongbox"
+  },
+  {
+   "coe_id": 1115,
+   "name": null,
+   "key": "waystone_strongbox"
+  },
+  {
+   "coe_id": 1116,
+   "name": null,
+   "key": "martial_strongbox"
+  },
+  {
+   "coe_id": 1117,
+   "name": null,
+   "key": "caster_strongbox"
+  },
+  {
+   "coe_id": 1118,
+   "name": null,
+   "key": "armourer_strongbox"
+  },
+  {
+   "coe_id": 1119,
+   "name": null,
+   "key": "jeweller_strongbox"
+  },
+  {
+   "coe_id": 1121,
+   "name": null,
+   "key": "socket_currency"
+  },
+  {
+   "coe_id": 1128,
+   "name": null,
+   "key": "tower_augment"
+  },
+  {
+   "coe_id": 1138,
+   "name": null,
+   "key": "drop"
+  },
+  {
+   "coe_id": 1142,
+   "name": null,
+   "key": "vivid_idol"
+  },
+  {
+   "coe_id": 1143,
+   "name": null,
+   "key": "wild_idol"
+  },
+  {
+   "coe_id": 1144,
+   "name": null,
+   "key": "primal_idol"
+  },
+  {
+   "coe_id": 1145,
+   "name": null,
+   "key": "sacred_idol"
+  },
+  {
+   "coe_id": 1146,
+   "name": null,
+   "key": "corrupted_idol"
+  },
+  {
+   "coe_id": 1150,
+   "name": null,
+   "key": "rune_lesser"
+  },
+  {
+   "coe_id": 1151,
+   "name": null,
+   "key": "rune_normal"
+  },
+  {
+   "coe_id": 1152,
+   "name": null,
+   "key": "rune_greater"
+  },
+  {
+   "coe_id": 1153,
+   "name": null,
+   "key": "rune_perfect"
+  },
+  {
+   "coe_id": 1154,
+   "name": "Charm",
+   "key": "charm"
+  },
+  {
+   "coe_id": 1163,
+   "name": null,
+   "key": "rune"
+  },
+  {
+   "coe_id": 1164,
+   "name": null,
+   "key": "map_monster_rarity"
+  },
+  {
+   "coe_id": 1165,
+   "name": null,
+   "key": "map_item_rarity"
+  },
+  {
+   "coe_id": 1166,
+   "name": null,
+   "key": "map_pack_size"
+  },
+  {
+   "coe_id": 1179,
+   "name": null,
+   "key": "karui_basetype"
+  },
+  {
+   "coe_id": 1182,
+   "name": null,
+   "key": "ulaman_mod"
+  },
+  {
+   "coe_id": 1183,
+   "name": null,
+   "key": "amanamu_mod"
+  },
+  {
+   "coe_id": 1184,
+   "name": null,
+   "key": "kurgal_mod"
+  },
+  {
+   "coe_id": 1187,
+   "name": null,
+   "key": "abyssal_eye"
+  },
+  {
+   "coe_id": 1216,
+   "name": null,
+   "key": "strongbox"
+  },
+  {
+   "coe_id": 1220,
+   "name": null,
+   "key": "basic_strongbox"
+  },
+  {
+   "coe_id": 1242,
+   "name": null,
+   "key": "jewel_catalyst"
+  },
+  {
+   "coe_id": 1245,
+   "name": null,
+   "key": "verisium_common"
+  },
+  {
+   "coe_id": 1246,
+   "name": null,
+   "key": "verisium_uncommon"
+  },
+  {
+   "coe_id": 1247,
+   "name": null,
+   "key": "verisium_rare"
+  },
+  {
+   "coe_id": 1248,
+   "name": null,
+   "key": "verisium_mythic"
+  },
+  {
+   "coe_id": 1250,
+   "name": null,
+   "key": "runeforged"
+  },
+  {
+   "coe_id": 1251,
+   "name": null,
+   "key": "runic_ward"
+  },
+  {
+   "coe_id": 1252,
+   "name": null,
+   "key": "breach_desecration"
+  },
+  {
+   "coe_id": 1262,
+   "name": null,
+   "key": "elemental_resistance"
+  },
+  {
+   "coe_id": 1263,
+   "name": null,
+   "key": "fire_resistance"
+  },
+  {
+   "coe_id": 1264,
+   "name": null,
+   "key": "cold_resistance"
+  },
+  {
+   "coe_id": 1265,
+   "name": null,
+   "key": "lightning_resistance"
+  },
+  {
+   "coe_id": 1286,
+   "name": null,
+   "key": "chronomancy"
+  },
+  {
+   "coe_id": 1287,
+   "name": null,
+   "key": "soul"
+  },
+  {
+   "coe_id": 1288,
+   "name": null,
+   "key": "berserking"
+  },
+  {
+   "coe_id": 1289,
+   "name": null,
+   "key": "marksman"
+  },
+  {
+   "coe_id": 1290,
+   "name": null,
+   "key": "decay"
+  },
+  {
+   "coe_id": 1291,
+   "name": null,
+   "key": "destruction"
+  },
+  {
+   "coe_id": 1292,
+   "name": null,
+   "key": "cannon"
+  },
+  {
+   "coe_id": 1293,
+   "name": null,
+   "key": "chaos_resistance"
+  },
+  {
+   "coe_id": 1294,
+   "name": null,
+   "key": "minion_resistance"
+  },
+  {
+   "coe_id": 1295,
+   "name": null,
+   "key": "minion_speed"
+  },
+  {
+   "coe_id": 1296,
+   "name": null,
+   "key": "minion_damage"
+  },
+  {
+   "coe_id": 1297,
+   "name": null,
+   "key": "caster_speed"
+  },
+  {
+   "coe_id": 1298,
+   "name": null,
+   "key": "caster_critical"
+  },
+  {
+   "coe_id": 1300,
+   "name": null,
+   "key": "genesis_tree_caster"
+  },
+  {
+   "coe_id": 1301,
+   "name": null,
+   "key": "genesis_tree_minion"
+  },
+  {
+   "coe_id": 1303,
+   "name": null,
+   "key": "life_catalyst"
+  },
+  {
+   "coe_id": 1304,
+   "name": null,
+   "key": "mana_catalyst"
+  },
+  {
+   "coe_id": 1305,
+   "name": null,
+   "key": "defences_catalyst"
+  },
+  {
+   "coe_id": 1306,
+   "name": null,
+   "key": "physical_catalyst"
+  },
+  {
+   "coe_id": 1307,
+   "name": null,
+   "key": "fire_catalyst"
+  },
+  {
+   "coe_id": 1308,
+   "name": null,
+   "key": "cold_catalyst"
+  },
+  {
+   "coe_id": 1309,
+   "name": null,
+   "key": "lightning_catalyst"
+  },
+  {
+   "coe_id": 1310,
+   "name": null,
+   "key": "chaos_catalyst"
+  },
+  {
+   "coe_id": 1311,
+   "name": null,
+   "key": "attack_catalyst"
+  },
+  {
+   "coe_id": 1312,
+   "name": null,
+   "key": "caster_catalyst"
+  },
+  {
+   "coe_id": 1313,
+   "name": null,
+   "key": "speed_catalyst"
+  },
+  {
+   "coe_id": 1314,
+   "name": null,
+   "key": "attribute_catalyst"
+  },
+  {
+   "coe_id": 1315,
+   "name": null,
+   "key": "minion_catalyst"
+  },
+  {
+   "coe_id": 1316,
+   "name": null,
+   "key": "map_monster_potency"
+  },
+  {
+   "coe_id": 1319,
+   "name": null,
+   "key": "strongbox_robot_rare_guard"
+  },
+  {
+   "coe_id": 1320,
+   "name": null,
+   "key": "incursion_currency"
+  }
+ ]
+}

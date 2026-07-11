@@ -1,0 +1,1519 @@
+{
+ "metadata": {
+  "created": "2026-07-11",
+  "game": "Path of Exile 2",
+  "target_patch": "0.5.4b",
+  "purpose": "UI-ready trade search presets for gear items. Stat IDs intentionally unverified.",
+  "stat_id_policy": "Do not enable one-click stat searches until trade_stat_id is verified against official trade2 metadata or trade UI payload.",
+  "stat_id_verification": "54 modifier rows verified against official trade2 stats metadata on 2026-07-11; 19 rows remain checklist-only (composite/placeholder texts with no exact official match)."
+ },
+ "presets": [
+  {
+   "id": "gloves_projectile_marksman_kolrs_hunt",
+   "display_name": "Projectile / Marksman Gloves",
+   "item_category": "Gloves",
+   "trade_category": "armour.gloves",
+   "build_goal": "Projectile attack / Marksman / Twister-style gloves",
+   "confidence": "mixed_confirmed_db_and_transcript",
+   "base_filters": [
+    {
+     "field": "item_class",
+     "value": "Gloves",
+     "verified": false
+    },
+    {
+     "field": "corrupted",
+     "value": false,
+     "verified": false
+    },
+    {
+     "field": "item_level_min",
+     "value": 82,
+     "verified": "transcript_target"
+    },
+    {
+     "field": "augment_or_socket_note",
+     "value": "Kolr's Hunt socketed or open augment socket for crafting base",
+     "verified": false
+    }
+   ],
+   "must_have_mods": [
+    {
+     "label": "+2 to Level of all Projectile Skills",
+     "stat_text": "+# to Level of all Projectile Skills",
+     "trade_stat_id": "explicit.stat_1202301673",
+     "trade_ready": true,
+     "min_value": 2,
+     "max_value": null,
+     "priority": "SS",
+     "mod_type": "suffix",
+     "why": "Core transcript target / major scaling for projectile builds.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "# to Level of all Projectile Skills"
+    },
+    {
+     "label": "Surpassing chance to fire an additional Projectile",
+     "stat_text": "+#% Surpassing chance to fire an additional Projectile",
+     "trade_stat_id": "explicit.stat_1347539079",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "SS",
+     "mod_type": "suffix",
+     "why": "Transcript target during suffix Desecration; major projectile multiplier-style mod.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "#% Surpassing chance to fire an additional Projectile"
+    }
+   ],
+   "optional_mods": [
+    {
+     "label": "Projectile Damage",
+     "stat_text": "#% increased Projectile Damage",
+     "trade_stat_id": "explicit.stat_1839076647",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "S",
+     "mod_type": "prefix",
+     "why": "Strong direct projectile scaling.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "#% increased Projectile Damage"
+    },
+    {
+     "label": "Added Physical Damage to Attacks",
+     "stat_text": "Adds # to # Physical Damage to Attacks",
+     "trade_stat_id": "explicit.stat_3032590688",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "S",
+     "mod_type": "prefix",
+     "why": "Transcript prioritized flat physical as one of the best prefixes.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "Adds # to # Physical Damage to Attacks"
+    },
+    {
+     "label": "Added Lightning Damage to Attacks",
+     "stat_text": "Adds # to # Lightning Damage to Attacks",
+     "trade_stat_id": "explicit.stat_1754445556",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "A",
+     "mod_type": "prefix",
+     "why": "Transcript kept T3 lightning as good enough.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "Adds # to # Lightning damage to Attacks"
+    },
+    {
+     "label": "Added Cold Damage to Attacks",
+     "stat_text": "Adds # to # Cold Damage to Attacks",
+     "trade_stat_id": "explicit.stat_4067062424",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "A",
+     "mod_type": "prefix",
+     "why": "Transcript listed cold as an acceptable flat damage hit.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "Adds # to # Cold damage to Attacks"
+    },
+    {
+     "label": "Critical Hit Chance",
+     "stat_text": "#% increased Critical Hit Chance",
+     "trade_stat_id": "explicit.stat_587431675",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "A",
+     "mod_type": "suffix",
+     "why": "Good offensive suffix for crit projectile builds.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "#% increased Critical Hit Chance"
+    },
+    {
+     "label": "Critical Damage Bonus",
+     "stat_text": "+#% to Critical Damage Bonus",
+     "trade_stat_id": "explicit.stat_2694482655",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "A",
+     "mod_type": "suffix",
+     "why": "Transcript accepted fractured crit damage bonus.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "#% to Critical Damage Bonus"
+    },
+    {
+     "label": "Attack Speed",
+     "stat_text": "#% increased Attack Speed",
+     "trade_stat_id": "explicit.stat_681332047",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "A",
+     "mod_type": "suffix",
+     "why": "Generic strong attack modifier where available.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "#% increased Attack Speed"
+    },
+    {
+     "label": "Life / ES / Evasion",
+     "stat_text": "+# to maximum Life or Energy Shield / increased Evasion and Energy Shield",
+     "trade_stat_id": "UNKNOWN_NEEDS_TRADE2_METADATA_VERIFICATION",
+     "trade_ready": false,
+     "min_value": null,
+     "max_value": null,
+     "priority": "B",
+     "mod_type": "prefix",
+     "why": "Defensive finish if offense is already strong.",
+     "confidence": "needs_trade_id",
+     "verified_by": null,
+     "verified_date": null
+    },
+    {
+     "label": "Elemental Resistances",
+     "stat_text": "+#% to Elemental Resistance",
+     "trade_stat_id": "UNKNOWN_NEEDS_TRADE2_METADATA_VERIFICATION",
+     "trade_ready": false,
+     "min_value": null,
+     "max_value": null,
+     "priority": "B",
+     "mod_type": "suffix",
+     "why": "Useful if trade item is also meant to be worn, not just a craft base.",
+     "confidence": "needs_trade_id",
+     "verified_by": null,
+     "verified_date": null
+    }
+   ],
+   "budget_mods": [
+    "Any one of +Projectile Skills OR Surpassing additional projectile chance",
+    "Add life/resistance manually if item is for wearing"
+   ],
+   "high_end_mods": [
+    "COUNT 2 of +Projectile Skills, additional projectile chance, Projectile Damage, Attack Speed, Added Physical/Lightning/Cold, Crit Damage",
+    "Then AND good defenses/resists if affordable"
+   ],
+   "avoid_notes": [
+    "High-cost RNG craft; do not present as deterministic.",
+    "Do not confuse prefix-only Chaos with clean prefix deletion.",
+    "Transcript prices are stale after the stream moment."
+   ],
+   "trade_logic": {
+    "must_have_mode": "AND",
+    "optional_mode": "COUNT",
+    "optional_count_min": 2
+   },
+   "source_refs": [
+    "owner_transcript:Pasted text(2).txt",
+    "https://poe2db.tw/us/Kolrs_Hunt",
+    "https://www.poe2wiki.net/wiki/Omen",
+    "https://www.craftofexile.com/?game=poe2"
+   ],
+   "patch": "0.5.4b",
+   "last_verified": "2026-07-11",
+   "trade_category_note": "Gloves",
+   "trade_category_verified": "official trade2 filters metadata 2026-07-11"
+  },
+  {
+   "id": "weapon_minion_sceptre",
+   "display_name": "Minion Sceptre",
+   "item_category": "Sceptre",
+   "trade_category": "weapon.sceptre",
+   "build_goal": "Witch / minion build weapon",
+   "confidence": "meta_opinion_needs_trade_id",
+   "base_filters": [
+    {
+     "field": "item_class",
+     "value": "Sceptre",
+     "verified": false
+    }
+   ],
+   "must_have_mods": [
+    {
+     "label": "+Level of all Minion Skills",
+     "stat_text": "+# to Level of all Minion Skills",
+     "trade_stat_id": "explicit.stat_2162097452",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "SS",
+     "mod_type": "unknown",
+     "why": "Usually the first search stat for minion builds.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "# to Level of all Minion Skills"
+    },
+    {
+     "label": "Minion Damage",
+     "stat_text": "Minions deal #% increased Damage",
+     "trade_stat_id": "explicit.stat_1589917703",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "S",
+     "mod_type": "unknown",
+     "why": "Primary minion damage scaling.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "Minions deal #% increased Damage"
+    }
+   ],
+   "optional_mods": [
+    {
+     "label": "Minion Attack/Cast Speed",
+     "stat_text": "Minions have #% increased Attack and Cast Speed",
+     "trade_stat_id": "explicit.stat_3091578504",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "S",
+     "mod_type": "unknown",
+     "why": "Strong DPS/feel modifier.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "Minions have #% increased Attack and Cast Speed"
+    },
+    {
+     "label": "Spirit",
+     "stat_text": "+# to Spirit",
+     "trade_stat_id": "explicit.stat_3981240776",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "A",
+     "mod_type": "unknown",
+     "why": "Useful if base/mod supports it; verify exact item-class rules.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "# to Spirit"
+    },
+    {
+     "label": "Minion Life",
+     "stat_text": "Minions have #% increased maximum Life",
+     "trade_stat_id": "explicit.stat_770672621",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "A",
+     "mod_type": "unknown",
+     "why": "Good for spectres/fragile minions.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "Minions have #% increased maximum Life"
+    },
+    {
+     "label": "Attributes",
+     "stat_text": "+# to Attributes",
+     "trade_stat_id": "UNKNOWN_NEEDS_TRADE2_METADATA_VERIFICATION",
+     "trade_ready": false,
+     "min_value": null,
+     "max_value": null,
+     "priority": "B",
+     "mod_type": "suffix",
+     "why": "Helps requirements.",
+     "confidence": "needs_trade_id",
+     "verified_by": null,
+     "verified_date": null
+    }
+   ],
+   "budget_mods": [
+    "+Minion Skills only, then compare spirit/base/price"
+   ],
+   "high_end_mods": [
+    "+Minion Skills + Minion Damage + Minion Speed + Spirit/base value"
+   ],
+   "avoid_notes": [
+    "Exact sceptre base/implicit depends on build; do not force one universal base."
+   ],
+   "trade_logic": {
+    "must_have_mode": "AND",
+    "optional_mode": "COUNT",
+    "optional_count_min": 1
+   },
+   "source_refs": [
+    "https://poe2db.tw/us/Sceptres"
+   ],
+   "patch": "0.5.4b",
+   "last_verified": "2026-07-11",
+   "trade_category_note": "Sceptre",
+   "trade_category_verified": "official trade2 filters metadata 2026-07-11"
+  },
+  {
+   "id": "weapon_spell_wand_staff_focus",
+   "display_name": "Spell Caster Weapon / Focus",
+   "item_category": "Wand / Staff / Focus",
+   "trade_category": "weapon.caster",
+   "build_goal": "Spell caster damage item",
+   "confidence": "meta_opinion_needs_trade_id",
+   "base_filters": [
+    {
+     "field": "item_class",
+     "value": "Wand, Staff, or Focus",
+     "verified": false
+    }
+   ],
+   "must_have_mods": [
+    {
+     "label": "+Level of all Spell Skills",
+     "stat_text": "+# to Level of all Spell Skills",
+     "trade_stat_id": "explicit.stat_124131830",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "SS",
+     "mod_type": "unknown",
+     "why": "Usually strongest generic spell scaling.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "# to Level of all Spell Skills"
+    },
+    {
+     "label": "Spell Damage or Elemental/Chaos Damage",
+     "stat_text": "#% increased Spell Damage",
+     "trade_stat_id": "explicit.stat_2974417149",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "S",
+     "mod_type": "unknown",
+     "why": "Primary damage scaling; exact stat depends on build.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "#% increased Spell Damage"
+    }
+   ],
+   "optional_mods": [
+    {
+     "label": "Cast Speed",
+     "stat_text": "#% increased Cast Speed",
+     "trade_stat_id": "explicit.stat_2891184298",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "S",
+     "mod_type": "unknown",
+     "why": "Strong DPS and feel.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "#% increased Cast Speed"
+    },
+    {
+     "label": "Critical Hit Chance for Spells",
+     "stat_text": "#% increased Critical Hit Chance for Spells",
+     "trade_stat_id": "explicit.stat_737908626",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "A",
+     "mod_type": "unknown",
+     "why": "Strong for crit casters.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "#% increased Critical Hit Chance for Spells"
+    },
+    {
+     "label": "Critical Damage Bonus",
+     "stat_text": "+#% to Critical Damage Bonus",
+     "trade_stat_id": "explicit.stat_2694482655",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "A",
+     "mod_type": "unknown",
+     "why": "Strong if crit chance is high.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "#% to Critical Damage Bonus"
+    },
+    {
+     "label": "Mana / Mana Regeneration",
+     "stat_text": "+# to maximum Mana",
+     "trade_stat_id": "explicit.stat_1050105434",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "B",
+     "mod_type": "unknown",
+     "why": "Good sustain/requirements.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "# to maximum Mana"
+    },
+    {
+     "label": "Energy Shield on Focus",
+     "stat_text": "+# to maximum Energy Shield",
+     "trade_stat_id": "explicit.stat_3489782002",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "B",
+     "mod_type": "unknown",
+     "why": "Defensive value on caster off-hands.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "# to maximum Energy Shield"
+    }
+   ],
+   "budget_mods": [
+    "+Skill levels first, then add cast speed or spell damage"
+   ],
+   "high_end_mods": [
+    "+Skill levels + spell/element damage + cast speed + crit package"
+   ],
+   "avoid_notes": [
+    "Do not mix attack-only stats into caster presets."
+   ],
+   "trade_logic": {
+    "must_have_mode": "COUNT",
+    "must_have_count_min": 1,
+    "optional_mode": "COUNT",
+    "optional_count_min": 2
+   },
+   "source_refs": [
+    "https://poe2db.tw/us/Wands",
+    "https://poe2db.tw/us/Foci"
+   ],
+   "patch": "0.5.4b",
+   "last_verified": "2026-07-11",
+   "trade_category_note": "Any Caster Weapon (Focus needs armour.focus separately)",
+   "trade_category_verified": "official trade2 filters metadata 2026-07-11"
+  },
+  {
+   "id": "weapon_high_physical_dps",
+   "display_name": "High Physical DPS Weapon",
+   "item_category": "Attack Weapon",
+   "trade_category": "weapon",
+   "build_goal": "Physical attack build weapon",
+   "confidence": "system_inference_needs_trade_id",
+   "base_filters": [
+    {
+     "field": "item_class",
+     "value": "Weapon selected by user",
+     "verified": false
+    }
+   ],
+   "must_have_mods": [
+    {
+     "label": "Increased Physical Damage",
+     "stat_text": "#% increased Physical Damage",
+     "trade_stat_id": "explicit.stat_1509134228",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "SS",
+     "mod_type": "prefix",
+     "why": "Core local weapon physical scaling.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "#% increased Physical Damage"
+    },
+    {
+     "label": "Adds Physical Damage",
+     "stat_text": "Adds # to # Physical Damage",
+     "trade_stat_id": "explicit.stat_1940865751",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "SS",
+     "mod_type": "prefix",
+     "why": "Core local flat physical scaling.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "Adds # to # Physical Damage"
+    },
+    {
+     "label": "Attack Speed",
+     "stat_text": "#% increased Attack Speed",
+     "trade_stat_id": "explicit.stat_681332047",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "S",
+     "mod_type": "suffix",
+     "why": "Core local DPS scaling.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "#% increased Attack Speed"
+    }
+   ],
+   "optional_mods": [
+    {
+     "label": "Critical Hit Chance",
+     "stat_text": "#% increased Critical Hit Chance",
+     "trade_stat_id": "explicit.stat_587431675",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "A",
+     "mod_type": "unknown",
+     "why": "Strong for crit attack builds.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "#% increased Critical Hit Chance"
+    },
+    {
+     "label": "Critical Damage Bonus",
+     "stat_text": "+#% to Critical Damage Bonus",
+     "trade_stat_id": "explicit.stat_2694482655",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "A",
+     "mod_type": "unknown",
+     "why": "Strong with crit chance.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "#% to Critical Damage Bonus"
+    },
+    {
+     "label": "Accuracy Rating",
+     "stat_text": "+# to Accuracy Rating",
+     "trade_stat_id": "explicit.stat_803737631",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "B",
+     "mod_type": "unknown",
+     "why": "Useful if accuracy-starved.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "# to Accuracy Rating"
+    },
+    {
+     "label": "Weapon-specific projectile/skill mod",
+     "stat_text": "Build-specific weapon modifier",
+     "trade_stat_id": "UNKNOWN_NEEDS_TRADE2_METADATA_VERIFICATION",
+     "trade_ready": false,
+     "min_value": null,
+     "max_value": null,
+     "priority": "A",
+     "mod_type": "unknown",
+     "why": "Only include when selected build supports it.",
+     "confidence": "needs_trade_id",
+     "verified_by": null,
+     "verified_date": null
+    }
+   ],
+   "budget_mods": [
+    "Sort manually by physical DPS + attack speed"
+   ],
+   "high_end_mods": [
+    "% physical + flat physical + attack speed + crit chance/damage"
+   ],
+   "avoid_notes": [
+    "Local DPS is more important than unrelated global damage for most attack weapons."
+   ],
+   "trade_logic": {
+    "must_have_mode": "COUNT",
+    "must_have_count_min": 2,
+    "optional_mode": "COUNT",
+    "optional_count_min": 1
+   },
+   "source_refs": [
+    "https://poe2db.tw/us/Bows",
+    "https://poe2db.tw/us/Modifiers"
+   ],
+   "patch": "0.5.4b",
+   "last_verified": "2026-07-11",
+   "trade_category_note": "Any Weapon (narrow by hand in the trade UI)",
+   "trade_category_verified": "official trade2 filters metadata 2026-07-11"
+  },
+  {
+   "id": "weapon_elemental_attack_dps",
+   "display_name": "Elemental Attack Weapon",
+   "item_category": "Attack Weapon",
+   "trade_category": "weapon",
+   "build_goal": "Elemental bow/crossbow/spear/attack weapon",
+   "confidence": "system_inference_needs_trade_id",
+   "base_filters": [
+    {
+     "field": "item_class",
+     "value": "Weapon selected by user",
+     "verified": false
+    }
+   ],
+   "must_have_mods": [
+    {
+     "label": "Adds Lightning Damage",
+     "stat_text": "Adds # to # Lightning Damage",
+     "trade_stat_id": "explicit.stat_3336890334",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "S",
+     "mod_type": "unknown",
+     "why": "Large flat elemental roll.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "Adds # to # Lightning Damage"
+    },
+    {
+     "label": "Adds Cold Damage",
+     "stat_text": "Adds # to # Cold Damage",
+     "trade_stat_id": "explicit.stat_1037193709",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "A",
+     "mod_type": "unknown",
+     "why": "Large flat elemental roll.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "Adds # to # Cold Damage"
+    },
+    {
+     "label": "Adds Fire Damage",
+     "stat_text": "Adds # to # Fire Damage",
+     "trade_stat_id": "explicit.stat_709508406",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "A",
+     "mod_type": "unknown",
+     "why": "Large flat elemental roll.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "Adds # to # Fire Damage"
+    },
+    {
+     "label": "Attack Speed",
+     "stat_text": "#% increased Attack Speed",
+     "trade_stat_id": "explicit.stat_681332047",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "S",
+     "mod_type": "unknown",
+     "why": "Core DPS stat.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "#% increased Attack Speed"
+    }
+   ],
+   "optional_mods": [
+    {
+     "label": "Critical Hit Chance",
+     "stat_text": "#% increased Critical Hit Chance",
+     "trade_stat_id": "explicit.stat_587431675",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "A",
+     "mod_type": "unknown",
+     "why": "Good for crit elemental attack builds.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "#% increased Critical Hit Chance"
+    },
+    {
+     "label": "Critical Damage Bonus",
+     "stat_text": "+#% to Critical Damage Bonus",
+     "trade_stat_id": "explicit.stat_2694482655",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "A",
+     "mod_type": "unknown",
+     "why": "Good when crit chance exists.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "#% to Critical Damage Bonus"
+    },
+    {
+     "label": "Projectile or skill-specific modifier",
+     "stat_text": "Build-specific projectile modifier",
+     "trade_stat_id": "UNKNOWN_NEEDS_TRADE2_METADATA_VERIFICATION",
+     "trade_ready": false,
+     "min_value": null,
+     "max_value": null,
+     "priority": "A",
+     "mod_type": "unknown",
+     "why": "Only for projectile skills/builds.",
+     "confidence": "needs_trade_id",
+     "verified_by": null,
+     "verified_date": null
+    }
+   ],
+   "budget_mods": [
+    "Search high elemental DPS and attack speed"
+   ],
+   "high_end_mods": [
+    "Multiple flat elemental rolls + attack speed + crit"
+   ],
+   "avoid_notes": [
+    "Do not recommend fire/cold/lightning equally if build converts/scales only one element."
+   ],
+   "trade_logic": {
+    "must_have_mode": "COUNT",
+    "must_have_count_min": 2,
+    "optional_mode": "COUNT",
+    "optional_count_min": 1
+   },
+   "source_refs": [
+    "https://poe2db.tw/us/Bows",
+    "https://poe2db.tw/us/Modifiers"
+   ],
+   "patch": "0.5.4b",
+   "last_verified": "2026-07-11",
+   "trade_category_note": "Any Weapon (narrow by hand in the trade UI)",
+   "trade_category_verified": "official trade2 filters metadata 2026-07-11"
+  },
+  {
+   "id": "boots_movement_speed_defense",
+   "display_name": "Movement Speed Boots",
+   "item_category": "Boots",
+   "trade_category": "armour.boots",
+   "build_goal": "General mapping boots",
+   "confidence": "system_inference_needs_trade_id",
+   "base_filters": [
+    {
+     "field": "item_class",
+     "value": "Boots",
+     "verified": false
+    }
+   ],
+   "must_have_mods": [
+    {
+     "label": "Movement Speed",
+     "stat_text": "#% increased Movement Speed",
+     "trade_stat_id": "explicit.stat_2250533757",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "SS",
+     "mod_type": "unknown",
+     "why": "Most important boot quality-of-life and mapping stat.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "#% increased Movement Speed"
+    }
+   ],
+   "optional_mods": [
+    {
+     "label": "Life",
+     "stat_text": "+# to maximum Life",
+     "trade_stat_id": "explicit.stat_3299347043",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "S",
+     "mod_type": "unknown",
+     "why": "Generic defense.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "# to maximum Life"
+    },
+    {
+     "label": "Energy Shield",
+     "stat_text": "+# to maximum Energy Shield",
+     "trade_stat_id": "explicit.stat_3489782002",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "S",
+     "mod_type": "unknown",
+     "why": "Build-specific defense.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "# to maximum Energy Shield"
+    },
+    {
+     "label": "Elemental Resistances",
+     "stat_text": "+#% to Elemental Resistances",
+     "trade_stat_id": "UNKNOWN_NEEDS_TRADE2_METADATA_VERIFICATION",
+     "trade_ready": false,
+     "min_value": null,
+     "max_value": null,
+     "priority": "S",
+     "mod_type": "unknown",
+     "why": "Cap resists.",
+     "confidence": "needs_trade_id",
+     "verified_by": null,
+     "verified_date": null
+    },
+    {
+     "label": "Chaos Resistance",
+     "stat_text": "+#% to Chaos Resistance",
+     "trade_stat_id": "explicit.stat_2923486259",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "A",
+     "mod_type": "unknown",
+     "why": "Valuable defensive suffix.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "#% to Chaos Resistance"
+    },
+    {
+     "label": "Item Rarity",
+     "stat_text": "#% increased Rarity of Items found",
+     "trade_stat_id": "explicit.stat_3917489142",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "A",
+     "mod_type": "unknown",
+     "why": "Good for farming if survivability is already solved.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "#% increased Rarity of Items found"
+    },
+    {
+     "label": "Attributes",
+     "stat_text": "+# to Attributes",
+     "trade_stat_id": "UNKNOWN_NEEDS_TRADE2_METADATA_VERIFICATION",
+     "trade_ready": false,
+     "min_value": null,
+     "max_value": null,
+     "priority": "B",
+     "mod_type": "unknown",
+     "why": "Helps gear/gem requirements.",
+     "confidence": "needs_trade_id",
+     "verified_by": null,
+     "verified_date": null
+    }
+   ],
+   "budget_mods": [
+    "Movement speed + any two useful resists"
+   ],
+   "high_end_mods": [
+    "High movement speed + life/ES + chaos res + two ele res + rarity"
+   ],
+   "avoid_notes": [
+    "Do not skip movement speed for mapping unless build has another movement solution."
+   ],
+   "trade_logic": {
+    "must_have_mode": "AND",
+    "optional_mode": "COUNT",
+    "optional_count_min": 2
+   },
+   "source_refs": [
+    "https://poe2db.tw/us/Boots"
+   ],
+   "patch": "0.5.4b",
+   "last_verified": "2026-07-11",
+   "trade_category_note": "Boots",
+   "trade_category_verified": "official trade2 filters metadata 2026-07-11"
+  },
+  {
+   "id": "rings_rarity_resistance_farming",
+   "display_name": "Rarity / Resistance Rings",
+   "item_category": "Rings",
+   "trade_category": "accessory.ring",
+   "build_goal": "Magic-find/farming ring with defenses",
+   "confidence": "system_inference_needs_trade_id",
+   "base_filters": [
+    {
+     "field": "item_class",
+     "value": "Ring",
+     "verified": false
+    }
+   ],
+   "must_have_mods": [
+    {
+     "label": "Item Rarity",
+     "stat_text": "#% increased Rarity of Items found",
+     "trade_stat_id": "explicit.stat_3917489142",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "S",
+     "mod_type": "unknown",
+     "why": "Farming-focused ring stat.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "#% increased Rarity of Items found"
+    }
+   ],
+   "optional_mods": [
+    {
+     "label": "Elemental Resistances",
+     "stat_text": "+#% to Elemental Resistances",
+     "trade_stat_id": "UNKNOWN_NEEDS_TRADE2_METADATA_VERIFICATION",
+     "trade_ready": false,
+     "min_value": null,
+     "max_value": null,
+     "priority": "S",
+     "mod_type": "unknown",
+     "why": "Defensive core.",
+     "confidence": "needs_trade_id",
+     "verified_by": null,
+     "verified_date": null
+    },
+    {
+     "label": "Chaos Resistance",
+     "stat_text": "+#% to Chaos Resistance",
+     "trade_stat_id": "explicit.stat_2923486259",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "A",
+     "mod_type": "unknown",
+     "why": "High-value defensive suffix.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "#% to Chaos Resistance"
+    },
+    {
+     "label": "Life",
+     "stat_text": "+# to maximum Life",
+     "trade_stat_id": "explicit.stat_3299347043",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "A",
+     "mod_type": "unknown",
+     "why": "Generic defense.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "# to maximum Life"
+    },
+    {
+     "label": "Energy Shield",
+     "stat_text": "+# to maximum Energy Shield",
+     "trade_stat_id": "explicit.stat_3489782002",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "A",
+     "mod_type": "unknown",
+     "why": "ES defense.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "# to maximum Energy Shield"
+    },
+    {
+     "label": "Mana",
+     "stat_text": "+# to maximum Mana",
+     "trade_stat_id": "explicit.stat_1050105434",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "B",
+     "mod_type": "unknown",
+     "why": "Useful for mana builds.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "# to maximum Mana"
+    },
+    {
+     "label": "Attributes",
+     "stat_text": "+# to Attributes",
+     "trade_stat_id": "UNKNOWN_NEEDS_TRADE2_METADATA_VERIFICATION",
+     "trade_ready": false,
+     "min_value": null,
+     "max_value": null,
+     "priority": "B",
+     "mod_type": "unknown",
+     "why": "Requirement fixer.",
+     "confidence": "needs_trade_id",
+     "verified_by": null,
+     "verified_date": null
+    }
+   ],
+   "budget_mods": [
+    "Rarity + one strong resistance"
+   ],
+   "high_end_mods": [
+    "Rarity + chaos resistance + multiple resists + life/ES"
+   ],
+   "avoid_notes": [
+    "Farming rarity can be bad if it causes deaths or slows clear."
+   ],
+   "trade_logic": {
+    "must_have_mode": "AND",
+    "optional_mode": "COUNT",
+    "optional_count_min": 2
+   },
+   "source_refs": [
+    "https://poe2db.tw/us/Rings"
+   ],
+   "patch": "0.5.4b",
+   "last_verified": "2026-07-11",
+   "trade_category_note": "Ring",
+   "trade_category_verified": "official trade2 filters metadata 2026-07-11"
+  },
+  {
+   "id": "amulet_skill_level_spirit",
+   "display_name": "Skill Level / Spirit Amulet",
+   "item_category": "Amulet",
+   "trade_category": "accessory.amulet",
+   "build_goal": "Generic endgame amulet for skill-scaling builds",
+   "confidence": "system_inference_needs_trade_id",
+   "base_filters": [
+    {
+     "field": "item_class",
+     "value": "Amulet",
+     "verified": false
+    }
+   ],
+   "must_have_mods": [
+    {
+     "label": "+Level of all Skill Gems",
+     "stat_text": "+# to Level of all Skill Gems",
+     "trade_stat_id": "UNKNOWN_NEEDS_TRADE2_METADATA_VERIFICATION",
+     "trade_ready": false,
+     "min_value": null,
+     "max_value": null,
+     "priority": "SS",
+     "mod_type": "unknown",
+     "why": "Strong generic power where applicable.",
+     "confidence": "needs_trade_id",
+     "verified_by": null,
+     "verified_date": null
+    },
+    {
+     "label": "+Level of build-specific Skill Gems",
+     "stat_text": "+# to Level of all [tag] Skill Gems",
+     "trade_stat_id": "UNKNOWN_NEEDS_TRADE2_METADATA_VERIFICATION",
+     "trade_ready": false,
+     "min_value": null,
+     "max_value": null,
+     "priority": "SS",
+     "mod_type": "unknown",
+     "why": "Use exact tag for build: minion, spell, projectile, chaos, etc.",
+     "confidence": "needs_trade_id",
+     "verified_by": null,
+     "verified_date": null
+    }
+   ],
+   "optional_mods": [
+    {
+     "label": "Spirit",
+     "stat_text": "+# to Spirit",
+     "trade_stat_id": "explicit.stat_3981240776",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "S",
+     "mod_type": "unknown",
+     "why": "Important for spirit-starved builds if available.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "# to Spirit"
+    },
+    {
+     "label": "Attributes",
+     "stat_text": "+# to Attributes",
+     "trade_stat_id": "UNKNOWN_NEEDS_TRADE2_METADATA_VERIFICATION",
+     "trade_ready": false,
+     "min_value": null,
+     "max_value": null,
+     "priority": "A",
+     "mod_type": "unknown",
+     "why": "High-value requirement fixer.",
+     "confidence": "needs_trade_id",
+     "verified_by": null,
+     "verified_date": null
+    },
+    {
+     "label": "Life / Energy Shield",
+     "stat_text": "+# to maximum Life or Energy Shield",
+     "trade_stat_id": "UNKNOWN_NEEDS_TRADE2_METADATA_VERIFICATION",
+     "trade_ready": false,
+     "min_value": null,
+     "max_value": null,
+     "priority": "A",
+     "mod_type": "unknown",
+     "why": "Defense.",
+     "confidence": "needs_trade_id",
+     "verified_by": null,
+     "verified_date": null
+    },
+    {
+     "label": "Elemental / Chaos Resistance",
+     "stat_text": "+#% to Resistance",
+     "trade_stat_id": "UNKNOWN_NEEDS_TRADE2_METADATA_VERIFICATION",
+     "trade_ready": false,
+     "min_value": null,
+     "max_value": null,
+     "priority": "A",
+     "mod_type": "unknown",
+     "why": "Defense.",
+     "confidence": "needs_trade_id",
+     "verified_by": null,
+     "verified_date": null
+    },
+    {
+     "label": "Item Rarity",
+     "stat_text": "#% increased Rarity of Items found",
+     "trade_stat_id": "explicit.stat_3917489142",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "B",
+     "mod_type": "unknown",
+     "why": "Farming option.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "#% increased Rarity of Items found"
+    }
+   ],
+   "budget_mods": [
+    "+Skill level alone"
+   ],
+   "high_end_mods": [
+    "+Skill level + spirit + life/ES + resists + damage"
+   ],
+   "avoid_notes": [
+    "Exact +skill tag must match the build; do not show all tags as equal."
+   ],
+   "trade_logic": {
+    "must_have_mode": "COUNT",
+    "must_have_count_min": 1,
+    "optional_mode": "COUNT",
+    "optional_count_min": 2
+   },
+   "source_refs": [
+    "https://poe2db.tw/us/Amulets"
+   ],
+   "patch": "0.5.4b",
+   "last_verified": "2026-07-11",
+   "trade_category_note": "Amulet",
+   "trade_category_verified": "official trade2 filters metadata 2026-07-11"
+  },
+  {
+   "id": "body_armour_defense_spirit",
+   "display_name": "Defensive / Spirit Body Armour",
+   "item_category": "Body Armour",
+   "trade_category": "armour.chest",
+   "build_goal": "Survivability body armour",
+   "confidence": "system_inference_needs_trade_id",
+   "base_filters": [
+    {
+     "field": "item_class",
+     "value": "Body Armour",
+     "verified": false
+    }
+   ],
+   "must_have_mods": [
+    {
+     "label": "High Armour/Evasion/Energy Shield",
+     "stat_text": "#% increased Armour, Evasion, or Energy Shield",
+     "trade_stat_id": "UNKNOWN_NEEDS_TRADE2_METADATA_VERIFICATION",
+     "trade_ready": false,
+     "min_value": null,
+     "max_value": null,
+     "priority": "SS",
+     "mod_type": "unknown",
+     "why": "Core body armour value.",
+     "confidence": "needs_trade_id",
+     "verified_by": null,
+     "verified_date": null
+    },
+    {
+     "label": "Life or Energy Shield",
+     "stat_text": "+# to maximum Life or Energy Shield",
+     "trade_stat_id": "UNKNOWN_NEEDS_TRADE2_METADATA_VERIFICATION",
+     "trade_ready": false,
+     "min_value": null,
+     "max_value": null,
+     "priority": "S",
+     "mod_type": "unknown",
+     "why": "Core defense.",
+     "confidence": "needs_trade_id",
+     "verified_by": null,
+     "verified_date": null
+    }
+   ],
+   "optional_mods": [
+    {
+     "label": "Spirit",
+     "stat_text": "+# to Spirit",
+     "trade_stat_id": "explicit.stat_3981240776",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "S",
+     "mod_type": "unknown",
+     "why": "Important for builds needing more reservation/minions.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "# to Spirit"
+    },
+    {
+     "label": "Elemental Resistances",
+     "stat_text": "+#% to Elemental Resistances",
+     "trade_stat_id": "UNKNOWN_NEEDS_TRADE2_METADATA_VERIFICATION",
+     "trade_ready": false,
+     "min_value": null,
+     "max_value": null,
+     "priority": "A",
+     "mod_type": "unknown",
+     "why": "Defense.",
+     "confidence": "needs_trade_id",
+     "verified_by": null,
+     "verified_date": null
+    },
+    {
+     "label": "Chaos Resistance",
+     "stat_text": "+#% to Chaos Resistance",
+     "trade_stat_id": "explicit.stat_2923486259",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "A",
+     "mod_type": "unknown",
+     "why": "Defense.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "#% to Chaos Resistance"
+    },
+    {
+     "label": "Socket/Augment value",
+     "stat_text": "Open augment sockets or useful socketed augment",
+     "trade_stat_id": "UNKNOWN_NEEDS_TRADE2_METADATA_VERIFICATION",
+     "trade_ready": false,
+     "min_value": null,
+     "max_value": null,
+     "priority": "B",
+     "mod_type": "unknown",
+     "why": "Crafting/augment planning.",
+     "confidence": "needs_trade_id",
+     "verified_by": null,
+     "verified_date": null
+    }
+   ],
+   "budget_mods": [
+    "High defense + life/ES"
+   ],
+   "high_end_mods": [
+    "High defense + spirit + life/ES + chaos res + ele res"
+   ],
+   "avoid_notes": [
+    "Do not overpay for irrelevant defense type if build scales a different layer."
+   ],
+   "trade_logic": {
+    "must_have_mode": "COUNT",
+    "must_have_count_min": 2,
+    "optional_mode": "COUNT",
+    "optional_count_min": 2
+   },
+   "source_refs": [
+    "https://poe2db.tw/us/Body_Armours"
+   ],
+   "patch": "0.5.4b",
+   "last_verified": "2026-07-11",
+   "trade_category_note": "Body Armour",
+   "trade_category_verified": "official trade2 filters metadata 2026-07-11"
+  },
+  {
+   "id": "general_resist_gear",
+   "display_name": "General Resist Gear",
+   "item_category": "Any Armour/Jewellery",
+   "trade_category": null,
+   "build_goal": "Fix elemental/chaos resistances cheaply",
+   "confidence": "system_inference_needs_trade_id",
+   "base_filters": [
+    {
+     "field": "item_class",
+     "value": "User selected slot",
+     "verified": false
+    }
+   ],
+   "must_have_mods": [
+    {
+     "label": "Fire Resistance",
+     "stat_text": "+#% to Fire Resistance",
+     "trade_stat_id": "explicit.stat_3372524247",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "A",
+     "mod_type": "unknown",
+     "why": "Resistance fixing.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "#% to Fire Resistance"
+    },
+    {
+     "label": "Cold Resistance",
+     "stat_text": "+#% to Cold Resistance",
+     "trade_stat_id": "explicit.stat_4220027924",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "A",
+     "mod_type": "unknown",
+     "why": "Resistance fixing.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "#% to Cold Resistance"
+    },
+    {
+     "label": "Lightning Resistance",
+     "stat_text": "+#% to Lightning Resistance",
+     "trade_stat_id": "explicit.stat_1671376347",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "A",
+     "mod_type": "unknown",
+     "why": "Resistance fixing.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "#% to Lightning Resistance"
+    },
+    {
+     "label": "Chaos Resistance",
+     "stat_text": "+#% to Chaos Resistance",
+     "trade_stat_id": "explicit.stat_2923486259",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "S",
+     "mod_type": "unknown",
+     "why": "Usually harder to solve and valuable.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "#% to Chaos Resistance"
+    }
+   ],
+   "optional_mods": [
+    {
+     "label": "Life",
+     "stat_text": "+# to maximum Life",
+     "trade_stat_id": "explicit.stat_3299347043",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "A",
+     "mod_type": "unknown",
+     "why": "Defense.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "# to maximum Life"
+    },
+    {
+     "label": "Energy Shield",
+     "stat_text": "+# to maximum Energy Shield",
+     "trade_stat_id": "explicit.stat_3489782002",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "A",
+     "mod_type": "unknown",
+     "why": "Defense.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "# to maximum Energy Shield"
+    },
+    {
+     "label": "Attributes",
+     "stat_text": "+# to Attributes",
+     "trade_stat_id": "UNKNOWN_NEEDS_TRADE2_METADATA_VERIFICATION",
+     "trade_ready": false,
+     "min_value": null,
+     "max_value": null,
+     "priority": "B",
+     "mod_type": "unknown",
+     "why": "Requirement fixer.",
+     "confidence": "needs_trade_id",
+     "verified_by": null,
+     "verified_date": null
+    },
+    {
+     "label": "Item Rarity",
+     "stat_text": "#% increased Rarity of Items found",
+     "trade_stat_id": "explicit.stat_3917489142",
+     "trade_ready": true,
+     "min_value": null,
+     "max_value": null,
+     "priority": "B",
+     "mod_type": "unknown",
+     "why": "Farming optional.",
+     "confidence": "confirmed_db",
+     "verified_by": "official trade2 metadata exact-text match (2026-07-11)",
+     "verified_date": "2026-07-11",
+     "official_text": "#% increased Rarity of Items found"
+    }
+   ],
+   "budget_mods": [
+    "COUNT 2 of fire/cold/lightning resistance"
+   ],
+   "high_end_mods": [
+    "Total resistances + chaos resistance + life/ES"
+   ],
+   "avoid_notes": [
+    "Let user choose slot first so the app does not search invalid combinations."
+   ],
+   "trade_logic": {
+    "must_have_mode": "COUNT",
+    "must_have_count_min": 2,
+    "optional_mode": "COUNT",
+    "optional_count_min": 1
+   },
+   "source_refs": [
+    "https://poe2db.tw/us/Modifiers"
+   ],
+   "patch": "0.5.4b",
+   "last_verified": "2026-07-11",
+   "trade_category_note": "No single official category - checklist covers armour + jewellery",
+   "trade_category_verified": null
+  }
+ ]
+}

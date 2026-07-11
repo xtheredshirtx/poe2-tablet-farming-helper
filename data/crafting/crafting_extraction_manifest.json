@@ -1,0 +1,54 @@
+{
+ "extraction_date": "2026-07-05",
+ "converted_on": "2026-07-11",
+ "coe_patch": "4.5.4.1.2",
+ "coe_patch_label": "0.5.4.1.2",
+ "coe_league_label": "Return of the Ancients",
+ "raw_files": [
+  {
+   "file": "data.json",
+   "bytes": 2897500,
+   "sha256": "30a09add1e2e626a74c697da3aa78c2400c4122c21353bd0ed824bd4aa58b4ee"
+  },
+  {
+   "file": "english.json",
+   "bytes": 335076,
+   "sha256": "de3af70141d2b499d190b40a3a2acb7463480455e250f9a05db2ba00ffbda73d"
+  },
+  {
+   "file": "package_poe2.js",
+   "bytes": 440294,
+   "sha256": "89d3c4b4754e51696e3b8f87e94254a56144f24f01a2b5c02cb2263ca590a9a9"
+  },
+  {
+   "file": "prices.json",
+   "bytes": 90525,
+   "sha256": "d3ffc712a3271441aefe9be7a9cf068bb4bea736a95eee465a3c3171b8be9554"
+  },
+  {
+   "file": "settings.json",
+   "bytes": 10394,
+   "sha256": "a9c9c3009cfbc71bb94cb38c2241954e7e0637b13009828f4144c2e34df7a4d2"
+  }
+ ],
+ "counts": {
+  "bases": 2469,
+  "modifiers": 3178,
+  "mod_groups": 1277,
+  "methods": 93,
+  "omens": 38,
+  "essences": 95,
+  "catalysts": 26,
+  "special_bases": 36,
+  "tags": 217,
+  "classes": 104,
+  "guides": 10
+ },
+ "known_gaps": [
+  "Omen exact in-game effect text not present in data files; only Craft of Exile action ids.",
+  "Craft of Exile exposes no guide/how-to content; existing sourced community guides are preserved and not overwritten.",
+  "Weights are Craft of Exile estimates, not official GGG weights.",
+  "Simulation/odds calculations were intentionally not extracted (owner scope).",
+  "League label mismatch: CoE 'Return of the Ancients' vs official 'Runes of Aldur'."
+ ]
+}

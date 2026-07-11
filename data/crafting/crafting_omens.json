@@ -1,0 +1,431 @@
+{
+ "_source": "Craft of Exile beta data.json methods.omens",
+ "_patch": "0.5.4.1.2",
+ "_accessed": "2026-07-05",
+ "omens": [
+  {
+   "item_id": 1442,
+   "name": "Aldur's Saga",
+   "action": "Expedition2LogbookSpecial",
+   "constraints": null,
+   "description": {
+    "stack": 10,
+    "description": 5207
+   },
+   "effect_text_status": "action id from Craft of Exile; exact in-game text NEEDS VERIFICATION"
+  },
+  {
+   "item_id": 1443,
+   "name": "Medved's Saga",
+   "action": "Expedition2LogbookMedved",
+   "constraints": null,
+   "description": {
+    "stack": 10,
+    "description": 5208
+   },
+   "effect_text_status": "action id from Craft of Exile; exact in-game text NEEDS VERIFICATION"
+  },
+  {
+   "item_id": 1444,
+   "name": "Vorana's Saga",
+   "action": "Expedition2LogbookVorana",
+   "constraints": null,
+   "description": {
+    "stack": 10,
+    "description": 5209
+   },
+   "effect_text_status": "action id from Craft of Exile; exact in-game text NEEDS VERIFICATION"
+  },
+  {
+   "item_id": 1445,
+   "name": "Uhtred's Saga",
+   "action": "Expedition2LogbookUhtred",
+   "constraints": null,
+   "description": {
+    "stack": 10,
+    "description": 5210
+   },
+   "effect_text_status": "action id from Craft of Exile; exact in-game text NEEDS VERIFICATION"
+  },
+  {
+   "item_id": 1446,
+   "name": "Olroth's Saga",
+   "action": "Expedition2LogbookOlroth",
+   "constraints": null,
+   "description": {
+    "stack": 10,
+    "description": 5211
+   },
+   "effect_text_status": "action id from Craft of Exile; exact in-game text NEEDS VERIFICATION"
+  },
+  {
+   "item_id": 4415,
+   "name": "Omen of Whittling",
+   "action": "OmenOnChaosLowestLevelMod",
+   "constraints": null,
+   "description": {
+    "stack": 10,
+    "description": 5212
+   },
+   "effect_text_status": "action id from Craft of Exile; exact in-game text NEEDS VERIFICATION"
+  },
+  {
+   "item_id": 4416,
+   "name": "Omen of Sinistral Erasure",
+   "action": "OmenOnChaosPrefix",
+   "constraints": null,
+   "description": {
+    "stack": 10,
+    "description": 5213
+   },
+   "effect_text_status": "action id from Craft of Exile; exact in-game text NEEDS VERIFICATION"
+  },
+  {
+   "item_id": 4417,
+   "name": "Omen of Dextral Erasure",
+   "action": "OmenOnChaosSuffix",
+   "constraints": null,
+   "description": {
+    "stack": 10,
+    "description": 5214
+   },
+   "effect_text_status": "action id from Craft of Exile; exact in-game text NEEDS VERIFICATION"
+  },
+  {
+   "item_id": 4418,
+   "name": "Omen of Sinistral Alchemy",
+   "action": "OmenOnAlchemyMaximumPrefixes",
+   "constraints": null,
+   "description": {
+    "stack": 10,
+    "description": 5215
+   },
+   "effect_text_status": "action id from Craft of Exile; exact in-game text NEEDS VERIFICATION"
+  },
+  {
+   "item_id": 4419,
+   "name": "Omen of Dextral Alchemy",
+   "action": "OmenOnAlchemyMaximumSuffixes",
+   "constraints": null,
+   "description": {
+    "stack": 10,
+    "description": 5216
+   },
+   "effect_text_status": "action id from Craft of Exile; exact in-game text NEEDS VERIFICATION"
+  },
+  {
+   "item_id": 4420,
+   "name": "Omen of Sinistral Coronation",
+   "action": "OmenOnRegalPrefix",
+   "constraints": null,
+   "description": {
+    "stack": 10,
+    "description": 5217
+   },
+   "effect_text_status": "action id from Craft of Exile; exact in-game text NEEDS VERIFICATION"
+  },
+  {
+   "item_id": 4421,
+   "name": "Omen of Dextral Coronation",
+   "action": "OmenOnRegalSuffix",
+   "constraints": null,
+   "description": {
+    "stack": 10,
+    "description": 5218
+   },
+   "effect_text_status": "action id from Craft of Exile; exact in-game text NEEDS VERIFICATION"
+  },
+  {
+   "item_id": 4422,
+   "name": "Omen of Corruption",
+   "action": "OmenOnVaalRemoveDoNothingOutcome",
+   "constraints": null,
+   "description": {
+    "stack": 10,
+    "description": 5219
+   },
+   "effect_text_status": "action id from Craft of Exile; exact in-game text NEEDS VERIFICATION"
+  },
+  {
+   "item_id": 4423,
+   "name": "Omen of Greater Exaltation",
+   "action": "OmenOnExaltAddTwoMods",
+   "constraints": null,
+   "description": {
+    "stack": 10,
+    "description": 5220
+   },
+   "effect_text_status": "action id from Craft of Exile; exact in-game text NEEDS VERIFICATION"
+  },
+  {
+   "item_id": 4424,
+   "name": "Omen of Sinistral Exaltation",
+   "action": "OmenOnExaltAddPrefixes",
+   "constraints": null,
+   "description": {
+    "stack": 10,
+    "description": 5221
+   },
+   "effect_text_status": "action id from Craft of Exile; exact in-game text NEEDS VERIFICATION"
+  },
+  {
+   "item_id": 4425,
+   "name": "Omen of Dextral Exaltation",
+   "action": "OmenOnExaltAddSuffixes",
+   "constraints": null,
+   "description": {
+    "stack": 10,
+    "description": 5222
+   },
+   "effect_text_status": "action id from Craft of Exile; exact in-game text NEEDS VERIFICATION"
+  },
+  {
+   "item_id": 4426,
+   "name": "Omen of Greater Annulment",
+   "action": "OmenOnAnnulRemoveTwoMods",
+   "constraints": null,
+   "description": {
+    "stack": 10,
+    "description": 5223
+   },
+   "effect_text_status": "action id from Craft of Exile; exact in-game text NEEDS VERIFICATION"
+  },
+  {
+   "item_id": 4427,
+   "name": "Omen of Sinistral Annulment",
+   "action": "OmenOnAnnulRemovePrefixes",
+   "constraints": null,
+   "description": {
+    "stack": 10,
+    "description": 5224
+   },
+   "effect_text_status": "action id from Craft of Exile; exact in-game text NEEDS VERIFICATION"
+  },
+  {
+   "item_id": 4428,
+   "name": "Omen of Dextral Annulment",
+   "action": "OmenOnAnnulRemoveSuffixes",
+   "constraints": null,
+   "description": {
+    "stack": 10,
+    "description": 5225
+   },
+   "effect_text_status": "action id from Craft of Exile; exact in-game text NEEDS VERIFICATION"
+  },
+  {
+   "item_id": 4433,
+   "name": "Omen of Homogenising Exaltation",
+   "action": "OmenOnExaltAddExistingModType",
+   "constraints": null,
+   "description": {
+    "stack": 10,
+    "description": 5226
+   },
+   "effect_text_status": "action id from Craft of Exile; exact in-game text NEEDS VERIFICATION"
+  },
+  {
+   "item_id": 4434,
+   "name": "Omen of Homogenising Coronation",
+   "action": "OmenOnRegalAddExistingModType",
+   "constraints": null,
+   "description": {
+    "stack": 10,
+    "description": 5227
+   },
+   "effect_text_status": "action id from Craft of Exile; exact in-game text NEEDS VERIFICATION"
+  },
+  {
+   "item_id": 4438,
+   "name": "Omen of the Blessed",
+   "action": "OmenOnDivineRerollImplicits",
+   "constraints": null,
+   "description": {
+    "stack": 10,
+    "description": 5228
+   },
+   "effect_text_status": "action id from Craft of Exile; exact in-game text NEEDS VERIFICATION"
+  },
+  {
+   "item_id": 4439,
+   "name": "Omen of Chaotic Rarity",
+   "action": "OmenOnChaosMapItemRarity",
+   "constraints": [
+    "waystone_base"
+   ],
+   "description": {
+    "stack": 10,
+    "description": 5229
+   },
+   "effect_text_status": "action id from Craft of Exile; exact in-game text NEEDS VERIFICATION"
+  },
+  {
+   "item_id": 4440,
+   "name": "Omen of Chaotic Quantity",
+   "action": "OmenOnChaosMapPackSize",
+   "constraints": [
+    "waystone_base"
+   ],
+   "description": {
+    "stack": 10,
+    "description": 5230
+   },
+   "effect_text_status": "action id from Craft of Exile; exact in-game text NEEDS VERIFICATION"
+  },
+  {
+   "item_id": 4441,
+   "name": "Omen of Chaotic Monsters",
+   "action": "OmenOnChaosMapMonsterRarity",
+   "constraints": [
+    "waystone_base"
+   ],
+   "description": {
+    "stack": 10,
+    "description": 5231
+   },
+   "effect_text_status": "action id from Craft of Exile; exact in-game text NEEDS VERIFICATION"
+  },
+  {
+   "item_id": 4442,
+   "name": "Omen of Chaotic Effectiveness",
+   "action": "OmenOnChaosMapMonsterEffectiveness",
+   "constraints": null,
+   "description": {
+    "stack": 10,
+    "description": 5232
+   },
+   "effect_text_status": "action id from Craft of Exile; exact in-game text NEEDS VERIFICATION"
+  },
+  {
+   "item_id": 4445,
+   "name": "Omen of Sanctification",
+   "action": "OmenOnDivineSanctify",
+   "constraints": null,
+   "description": {
+    "stack": 10,
+    "description": 5233
+   },
+   "effect_text_status": "action id from Craft of Exile; exact in-game text NEEDS VERIFICATION"
+  },
+  {
+   "item_id": 4446,
+   "name": "Omen of Dextral Crystallisation",
+   "action": "OmenOnPerfectEssenceSuffix",
+   "constraints": null,
+   "description": {
+    "stack": 10,
+    "description": 5234
+   },
+   "effect_text_status": "action id from Craft of Exile; exact in-game text NEEDS VERIFICATION"
+  },
+  {
+   "item_id": 4447,
+   "name": "Omen of Sinistral Crystallisation",
+   "action": "OmenOnPerfectEssencePrefix",
+   "constraints": null,
+   "description": {
+    "stack": 10,
+    "description": 5235
+   },
+   "effect_text_status": "action id from Craft of Exile; exact in-game text NEEDS VERIFICATION"
+  },
+  {
+   "item_id": 4448,
+   "name": "Omen of Catalysing Exaltation",
+   "action": "OmenOnExaltConsumeQuality",
+   "constraints": null,
+   "description": {
+    "stack": 10,
+    "description": 5236
+   },
+   "effect_text_status": "action id from Craft of Exile; exact in-game text NEEDS VERIFICATION"
+  },
+  {
+   "item_id": 4449,
+   "name": "Omen of Abyssal Echoes",
+   "action": "OmenOnAbyssRerollOptions",
+   "constraints": null,
+   "description": {
+    "stack": 10,
+    "description": 5237
+   },
+   "effect_text_status": "action id from Craft of Exile; exact in-game text NEEDS VERIFICATION"
+  },
+  {
+   "item_id": 4450,
+   "name": "Omen of the Sovereign",
+   "action": "OmenOnAbyssGuarenteeLichTypeMod1",
+   "constraints": null,
+   "description": {
+    "stack": 10,
+    "description": 5238
+   },
+   "effect_text_status": "action id from Craft of Exile; exact in-game text NEEDS VERIFICATION"
+  },
+  {
+   "item_id": 4451,
+   "name": "Omen of the Liege",
+   "action": "OmenOnAbyssGuarenteeLichTypeMod2",
+   "constraints": null,
+   "description": {
+    "stack": 10,
+    "description": 5239
+   },
+   "effect_text_status": "action id from Craft of Exile; exact in-game text NEEDS VERIFICATION"
+  },
+  {
+   "item_id": 4452,
+   "name": "Omen of the Blackblooded",
+   "action": "OmenOnAbyssGuarenteeLichTypeMod3",
+   "constraints": null,
+   "description": {
+    "stack": 10,
+    "description": 5240
+   },
+   "effect_text_status": "action id from Craft of Exile; exact in-game text NEEDS VERIFICATION"
+  },
+  {
+   "item_id": 4453,
+   "name": "Omen of Putrefaction",
+   "action": "OmenOnAbyssVeilAllAndCorrupt",
+   "constraints": null,
+   "description": {
+    "stack": 10,
+    "description": 5241
+   },
+   "effect_text_status": "action id from Craft of Exile; exact in-game text NEEDS VERIFICATION"
+  },
+  {
+   "item_id": 4454,
+   "name": "Omen of Light",
+   "action": "OmenOnAnnulRemoveAbyssMod",
+   "constraints": null,
+   "description": {
+    "stack": 10,
+    "description": 5242
+   },
+   "effect_text_status": "action id from Craft of Exile; exact in-game text NEEDS VERIFICATION"
+  },
+  {
+   "item_id": 4455,
+   "name": "Omen of Sinistral Necromancy",
+   "action": "OmenOnAbyssAddPrefixes",
+   "constraints": null,
+   "description": {
+    "stack": 10,
+    "description": 5243
+   },
+   "effect_text_status": "action id from Craft of Exile; exact in-game text NEEDS VERIFICATION"
+  },
+  {
+   "item_id": 4456,
+   "name": "Omen of Dextral Necromancy",
+   "action": "OmenOnAbyssAddSuffixes",
+   "constraints": null,
+   "description": {
+    "stack": 10,
+    "description": 5244
+   },
+   "effect_text_status": "action id from Craft of Exile; exact in-game text NEEDS VERIFICATION"
+  }
+ ]
+}

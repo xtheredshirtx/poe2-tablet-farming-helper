@@ -1,0 +1,422 @@
+{
+ "_source": "POE2_054_Farming_Research_Phase2/EXPEDITION_LOGBOOK_RESEARCH.md + external_source_exports/expedition_cheat_sheet_gid1976406181.csv",
+ "_patch_basis": "0.5.4b Hotfix 3",
+ "_credits": "Community spreadsheet by Dracorath (rumor credit: Guitaraholic; Travic guide linked). NOT official data.",
+ "_spreadsheet_url": "https://docs.google.com/spreadsheets/d/1d5FFDUSgoL2WNbEwv1gkBra3ALnI4UsdokksSADxx_0/edit?gid=1976406181",
+ "official_054_changes": [
+  "0.5.4 added an Expedition Atlas Passive Skill Tree; points earned by defeating each Boss in The Grand Expedition questline.",
+  "0.5.4 added Liquid Verisium (from Farrow after allocating Feeling Lucky?) to immediately start a Runic Remnant Encounter.",
+  "Grand Expeditions now have 1-2 Expedition Map Modifiers (Runic Monster Markers, duplicated Runic Monsters, additional Remnants).",
+  "Remnants now choose which Rune slot propagates to later monsters.",
+  "Doryani's Refined Formula: Grand Expeditions have only 5 Explosives (overrides max 1 for Expeditions).",
+  "0.5.4b + Hotfix 3 fixed multiple Expedition bugs including Verisium Remnant interaction after Liquid Verisium."
+ ],
+ "rumours": [
+  {
+   "type": "Unique Map",
+   "rumour": "Fallen Skies",
+   "map": "Moor of Fallen Skies",
+   "mods": "Runestones",
+   "rank": "S+",
+   "details": "Unique Expedition Map with 9-10 Rune to unlock",
+   "note": "High-priority; Aldurs exception applies (only unique map worth Aldurs)."
+  },
+  {
+   "type": "Unique Map",
+   "rumour": "All that glitters",
+   "map": "Castaway",
+   "mods": "Gold",
+   "rank": "A",
+   "details": "All of the Gold",
+   "note": "Economy-dependent."
+  },
+  {
+   "type": "Unique Map",
+   "rumour": "Reflective Waters",
+   "map": "Lake of Kalandra",
+   "mods": "Ring Bases",
+   "rank": "A",
+   "details": "\"The best PoE 1 league\"",
+   "note": "Ring-base value; not official."
+  },
+  {
+   "type": "Unique Map",
+   "rumour": "Almost paradise",
+   "map": "Untainted Paradise",
+   "mods": "Experience",
+   "rank": "C",
+   "details": "Less XP than a City map",
+   "note": "Low priority unless leveling."
+  },
+  {
+   "type": "Unique Map",
+   "rumour": "A good fellow...",
+   "map": "Moment of Zen",
+   "mods": "Seer",
+   "rank": "C",
+   "details": "Nameless Seer joke/note",
+   "note": "Low confidence, possible lottery."
+  },
+  {
+   "type": "Rumour",
+   "rumour": "Endless Cliffs",
+   "map": "Craggy Peninsula",
+   "mods": "Rarity/Rogue Exiles",
+   "rank": "A",
+   "details": "Good map; focus on juicing the rogue exiles",
+   "note": "Strong non-boss rumour."
+  },
+  {
+   "type": "Rumour",
+   "rumour": "Sulphite!",
+   "map": "Scorched Cay",
+   "mods": "Increased Rarity",
+   "rank": "A",
+   "details": "Good map; juice remnants for boss/good runes",
+   "note": "Strong non-boss rumour."
+  },
+  {
+   "type": "Rumour",
+   "rumour": "Cold as ice",
+   "map": "Frigid Bluffs",
+   "mods": "Old Expedition",
+   "rank": "B",
+   "details": "Juice hard - old-style Expedition mobs",
+   "note": "Solid if build handles it."
+  },
+  {
+   "type": "Rumour",
+   "rumour": "Unknown Ruins",
+   "map": "Exhumed Ruins",
+   "mods": "Precursor Leylines",
+   "rank": "B",
+   "details": "Can spawn in bad location; run if adjacent logbook zone is empty",
+   "note": "Conditional."
+  },
+  {
+   "type": "Rumour",
+   "rumour": "Warm but risky",
+   "map": "Grazed Prairie",
+   "mods": "Expedition/Beyond/Hoards",
+   "rank": "B",
+   "details": "Juice hard - old-style Expedition mobs",
+   "note": "Conditional risk."
+  },
+  {
+   "type": "Rumour",
+   "rumour": "Wild, Roaming Free",
+   "map": "Lush Island",
+   "mods": "Azmeri Spirits",
+   "rank": "B",
+   "details": "Can juice a strong boss with wisps",
+   "note": "Hilda/boss synergy possible."
+  },
+  {
+   "type": "Rumour",
+   "rumour": "Something Fishy",
+   "map": "Bleached Shoals",
+   "mods": "Amulets",
+   "rank": "C",
+   "details": "Source of all-res Pearl amulets",
+   "note": "Niche."
+  },
+  {
+   "type": "Rumour",
+   "rumour": "Nothing to drink",
+   "map": "Stagnant Basin",
+   "mods": "Oil",
+   "rank": "C",
+   "details": "Check runes otherwise go for currency tiles",
+   "note": "Niche."
+  },
+  {
+   "type": "Rumour",
+   "rumour": "It's dry at least",
+   "map": "Sloughed Gully",
+   "mods": "Monster effectiveness",
+   "rank": "F",
+   "details": "Can spawn untargetable enemies",
+   "note": "AVOID unless verified fixed."
+  },
+  {
+   "type": "Rumour",
+   "rumour": "Bleak and Awful",
+   "map": "Barren Atoll",
+   "mods": "Strongbox",
+   "rank": "F",
+   "details": "Can spawn untargetable enemies",
+   "note": "AVOID unless verified fixed."
+  },
+  {
+   "type": "Powerful Boss",
+   "rumour": "Crazed Chieftain...",
+   "map": "Jade Isles",
+   "mods": "Powerful Map Boss",
+   "rank": "S+",
+   "details": "\"Go get a Rakiata's Flow!\"",
+   "note": "Strong boss-value; market dependent."
+  },
+  {
+   "type": "Boss Encounter",
+   "rumour": "Stardrinker...",
+   "map": "Secluded Temple",
+   "mods": "Uhtred",
+   "rank": "S",
+   "details": "Drops the Drained Mana Rune!?",
+   "note": "Strong, but do not use Aldurs on Boss."
+  },
+  {
+   "type": "Boss Encounter",
+   "rumour": "Origin of the Fall...",
+   "map": "Obscure Island",
+   "mods": "Olroth",
+   "rank": "A",
+   "details": "Drops Triskellion / flask",
+   "note": "Good boss target."
+  },
+  {
+   "type": "Boss Encounter",
+   "rumour": "The Last To Fall...",
+   "map": "Mournful Cliffside",
+   "mods": "Vorana",
+   "rank": "B",
+   "details": "",
+   "note": "Medium/unknown."
+  },
+  {
+   "type": "Boss Encounter",
+   "rumour": "End of the Circle...",
+   "map": "Sprawling Jungle",
+   "mods": "Medved",
+   "rank": "B",
+   "details": "",
+   "note": "Medium/unknown."
+  }
+ ],
+ "sagas": [
+  {
+   "name": "Aldurs",
+   "target": "Buffs Expeditions",
+   "rank": "S+",
+   "note": "Can be a gamble on the seed",
+   "rule": "Use only with 3 rumours; never on Boss; never on unique maps except Fallen Skies."
+  },
+  {
+   "name": "Olroth",
+   "target": "Obscure Island boss node",
+   "rank": "A",
+   "note": "Guarantees boss encounter",
+   "rule": "Use when boss-farming Olroth."
+  },
+  {
+   "name": "Uhtred",
+   "target": "Secluded Temple boss node",
+   "rank": "B+",
+   "note": "Guarantees boss encounter",
+   "rule": "Boss-targeted only."
+  },
+  {
+   "name": "Medved",
+   "target": "Strange Jungle boss node",
+   "rank": "B+",
+   "note": "Guarantees boss encounter (sheet spells it Medhed)",
+   "rule": "Boss-targeted only."
+  },
+  {
+   "name": "Vorana",
+   "target": "Mournful Cliffside boss node",
+   "rank": "B+",
+   "note": "Guarantees boss encounter",
+   "rule": "Boss-targeted only."
+  }
+ ],
+ "aldurs_rules": [
+  "Do not use Aldurs on Boss.",
+  "Do not use Aldurs on a Unique map unless it is Fallen Skies.",
+  "Use Aldurs if there are 3 rumours.",
+  "Do not use Aldurs if there are only 2 rumours (less content).",
+  "Before using Aldurs, make sure rumours do not change before confirming.",
+  "More than 5 rune slots is highly favorable.",
+  "Fish by enabling/disabling Sagas to change rumours."
+ ],
+ "tips": [
+  "Run 3x other-tablet strats on any map in between Grand Expeditions; this means current shared/Irradiated/map juice, not Expedition Tablets.",
+  "Make sure you are capped on rarity (spreadsheet advice).",
+  "Logbook farm: 2 red flags on one pole gives rare monsters that could drop logbooks (spreadsheet note)."
+ ],
+ "current_juice_rule": {
+  "date": "2026-07-05",
+  "status": "authoritative_owner_rule_plus_data_mapping",
+  "summary": "When current notes or guides say to juice Expedition, interpret that as juicing the surrounding maps/logbooks/whispers with other current tablets, waystone/map modifiers, Atlas Master choices, and remnant order. It does not mean buying, filtering, or recommending Expedition Tablets.",
+  "current_game_rule": "Expedition Tablets do not exist in the current game; old Expedition Tablet rows are legacy only.",
+  "use_other_tablets": true,
+  "never_use_tablet_type": "Expedition Tablet",
+  "recommended_other_tablet_filters": [
+   {
+    "modifier_id": "shared_prefix_pack_size",
+    "label": "Pack Size",
+    "why": "Safe default density for maps around Grand Expeditions and whisper/logbook routes."
+   },
+   {
+    "modifier_id": "shared_prefix_rare_monsters",
+    "label": "Rare Monsters",
+    "why": "Matches the sheet note that rare monsters can matter for logbook drops and general Expedition-value maps."
+   },
+   {
+    "modifier_id": "shared_prefix_monster_rarity",
+    "label": "Monster Rarity",
+    "why": "Pairs with the spreadsheet advice to cap rarity when farming Expedition rewards."
+   },
+   {
+    "modifier_id": "shared_prefix_item_rarity",
+    "label": "Item Rarity",
+    "why": "Generic rarity stacking for Grand Expedition style mapping and rare/boss loot."
+   },
+   {
+    "modifier_id": "shared_suffix_waystone_quantity",
+    "label": "Waystone Quantity",
+    "why": "Sustain option while chaining maps between Grand Expeditions."
+   },
+   {
+    "modifier_id": "shared_prefix_monster_effectiveness",
+    "label": "Monster Effectiveness",
+    "why": "High-investment Expedition-style map juice; dangerous and should be avoided by weak builds.",
+    "risk": "high"
+   },
+   {
+    "modifier_id": "shared_suffix_random_modifiers",
+    "label": "Additional Random Modifier",
+    "why": "High-investment multiplier for strong builds only.",
+    "risk": "high"
+   }
+  ],
+  "recommended_current_presets": [
+   {
+    "preset_id": "preset_all_safe_currency",
+    "label": "Any Tablet - Safe Currency Juice",
+    "why": "Use when a note only says to juice Expedition and no high-risk instruction is given."
+   },
+   {
+    "preset_id": "preset_all_high_investment",
+    "label": "Any Tablet - High-Investment Juice",
+    "why": "Use only when the build can handle dangerous stacked map mods."
+   },
+   {
+    "preset_id": "preset_irradiated_currency",
+    "label": "Irradiated - Area Level/Tablet Farm Juice",
+    "why": "Relevant when the plan is area-level/tablet/currency farming around the Expedition route."
+   }
+  ],
+  "atlas_master_support": [
+   {
+    "master": "Doryani's Science",
+    "node": "Refined Formula",
+    "why": "Expedition explosive radius/range control; Grand Expeditions have 5 explosives."
+   },
+   {
+    "master": "Hilda's Hunting",
+    "node": "Scarred Lands",
+    "why": "More Runic Monster Markers and Rare Expedition Monsters."
+   },
+   {
+    "master": "Jado's Spycraft",
+    "node": "Eastern Knowledge",
+    "why": "Verisium Remnants can roll an additional time, keeping rarest outcome."
+   }
+  ],
+  "remnant_priorities_to_pair_with_juice": [
+   "Runic Monsters are duplicated",
+   "Quantity of Expedition Logbooks",
+   "Increased number of Rare monsters",
+   "Quantity of Items",
+   "Rarity of Items"
+  ],
+  "app_behavior": "Show this in Expedition Whispers as the current Expedition juice interpretation. Do not expose Expedition Tablet trade filters as current."
+ },
+ "remnant_priority": [
+  {
+   "priority": 1,
+   "remnant": "Runic Monsters are duplicated"
+  },
+  {
+   "priority": 2,
+   "remnant": "Quantity of Expedition Logbooks"
+  },
+  {
+   "priority": 3,
+   "remnant": "Increased number of Rare monsters"
+  },
+  {
+   "priority": 4,
+   "remnant": "Quantity of Items"
+  },
+  {
+   "priority": 5,
+   "remnant": "Rarity of Items"
+  }
+ ],
+ "remnant_rule": "CRITICAL: Remnant bonuses are NOT retroactive. Detonation order and pathing determine which monsters are affected.",
+ "avoid_warnings": [
+  "Damage-type immunity matching the build.",
+  "Guaranteed critical strikes on monsters unless the build is very durable.",
+  "Monster effectiveness/damage stacks on weak builds.",
+  "F-rank maps (It's dry at least / Bleak and Awful) until the untargetable-enemy issue is verified fixed.",
+  "Aldurs Saga on Boss maps or low-rumour maps."
+ ],
+ "tablet_setups": [
+  {
+   "goal": "Logbook sustain",
+   "setup": "LEGACY ONLY - removed tablet setup: Pack Size + of Knowledge. Current play uses other current tablets/shared juice, Atlas Masters, whispers, and remnants instead.",
+   "stat_ids": [
+    "explicit.stat_2017682521",
+    "explicit.stat_1083387327"
+   ],
+   "confidence": "High for legacy IDs, no longer current-game-available",
+   "current_game_available": false,
+   "legacy_removed_from_current_game": true,
+   "legacy_note": "Owner rule 2026-07-05: Expedition Tablets do not exist in the current game. Treat this as historical source context only."
+  },
+  {
+   "goal": "Runic density",
+   "setup": "LEGACY ONLY - removed tablet setup: of Runes + rare Expedition monsters. Current play uses Hilda Scarred Lands, remnant order, and other current tablet juice instead.",
+   "stat_ids": [
+    "explicit.stat_1640965354",
+    "explicit.stat_2694800111"
+   ],
+   "confidence": "High for legacy IDs, no longer current-game-available",
+   "current_game_available": false,
+   "legacy_removed_from_current_game": true,
+   "legacy_note": "Owner rule 2026-07-05: Expedition Tablets do not exist in the current game. Treat this as historical source context only."
+  },
+  {
+   "goal": "Remnant/rune recipe farm",
+   "setup": "LEGACY ONLY - removed tablet setup: of the Writings / of Relics. Current play uses remnant priorities, Atlas Master support, and other current tablet juice instead.",
+   "stat_ids": [
+    "explicit.stat_3753446846",
+    "explicit.stat_3078574625"
+   ],
+   "confidence": "High for legacy IDs, no longer current-game-available",
+   "current_game_available": false,
+   "legacy_removed_from_current_game": true,
+   "legacy_note": "Owner rule 2026-07-05: Expedition Tablets do not exist in the current game. Treat this as historical source context only."
+  },
+  {
+   "goal": "High-investment runic duplication",
+   "setup": "LEGACY ONLY - removed unique tablet setup: Forgotten By Time. Current play uses Grand Expedition/remnant priorities and other current tablet juice instead.",
+   "stat_ids": [
+    "explicit.stat_144770454",
+    "explicit.stat_2816104578"
+   ],
+   "confidence": "High for legacy IDs/text, no longer current-game-available",
+   "current_game_available": false,
+   "legacy_removed_from_current_game": true,
+   "legacy_note": "Owner rule 2026-07-05: Expedition Tablets do not exist in the current game. Treat this as historical source context only."
+  }
+ ],
+ "grand_vs_standard": {
+  "standard": "Logbook sustain and routine rewards. Expedition tree and remnant propagation changes apply.",
+  "grand": "High-value rune/remnant payoff. 1-2 modifiers baseline; map icon; Doryani 5-explosive behavior. Use Aldurs only with strong conditions.",
+  "open_question": "Whether logbooks can drop from Grands and exact expected value — UNVERIFIED."
+ },
+ "_owner_update": "2026-07-05: Expeditions are no longer tablets in the current season - they work through logbooks and WHISPERS (the rumour system below). When current notes say to juice Expedition, they mean other current tablets/map juice/Atlas Masters/remnants around the Expedition route, not Expedition Tablets. Old Expedition Tablet modifier data is legacy."
+}

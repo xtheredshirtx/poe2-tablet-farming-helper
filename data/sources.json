@@ -1,0 +1,400 @@
+{
+  "_source": "POE2_054_Farming_Research_Phase2/DATA_SOURCE_REGISTRY.md",
+  "_accessed": "2026-07-05",
+  "sources": [
+    {
+      "name": "Owner current gameplay rule - no Expedition Tablets",
+      "url": "",
+      "type": "Owner in-game rule",
+      "reliability": "High for current gameplay behavior",
+      "data": "Expedition Tablets do not exist in the current game; Expedition runs through logbooks/whispers instead.",
+      "limitations": "If the owner later reports Expedition Tablets returned in a patch, this rule must be revisited explicitly."
+    },
+    {
+      "name": "Owner current gameplay interpretation - Expedition juice means other tablets",
+      "url": "",
+      "type": "Owner in-game rule",
+      "reliability": "High for current gameplay interpretation",
+      "data": "When current Expedition notes say to juice Expedition, interpret that as other current tablets, map/waystone modifiers, Atlas Master choices, whispers, and remnant order around Expedition content, not Expedition Tablets.",
+      "limitations": "Does not make Expedition Tablet current-game-available; imported old Expedition Tablet suffixes still remain legacy only."
+    },
+    {
+      "name": "Official Early Access Patch Notes forum",
+      "url": "https://www.pathofexile.com/forum/view-forum/2212",
+      "type": "Official",
+      "reliability": "High",
+      "data": "Latest visible patch thread: 0.5.4b Hotfix 3",
+      "limitations": "Must recheck after every patch."
+    },
+    {
+      "name": "Official 0.5.4 Patch Notes",
+      "url": "https://www.pathofexile.com/forum/view-thread/3975218",
+      "type": "Official",
+      "reliability": "High",
+      "data": "Expedition Atlas tree, Liquid Verisium, Grand Expedition modifiers, Doryani Refined Formula update",
+      "limitations": "Superseded by 0.5.4b/hotfix details where applicable."
+    },
+    {
+      "name": "Official 0.5.4b Patch Notes",
+      "url": "https://www.pathofexile.com/forum/view-thread/3980516",
+      "type": "Official",
+      "reliability": "High",
+      "data": "Expedition fixes, boss fixes, Endgame fixes, Doryani/Jado fix",
+      "limitations": "Read before old community guides."
+    },
+    {
+      "name": "Official 0.5.4b Hotfix 3",
+      "url": "https://www.pathofexile.com/forum/view-thread/3980829",
+      "type": "Official",
+      "reliability": "High",
+      "data": "Verisium Remnant interaction fix, Grand Expedition portal fixes",
+      "limitations": "Latest visible thread during Phase 2."
+    },
+    {
+      "name": "Official 0.5.0 Patch Notes",
+      "url": "https://www.pathofexile.com/forum/view-thread/3932540",
+      "type": "Official",
+      "reliability": "High",
+      "data": "Waystone of Nemeses removal and Extra Projectiles Waystone disable guardrail",
+      "limitations": "Older patch, but still relevant to disabled legacy Waystone rows."
+    },
+    {
+      "name": "Official developer docs",
+      "url": "https://www.pathofexile.com/developer/docs",
+      "type": "Official",
+      "reliability": "High",
+      "data": "API policy, OAuth cautions, user-agent/rate-limit guidance",
+      "limitations": "Does not document every trade2 query detail."
+    },
+    {
+      "name": "Official trade2 stats metadata",
+      "url": "https://www.pathofexile.com/api/trade2/data/stats",
+      "type": "Official metadata",
+      "reliability": "High",
+      "data": "Confirmed many explicit.stat_* IDs for tablet modifiers",
+      "limitations": "Not fully documented; respect rate limits and ToS."
+    },
+    {
+      "name": "Official trade2 items metadata",
+      "url": "https://www.pathofexile.com/api/trade2/data/items",
+      "type": "Official metadata",
+      "reliability": "High",
+      "data": "Tablet base names and unique tablet names; group map",
+      "limitations": "Does not by itself prove query filters."
+    },
+    {
+      "name": "Official trade2 leagues metadata",
+      "url": "https://www.pathofexile.com/api/trade2/data/leagues",
+      "type": "Official metadata",
+      "reliability": "High",
+      "data": "Runes of Aldur, HC Runes of Aldur, Standard, Hardcore",
+      "limitations": "Seasonal IDs will change."
+    },
+    {
+      "name": "Official trade2 filters metadata",
+      "url": "https://www.pathofexile.com/api/trade2/data/filters",
+      "type": "Official metadata",
+      "reliability": "High",
+      "data": "Category map.tablet, rarity, corruption, item level, status, price filters",
+      "limitations": "Query POST still needs full per-filter validation."
+    },
+    {
+      "name": "Official trade2 web UI",
+      "url": "https://www.pathofexile.com/trade2",
+      "type": "Official",
+      "reliability": "High",
+      "data": "Official user-facing trade surface",
+      "limitations": "Raw shell request returned 403; browser behavior needs manual validation."
+    },
+    {
+      "name": "Owner Expedition Google Sheet (Dracorath)",
+      "url": "https://docs.google.com/spreadsheets/d/1d5FFDUSgoL2WNbEwv1gkBra3ALnI4UsdokksSADxx_0/edit?gid=1976406181",
+      "type": "Community spreadsheet",
+      "reliability": "Medium",
+      "data": "Rumour/map/saga rankings and notes",
+      "limitations": "Community spreadsheet; not official; typos preserved."
+    },
+    {
+      "name": "PoE2DB Tablets",
+      "url": "https://poe2db.tw/us/Tablets",
+      "type": "Database",
+      "reliability": "High/Medium",
+      "data": "Tablet system, Ancient Infuser, tablet passives, Precursor Towers",
+      "limitations": "Modifier weight info may be unavailable."
+    },
+    {
+      "name": "PoE2DB Expedition Tablet",
+      "url": "https://poe2db.tw/us/Expedition_Tablet",
+      "type": "Database",
+      "reliability": "High/Medium",
+      "data": "Expedition Tablet base, 10 uses, Forgotten By Time text",
+      "limitations": "Needs repeated checks after patches."
+    },
+    {
+      "name": "PoE2DB Waystone tier pages",
+      "url": "https://poe2db.tw/us/Waystones_low_tier ; https://poe2db.tw/us/Waystones_mid_tier ; https://poe2db.tw/us/Waystones_top_tier",
+      "type": "Database",
+      "reliability": "High/Medium",
+      "data": "Waystone base modifier pool, tier roll ranges, hidden reward lines",
+      "limitations": "Some disabled legacy rows still appear; reconcile against official patch notes."
+    },
+    {
+      "name": "PoE2DB Temple Tablet",
+      "url": "https://poe2db.tw/us/Temple_Tablet",
+      "type": "Database",
+      "reliability": "High/Medium",
+      "data": "Temple/Vaal Beacon suffix roll ranges and two suffixes missing from earlier seed data",
+      "limitations": "Strategy value and economy still untested."
+    },
+    {
+      "name": "PoE2DB Atlas Masters",
+      "url": "https://poe2db.tw/us/Atlas_Masters",
+      "type": "Database",
+      "reliability": "High/Medium",
+      "data": "36 Atlas Master nodes for Jado, Doryani, Hilda; unlock notes",
+      "limitations": "Unlock wording still has conflicts."
+    },
+    {
+      "name": "PoE2DB Island Rumours",
+      "url": "https://poe2db.tw/Island_Rumours",
+      "type": "Database",
+      "reliability": "High/Medium",
+      "data": "Island rumour reference used by spreadsheet",
+      "limitations": "Not fully extracted in Phase 2."
+    },
+    {
+      "name": "poe2wiki tablet modifier list",
+      "url": "https://www.poe2wiki.net/wiki/List_of_modifiers_for_tablets",
+      "type": "Community wiki",
+      "reliability": "High/Medium",
+      "data": "Modifier pools and roll ranges for many tablets",
+      "limitations": "Reconcile with official trade stats where wording differs."
+    },
+    {
+      "name": "Mobalytics / Maxroll / creator guides",
+      "url": "",
+      "type": "Community guides",
+      "reliability": "Medium/Low",
+      "data": "Strategy rankings, setup ideas, warnings",
+      "limitations": "Treat as opinion unless backed by data/sample sizes."
+    },
+    {
+      "name": "GhazzyTV POE2 crafting guide video",
+      "url": "https://www.youtube.com/watch?v=HfFkmE_t4SA",
+      "type": "Community video guide",
+      "reliability": "Medium",
+      "data": "Owner-provided transcript converted into sourced crafting guide entries for item anatomy, budget crafts, minion sceptre, fracture/omen metacrafting, and profit-crafting principles.",
+      "limitations": "Community content, not official; economy examples are perishable and should be dated before treating as current prices."
+    },
+    {
+      "name": "PoE2DB Tablet page",
+      "url": "https://poe2db.tw/Tablet",
+      "type": "Database",
+      "reliability": "High/Medium",
+      "data": "Phase 10 tablet juice cross-check: tablet bases, unique tablets, shared prefix/suffix pools, type-specific suffixes and roll ranges.",
+      "limitations": "Unofficial mirror; official trade stats remain authority for trade_stat_id."
+    },
+    {
+      "name": "PoE2 Regex Tablet helper",
+      "url": "https://poe2.re/tablet",
+      "type": "Community tool",
+      "reliability": "Medium",
+      "data": "Cross-check visible tablet modifier wording for regex/filter text in tablet-juice pack.",
+      "limitations": "Not primary source; use only as a convenience cross-check."
+    },
+    {
+      "name": "Mobalytics PoE2 0.5 patch hub",
+      "url": "https://mobalytics.gg/poe-2/guides/0-5-patch-notes",
+      "type": "Guide/patch aggregation",
+      "reliability": "Medium",
+      "data": "Community/guide context around 0.5 tablet and Monster Effectiveness usage.",
+      "limitations": "Not official; ranking/value claims remain opinion."
+    },
+    {
+      "name": "Reddit Grand Expedition tips post",
+      "url": "https://www.reddit.com/r/PathOfExile2/comments/1ud069j/some_grand_expedition_tips_that_have_been/",
+      "type": "Reddit/community",
+      "reliability": "Low/Medium",
+      "data": "Community claims around Irradiated, Increased Effectiveness, and Item Rarity tablet stacking; used only as opinion context.",
+      "limitations": "Anecdotal and perishable."
+    },
+    {
+      "name": "Reddit Irradiated Tablet stacking post",
+      "url": "https://www.reddit.com/r/pathofexile2builds/comments/1u75ffy/irradiated_tablet_stacking_not_an_abyss_farming/",
+      "type": "Reddit/community",
+      "reliability": "Low/Medium",
+      "data": "Community claims that Irradiated tablet stacking still allows mechanics/tablet/omen drops; used only as opinion context.",
+      "limitations": "Anecdotal and needs dated economy testing."
+    },
+    {
+      "name": "Mobalytics / Mattjestic 0.5.4 Expedition guide",
+      "url": "https://mobalytics.gg/poe-2/profile/mattjestic-multigaming/guides/poe-2-0-5-expedition-endgame-farming-guide-500-divine-daily-income",
+      "type": "Creator guide",
+      "reliability": "Medium/Low",
+      "data": "Community Expedition/Grand Expedition strategy notes for tablet juice ranking.",
+      "limitations": "Profit claims are perishable and not official."
+    },
+    {
+      "name": "AOEAH 0.5.4 Expedition Farm Guide",
+      "url": "https://www.aoeah.com/news/4619--poe-2-054-expedition-farm-guide-logbooks-tablets-atlas--farm-strats",
+      "type": "Guide",
+      "reliability": "Low/Medium",
+      "data": "Community Expedition/Grand Expedition strategy opinions.",
+      "limitations": "Commercial guide; use only as low-confidence opinion."
+    },
+    {
+      "name": "AOEAH 0.5 Abyss Farming Guide",
+      "url": "https://www.aoeah.com/news/4616--poe-2-05-abyss-farming-guide-best-faction-tablets--atlas-tree",
+      "type": "Guide",
+      "reliability": "Low/Medium",
+      "data": "Community Abyss/Irradiated/high-effectiveness tablet opinions.",
+      "limitations": "Commercial guide; use only as low-confidence opinion."
+    },
+    {
+      "name": "How to Roll Waystones and Tablets - PoE2 0.5",
+      "url": "https://www.youtube.com/watch?v=Rowlyx5glV8",
+      "type": "YouTube/community",
+      "reliability": "Medium/Low",
+      "data": "Community tablet/waystone rolling priorities for Phase 10 juice rankings.",
+      "limitations": "No database text copied; market claims perishable."
+    }
+  ],
+  "conflicts": [
+    {
+      "id": "C1",
+      "topic": "Tablet rarity/modifier count",
+      "claim_a": "Inherited rule: tablets are Magic only",
+      "claim_b": "PoE2DB: unique tablets exist; Ancient Infuser corrupts/modifies; passives upgrade tablets to Rare / add max modifiers",
+      "status": "RESOLVED",
+      "note": "RESOLVED 2026-07-05 Phase 10: PoE2DB exposes normal/magic/rare/unique tablet rarity support and official trade filters support rarity. The app keeps rarity filtering and the 4 explicit-mod cap separately.",
+      "resolution": "RESOLVED 2026-07-05 Phase 10: PoE2DB exposes normal/magic/rare/unique tablet rarity support and official trade filters support rarity. The app keeps rarity filtering and the 4 explicit-mod cap separately."
+    },
+    {
+      "id": "C2",
+      "topic": "Ritual reroll cost sign",
+      "claim_a": "Inherited: ~15% REDUCED Tribute cost",
+      "claim_b": "Official trade stats: costs #% INCREASED Tribute",
+      "status": "RESOLVED",
+      "note": "RESOLVED 2026-07-05: official trade text = INCREASED Tribute. Trade search re-enabled.",
+      "resolution": "RESOLVED 2026-07-05: official trade text = INCREASED Tribute. Trade search re-enabled."
+    },
+    {
+      "id": "C3",
+      "topic": "Ritual defer cost sign",
+      "claim_a": "Inherited: 20-30% REDUCED Tribute cost",
+      "claim_b": "Official trade stats: costs #% INCREASED Tribute",
+      "status": "RESOLVED",
+      "note": "RESOLVED 2026-07-05: official trade text = INCREASED Tribute. Trade search re-enabled.",
+      "resolution": "RESOLVED 2026-07-05: official trade text = INCREASED Tribute. Trade search re-enabled."
+    },
+    {
+      "id": "C4",
+      "topic": "Delirium fog dissipate speed (of the Unending)",
+      "claim_a": "Inherited: 30-20% SLOWER",
+      "claim_b": "Trade stats: dissipates #% FASTER",
+      "status": "RESOLVED",
+      "note": "RESOLVED 2026-07-05 Phase 10: official trade2 stats text is \"Delirium Fog in Map dissipates #% faster\". App uses official text for trade; PoE2DB slower wording is preserved only as a note about possible value-sign encoding.",
+      "resolution": "RESOLVED 2026-07-05 Phase 10: official trade2 stats text is \"Delirium Fog in Map dissipates #% faster\". App uses official text for trade; PoE2DB slower wording is preserved only as a note about possible value-sign encoding."
+    },
+    {
+      "id": "C5",
+      "topic": "Delirium of Eternity duplicate stat ID",
+      "claim_a": "explicit.stat_1174954559",
+      "claim_b": "explicit.stat_3226351972",
+      "status": "RESOLVED",
+      "note": "RESOLVED 2026-07-05 Phase 10: official duplicate tested with search POST only. explicit.stat_3226351972 returned Delirium Tablet matches; explicit.stat_1174954559 returned 0. App now uses explicit.stat_3226351972 and re-enables the row.",
+      "resolution": "RESOLVED 2026-07-05 Phase 10: official duplicate tested with search POST only. explicit.stat_3226351972 returned Delirium Tablet matches; explicit.stat_1174954559 returned 0. App now uses explicit.stat_3226351972 and re-enables the row."
+    },
+    {
+      "id": "C6",
+      "topic": "Delirium of Freeze Time value",
+      "claim_a": "Inherited: 3-5 seconds",
+      "claim_b": "Trade text: 1 second",
+      "status": "RESOLVED",
+      "note": "RESOLVED 2026-07-05: official trade text is fixed \"1 second\".",
+      "resolution": "RESOLVED 2026-07-05: official trade text is fixed \"1 second\"."
+    },
+    {
+      "id": "C7",
+      "topic": "Delirium of Madness display",
+      "claim_a": "Inherited concept differs",
+      "claim_b": "Trade: increased Deliriousness to Players",
+      "status": "RESOLVED",
+      "note": "RESOLVED 2026-07-05 Phase 10: official trade2 stats text confirmed: Delirium Fog in Map applies #% increased Deliriousness to Players. App uses official text.",
+      "resolution": "RESOLVED 2026-07-05 Phase 10: official trade2 stats text confirmed: Delirium Fog in Map applies #% increased Deliriousness to Players. App uses official text."
+    },
+    {
+      "id": "C8",
+      "topic": "Treasurer's rare chest count",
+      "claim_a": "Inherited roll 2-3",
+      "claim_b": "Trade text singular chest",
+      "status": "RESOLVED",
+      "note": "RESOLVED 2026-07-05: official trade text singular \"an additional Rare Chest\" is used for search; database roll range remains note-only.",
+      "resolution": "RESOLVED 2026-07-05: official trade text singular \"an additional Rare Chest\" is used for search; database roll range remains note-only."
+    },
+    {
+      "id": "C9",
+      "topic": "Breach of the Invasion count",
+      "claim_a": "Inherited roll 1-3",
+      "claim_b": "Trade text singular Rare Monster",
+      "status": "RESOLVED",
+      "note": "RESOLVED 2026-07-05: official trade text singular \"an additional Rare Monster\" is used for search; database roll range remains note-only.",
+      "resolution": "RESOLVED 2026-07-05: official trade text singular \"an additional Rare Monster\" is used for search; database roll range remains note-only."
+    },
+    {
+      "id": "C10",
+      "topic": "Jado's Spycraft unlock wording",
+      "claim_a": "Anomaly map near start",
+      "claim_b": "Defeat 4 Deadly Map Bosses (Sealed Vault, Jade Isles, Sacred Reservoir, Derelict Mansion)",
+      "status": "RESOLVED",
+      "note": "RESOLVED 2026-07-05 Phase 10: PoE2DB Jados_Spycraft quest page lists Jade Isles, Sealed Vault, Sacred Reservoir, and Derelict Mansion map steps; Masters page summarizes anomaly/deadly-map unlock wording. App unlock detail updated.",
+      "resolution": "RESOLVED 2026-07-05 Phase 10: PoE2DB Jados_Spycraft quest page lists Jade Isles, Sealed Vault, Sacred Reservoir, and Derelict Mansion map steps; Masters page summarizes anomaly/deadly-map unlock wording. App unlock detail updated."
+    },
+    {
+      "id": "C11",
+      "topic": "Clear Skies downside",
+      "claim_a": "Inherited: REDUCED Deliriousness",
+      "claim_b": "Trade stats show INCREASED Deliriousness row elsewhere",
+      "status": "RESOLVED",
+      "note": "RESOLVED 2026-07-05 Phase 10: official trade2 stats expose Clear Skies as \"Delirium Fog in your Maps never dissipates\". No secondary trade-stat conflict remains in source data.",
+      "resolution": "RESOLVED 2026-07-05 Phase 10: official trade2 stats expose Clear Skies as \"Delirium Fog in your Maps never dissipates\". No secondary trade-stat conflict remains in source data."
+    },
+    {
+      "id": "C12",
+      "topic": "Unforeseen Consequences exact text",
+      "claim_a": "Inherited: 14-18 additional Abysses + overrun",
+      "claim_b": "Only additional-Abysses stat ID known",
+      "status": "RESOLVED",
+      "note": "RESOLVED 2026-07-05 Phase 10: official trade2 stats expose both \"Map contains # additional Abysses\" and \"Map is overrun by the Abyssal\". App unique text/stat IDs updated.",
+      "resolution": "RESOLVED 2026-07-05 Phase 10: official trade2 stats expose both \"Map contains # additional Abysses\" and \"Map is overrun by the Abyssal\". App unique text/stat IDs updated."
+    },
+    {
+      "id": "C13",
+      "topic": "Abyss of Ossification behavior",
+      "claim_a": "Works as listed",
+      "claim_b": "Community report: possible bug for omen drops",
+      "status": "RESOLVED",
+      "note": "RESOLVED 2026-07-05 Phase 10: official trade2 stats and PoE2DB both expose the Ossification/Desecrated Currency stat. Old community bug reports are kept as gameplay watch items, not an active source conflict.",
+      "resolution": "RESOLVED 2026-07-05 Phase 10: official trade2 stats and PoE2DB both expose the Ossification/Desecrated Currency stat. Old community bug reports are kept as gameplay watch items, not an active source conflict."
+    },
+    {
+      "id": "C14",
+      "topic": "Expedition Tablet existence in current season",
+      "claim_a": "Owner authoritative current-game rule (2026-07-05): Expedition Tablets do not exist now; Expedition uses logbooks/whispers.",
+      "claim_b": "Legacy trade2/PoE2DB/imported-pack data may still list Expedition Tablet.",
+      "status": "RESOLVED",
+      "note": "RESOLVED 2026-07-05 Phase 11: owner rule is authoritative for current gameplay. App hides Expedition Tablet from active tablet/trade workflows and treats imported Expedition Tablet data as legacy/stale/trade-leftover.",
+      "resolution": "RESOLVED 2026-07-05 Phase 11: owner rule is authoritative for current gameplay. App hides Expedition Tablet from active tablet/trade workflows and treats imported Expedition Tablet data as legacy/stale/trade-leftover."
+    }
+  ],
+  "needs_verification": [
+    "trade2 ?q= deep-link behavior in an authenticated normal browser (unauthenticated browser hit sign-in gate on 2026-07-05)",
+    "Live listing matches for generated POST payloads with stat filters, without scraping or polling",
+    "Waystone optimizer economy scoring and hidden reward-line trade IDs; current pool/ranges are a verified draft",
+    "Temple/Vaal Beacon strategy value and economy testing; roll ranges are now sourced",
+    "Current market/economy observations with dates and sample sizes",
+    "Whether 0.5.4b/hotfixes resolved untargetable-enemy issues for F-rank Expedition maps",
+    "Tablet juice rankings and market value: Phase 10 stat IDs are verified, but SS/S/A/B ratings remain community opinion and need dated economy samples.",
+    "Abyss of Ossification live drop behavior can still be watched, but it is no longer treated as a source-text conflict."
+  ]
+}
