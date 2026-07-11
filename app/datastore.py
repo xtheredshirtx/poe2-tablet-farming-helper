@@ -1,9 +1,14 @@
 """Loads the JSON seed data derived from the Phase 2 research folder."""
 import json
+import sys
 from pathlib import Path
 
-APP_DIR = Path(__file__).resolve().parent.parent
-DATA_DIR = APP_DIR / "data"
+if getattr(sys, "frozen", False):
+    APP_DIR = Path(sys.executable).resolve().parent
+    DATA_DIR = Path(getattr(sys, "_MEIPASS", APP_DIR)) / "data"
+else:
+    APP_DIR = Path(__file__).resolve().parent.parent
+    DATA_DIR = APP_DIR / "data"
 SETTINGS_FILE = APP_DIR / "settings.json"
 
 DEFAULT_SETTINGS = {

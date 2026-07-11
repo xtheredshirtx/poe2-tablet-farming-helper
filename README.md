@@ -53,7 +53,18 @@ The app is built to be cautious: uncertain data is marked, unverified trade rows
 
 ## Download And Run
 
-### Option 1: Download ZIP From GitHub
+### Option 1: Download The Windows EXE Release
+
+This is the easiest option if you do not want to install Python.
+
+1. Open the [Releases page](https://github.com/xtheredshirtx/poe2-tablet-farming-helper/releases).
+2. Download the latest `POE2TabletFarmingHelper-...-windows.zip`.
+3. Extract the ZIP.
+4. Double-click `POE2TabletFarmingHelper.exe`.
+
+Windows may show a SmartScreen warning because this is a new unsigned community app. Choose **More info** and **Run anyway** only if you trust the download source.
+
+### Option 2: Run From Source ZIP
 
 1. Click the green **Code** button on GitHub.
 2. Choose **Download ZIP**.
@@ -73,7 +84,7 @@ Then run again:
 python main.py
 ```
 
-### Option 2: Clone With Git
+### Option 3: Clone With Git
 
 ```powershell
 git clone https://github.com/xtheredshirtx/poe2-tablet-farming-helper.git
@@ -85,8 +96,8 @@ python main.py
 ## Requirements
 
 - Windows 10 or Windows 11 recommended.
-- Python 3.10 or newer.
-- PySide6.
+- For the EXE release: no Python install is required.
+- For source installs: Python 3.10 or newer and PySide6.
 - Internet access only when you click an official trade-search button or open an external source/video.
 
 Install dependencies:

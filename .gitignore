@@ -18,4 +18,5 @@ Thumbs.db
 
 dist/
 build/
+release_artifacts/
 *.spec
