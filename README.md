@@ -25,6 +25,9 @@ PoE2 Tablet Farming Helper collects several farming and crafting planning tools 
 
 The app is built to be cautious: uncertain data is marked, unverified trade rows are disabled for one-click search, and community recommendations are not presented as official truth.
 
+New users can also read the plain-text walkthrough:
+[NEW_USER_GUIDE.txt](NEW_USER_GUIDE.txt)
+
 ## Screenshots
 
 ### Tablets

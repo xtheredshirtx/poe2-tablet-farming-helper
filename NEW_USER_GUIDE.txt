@@ -1,0 +1,454 @@
+POE2 TABLET FARMING HELPER - NEW USER GUIDE
+Version covered: 0.10.1-phase15-xp-preset
+Project page: https://github.com/xtheredshirtx/poe2-tablet-farming-helper
+Latest releases: https://github.com/xtheredshirtx/poe2-tablet-farming-helper/releases
+
+This is an unofficial community tool for Path of Exile 2. It is not made,
+endorsed, or supported by Grinding Gear Games.
+
+The app is still a work in progress. Treat it as a planning helper, not a
+guaranteed profit calculator or a final source of truth.
+
+
+1. WHAT THIS APP IS FOR
+-----------------------
+
+PoE2 Tablet Farming Helper is a local Windows desktop app that helps you plan:
+
+- Tablet farming setups.
+- Waystone/map modifier choices.
+- Crafting bases, modifiers, methods, omens, essences, and catalysts.
+- Expedition Whispers and remnant/juice context.
+- Atlas Master choices.
+- Official trade searches for tablets, gear presets, and crafting materials.
+- Source confidence and verification status.
+
+The app is built around one main idea: show useful farming/crafting planning
+information while clearly marking what is official, database-sourced,
+community opinion, unresolved, or still needing verification.
+
+
+2. HOW TO INSTALL THE EASY WAY
+------------------------------
+
+Use this method if you do not want to install Python.
+
+1. Go to:
+   https://github.com/xtheredshirtx/poe2-tablet-farming-helper/releases
+
+2. Download the latest Windows ZIP. It will have a name like:
+   POE2TabletFarmingHelper-v0.10.1-phase15-xp-preset-windows.zip
+
+3. Extract the ZIP.
+
+4. Open the extracted folder.
+
+5. Double-click:
+   POE2TabletFarmingHelper.exe
+
+Windows SmartScreen may warn you because the app is unsigned. That is normal
+for new community tools. Only run it if you trust the GitHub source.
+
+
+3. HOW TO RUN FROM SOURCE
+-------------------------
+
+Use this method if you are comfortable with Python.
+
+1. Download or clone the repo:
+   https://github.com/xtheredshirtx/poe2-tablet-farming-helper
+
+2. Open PowerShell in the repo folder.
+
+3. Install requirements:
+   python -m pip install -r requirements.txt
+
+4. Run:
+   python main.py
+
+You can also double-click run_windows.bat after Python and PySide6 are
+installed.
+
+
+4. FIRST TIME STARTUP
+---------------------
+
+When you open the app, it starts maximized with a dark Path of Exile-style UI.
+
+The top tab bar has the main sections:
+
+- Dashboard
+- Tablets
+- Waystone Optimizer
+- Crafting
+- Expedition Whispers
+- Atlas Masters
+- Trade Search Builder
+- Source Confidence
+- Settings
+
+If you are new, start with Dashboard, then Tablets, then Trade Search Builder.
+
+
+5. DASHBOARD
+------------
+
+The Dashboard is the quick overview page.
+
+Use it to see draft farming strategies and jump into the related tablet or
+trade-search areas.
+
+Important:
+
+- Strategy cards are community opinion, not official data.
+- Confidence/opinion badges matter.
+- Budget and high-investment modes change the setup notes.
+
+
+6. TABLETS
+----------
+
+The Tablets tab is for planning tablet farming by mechanic.
+
+Current active tablet pages:
+
+- Ritual
+- Breach
+- Delirium
+- Abyss
+- Overseer
+- Irradiated
+- Temple
+
+Each tablet page starts with a Community Best Setup card. Read that first.
+It gives a compact suggestion for what modifiers/community setups are usually
+interesting for that mechanic.
+
+Below that, deeper data is tucked into expandable sections:
+
+- Type-specific modifiers.
+- Shared high-value modifiers.
+- Unique tablets.
+- Full applicable modifier pools.
+- Notes and source warnings.
+
+Important Expedition rule:
+
+Expedition Tablets are treated as legacy/stale data for the current game
+state. Expedition gameplay is handled through Expedition Whispers, remnant
+order, map/Waystone setup, Atlas Masters, and other current tablets.
+
+If you see old references to "Expedition Tablet" in older sources, do not
+treat them as current active gameplay unless a future patch confirms they
+returned.
+
+
+7. WAYSTONE OPTIMIZER
+---------------------
+
+Use the Waystone Optimizer to think about map modifiers.
+
+Pick:
+
+- Your farming goal.
+- Your safety profile.
+
+The app shows modifier rows with reward tags and danger tags.
+
+Examples of planning goals:
+
+- Safe Waystone sustain.
+- Currency/density push.
+- Boss/logbook support.
+
+This tab is a rule-of-thumb planner. It does not scrape prices and does not
+simulate profit.
+
+
+8. CRAFTING
+-----------
+
+The Crafting tab is a reference section based mostly on Craft of Exile POE2
+beta data plus sourced community guides.
+
+Sections include:
+
+- Craft: CoE-style base/modifier view.
+- Overview.
+- Base Browser.
+- Modifier Explorer.
+- Crafting Methods.
+- Omens / Essences / Catalysts.
+- Craft Guides.
+- Cost Planner.
+- Source Confidence.
+
+Use this tab to inspect bases, modifier pools, weights, and crafting methods.
+
+Important:
+
+- Craft of Exile is third-party data.
+- Modifier weights are estimates.
+- Omen effect text may still need in-game verification.
+- Do not spend expensive currency based only on this app without checking
+  current in-game/trade information.
+
+
+9. EXPEDITION WHISPERS
+----------------------
+
+Use Expedition Whispers for Expedition-related planning.
+
+This tab includes:
+
+- Whisper/saga rankings from community data.
+- Aldurs decision helper.
+- Current Expedition juice context.
+- Remnant and setup notes.
+
+Important:
+
+When a guide says to "juice Expedition," this app interprets that as using
+other current tablets, shared/Irradiated juice, Waystone/map modifiers, Atlas
+Master choices, whispers, and remnant order around Expedition content.
+
+It does not mean using Expedition Tablets.
+
+
+10. ATLAS MASTERS
+-----------------
+
+The Atlas Masters tab is a reference for:
+
+- Doryani
+- Hilda
+- Jado
+
+Use it to browse Atlas Master nodes, unlock/context notes, and strategy
+mapping.
+
+Source labels still matter. Recheck after major patches.
+
+
+11. TRADE SEARCH BUILDER
+------------------------
+
+The Trade Search Builder has three areas:
+
+1. Tablets
+2. Gear Presets
+3. Crafting Materials
+
+The app creates official Path of Exile trade searches, but only when you click
+a button.
+
+Safety rules:
+
+- The app does not scrape trade listings.
+- The app does not poll.
+- The app does not run background searches.
+- The app sends at most one user-triggered search-creation request per click.
+- The official Path of Exile trade site opens in your browser.
+- Unverified stat rows stay disabled for one-click search.
+
+
+12. TABLET TRADE SEARCHES
+-------------------------
+
+Use the Tablets section when looking for tablets with certain modifiers.
+
+Common modes:
+
+- Manual: choose your own modifiers.
+- Preset searches: start from community-rated preset ideas.
+- Best Currency Juice, Budget, High Investment: load tablet-juice planning
+  presets.
+
+Tablet modifier rule:
+
+Tablets can have at most 4 modifiers. The app blocks impossible AND searches
+that require more than 4 modifiers.
+
+COUNT mode can use a larger candidate pool as long as the required count is
+possible for a real tablet.
+
+Example:
+
+If a preset has 5 candidate modifiers and COUNT is set to at least 2, that can
+be valid. If AND mode requires 5 modifiers, that is impossible and the app will
+block it.
+
+
+13. EXPERIENCE BOOSTING PRESETS
+-------------------------------
+
+Version 0.10.1 added XP-focused trade presets.
+
+Look for:
+
+- Experience boosting (leveling)
+- Boss experience (Overseer)
+
+These use verified XP-related modifiers and supporting density modifiers.
+
+Tip:
+
+If you want the search to require the XP modifier, switch to Manual/AND style
+selection and make sure the XP modifier itself is selected as required.
+
+
+14. GEAR PRESETS
+----------------
+
+Gear Presets are starter search templates for gear goals such as:
+
+- Projectile / Marksman gloves.
+- Minion sceptres.
+- Caster weapons.
+- Physical or elemental weapons.
+- Boots.
+- Rings.
+- Amulets.
+- Body armour.
+- Resist gear.
+
+Each modifier row can have:
+
+- Checkbox.
+- Minimum value.
+- Priority label.
+- Affix label.
+- Official / needs-verification badge.
+
+Gear modifier rule:
+
+Rare gear can have at most 6 explicit modifiers. The app blocks impossible
+AND searches that require more than 6 explicit modifiers.
+
+Unverified gear rows are visible for manual checklist use, but disabled for
+one-click search until they have exact official trade stat IDs.
+
+
+15. CRAFTING MATERIALS
+----------------------
+
+Crafting Materials is for quick name-based searches for verified material
+names such as omens, currencies, and Kolr's Hunt-related materials.
+
+These searches are based on verified item names, not stat IDs.
+
+
+16. SOURCE CONFIDENCE
+---------------------
+
+The Source Confidence tab explains where data came from and what its status is.
+
+Useful labels:
+
+- OFFICIAL: GGG patch notes or official trade metadata.
+- DATABASE: PoE2DB/poe2wiki style database source.
+- COMMUNITY: community spreadsheet or guide.
+- OPINION: farming value/ranking opinion.
+- NEEDS VERIFICATION: do not treat as final.
+- CONFLICT / RESOLVED: source disagreement tracking.
+
+The app intentionally shows uncertainty instead of hiding it.
+
+
+17. SETTINGS
+------------
+
+Use Settings to choose:
+
+- Default league.
+- Default trade type.
+- Default investment mode.
+- App color theme.
+
+Settings are saved locally in settings.json beside the app or EXE.
+
+This local settings file is not part of GitHub and is not required for the app
+to run.
+
+
+18. WHAT THE APP DOES NOT DO
+----------------------------
+
+This app does not:
+
+- Scrape Path of Exile trade listings.
+- Poll the trade site.
+- Run background searches.
+- Guarantee profit.
+- Automatically update market prices.
+- Replace in-game verification.
+- Claim community strategies are official.
+
+
+19. TROUBLESHOOTING
+-------------------
+
+Problem: Windows says the app is unsafe.
+
+Reason: The EXE is unsigned. This is common for small community tools.
+Only run it if you trust the GitHub release source.
+
+Problem: The EXE does not open.
+
+Try:
+
+- Extract the ZIP first. Do not run the EXE from inside the ZIP preview.
+- Keep the EXE and _internal folder together.
+- Download the latest release again.
+
+Problem: Running from source says PySide6 is missing.
+
+Run:
+
+python -m pip install -r requirements.txt
+
+Problem: A trade button is disabled.
+
+Usually this means:
+
+- No verified modifier is selected.
+- A selected row still needs official stat ID verification.
+- The search would require more modifiers than the item can have.
+
+Problem: A farming recommendation looks wrong after a patch.
+
+Recheck the official patch notes and source confidence. The app is patch-based
+and can become stale when Path of Exile 2 changes.
+
+
+20. BEST FIRST WORKFLOW FOR NEW USERS
+-------------------------------------
+
+1. Open Dashboard.
+2. Pick a farming goal or mechanic.
+3. Open the matching tablet page.
+4. Read the Community Best Setup card.
+5. Expand modifier details if you want to understand why.
+6. Open Trade Search Builder.
+7. Choose a preset or manually select verified modifiers.
+8. Preview the JSON if you care about exact trade payloads.
+9. Click Create search or Create LIVE search.
+10. Finish buying/searching on the official Path of Exile trade site.
+
+
+21. FEEDBACK
+------------
+
+GitHub project:
+https://github.com/xtheredshirtx/poe2-tablet-farming-helper
+
+Please report:
+
+- Bugs.
+- Bad wording.
+- Wrong or stale game data.
+- Better screenshots.
+- New verified trade stat IDs.
+- Ideas for clearer workflows.
+
+This project is actively evolving.
