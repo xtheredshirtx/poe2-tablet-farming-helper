@@ -467,6 +467,27 @@ def run():
     check("gear: hub delegates to tablet builder",
           hub.sub.currentIndex() == 0 and hub.tablet_type.currentText() == "Ritual Tablet")
 
+    # ---- phase 14: all-tablet-modifiers merge (per-tablet rule) ------------
+    tj = store.tablets
+    check("mods14: import marker present", "_all_modifiers_import" in tj)
+    ts = tj["type_suffixes"]
+    check("mods14: per-tablet counts (deli/abyss/ritual/temple)",
+          len(ts["Delirium Tablet"]) >= 11 and len(ts["Abyss Tablet"]) >= 11
+          and len(ts["Ritual Tablet"]) >= 12 and len(ts["Temple Tablet"]) >= 8)
+    check("mods14: irradiated has NO type suffixes (shared pool only)",
+          len(ts.get("Irradiated Tablet", [])) == 0)
+    new_rows = [r for pool in ([tj["shared_prefixes"], tj["shared_suffixes"]]
+                               + list(ts.values()))
+                for r in pool if "Imported 2026-07-11" in str(r.get("note", ""))]
+    check("mods14: 25 new rows imported", len(new_rows) == 25, str(len(new_rows)))
+    check("mods14: verified rows have explicit ids; unknown rows locked",
+          all((r["trade_ready"] and str(r["stat_id"]).startswith("explicit."))
+              or (not r["trade_ready"]) for r in new_rows))
+    legacy_exp = [r for r in ts["Expedition Tablet"]
+                  if "LEGACY ONLY" in str(r.get("note", ""))]
+    check("mods14: expedition additions legacy-only and never trade-ready",
+          legacy_exp and all(not r["trade_ready"] for r in legacy_exp))
+
     # ---- phase 8: theme switching -----------------------------------------
     st.theme.setCurrentText("PoE Gold (default)"); app.processEvents()
     st.theme.setCurrentText("Abyss Blue"); app.processEvents()
