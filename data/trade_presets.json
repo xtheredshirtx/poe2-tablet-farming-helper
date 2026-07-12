@@ -76,6 +76,24 @@
       "description": "Boss rarity/quantity and Waystone drops - the three S-rated Overseer suffixes."
     },
     {
+      "id": "xp_boosting",
+      "name": "Experience boosting (leveling)",
+      "tablet_type": "Any",
+      "mods": ["Elevated", "Breeding", "Brimming", "Teeming"],
+      "match_mode": "count",
+      "count_min": 2,
+      "description": "XP-leveling setup: 'Elevated' (#% increased Experience gain in Map, 12-18) is the direct XP modifier; Pack Size, Rare Monsters, and Magic Monsters multiply kills and therefore XP. Tip: to REQUIRE the Experience mod, untick the others or switch to AND with just Elevated + one density mod."
+    },
+    {
+      "id": "xp_boss_overseer",
+      "name": "Boss experience (Overseer)",
+      "tablet_type": "Overseer Tablet",
+      "mods": ["of Conquering", "Elevated", "Breeding", "Brimming"],
+      "match_mode": "count",
+      "count_min": 2,
+      "description": "Boss-XP pushing: 'of Conquering' (Map Bosses grant 40-80% increased Experience) plus the shared Experience-gain prefix and density. Pairs with boss-density Atlas choices (Hilda Mighty Prey / Patient Battue)."
+    },
+    {
       "id": "temple_experimental",
       "name": "Temple / Vaal Beacons (experimental)",
       "tablet_type": "Temple Tablet",

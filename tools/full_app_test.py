@@ -314,6 +314,28 @@ def run():
           tb.search_btn.isEnabled() and "candidate filters" in tb.guard_label.text())
     extra[0].check.setChecked(False); app.processEvents()
     check("4-mod rule: buttons re-enabled at 4", tb.search_btn.isEnabled())
+    # phase 15: experience-boosting presets
+    check("presets: xp preset exists", "Experience boosting (leveling)" in preset_names
+          or tb.preset.findText("Experience boosting (leveling)") >= 0)
+    tb.preset.setCurrentIndex(tb.preset.findText("Experience boosting (leveling)"))
+    app.processEvents()
+    xp_sel = [r for r in tb.mod_rows if r.selected()]
+    check("presets: xp preset selects <= 4 verified mods (%d)" % len(xp_sel),
+          0 < len(xp_sel) <= 4 and all(r.check.isEnabled() for r in xp_sel))
+    check("presets: xp preset includes the Experience mod",
+          any("Experience gain" in r.mod["text"] for r in xp_sel))
+    q = json.loads(tb.preview.toPlainText())
+    check("presets: xp query includes Elevated stat id",
+          any(f["id"] == "explicit.stat_57434274"
+              for f in q["query"]["stats"][0]["filters"]))
+    tb.preset.setCurrentIndex(tb.preset.findText("Boss experience (Overseer)"))
+    app.processEvents()
+    check("presets: boss-xp preset targets Overseer",
+          tb.tablet_type.currentText() == "Overseer Tablet")
+    q = json.loads(tb.preview.toPlainText())
+    check("presets: boss-xp query includes of Conquering stat id",
+          any(f["id"] == "explicit.stat_3860150265"
+              for f in q["query"]["stats"][0]["filters"]))
     tb.preset.setCurrentIndex(0); app.processEvents()  # back to manual
 
     # ---- phase 10: tablet juice data pack + trade mode --------------------
