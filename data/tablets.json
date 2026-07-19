@@ -115,7 +115,9 @@
    "rating": "SS",
    "best_for": "Almost all strategies",
    "confidence": "database",
-   "trade_ready": true
+   "trade_ready": true,
+   "stacking": "stacks",
+   "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
   },
   {
    "name": "Brimming",
@@ -126,7 +128,9 @@
    "rating": "S",
    "best_for": "Currency, rare drops, density",
    "confidence": "database",
-   "trade_ready": true
+   "trade_ready": true,
+   "stacking": "stacks",
+   "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
   },
   {
    "name": "Abounding",
@@ -137,7 +141,9 @@
    "rating": "S",
    "best_for": "Rare-monster strategies",
    "confidence": "database",
-   "trade_ready": true
+   "trade_ready": true,
+   "stacking": "stacks",
+   "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
   },
   {
    "name": "Collector's",
@@ -148,7 +154,9 @@
    "rating": "A",
    "best_for": "Rarity/MF builds",
    "confidence": "database",
-   "trade_ready": true
+   "trade_ready": true,
+   "stacking": "stacks",
+   "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
   },
   {
    "name": "Teeming",
@@ -159,7 +167,9 @@
    "rating": "A/S with Doryani",
    "best_for": "Doryani magic-monster setups",
    "confidence": "database",
-   "trade_ready": true
+   "trade_ready": true,
+   "stacking": "stacks",
+   "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
   },
   {
    "name": "Treasurer's",
@@ -171,7 +181,9 @@
    "best_for": "Chest/Jado setups",
    "confidence": "official",
    "trade_ready": true,
-   "note": "RESOLVED 2026-07-05: official trade text is singular 'an additional Rare Chest'; inherited 2-3 roll kept as historical note only. Official trade2 stats metadata re-verified 2026-07-05; official trade text is authoritative for trade search."
+   "note": "RESOLVED 2026-07-05: official trade text is singular 'an additional Rare Chest'; inherited 2-3 roll kept as historical note only. Official trade2 stats metadata re-verified 2026-07-05; official trade text is authoritative for trade search.",
+   "stacking": "stacks_flat",
+   "stacking_note": "Stacks across tablets: each tablet instance adds another copy (one more of the flat effect per tablet). Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
   },
   {
    "name": "Crystallised",
@@ -182,7 +194,9 @@
    "rating": "B",
    "best_for": "Essence side farming",
    "confidence": "database",
-   "trade_ready": true
+   "trade_ready": true,
+   "stacking": "stacks_flat",
+   "stacking_note": "Stacks across tablets: each tablet instance adds another copy (one more of the flat effect per tablet). Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
   },
   {
    "name": "Summoner's",
@@ -193,7 +207,9 @@
    "rating": "B/C",
    "best_for": "Summoning circle content",
    "confidence": "database",
-   "trade_ready": true
+   "trade_ready": true,
+   "stacking": "stacks_flat",
+   "stacking_note": "Stacks across tablets: each tablet instance adds another copy (one more of the flat effect per tablet). Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
   },
   {
    "name": "Azmeri's",
@@ -204,7 +220,9 @@
    "rating": "B/A with Hilda",
    "best_for": "Spirit/Hilda strategies",
    "confidence": "database",
-   "trade_ready": true
+   "trade_ready": true,
+   "stacking": "stacks_flat",
+   "stacking_note": "Stacks across tablets: each tablet instance adds another copy (one more of the flat effect per tablet). Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
   },
   {
    "name": "Exiled",
@@ -215,7 +233,9 @@
    "rating": "B/C",
    "best_for": "Rogue exile/tablet drops",
    "confidence": "database",
-   "trade_ready": true
+   "trade_ready": true,
+   "stacking": "stacks_flat",
+   "stacking_note": "Stacks across tablets: each tablet instance adds another copy (one more of the flat effect per tablet). Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
   },
   {
    "name": "Bountiful",
@@ -227,7 +247,9 @@
    "best_for": "Gold-specific farming",
    "confidence": "database",
    "trade_ready": true,
-   "note": "Official trade text says Gold Piles."
+   "note": "Official trade text says Gold Piles.",
+   "stacking": "stacks",
+   "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
   },
   {
    "name": "Elevated",
@@ -238,7 +260,9 @@
    "rating": "C",
    "best_for": "Leveling",
    "confidence": "database",
-   "trade_ready": true
+   "trade_ready": true,
+   "stacking": "stacks",
+   "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
   },
   {
    "name": "Challenger's",
@@ -250,7 +274,9 @@
    "best_for": "Only if rewards justify danger elsewhere",
    "confidence": "database",
    "trade_ready": true,
-   "warning": "Pure danger modifier."
+   "warning": "Pure danger modifier.",
+   "stacking": "stacks",
+   "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
   },
   {
    "name": "shared_prefix_summoning_circle",
@@ -268,7 +294,9 @@
    "danger": "low",
    "tags": [
     "general_mapping"
-   ]
+   ],
+   "stacking": "unknown",
+   "stacking_note": "Stacking behavior UNKNOWN - NEEDS VERIFICATION (fixed-value or unverified wording). Test in game before buying duplicates for it."
   },
   {
    "name": "shared_prefix_waystone_qty_rogue_exile",
@@ -286,7 +314,9 @@
    "danger": "low",
    "tags": [
     "waystone_sustain"
-   ]
+   ],
+   "stacking": "unknown",
+   "stacking_note": "Stacking behavior UNKNOWN - NEEDS VERIFICATION (fixed-value or unverified wording). Test in game before buying duplicates for it."
   },
   {
    "name": "shared_prefix_waystone_qty_azmeri_spirit",
@@ -304,7 +334,9 @@
    "danger": "low",
    "tags": [
     "waystone_sustain"
-   ]
+   ],
+   "stacking": "unknown",
+   "stacking_note": "Stacking behavior UNKNOWN - NEEDS VERIFICATION (fixed-value or unverified wording). Test in game before buying duplicates for it."
   },
   {
    "name": "shared_prefix_essence_waystone_qty",
@@ -322,7 +354,9 @@
    "danger": "low",
    "tags": [
     "waystone_sustain"
-   ]
+   ],
+   "stacking": "unknown",
+   "stacking_note": "Stacking behavior UNKNOWN - NEEDS VERIFICATION (fixed-value or unverified wording). Test in game before buying duplicates for it."
   },
   {
    "name": "shared_prefix_rare_chests",
@@ -342,7 +376,9 @@
    "tags": [
     "map_juice",
     "currency"
-   ]
+   ],
+   "stacking": "unknown",
+   "stacking_note": "Stacking behavior UNKNOWN - NEEDS VERIFICATION (fixed-value or unverified wording). Test in game before buying duplicates for it."
   }
  ],
  "shared_suffixes": [
@@ -355,7 +391,9 @@
    "rating": "S",
    "best_for": "Waystone sustain",
    "confidence": "database",
-   "trade_ready": true
+   "trade_ready": true,
+   "stacking": "stacks",
+   "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
   },
   {
    "name": "of Undertaking",
@@ -366,7 +404,9 @@
    "rating": "S for strong builds",
    "best_for": "General scaling",
    "confidence": "database",
-   "trade_ready": true
+   "trade_ready": true,
+   "stacking": "stacks_flat",
+   "stacking_note": "Stacks across tablets: each tablet instance adds another copy (one more of the flat effect per tablet). Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
   },
   {
    "name": "of Contest",
@@ -377,7 +417,9 @@
    "rating": "A",
    "best_for": "Boss/unique monsters",
    "confidence": "database",
-   "trade_ready": true
+   "trade_ready": true,
+   "stacking": "stacks_flat",
+   "stacking_note": "Stacks across tablets: each tablet instance adds another copy (one more of the flat effect per tablet). Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
   },
   {
    "name": "of the Antiquarian",
@@ -388,7 +430,9 @@
    "rating": "A",
    "best_for": "Strongbox/Jado",
    "confidence": "database",
-   "trade_ready": true
+   "trade_ready": true,
+   "stacking": "stacks_flat",
+   "stacking_note": "Stacks across tablets: each tablet instance adds another copy (one more of the flat effect per tablet). Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
   },
   {
    "name": "of Strongboxes",
@@ -399,7 +443,9 @@
    "rating": "B",
    "best_for": "Strongbox chance",
    "confidence": "database",
-   "trade_ready": true
+   "trade_ready": true,
+   "stacking": "stacks",
+   "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
   },
   {
    "name": "of the Devoted",
@@ -410,7 +456,9 @@
    "rating": "B",
    "best_for": "Shrine setups",
    "confidence": "database",
-   "trade_ready": true
+   "trade_ready": true,
+   "stacking": "stacks_flat",
+   "stacking_note": "Stacks across tablets: each tablet instance adds another copy (one more of the flat effect per tablet). Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
   },
   {
    "name": "of Shrines",
@@ -421,7 +469,9 @@
    "rating": "C",
    "best_for": "Shrine chance",
    "confidence": "database",
-   "trade_ready": true
+   "trade_ready": true,
+   "stacking": "stacks",
+   "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
   },
   {
    "name": "of the Essence",
@@ -432,7 +482,9 @@
    "rating": "B",
    "best_for": "Essence chance",
    "confidence": "database",
-   "trade_ready": true
+   "trade_ready": true,
+   "stacking": "stacks",
+   "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
   },
   {
    "name": "of Spirits",
@@ -443,7 +495,9 @@
    "rating": "B",
    "best_for": "Spirit/Hilda",
    "confidence": "database",
-   "trade_ready": true
+   "trade_ready": true,
+   "stacking": "stacks",
+   "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
   },
   {
    "name": "of the Summoning",
@@ -454,7 +508,9 @@
    "rating": "C",
    "best_for": "Summoning chance",
    "confidence": "database",
-   "trade_ready": true
+   "trade_ready": true,
+   "stacking": "stacks",
+   "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
   },
   {
    "name": "of the Exile",
@@ -465,7 +521,9 @@
    "rating": "C",
    "best_for": "Rogue exile chance",
    "confidence": "database",
-   "trade_ready": true
+   "trade_ready": true,
+   "stacking": "stacks",
+   "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
   },
   {
    "name": "shared_suffix_add_essences",
@@ -483,7 +541,9 @@
    "danger": "low",
    "tags": [
     "general_mapping"
-   ]
+   ],
+   "stacking": "unknown",
+   "stacking_note": "Stacking behavior UNKNOWN - NEEDS VERIFICATION (fixed-value or unverified wording). Test in game before buying duplicates for it."
   },
   {
    "name": "shared_suffix_add_shrines",
@@ -501,7 +561,9 @@
    "danger": "low",
    "tags": [
     "general_mapping"
-   ]
+   ],
+   "stacking": "unknown",
+   "stacking_note": "Stacking behavior UNKNOWN - NEEDS VERIFICATION (fixed-value or unverified wording). Test in game before buying duplicates for it."
   },
   {
    "name": "shared_suffix_random_modifiers",
@@ -519,7 +581,9 @@
    "danger": "high",
    "tags": [
     "general_mapping"
-   ]
+   ],
+   "stacking": "unknown",
+   "stacking_note": "Stacking behavior UNKNOWN - NEEDS VERIFICATION (fixed-value or unverified wording). Test in game before buying duplicates for it."
   },
   {
    "name": "shared_suffix_strongbox_reduced_pack_waystones",
@@ -541,7 +605,9 @@
     "map_juice",
     "currency",
     "waystone_sustain"
-   ]
+   ],
+   "stacking": "unknown",
+   "stacking_note": "Stacking behavior UNKNOWN - NEEDS VERIFICATION (fixed-value or unverified wording). Test in game before buying duplicates for it."
   },
   {
    "name": "shared_suffix_shrine_reduced_pack_waystones",
@@ -563,7 +629,9 @@
     "map_juice",
     "currency",
     "waystone_sustain"
-   ]
+   ],
+   "stacking": "unknown",
+   "stacking_note": "Stacking behavior UNKNOWN - NEEDS VERIFICATION (fixed-value or unverified wording). Test in game before buying duplicates for it."
   },
   {
    "name": "shared_suffix_rare_extra_modifier",
@@ -583,7 +651,9 @@
    "tags": [
     "map_juice",
     "currency"
-   ]
+   ],
+   "stacking": "stacks",
+   "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
   }
  ],
  "type_suffixes": {
@@ -602,7 +672,9 @@
     "current_game_available": false,
     "legacy_removed_from_current_game": true,
     "conflict": "OWNER RULE 2026-07-05: Expedition Tablets do not exist in the current game. If trade metadata, PoE2DB, old research, or imported packs list Expedition Tablet, treat those rows as legacy/stale/trade-leftover data and keep Expedition out of current tablet workflows.",
-    "evidence": "Stat ID may be known from legacy metadata, but current game has no Expedition Tablet to search for."
+    "evidence": "Stat ID may be known from legacy metadata, but current game has no Expedition Tablet to search for.",
+    "stacking": "stacks",
+    "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "of Runes",
@@ -618,7 +690,9 @@
     "current_game_available": false,
     "legacy_removed_from_current_game": true,
     "conflict": "OWNER RULE 2026-07-05: Expedition Tablets do not exist in the current game. If trade metadata, PoE2DB, old research, or imported packs list Expedition Tablet, treat those rows as legacy/stale/trade-leftover data and keep Expedition out of current tablet workflows.",
-    "evidence": "Stat ID may be known from legacy metadata, but current game has no Expedition Tablet to search for."
+    "evidence": "Stat ID may be known from legacy metadata, but current game has no Expedition Tablet to search for.",
+    "stacking": "stacks",
+    "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "of Ancient Fiends",
@@ -634,7 +708,9 @@
     "current_game_available": false,
     "legacy_removed_from_current_game": true,
     "conflict": "OWNER RULE 2026-07-05: Expedition Tablets do not exist in the current game. If trade metadata, PoE2DB, old research, or imported packs list Expedition Tablet, treat those rows as legacy/stale/trade-leftover data and keep Expedition out of current tablet workflows.",
-    "evidence": "Stat ID may be known from legacy metadata, but current game has no Expedition Tablet to search for."
+    "evidence": "Stat ID may be known from legacy metadata, but current game has no Expedition Tablet to search for.",
+    "stacking": "stacks",
+    "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "of the Writings",
@@ -650,7 +726,9 @@
     "current_game_available": false,
     "legacy_removed_from_current_game": true,
     "conflict": "OWNER RULE 2026-07-05: Expedition Tablets do not exist in the current game. If trade metadata, PoE2DB, old research, or imported packs list Expedition Tablet, treat those rows as legacy/stale/trade-leftover data and keep Expedition out of current tablet workflows.",
-    "evidence": "Stat ID may be known from legacy metadata, but current game has no Expedition Tablet to search for."
+    "evidence": "Stat ID may be known from legacy metadata, but current game has no Expedition Tablet to search for.",
+    "stacking": "stacks",
+    "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "of Verisium",
@@ -665,7 +743,9 @@
     "current_game_available": false,
     "legacy_removed_from_current_game": true,
     "conflict": "OWNER RULE 2026-07-05: Expedition Tablets do not exist in the current game. If trade metadata, PoE2DB, old research, or imported packs list Expedition Tablet, treat those rows as legacy/stale/trade-leftover data and keep Expedition out of current tablet workflows.",
-    "evidence": "Stat ID may be known from legacy metadata, but current game has no Expedition Tablet to search for."
+    "evidence": "Stat ID may be known from legacy metadata, but current game has no Expedition Tablet to search for.",
+    "stacking": "stacks",
+    "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "of Relics",
@@ -681,7 +761,9 @@
     "current_game_available": false,
     "legacy_removed_from_current_game": true,
     "conflict": "OWNER RULE 2026-07-05: Expedition Tablets do not exist in the current game. If trade metadata, PoE2DB, old research, or imported packs list Expedition Tablet, treat those rows as legacy/stale/trade-leftover data and keep Expedition out of current tablet workflows.",
-    "evidence": "Stat ID may be known from legacy metadata, but current game has no Expedition Tablet to search for."
+    "evidence": "Stat ID may be known from legacy metadata, but current game has no Expedition Tablet to search for.",
+    "stacking": "stacks",
+    "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "of the Demolition",
@@ -696,7 +778,9 @@
     "current_game_available": false,
     "legacy_removed_from_current_game": true,
     "conflict": "OWNER RULE 2026-07-05: Expedition Tablets do not exist in the current game. If trade metadata, PoE2DB, old research, or imported packs list Expedition Tablet, treat those rows as legacy/stale/trade-leftover data and keep Expedition out of current tablet workflows.",
-    "evidence": "Stat ID may be known from legacy metadata, but current game has no Expedition Tablet to search for."
+    "evidence": "Stat ID may be known from legacy metadata, but current game has no Expedition Tablet to search for.",
+    "stacking": "stacks",
+    "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "of the Detonator",
@@ -711,7 +795,9 @@
     "current_game_available": false,
     "legacy_removed_from_current_game": true,
     "conflict": "OWNER RULE 2026-07-05: Expedition Tablets do not exist in the current game. If trade metadata, PoE2DB, old research, or imported packs list Expedition Tablet, treat those rows as legacy/stale/trade-leftover data and keep Expedition out of current tablet workflows.",
-    "evidence": "Stat ID may be known from legacy metadata, but current game has no Expedition Tablet to search for."
+    "evidence": "Stat ID may be known from legacy metadata, but current game has no Expedition Tablet to search for.",
+    "stacking": "stacks",
+    "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "expedition_suffix_remnants",
@@ -729,7 +815,9 @@
     "danger": "low",
     "tags": [
      "expedition"
-    ]
+    ],
+    "stacking": "unknown",
+    "stacking_note": "Stacking behavior UNKNOWN - NEEDS VERIFICATION (fixed-value or unverified wording). Test in game before buying duplicates for it."
    }
   ],
   "Ritual Tablet": [
@@ -742,7 +830,9 @@
     "rating": "SS",
     "best_for": "Omen farming",
     "confidence": "official",
-    "trade_ready": true
+    "trade_ready": true,
+    "stacking": "stacks",
+    "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "Reroll additional time",
@@ -753,7 +843,9 @@
     "rating": "SS",
     "best_for": "Reroll strategies",
     "confidence": "official",
-    "trade_ready": true
+    "trade_ready": true,
+    "stacking": "stacks_flat",
+    "stacking_note": "Stacks across tablets: each tablet instance adds another copy (one more of the flat effect per tablet). Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "Reroll cost",
@@ -765,7 +857,9 @@
     "best_for": "Reroll-cost tuning",
     "confidence": "official",
     "trade_ready": true,
-    "note": "RESOLVED 2026-07-05: official trade text says INCREASED Tribute; inherited reduced-cost note was wrong for trade purposes. Official trade2 stats metadata re-verified 2026-07-05; official trade text is authoritative for trade search."
+    "note": "RESOLVED 2026-07-05: official trade text says INCREASED Tribute; inherited reduced-cost note was wrong for trade purposes. Official trade2 stats metadata re-verified 2026-07-05; official trade text is authoritative for trade search.",
+    "stacking": "stacks",
+    "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "Defer cost",
@@ -777,7 +871,9 @@
     "best_for": "Defer-heavy setups",
     "confidence": "official",
     "trade_ready": true,
-    "note": "RESOLVED 2026-07-05: official trade text says INCREASED Tribute. Official trade2 stats metadata re-verified 2026-07-05; official trade text is authoritative for trade search."
+    "note": "RESOLVED 2026-07-05: official trade text says INCREASED Tribute. Official trade2 stats metadata re-verified 2026-07-05; official trade text is authoritative for trade search.",
+    "stacking": "stacks",
+    "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "Tribute increase",
@@ -788,7 +884,9 @@
     "rating": "A",
     "best_for": "Raw tribute",
     "confidence": "database",
-    "trade_ready": true
+    "trade_ready": true,
+    "stacking": "stacks",
+    "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "Defer speed",
@@ -799,7 +897,9 @@
     "rating": "B",
     "best_for": "Defer cycling",
     "confidence": "official",
-    "trade_ready": true
+    "trade_ready": true,
+    "stacking": "stacks",
+    "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "No-cost reroll chance",
@@ -810,7 +910,9 @@
     "rating": "B",
     "best_for": "Marginal reroll value",
     "confidence": "official",
-    "trade_ready": true
+    "trade_ready": true,
+    "stacking": "stacks_chance",
+    "stacking_note": "Stacks across tablets: each tablet's chance applies per instance (caps untested). Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "ritual_suffix_rare_revived",
@@ -828,7 +930,9 @@
     "danger": "low",
     "tags": [
      "ritual"
-    ]
+    ],
+    "stacking": "stacks",
+    "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "ritual_suffix_magic_revived",
@@ -846,7 +950,9 @@
     "danger": "low",
     "tags": [
      "ritual"
-    ]
+    ],
+    "stacking": "stacks",
+    "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "ritual_suffix_additional_rerolls",
@@ -864,7 +970,9 @@
     "danger": "low",
     "tags": [
      "ritual"
-    ]
+    ],
+    "stacking": "unknown",
+    "stacking_note": "Stacking behavior UNKNOWN - NEEDS VERIFICATION (fixed-value or unverified wording). Test in game before buying duplicates for it."
    },
    {
     "name": "ritual_suffix_defer_cost",
@@ -882,7 +990,9 @@
     "danger": "low",
     "tags": [
      "ritual"
-    ]
+    ],
+    "stacking": "unknown",
+    "stacking_note": "Stacking behavior UNKNOWN - NEEDS VERIFICATION (fixed-value or unverified wording). Test in game before buying duplicates for it."
    },
    {
     "name": "ritual_suffix_reroll_cost",
@@ -900,7 +1010,9 @@
     "danger": "low",
     "tags": [
      "ritual"
-    ]
+    ],
+    "stacking": "unknown",
+    "stacking_note": "Stacking behavior UNKNOWN - NEEDS VERIFICATION (fixed-value or unverified wording). Test in game before buying duplicates for it."
    }
   ],
   "Breach Tablet": [
@@ -913,7 +1025,9 @@
     "rating": "S",
     "best_for": "Density",
     "confidence": "database",
-    "trade_ready": true
+    "trade_ready": true,
+    "stacking": "stacks",
+    "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "of the Invasion",
@@ -925,7 +1039,9 @@
     "best_for": "Rare-monster loot",
     "confidence": "official",
     "trade_ready": true,
-    "note": "RESOLVED 2026-07-05: official trade text is singular 'an additional Rare Monster'. Official trade2 stats metadata re-verified 2026-07-05; official trade text is authoritative for trade search."
+    "note": "RESOLVED 2026-07-05: official trade text is singular 'an additional Rare Monster'. Official trade2 stats metadata re-verified 2026-07-05; official trade text is authoritative for trade search.",
+    "stacking": "stacks_flat",
+    "stacking_note": "Stacks across tablets: each tablet instance adds another copy (one more of the flat effect per tablet). Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "of the Flow",
@@ -936,7 +1052,9 @@
     "rating": "A",
     "best_for": "Hiveblood",
     "confidence": "database",
-    "trade_ready": true
+    "trade_ready": true,
+    "stacking": "stacks",
+    "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "of the Form",
@@ -947,7 +1065,9 @@
     "rating": "A",
     "best_for": "Wombgifts",
     "confidence": "database",
-    "trade_ready": true
+    "trade_ready": true,
+    "stacking": "stacks",
+    "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "of the Flesh",
@@ -958,7 +1078,9 @@
     "rating": "A",
     "best_for": "Wombgift level",
     "confidence": "database",
-    "trade_ready": true
+    "trade_ready": true,
+    "stacking": "stacks_chance",
+    "stacking_note": "Stacks across tablets: each tablet's chance applies per instance (caps untested). Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "of the Commander",
@@ -969,7 +1091,9 @@
     "rating": "A/B",
     "best_for": "Boss/splinter farming",
     "confidence": "database",
-    "trade_ready": true
+    "trade_ready": true,
+    "stacking": "stacks",
+    "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "of the Hand",
@@ -981,7 +1105,9 @@
     "best_for": "Pure danger unless reward tested",
     "confidence": "database",
     "trade_ready": true,
-    "warning": "Pure danger badge unless reward testing is added."
+    "warning": "Pure danger badge unless reward testing is added.",
+    "stacking": "stacks",
+    "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "Additional Breach chance",
@@ -993,7 +1119,9 @@
     "best_for": "Breach volume",
     "confidence": "unknown",
     "trade_ready": false,
-    "conflict": "Needs item-base validation: unconfirmed that this rolls on tablets."
+    "conflict": "Needs item-base validation: unconfirmed that this rolls on tablets.",
+    "stacking": "unknown",
+    "stacking_note": "Stacking behavior UNKNOWN - NEEDS VERIFICATION (fixed-value or unverified wording). Test in game before buying duplicates for it."
    },
    {
     "name": "breach_suffix_stabilized_rares",
@@ -1015,7 +1143,9 @@
      "map_juice",
      "currency",
      "breach"
-    ]
+    ],
+    "stacking": "unknown",
+    "stacking_note": "Stacking behavior UNKNOWN - NEEDS VERIFICATION (fixed-value or unverified wording). Test in game before buying duplicates for it."
    }
   ],
   "Delirium Tablet": [
@@ -1028,7 +1158,9 @@
     "rating": "S",
     "best_for": "Simulacrum splinters",
     "confidence": "official",
-    "trade_ready": true
+    "trade_ready": true,
+    "stacking": "stacks",
+    "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "of Persecution",
@@ -1039,7 +1171,9 @@
     "rating": "S",
     "best_for": "Density",
     "confidence": "official",
-    "trade_ready": true
+    "trade_ready": true,
+    "stacking": "stacks",
+    "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "of Eternity",
@@ -1052,7 +1186,9 @@
     "confidence": "official",
     "trade_ready": true,
     "note": "STILL OPEN (C5): two official stat IDs share this exact text; item validation needed to know which one rolls on tablets. Trade search stays disabled.",
-    "evidence": "Phase 10: official trade2 stats has duplicate text, but POST test for Delirium Tablet returned matches for explicit.stat_3226351972 and zero matches for explicit.stat_1174954559; no listing fetch performed."
+    "evidence": "Phase 10: official trade2 stats has duplicate text, but POST test for Delirium Tablet returned matches for explicit.stat_3226351972 and zero matches for explicit.stat_1174954559; no listing fetch performed.",
+    "stacking": "stacks_flat",
+    "stacking_note": "Stacks across tablets: each tablet instance adds another copy (one more of the flat effect per tablet). Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "of the Unending",
@@ -1065,7 +1201,9 @@
     "confidence": "official",
     "trade_ready": true,
     "note": "RESOLVED for trade 2026-07-05: official text is 'dissipates # faster'; negative/low values may encode slower - check listed values when buying. Official trade2 stats metadata re-verified 2026-07-05; official trade text is authoritative for trade search.",
-    "evidence": "Phase 10: official trade2 stats text is Delirium Fog in Map dissipates #% faster; app uses official text for search."
+    "evidence": "Phase 10: official trade2 stats text is Delirium Fog in Map dissipates #% faster; app uses official text for search.",
+    "stacking": "stacks",
+    "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "of Freeze Time",
@@ -1077,7 +1215,9 @@
     "best_for": "Slower builds",
     "confidence": "official",
     "trade_ready": true,
-    "note": "RESOLVED 2026-07-05: official trade text is fixed 'for 1 second'; inherited 3-5s note superseded. Official trade2 stats metadata re-verified 2026-07-05; official trade text is authoritative for trade search."
+    "note": "RESOLVED 2026-07-05: official trade text is fixed 'for 1 second'; inherited 3-5s note superseded. Official trade2 stats metadata re-verified 2026-07-05; official trade text is authoritative for trade search.",
+    "stacking": "unknown",
+    "stacking_note": "Stacking behavior UNKNOWN - NEEDS VERIFICATION (fixed-value or unverified wording). Test in game before buying duplicates for it."
    },
    {
     "name": "of Shattering",
@@ -1088,7 +1228,9 @@
     "rating": "B",
     "best_for": "Shard farming",
     "confidence": "official",
-    "trade_ready": true
+    "trade_ready": true,
+    "stacking": "stacks",
+    "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "of Mirrors",
@@ -1099,7 +1241,9 @@
     "rating": "B",
     "best_for": "Mirror spawns",
     "confidence": "official",
-    "trade_ready": true
+    "trade_ready": true,
+    "stacking": "stacks",
+    "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "of Phobia",
@@ -1110,7 +1254,9 @@
     "rating": "B",
     "best_for": "Delirium bosses",
     "confidence": "official",
-    "trade_ready": true
+    "trade_ready": true,
+    "stacking": "stacks",
+    "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "of Madness",
@@ -1123,7 +1269,9 @@
     "confidence": "official",
     "trade_ready": true,
     "note": "RESOLVED for trade 2026-07-05: official text confirmed 'increased Deliriousness to Players'. Avoid rating (community) unchanged. Official trade2 stats metadata re-verified 2026-07-05; official trade text is authoritative for trade search.",
-    "evidence": "Phase 10: official trade2 stats text confirmed."
+    "evidence": "Phase 10: official trade2 stats text confirmed.",
+    "stacking": "stacks",
+    "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "delirium_suffix_pause_timer_rare_kills",
@@ -1145,7 +1293,9 @@
      "map_juice",
      "currency",
      "delirium"
-    ]
+    ],
+    "stacking": "unknown",
+    "stacking_note": "Stacking behavior UNKNOWN - NEEDS VERIFICATION (fixed-value or unverified wording). Test in game before buying duplicates for it."
    },
    {
     "name": "delirium_suffix_fog_slower",
@@ -1163,7 +1313,9 @@
     "danger": "low",
     "tags": [
      "delirium"
-    ]
+    ],
+    "stacking": "unknown",
+    "stacking_note": "Stacking behavior UNKNOWN - NEEDS VERIFICATION (fixed-value or unverified wording). Test in game before buying duplicates for it."
    }
   ],
   "Abyss Tablet": [
@@ -1176,7 +1328,9 @@
     "rating": "S",
     "best_for": "Abyss volume",
     "confidence": "database",
-    "trade_ready": true
+    "trade_ready": true,
+    "stacking": "stacks_chance",
+    "stacking_note": "Stacks across tablets: each tablet's chance applies per instance (caps untested). Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "of Hollows",
@@ -1187,7 +1341,9 @@
     "rating": "S",
     "best_for": "Guaranteed volume",
     "confidence": "database",
-    "trade_ready": true
+    "trade_ready": true,
+    "stacking": "stacks_flat",
+    "stacking_note": "Stacks across tablets: each tablet instance adds another copy (one more of the flat effect per tablet). Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "of Champions",
@@ -1198,7 +1354,9 @@
     "rating": "A",
     "best_for": "Loot per abyss",
     "confidence": "database",
-    "trade_ready": true
+    "trade_ready": true,
+    "stacking": "stacks_flat",
+    "stacking_note": "Stacks across tablets: each tablet instance adds another copy (one more of the flat effect per tablet). Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "of Treasures",
@@ -1209,7 +1367,9 @@
     "rating": "A",
     "best_for": "Pit rewards",
     "confidence": "database",
-    "trade_ready": true
+    "trade_ready": true,
+    "stacking": "unknown",
+    "stacking_note": "Stacking behavior UNKNOWN - NEEDS VERIFICATION (fixed-value or unverified wording). Test in game before buying duplicates for it."
    },
    {
     "name": "of Ossification",
@@ -1222,7 +1382,9 @@
     "confidence": "official",
     "trade_ready": true,
     "warning": "Community report says possible bug for omen drops.",
-    "evidence": "Phase 10: official trade2 stats and PoE2DB both expose this modifier; old community bug report kept as gameplay watch item, not an active source conflict."
+    "evidence": "Phase 10: official trade2 stats and PoE2DB both expose this modifier; old community bug report kept as gameplay watch item, not an active source conflict.",
+    "stacking": "stacks",
+    "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "of Dark Power",
@@ -1233,7 +1395,9 @@
     "rating": "B",
     "best_for": "Risk/reward",
     "confidence": "official",
-    "trade_ready": true
+    "trade_ready": true,
+    "stacking": "stacks",
+    "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "of the Depths",
@@ -1244,7 +1408,9 @@
     "rating": "B/C",
     "best_for": "Depths/Kulemak route",
     "confidence": "official",
-    "trade_ready": true
+    "trade_ready": true,
+    "stacking": "stacks",
+    "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "of Escalation",
@@ -1256,7 +1422,9 @@
     "best_for": "Pure danger",
     "confidence": "official",
     "trade_ready": true,
-    "warning": "Pure danger modifier."
+    "warning": "Pure danger modifier.",
+    "stacking": "stacks",
+    "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "abyss_suffix_one_extra",
@@ -1274,7 +1442,9 @@
     "danger": "low",
     "tags": [
      "abyss"
-    ]
+    ],
+    "stacking": "unknown",
+    "stacking_note": "Stacking behavior UNKNOWN - NEEDS VERIFICATION (fixed-value or unverified wording). Test in game before buying duplicates for it."
    },
    {
     "name": "abyss_suffix_difficulty_reward_per_pit",
@@ -1296,7 +1466,9 @@
      "high_investment",
      "reward_scaling",
      "abyss"
-    ]
+    ],
+    "stacking": "unknown",
+    "stacking_note": "Stacking behavior UNKNOWN - NEEDS VERIFICATION (fixed-value or unverified wording). Test in game before buying duplicates for it."
    },
    {
     "name": "abyss_suffix_spawn_monsters",
@@ -1318,7 +1490,9 @@
      "map_juice",
      "currency",
      "abyss"
-    ]
+    ],
+    "stacking": "stacks",
+    "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    }
   ],
   "Overseer Tablet": [
@@ -1331,7 +1505,9 @@
     "rating": "S",
     "best_for": "Boss loot",
     "confidence": "database",
-    "trade_ready": true
+    "trade_ready": true,
+    "stacking": "stacks",
+    "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "of Hoards",
@@ -1342,7 +1518,9 @@
     "rating": "S",
     "best_for": "Boss loot",
     "confidence": "database",
-    "trade_ready": true
+    "trade_ready": true,
+    "stacking": "stacks",
+    "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "of Pathways",
@@ -1353,7 +1531,9 @@
     "rating": "S",
     "best_for": "Boss sustain",
     "confidence": "database",
-    "trade_ready": true
+    "trade_ready": true,
+    "stacking": "stacks",
+    "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "of Conquering",
@@ -1364,7 +1544,9 @@
     "rating": "B",
     "best_for": "XP pushing",
     "confidence": "database",
-    "trade_ready": true
+    "trade_ready": true,
+    "stacking": "stacks",
+    "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "of Wisps",
@@ -1375,7 +1557,9 @@
     "rating": "A with Hilda",
     "best_for": "Spirit/boss chains",
     "confidence": "database",
-    "trade_ready": true
+    "trade_ready": true,
+    "stacking": "stacks_flat",
+    "stacking_note": "Stacks across tablets: each tablet instance adds another copy (one more of the flat effect per tablet). Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "of Compartments",
@@ -1386,7 +1570,9 @@
     "rating": "B",
     "best_for": "Strongboxes",
     "confidence": "database",
-    "trade_ready": true
+    "trade_ready": true,
+    "stacking": "stacks_flat",
+    "stacking_note": "Stacks across tablets: each tablet instance adds another copy (one more of the flat effect per tablet). Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "of Worship",
@@ -1398,7 +1584,9 @@
     "best_for": "Shrines",
     "confidence": "database",
     "trade_ready": true,
-    "note": "Inherited roll 1-2 vs shared +1; minor discrepancy."
+    "note": "Inherited roll 1-2 vs shared +1; minor discrepancy.",
+    "stacking": "stacks_flat",
+    "stacking_note": "Stacks across tablets: each tablet instance adds another copy (one more of the flat effect per tablet). Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "of Crystals",
@@ -1410,7 +1598,9 @@
     "best_for": "Essences",
     "confidence": "database",
     "trade_ready": true,
-    "note": "Inherited roll 1-2 vs shared +1; minor discrepancy."
+    "note": "Inherited roll 1-2 vs shared +1; minor discrepancy.",
+    "stacking": "stacks_flat",
+    "stacking_note": "Stacks across tablets: each tablet instance adds another copy (one more of the flat effect per tablet). Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "overseer_suffix_add_azmeri_spirits",
@@ -1428,7 +1618,9 @@
     "danger": "low",
     "tags": [
      "general_mapping"
-    ]
+    ],
+    "stacking": "unknown",
+    "stacking_note": "Stacking behavior UNKNOWN - NEEDS VERIFICATION (fixed-value or unverified wording). Test in game before buying duplicates for it."
    }
   ],
   "Irradiated Tablet": [],
@@ -1443,7 +1635,9 @@
     "best_for": "Temple density candidate",
     "confidence": "database",
     "trade_ready": true,
-    "note": "Roll range from PoE2DB Temple Tablet page; strategy value still untested."
+    "note": "Roll range from PoE2DB Temple Tablet page; strategy value still untested.",
+    "stacking": "stacks",
+    "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "Vaal Beacon extra pack",
@@ -1455,7 +1649,9 @@
     "best_for": "Temple/Vaal Beacon density",
     "confidence": "database",
     "trade_ready": true,
-    "note": "PoE2DB and official trade metadata agree on the extra-pack stat."
+    "note": "PoE2DB and official trade metadata agree on the extra-pack stat.",
+    "stacking": "stacks",
+    "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "Vaal Beacon extra pack chance",
@@ -1467,7 +1663,9 @@
     "best_for": "Temple/Vaal Beacon density",
     "confidence": "database",
     "trade_ready": true,
-    "note": "Official trade text keeps the grammar oddity: 'an extra packs'."
+    "note": "Official trade text keeps the grammar oddity: 'an extra packs'.",
+    "stacking": "stacks_chance",
+    "stacking_note": "Stacks across tablets: each tablet's chance applies per instance (caps untested). Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "Vaal Beacon additional monsters",
@@ -1478,7 +1676,9 @@
     "rating": "Experimental",
     "best_for": "Temple/Vaal Beacon monster count",
     "confidence": "database",
-    "trade_ready": true
+    "trade_ready": true,
+    "stacking": "stacks",
+    "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "Vaal Beacon extra crystal",
@@ -1489,7 +1689,9 @@
     "rating": "Experimental",
     "best_for": "Temple/Vaal Beacon reward candidate",
     "confidence": "database",
-    "trade_ready": true
+    "trade_ready": true,
+    "stacking": "stacks_chance",
+    "stacking_note": "Stacks across tablets: each tablet's chance applies per instance (caps untested). Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "Vaal Beacon unique monster",
@@ -1500,7 +1702,9 @@
     "rating": "Experimental",
     "best_for": "Temple unique-monster candidate",
     "confidence": "database",
-    "trade_ready": true
+    "trade_ready": true,
+    "stacking": "stacks_chance",
+    "stacking_note": "Stacks across tablets: each tablet's chance applies per instance (caps untested). Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "Vaal Beacon rare chests",
@@ -1511,7 +1715,9 @@
     "rating": "Experimental",
     "best_for": "Temple chest reward candidate",
     "confidence": "database",
-    "trade_ready": true
+    "trade_ready": true,
+    "stacking": "stacks",
+    "stacking_note": "Stacks across tablets: '%% increased/reduced' values from multiple tablets affecting the same map combine additively. Evidence: community 3x-tablet strats + standard additive stacking mechanics; not officially confirmed (2026-07-12)"
    },
    {
     "name": "temple_suffix_guaranteed_extra_pack",
@@ -1529,7 +1735,9 @@
     "danger": "low",
     "tags": [
      "temple"
-    ]
+    ],
+    "stacking": "unknown",
+    "stacking_note": "Stacking behavior UNKNOWN - NEEDS VERIFICATION (fixed-value or unverified wording). Test in game before buying duplicates for it."
    }
   ]
  },
@@ -1548,7 +1756,9 @@
    "rating_type": "opinion",
    "best_for": "Expedition/logbooks",
    "confidence": "database",
-   "trade_ready": true
+   "trade_ready": true,
+   "stacking": "redundant",
+   "stacking_note": "Does NOT benefit from stacking: boolean effect - a second copy of the same effect changes nothing."
   },
   {
    "name": "Freedom of Faith",
@@ -1564,7 +1774,9 @@
    "best_for": "Ritual reroll setups",
    "confidence": "conflict",
    "trade_ready": true,
-   "conflict": "Downside requires tribute-cost compensation; wording conflicts with some inherited rows."
+   "conflict": "Downside requires tribute-cost compensation; wording conflicts with some inherited rows.",
+   "stacking": "unknown",
+   "stacking_note": "Stacking behavior UNKNOWN - NEEDS VERIFICATION (fixed-value or unverified wording). Test in game before buying duplicates for it."
   },
   {
    "name": "Clear Skies",
@@ -1579,7 +1791,9 @@
    "best_for": "Delirium full clear",
    "confidence": "official",
    "trade_ready": true,
-   "evidence": "Phase 10: official trade2 stats exposes the never-dissipates stat; no secondary trade stat conflict remains in source data."
+   "evidence": "Phase 10: official trade2 stats exposes the never-dissipates stat; no secondary trade stat conflict remains in source data.",
+   "stacking": "redundant",
+   "stacking_note": "Does NOT benefit from stacking: boolean effect - a second copy of the same effect changes nothing."
   },
   {
    "name": "Unforeseen Consequences",
@@ -1595,7 +1809,9 @@
    "best_for": "Abyss density",
    "confidence": "official",
    "trade_ready": true,
-   "evidence": "Phase 10: official trade2 stats exposes both the additional-Abysses and overrun lines."
+   "evidence": "Phase 10: official trade2 stats exposes both the additional-Abysses and overrun lines.",
+   "stacking": "unknown",
+   "stacking_note": "Stacking behavior UNKNOWN - NEEDS VERIFICATION (fixed-value or unverified wording). Test in game before buying duplicates for it."
   },
   {
    "name": "Season of the Hunt",
@@ -1609,7 +1825,9 @@
    "rating_type": "opinion",
    "best_for": "Boss/Overseer",
    "confidence": "official",
-   "trade_ready": true
+   "trade_ready": true,
+   "stacking": "redundant",
+   "stacking_note": "Does NOT benefit from stacking: boolean effect - a second copy of the same effect changes nothing."
   },
   {
    "name": "Cruel Hegemony",
@@ -1624,7 +1842,9 @@
    "best_for": "Boss difficulty/reward",
    "confidence": "official",
    "trade_ready": true,
-   "warning": "Reward delta untested; dangerous for weak builds."
+   "warning": "Reward delta untested; dangerous for weak builds.",
+   "stacking": "unknown",
+   "stacking_note": "Stacking behavior UNKNOWN - NEEDS VERIFICATION (fixed-value or unverified wording). Test in game before buying duplicates for it."
   },
   {
    "name": "The Grand Project",
@@ -1636,7 +1856,9 @@
    "rating_type": "opinion",
    "best_for": "Vaal/Temple",
    "confidence": "unknown",
-   "trade_ready": false
+   "trade_ready": false,
+   "stacking": "unknown",
+   "stacking_note": "Stacking behavior UNKNOWN - NEEDS VERIFICATION (fixed-value or unverified wording). Test in game before buying duplicates for it."
   },
   {
    "name": "Visions of Paradise",
@@ -1648,7 +1870,9 @@
    "rating_type": "opinion",
    "best_for": "Vaal/Temple",
    "confidence": "unknown",
-   "trade_ready": false
+   "trade_ready": false,
+   "stacking": "unknown",
+   "stacking_note": "Stacking behavior UNKNOWN - NEEDS VERIFICATION (fixed-value or unverified wording). Test in game before buying duplicates for it."
   },
   {
    "name": "Mastered Domain",
@@ -1660,7 +1884,9 @@
    "rating_type": "opinion",
    "best_for": "Vaal/Temple",
    "confidence": "unknown",
-   "trade_ready": false
+   "trade_ready": false,
+   "stacking": "unknown",
+   "stacking_note": "Stacking behavior UNKNOWN - NEEDS VERIFICATION (fixed-value or unverified wording). Test in game before buying duplicates for it."
   },
   {
    "name": "Wraeclast Besieged",
@@ -1675,8 +1901,11 @@
    "best_for": "Breach density",
    "confidence": "conflict",
    "trade_ready": false,
-   "conflict": "Need exact unique text and full stat mapping."
+   "conflict": "Need exact unique text and full stat mapping.",
+   "stacking": "unknown",
+   "stacking_note": "Stacking behavior UNKNOWN - NEEDS VERIFICATION (fixed-value or unverified wording). Test in game before buying duplicates for it."
   }
  ],
- "_all_modifiers_import": "2026-07-11: merged the PoE2DB 83-modifier pack. Rows added ONLY to the tablet types that can roll them (owner rule). 62 stat IDs verified against official trade2 metadata, 21 stay UNKNOWN, 58 duplicates skipped, 1 Expedition rows stored as legacy only."
+ "_all_modifiers_import": "2026-07-11: merged the PoE2DB 83-modifier pack. Rows added ONLY to the tablet types that can roll them (owner rule). 62 stat IDs verified against official trade2 metadata, 21 stay UNKNOWN, 58 duplicates skipped, 1 Expedition rows stored as legacy only.",
+ "_stacking_classification": "2026-07-12: every modifier row classified for cross-tablet stacking (stacks/stacks_flat/stacks_chance/redundant/unknown) based on community 3x-strat evidence + standard additive mechanics. Not officially confirmed; unknown rows need in-game verification."
 }

@@ -71,8 +71,29 @@ class ModRow(QWidget):
             lay.addWidget(rank_chip(mod["currency_juice_rating"]))
         if str(mod.get("risk_level", "")).lower() in ("high", "very_high"):
             lay.addWidget(badge("conflict", "HIGH RISK"))
+        # cross-tablet stacking indicator (Phase 16): when checked, stackable
+        # modifiers turn green; redundant duplicates orange; unknown stays
+        # neutral. Classification is community/mechanics evidence, not official.
+        self.text_lbl = text
+        self.stacking = mod.get("stacking", "unknown")
+        note = mod.get("stacking_note")
+        if note:
+            self.text_lbl.setToolTip(note)
+            self.check.setToolTip(self.check.toolTip() + "\n\nStacking: " + note)
+        self.check.toggled.connect(self._update_stack_color)
         self.check.toggled.connect(on_change)
         self.min_spin.valueChanged.connect(on_change)
+        self._update_stack_color(self.check.isChecked())
+
+    def _update_stack_color(self, checked):
+        if checked and self.stacking in ("stacks", "stacks_flat", "stacks_chance"):
+            style = "color:#7ddc8f;font-weight:bold;"
+        elif checked and self.stacking == "redundant":
+            style = "color:#e0a95a;"
+        else:
+            style = ""
+        self.check.setStyleSheet(style)
+        self.text_lbl.setStyleSheet(style)
 
     def selected(self):
         return self.check.isChecked()
@@ -172,6 +193,11 @@ class TradeBuilderTab(QWidget):
         form.addWidget(top)
 
         form.addWidget(header("Modifiers / juice filters"))
+        form.addWidget(dim(
+            "Stacking colors when checked:  GREEN = stacks with the same modifier "
+            "on other tablets affecting the map (community-verified via 3x-tablet "
+            "strats — not official)  ·  ORANGE = a duplicate copy adds nothing  ·  "
+            "no color = stacking unverified, test in game first."))
         self.mods_scroll = QScrollArea()
         self.mods_scroll.setWidgetResizable(True)
         form.addWidget(self.mods_scroll, 1)

@@ -510,6 +510,45 @@ def run():
     check("mods14: expedition additions legacy-only and never trade-ready",
           legacy_exp and all(not r["trade_ready"] for r in legacy_exp))
 
+    # ---- phase 16: modifier stacking indicator -----------------------------
+    tj16 = store.tablets
+    check("stack16: classification marker present",
+          "_stacking_classification" in tj16)
+    all_rows16 = (tj16["shared_prefixes"] + tj16["shared_suffixes"]
+                  + [r for v in tj16["type_suffixes"].values() for r in v]
+                  + tj16["uniques"])
+    check("stack16: every row classified",
+          all(r.get("stacking") in ("stacks", "stacks_flat", "stacks_chance",
+                                    "redundant", "unknown") for r in all_rows16))
+    check("stack16: every row carries a stacking note",
+          all(r.get("stacking_note") for r in all_rows16))
+    # sanity anchors
+    breeding16 = next(r for r in tj16["shared_prefixes"] if r["name"] == "Breeding")
+    treasures16 = next(r for r in tj16["type_suffixes"]["Abyss Tablet"]
+                       if r["name"] == "of Treasures")
+    fbt16 = next(u for u in tj16["uniques"] if u["name"] == "Forgotten By Time")
+    check("stack16: increased-% mod stacks / fixed 'twice' unknown / boolean unique redundant",
+          breeding16["stacking"] == "stacks" and treasures16["stacking"] == "unknown"
+          and fbt16["stacking"] == "redundant")
+    # UI: checking a stackable row turns it green; unknown row stays neutral
+    tb.preset.setCurrentIndex(0); app.processEvents()
+    tb.tablet_type.setCurrentIndex(0); app.processEvents()
+    row_stack = next(r for r in tb.mod_rows if r.mod["name"] == "Breeding")
+    row_stack.check.setChecked(True); app.processEvents()
+    check("stack16: checked stackable row turns green",
+          "7ddc8f" in row_stack.check.styleSheet())
+    row_stack.check.setChecked(False); app.processEvents()
+    check("stack16: unchecking clears the color",
+          row_stack.check.styleSheet() == "")
+    tb.set_tablet_type("Abyss Tablet"); app.processEvents()
+    row_unk = next(r for r in tb.mod_rows if r.mod["name"] == "of Treasures")
+    if row_unk.check.isEnabled():
+        row_unk.check.setChecked(True); app.processEvents()
+        check("stack16: unknown-stacking row stays neutral when checked",
+              "7ddc8f" not in row_unk.check.styleSheet())
+        row_unk.check.setChecked(False); app.processEvents()
+    tb.tablet_type.setCurrentIndex(0); app.processEvents()
+
     # ---- phase 8: theme switching -----------------------------------------
     st.theme.setCurrentText("PoE Gold (default)"); app.processEvents()
     st.theme.setCurrentText("Abyss Blue"); app.processEvents()
